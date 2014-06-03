@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="14.704724"
+   height="13.818897"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="New document 1">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="45.254834"
+     inkscape:cx="3.7823166"
+     inkscape:cy="4.0751817"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="mm"
+     inkscape:snap-global="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1134"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3767"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       units="mm"
+       spacingx="0.2mm"
+       spacingy="0.2mm" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-1038.5433)">
+    <g
+       id="g3810" />
+    <g
+       id="g3814"
+       style="stroke:#ffffff;stroke-opacity:1"
+       transform="translate(0.70820007,0.01789376)">
+      <path
+         transform="translate(0,1038.5433)"
+         style="fill:none;stroke:#ffffff;stroke-width:1.41732287000000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="M 3.1484375,5.8735847 1.5742188,6.330616 0.69140625,6.8892097 1.5820313,7.4595222 l 1.5703125,0.4375"
+         id="path3806"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         sodipodi:nodetypes="ccccccccccccccccccccccc"
+         transform="translate(0,1038.5433)"
+         inkscape:connector-curvature="0"
+         id="path3808"
+         d="m 2.9453125,5.9009285 2.46875,0.00391 1.921875,-4.9335937 0.4414063,-0.28125 0.3007812,0.003906 0.7382813,0.28125 -1.0351563,4.9257812 3.101563,0.00391 1.253906,-1.8320312 0.960937,0.2851562 -0.445312,2.0429688 0.441406,0.4921875 -0.441406,0.4921875 0.441406,2.0429687 -0.949219,0.2851564 -1.265625,-1.8359376 -3.1015622,0 L 8.8125,12.814998 8.0820313,13.092342 7.7734375,13.092336 7.3242188,12.811086 5.421875,7.8774923 2.9648438,7.873586"
+         style="fill:none;stroke:#ffffff;stroke-width:1.41732287000000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <g
+       style="fill:#000000;fill-opacity:1"
+       id="g10"
+       transform="matrix(0.01476378,0,0,-0.0140927,6.9825332,1046.4683)">
+      <g
+         style="fill:#000000;fill-opacity:1"
+         id="g12"
+         transform="scale(0.1,0.1)">
+        <path
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path14"
+           inkscape:connector-curvature="0"
+           d="m -3780,720 600,400 1000,300 1600,0 1300,3500 300,200 200,0 500,-200 -700,-3500 2100,0 850,1300 650,-200 -300,-1450 300,-350 -300,-350 300,-1450 -650,-200 -850,1300 -2100,0 700,-3500 -500,-200 -200,0 -300,200 -1300,3500 -1600,0 -1000,300 -600,400" />
+      </g>
+    </g>
+  </g>
+</svg>
