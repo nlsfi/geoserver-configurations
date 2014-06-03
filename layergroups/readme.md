@@ -1,0 +1,1 @@
+the files in this folder specifies which layers are to be used with which styles in order to produce maps according to National Land Survey of Finalnd's visualization.
