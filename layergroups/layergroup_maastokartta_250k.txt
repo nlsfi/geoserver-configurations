@@ -1,0 +1,38 @@
+data: maastotietokanta shape data 1:250 000
+note: this layergroup uses
+-for placenames: non-standard data, where each letter has its own position
+-for buffered and offseted lines (e.g. suojelualue (protected areas)): buffered and offseted areas are calculated in Postgresql/PostGIS -database.
+
+
+<layer>maasto2alue</layer><style>maastokartta_250k</style>
+<layer>maaalue</layer><style>maastokartta_250k_1</style>
+<layer>peltoalue</layer><style>maastokartta_250k</style>
+<layer>maaalue</layer><style>maastokartta_250k</style>
+<layer>taajamaalue</layer><style>maastokartta_250k</style>
+<layer>taajamapiste</layer><style>maastokartta_250k</style>
+<layer>vesialue</layer><style>maastokartta_250k</style>
+<layer>liikennealue</layer><style>maastokartta_250k</style>
+<layer>kiitotieviiva</layer><style>maastokartta_250k</style>
+<layer>korkeusviiva</layer><style>maastokartta_250k</style>
+<layer>suojelualue</layer><style>maastokartta_250k_suojelualue</style>
+<layer>rajavyohykeraja_buffer</layer><style>maastokartta_250k_vyohykkeet</style>
+<layer>ampumaraja_buffer</layer><style>maastokartta_250k_vyohykkeet</style>
+<layer>valtakunnanraja_buffer</layer><style>maastokartta_250k_vyohykkeet</style>
+<layer>metsaraja</layer><style>maastokartta_250k</style>
+<layer>ampumaraja</layer><style>maastokartta_250k</style>
+<layer>suojaalue</layer><style>maastokartta_250k</style>
+<layer>rajavyohykeraja</layer><style>maastokartta_250k</style>
+<layer>vesiviiva</layer><style>maastokartta_250k</style>
+<layer>rakennuspiste</layer><style>maastokartta_250k_rakennukset</style>
+<layer>tieviiva</layer><style>maastokartta_250k_tiet_rautatiet</style>
+<layer>rautatieviiva</layer><style>maastokartta_250k_tiet_rautatiet</style>
+<layer>hallintoalueraja</layer><style>maastokartta_250k</style>
+<layer>rautatiepiste</layer><style>maastokartta_250k</style>
+<layer>rakennusviiva</layer><style>maastokartta_250k</style>
+<layer>lentokenttapiste</layer><style>maastokartta_250k</style>
+<layer>sahkolinja</layer><style>maastokartta_250k</style>
+<layer>rakennuspiste</layer><style>maastokartta_250k</style>
+<layer>majakkapiste</layer><style>maastokartta_250k</style>
+<layer>karttanimi_100000</layer><style>maastokartta_250k_paikannimet</style>
+<layer>karttanimi_100000</layer><style>maastokartta_250k_paikannimi_avaus</style>
+

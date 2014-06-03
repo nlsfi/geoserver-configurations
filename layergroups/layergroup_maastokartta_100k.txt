@@ -1,0 +1,41 @@
+data: maastotietokanta shape data 1:100 000
+note: this layergroup uses
+-for placenames: non-standard data, where each letter has its own position
+-for buffered and offseted lines (e.g. suojelualue (protected areas)): buffered and offseted areas are calculated in Postgresql/PostGIS -database.
+
+
+<layer>maasto2alue</layer><style>maastokartta_100k_varvikko</style>
+<layer>taajamaalue</layer><style>maastokartta_100k</style>
+<layer>peltoalue</layer><style>maastokartta_100k</style>
+<layer>maaalue</layer><style>maastokartta_100k</style>
+<layer>maasto2alue</layer><style>maastokartta_100k</style>
+<layer>vesialue</layer><style>maastokartta_100k</style>
+<layer>liikennealue</layer><style>maastokartta_100k</style>
+<layer>kiitotieviiva</layer><style>maastokartta_100k</style>
+<layer>maaalue</layer><style>maastokartta_100k_kivikot</style>
+<layer>maasto2alue</layer><style>maastokartta_100k_kivikot</style>
+<layer>korkeusviiva</layer><style>maastokartta_100k</style>
+<layer>metsaraja</layer><style>maastokartta_100k</style>
+<layer>suojelualue</layer><style>maastokartta_100k_suojelualue</style>
+<layer>ampumaraja_buffer</layer><style>maastokartta_100k_vyohykkeet</style>
+<layer>ampumaraja</layer><style>maastokartta_100k</style>
+<layer>suojaalue</layer><style>maastokartta_100k</style>
+<layer>rajavyohykeraja_buffer</layer><style>maastokartta_100k_vyohykkeet</style>
+<layer>valtakunnanraja_buffer</layer><style>maastokartta_100k_vyohykkeet</style>
+<layer>vesiviiva</layer><style>maastokartta_100k</style>
+<layer>maasto1viiva</layer><style>maastokartta_100k</style>
+<layer>vesirakennelmaviiva</layer><style>maastokartta_100k</style>
+<layer>rakennusalue</layer><style>maastokartta_100k</style>
+<layer>tieviiva</layer><style>maastokartta_100k_tiet_ja_rautatiet</style>
+<layer>rautatieviiva</layer><style>maastokartta_100k_tiet_ja_rautatiet</style>
+<layer>hallintoalueraja</layer><style>maastokartta_100k</style>
+<layer>rakennuspiste</layer><style>maastokartta_100k_rakennukset</style>
+<layer>rautatiepiste</layer><style>maastokartta_100k</style>
+<layer>rakennusviiva</layer><style>maastokartta_100k</style>
+<layer>sahkolinja</layer><style>maastokartta_100k</style>
+<layer>kaasujohto</layer><style>maastokartta_100k</style>
+<layer>vesiliikenneviiva</layer><style>maastokartta_100k</style>
+<layer>majakkapiste</layer><style>maastokartta_100k</style>
+<layer>karttanimi_40000</layer><style>maastokartta_100k_paikannimi</style>
+<layer>karttanimi_40000</layer><style>maastokartta_100k_paikannimi_avaus</style>
+<layer>rakennuspiste</layer><style>maastokartta_100k</style>
