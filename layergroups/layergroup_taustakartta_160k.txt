@@ -1,0 +1,32 @@
+data: maastotietokanta shape data 1:250 000
+note: this layergroup uses
+-for placenames: non-standard data, where each letter has its own position
+
+
+<layer>maasto2alue</layer><style>taustakartta_160k</style>
+<layer>taajamaalue</layer><style>taustakartta_160k</style>
+<layer>maaalue</layer><style>taustakartta_160k</style>
+<layer>taajamapiste</layer><style>taustakartta_160k</style>
+<layer>peltoalue</layer><style>taustakartta_160k</style>
+<layer>vesialue</layer><style>taustakartta_160k</style>
+<layer>liikennealue</layer><style>taustakartta_160k</style>
+<layer>kiitotieviiva</layer><style>taustakartta_160k</style>
+<layer>vesiviiva</layer><style>taustakartta_160k</style>
+<layer>tieviiva</layer><style>taustakartta_160k_tiet_rautatiet</style>
+<layer>rautatieviiva</layer><style>taustakartta_160k_tiet_rautatiet</style>
+<layer>lentokenttapiste</layer><style>taustakartta_160k</style>
+<layer>hallintoalueraja</layer><style>taustakartta_160k</style>
+<layer>karttanimi_100000</layer><style>taustakartta_160k_paikannimi</style>
+<layer>karttanimi_100000</layer><style>taustakartta_160k_paikannimi_avaus</style>
+
+
+
+
+
+
+
+
+
+
+
+

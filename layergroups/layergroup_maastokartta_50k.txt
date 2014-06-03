@@ -1,4 +1,4 @@
-data: maastotietokanta GML-schema
+data: maastotietokanta GML-schema (will not work with maastotietokanta shape data)
 note: this layergroup uses
 -for placenames: non-standard data, where each letter has its own position
 -for buffered and offseted lines (e.g. suojelualue (protected areas)): buffered and offseted areas are calculated in Postgresql/PostGIS -database.

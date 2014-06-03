@@ -1,0 +1,24 @@
+data: maastotietokanta shape data 1:4 500 000
+note: this layergroup uses
+-for placenames: non-standard data, where each letter has its own position
+-for background map nordic countries and seas
+
+
+<layer>manner</layer><style>taustakartta_8000k_manner</style>
+<layer>meret</layer><style>taustakartta_8000k_meret</style>
+<layer>korkeusalue</layer><style>taustakartta_8000k</style>
+<layer>vesialue</layer><style>taustakartta_8000k</style>
+<layer>maasto1reuna</layer><style>taustakartta_8000k</style>
+<layer>vesiviiva8000</layer><style>taustakartta_8000k</style>
+<layer>hallintoalueraja</layer><style>taustakartta_8000k</style>
+<layer>rautatieviiva</layer><style>taustakartta_8000k</style>
+<layer>tieviiva8000_uusi</layer><style>taustakartta_8000k_tieviiva</style>
+<layer>taajamapiste8000</layer><style>taustakartta_8000k_taajamapiste</style>
+<layer>karttanimi_8000000</layer><style>taustakartta_8000k_paikannimi</style>
+
+
+
+
+
+
+

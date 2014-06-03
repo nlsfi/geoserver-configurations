@@ -1,0 +1,40 @@
+data: maastotietokanta shape data 1:100 000
+note: this layergroup uses
+-for placenames: non-standard data, where each letter has its own position
+
+
+<layer>maasto2alue</layer><style>taustakartta_40k_varvikko_suo</style>
+<layer>maaalue</layer><style>taustakartta_40k_varvikko_suo</style>
+<layer>taajamaalue</layer><style>taustakartta_40k</style>
+<layer>peltoalue</layer><style>taustakartta_40k</style>
+<layer>maaalue</layer><style>taustakartta_40k</style>
+<layer>maasto2alue</layer><style>taustakartta_40k</style>
+<layer>vesialue</layer><style>taustakartta_40k</style>
+<layer>liikennealue</layer><style>taustakartta_40k</style>
+<layer>kiitotieviiva</layer><style>taustakartta_40k</style>
+<layer>vesiviiva</layer><style>taustakartta_40k</style>
+<layer>maasto1reuna</layer><style>taustakartta_40k</style>
+<layer>hallintoalueraja</layer><style>taustakartta_40k</style>
+<layer>rakennuspiste</layer><style>taustakartta_40k_rakennukset</style>
+<layer>tieviiva</layer><style>taustakartta_40k_tiet_rautatiet</style>
+<layer>rautatieviiva</layer><style>taustakartta_40k_tiet_rautatiet</style>
+<layer>sahkolinja</layer><style>taustakartta_40k_sahkolinja</style>
+<layer>vesiliikenneviiva</layer><style>taustakartta_40k</style>
+<layer>rakennuspiste</layer><style>taustakartta_40k</style>
+<layer>majakkapiste</layer><style>taustakartta_40k</style>
+<layer>karttanimi_40000</layer><style>taustakartta_40k_paikannimi</style>
+<layer>karttanimi_40000</layer><style>taustakartta_40k_paikannimi_avaus</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
