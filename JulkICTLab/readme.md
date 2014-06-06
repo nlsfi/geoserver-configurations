@@ -3,13 +3,13 @@ http://www.maanmittauslaitos.fi/aineistot-palvelut/rajapintapalvelut/paikkatiedo
 
 geoserver installation has following fonts:
 
-Bitstream 
-Courier
-Cursor	 
-Dialog
-Monospaced
-SansSerif
-Serif
+Bitstream, 
+Courier,
+Cursor,	 
+Dialog,
+Monospaced,
+SansSerif,
+Serif,
 Utopia
 
 with bold and italic versions.
