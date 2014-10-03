@@ -1,15 +1,4 @@
 http://www.maanmittauslaitos.fi/aineistot-palvelut/rajapintapalvelut/paikkatiedon-palvelualustan-pilotti
 
 
-geoserver installation has following fonts:
-
-Bitstream, 
-Courier,
-Cursor,	 
-Dialog,
-Monospaced,
-SansSerif,
-Serif,
-Utopia
-
-with bold and italic versions.
+this folder includes a how-to guide for using dynamic WMS on avoindata.maanmittauslaitos.fi/geoserver
