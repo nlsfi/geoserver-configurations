@@ -1,0 +1,295 @@
+JulkICTLab palvelualustan dynaamisen WMS-palvelun pikaopas
+
+Jakob Ventin, Maanmittauslaitos
+T‰m‰n ohjeen linkit toimivat parhaiten Chrome-seleimella.
+
+GetCapabilities-kysyely
+
+GetCapabilities-kysely palauttaa perustietoja palvelusta sek‰ listaa palvelussa olevat datat. Palvelun 
+tietoja ovat palvelutarjoajan yhteystiedot, valittavissa olevat formaatit, koordinaattij‰rjestelm‰t jne. 
+Palvelun tietojen j‰lkeen listataan palvelussa olevat datat. 
+
+http://avoindata.maanmittauslaitos.fi/geoserver/ows?service=wms&version=1.3.0&request=GetCapabilities
+ 
+DescribeFeatureType-kysely
+
+DescribeFeatureType-kysely on wfs-kysely. Sen avulla voidaan tutkia mink‰laisia ominaisuustietoja 
+tietyll‰ data-tasolla on. Alla oleva kysely kohdistuu 250k-aineiston tieviiva tasoon. N‰hd‰‰n, ett‰ t‰ll‰ 
+tasolla on ominaisuustietoina seuraavat:
+
+http://avoindata.maanmittauslaitos.fi/geoserver/wfs?request=DescribeFeatureType&version=1.1.0&typeName=mtkshp250k:
+tieviiva
+
+kohderyhma
+vertikaali
+kohdeluokk
+tieluokka
+valmiusast
+tienumero
+paallyste
+paallyste
+ajorataluk
+geom
+
+GetMap-kysely
+
+GetMap-kysely palauttaa karttakuvaa halutussa formaatissa. Alla oleva linkki palauttaa karttakuvan png-formaatissa 
+(&FORMAT=image%2Fpng) tasosta mtkshp250k:tieviiva (&LAYERS=mtkshp250k/3Atieviiva). Lis‰ksi m‰‰ritell‰‰n milt‰ 
+alueelta halutaan karttakuvaa (&BBOX=), mink‰ kokoisena (&WIDTH &HEIGHT) sek‰ miss‰ koordinaattij‰rjestelm‰ss‰ kuva 
+palautetaan (&SRS=EPSG&3A3067 (ETRS TM35FIN)).
+
+
+http://avoindata.maanmittauslaitos.fi/geoserver/wms?LAYERS=mtkshp250k%3Atieviiva&STYLES=&FORMAT=image%2Fpng&
+SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&SRS=EPSG%3A3067&BBOX=362762.12744141,6943435.2502441,408
+368.93896485,6966238.6560059&WIDTH=1600&HEIGHT=800
+
+Yll‰ olevassa kuvahaussa k‰ytet‰‰n t‰m‰n tason oletustyyli‰, joka on sininen viiva. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+<StyledLayerDescriptor version="1.0.0"  
+ xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"  
+ xmlns="http://www.opengis.net/sld"  
+ xmlns:ogc="http://www.opengis.net/ogc"  
+ xmlns:xlink="http://www.w3.org/1999/xlink"  
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
+  <!-- a Named Layer is the basic building block of an SLD document --> 
+  <NamedLayer> 
+    <Name>default_line</Name> 
+    <UserStyle> 
+    <!-- Styles can have names, titles and abstracts --> 
+      <Title>Default Line</Title> 
+      <Abstract>A sample style that draws a line</Abstract> 
+      <!-- FeatureTypeStyles describe how to render different features --> 
+      <!-- A FeatureTypeStyle for rendering lines --> 
+      <FeatureTypeStyle> 
+        <Rule> 
+          <Name>rule1</Name> 
+          <Title>Blue Line</Title> 
+          <Abstract>A solid blue line with a 1 pixel width</Abstract> 
+          <LineSymbolizer> 
+            <Stroke> 
+              <CssParameter name="stroke">#0000FF</CssParameter> 
+            </Stroke> 
+          </LineSymbolizer> 
+        </Rule> 
+      </FeatureTypeStyle> 
+    </UserStyle> 
+  </NamedLayer> 
+</StyledLayerDescriptor> 
+
+
+Viivan piirt‰minen m‰‰ritell‰‰n yll‰ olevassa tyylitiedostossa kohdassa, joka on v‰ritetty punaisella v‰rill‰. Oletustyyli‰ 
+k‰ytet‰‰n, kun &STYLES= parametrin j‰lkeen ei m‰‰ritell‰ arvoa. Dynaamisesta WMS-palvelusta voidaan myˆs pyyt‰‰ 
+karttakuvaa, jonka esitystyyli m‰‰ritet‰‰n itse. T‰m‰ voidaan tehd‰ kolmella tavalla
+*	 lis‰‰m‰ll‰ sld-tyyli GetMap-pyyntˆˆn
+*	sld-tyyliin viittaaminen url-osoitteella GetMap pyynnˆss‰ 
+*	sis‰lt‰m‰ll‰ sld WMS GetMap POST-kyselyn xml-tiedostoon.
+
+Kahdesta j‰lkimm‰isest‰ menetelm‰st‰ voit lukea enemm‰n t‰‰lt‰.
+
+Katsotaan seuraavaksi, miten voidaan lis‰t‰ sld-m‰‰rittely GetMap-pyyntˆˆn. Aloitetaan m‰‰rittelem‰ll‰ esitystyyli.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<StyledLayerDescriptor version="1.0.0" xmlns:gml="http://www.opengis.net/gml" xmlns
+:ogc="http://www.opengis.net/ogc" xmlns="http://www.opengis.net/sld">   
+  <NamedLayer> 
+    <Name>mtkshp250k:tieviiva</Name> 
+    <UserStyle xmlns="http://www.opengis.net/sld"> 
+    <FeatureTypeStyle> 
+        <Rule> 
+ 
+  
+          <ogc:Filter> 
+            <ogc:Or>       
+              <ogc:PropertyIsEqualTo> 
+                <ogc:PropertyName>kohdeluokk</ogc:PropertyName> 
+                <ogc:Literal>12132</ogc:Literal> 
+              </ogc:PropertyIsEqualTo> 
+              <ogc:PropertyIsEqualTo> 
+                <ogc:PropertyName>kohdeluokk</ogc:PropertyName> 
+                <ogc:Literal>12131</ogc:Literal> 
+              </ogc:PropertyIsEqualTo> 
+            </ogc:Or>         
+          </ogc:Filter> 
+          
+          <LineSymbolizer>             
+            <Stroke> 
+              <CssParameter name="stroke">#b4b6b8</CssParameter> 
+              <CssParameter name="stroke-width">1</CssParameter>                   
+       
+            </Stroke>             
+          </LineSymbolizer> 
+        </Rule>       
+     
+       <Rule> 
+ 
+  
+          <ogc:Filter> 
+            <ogc:Or>       
+              <ogc:PropertyIsEqualTo> 
+                <ogc:PropertyName>kohdeluokk</ogc:PropertyName> 
+                <ogc:Literal>12111</ogc:Literal> 
+              </ogc:PropertyIsEqualTo> 
+              <ogc:PropertyIsEqualTo> 
+                <ogc:PropertyName>kohdeluokk</ogc:PropertyName> 
+                <ogc:Literal>12112</ogc:Literal> 
+              </ogc:PropertyIsEqualTo> 
+              <ogc:PropertyIsEqualTo> 
+                <ogc:PropertyName>kohdeluokk</ogc:PropertyName> 
+                <ogc:Literal>12121</ogc:Literal> 
+              </ogc:PropertyIsEqualTo> 
+              <ogc:PropertyIsEqualTo> 
+                <ogc:PropertyName>kohdeluokk</ogc:PropertyName> 
+                <ogc:Literal>12122</ogc:Literal> 
+              </ogc:PropertyIsEqualTo>         
+            </ogc:Or>         
+          </ogc:Filter> 
+          
+          <LineSymbolizer>             
+            <Stroke> 
+              <CssParameter name="stroke">#ff0000</CssParameter> 
+              <CssParameter name="stroke-width">2</CssParameter>               
+            </Stroke>             
+          </LineSymbolizer> 
+        </Rule>           
+      </FeatureTypeStyle> 
+    </UserStyle> 
+  </NamedLayer> 
+</StyledLayerDescriptor>
+
+Yll‰ olevassa esimerkiss‰ m‰‰ritell‰‰n <Name> -kent‰ss‰, ett‰ haluttu taso on mtkshp250k:tieviiva. <UserStyle> -kent‰n 
+sis‰ll‰ m‰‰ritell‰‰n viivojen esitystyyli. T‰ss‰ tapauksessa viivan esitystyyli on eri riippuen tien t‰rkeydest‰. Ensimm‰isess‰ 
+<Rule>-elementiss‰ m‰‰ritet‰‰n esitystyyli 3b- ja 3a -luokan teille (kohdeluokk 12132 ja 12131). Esitystyyli on harmaa viiva, 
+jonka leveys on yksi pikseli. Toisessa <Rule>-elementiss‰ m‰‰ritet‰‰n esitystyyli 2b, 2a, 1b ja 1a-luokan teille (kohdeluokk 
+12111, 12112, 12121, 12122). Esitystyyli on punainen 2 px leve‰ viiva.
+Jotta t‰m‰ esitystyyli voitiaisiin liitt‰‰ WMS GetMap SLD_BODY-parametrin arvoksi, se pit‰‰ URL-enkoodata. Sen voi tehd‰ 
+esim. t‰ll‰ sivustolla. Nyt sld-tyyli n‰ytt‰‰ t‰llaiselta (poistetty v‰lilyˆnnit):
+
+%3CStyledLayerDescriptor%20version%3D%221.0.0%22%20xmlns%3Agml%3D%22http%3A%2F%2Fwww.opengis.net%2Fg
+ml%22%20xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%20xmlns%3D%22http%3A%2F%2Fwww.op
+engis.net%2Fsld%22%3E%20%20%0A%3CNamedLayer%3E%0A%3CName%3Emtkshp250k%3Atieviiva%3C%2FName%3E%0A
+%3CUserStyle%20xmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22%3E%0A%3CFeatureTypeStyle%3E%0A%3CRu
+le%3E%0A%3Cogc%3AFilter%3E%0A%3Cogc%3AOr%3E%20%20%0A%3Cogc%3APropertyIsEqualTo%3E%0A%3Cogc%3APro
+pertyName%3Ekohdeluokk%3C%2Fogc%3APropertyName%3E%0A%3Cogc%3ALiteral%3E12132%3C%2Fogc%3ALiteral%3E
+%0A%3C%2Fogc%3APropertyIsEqualTo%3E%0A%3Cogc%3APropertyIsEqualTo%3E%0A%3Cogc%3APropertyName%3Ekohd
+eluokk%3C%2Fogc%3APropertyName%3E%0A%3Cogc%3ALiteral%3E12131%3C%2Fogc%3ALiteral%3E%0A%3C%2Fogc%3A
+PropertyIsEqualTo%3E%0A%3C%2Fogc%3AOr%3E%0A%3C%2Fogc%3AFilter%3E%0A%3CLineSymbolizer%3E%0A%3CStroke
+%3E%0A%3CCssParameter%20name%3D%22stroke%22%3E%23b4b6b8%3C%2FCssParameter%3E%0A%3CCssParameter%2
+0name%3D%22stroke-
+width%22%3E1%3C%2FCssParameter%3E%20%0A%3C%2FStroke%3E%0A%3C%2FLineSymbolizer%3E%0A%3C%2FRule%3E
+%20%20%0A%20%3CRule%3E%20%0A%3Cogc%3AFilter%3E%0A%3Cogc%3AOr%3E%20%20%0A%3Cogc%3APropertyIsEqu
+alTo%3E%0A%3Cogc%3APropertyName%3Ekohdeluokk%3C%2Fogc%3APropertyName%3E%0A%3Cogc%3ALiteral%3E1211
+1%3C%2Fogc%3ALiteral%3E%0A%3C%2Fogc%3APropertyIsEqualTo%3E%0A%3Cogc%3APropertyIsEqualTo%3E%0A%3Cogc
+%3APropertyName%3Ekohdeluokk%3C%2Fogc%3APropertyName%3E%0A%3Cogc%3ALiteral%3E12112%3C%2Fogc%3ALit
+eral%3E%0A%3C%2Fogc%3APropertyIsEqualTo%3E%0A%3Cogc%3APropertyIsEqualTo%3E%0A%3Cogc%3APropertyName%
+3Ekohdeluokk%3C%2Fogc%3APropertyName%3E%0A%3Cogc%3ALiteral%3E12121%3C%2Fogc%3ALiteral%3E%0A%3C%2F
+ogc%3APropertyIsEqualTo%3E%0A%3Cogc%3APropertyIsEqualTo%3E%0A%3Cogc%3APropertyName%3Ekohdeluokk%3C%
+2Fogc%3APropertyName%3E%0A%3Cogc%3ALiteral%3E12122%3C%2Fogc%3ALiteral%3E%0A%3C%2Fogc%3APropertyIsEq
+ualTo%3E%0A%3C%2Fogc%3AOr%3E%0A%3C%2Fogc%3AFilter%3E%0A%3CLineSymbolizer%3E%0A%3CStroke%3E%0A%3C
+CssParameter%20name%3D%22stroke%22%3E%23ff0000%3C%2FCssParameter%3E%0A%3CCssParameter%20name%3D%
+22stroke-
+width%22%3E2%3C%2FCssParameter%3E%20%20%0A%3C%2FStroke%3E%0A%3C%2FLineSymbolizer%3E%0A%3C%2FRule
+%3E%20%20%0A%3C%2FFeatureTypeStyle%3E%0A%3C%2FUserStyle%3E%0A%3C%2FNamedLayer%3E%0A%3C%2FStyledL
+ayerDescriptor%3E
+
+Kun GetMap-pyyntˆˆn lis‰t‰‰n SLD-tyyli, se n‰ytt‰‰ hieman erilaiselta. &STYLES ja &LAYERS -parametrien sijaan k‰ytet‰‰n 
+&SLD_BODY-parametri‰. SLD_BODY-parametrin arvoksi annetaan yll‰ oleva enkoodattu SLD-tyyli, jossa on m‰‰ritelty 
+karttataso (layers) sek‰ esitystyyli. WMS Getmap esimerkkipyyntˆ SLD_BODY-parametrill‰ lˆytyy seuraavalta sivulta.
+?
+
+
+
+http://avoindata.maanmittauslaitos.fi/geoserver/wms?&WIDTH=1600&HEIGHT=800&FORMAT=imag
+e%2Fpng&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&SRS=EPSG%3A3067&BBOX=
+362762,6943435,408368,6966238&SLD_BODY=%3CStyledLayerDescriptor%20version%3D%221.0.0
+%22%20xmlns%3Agml%3D%22http%3A%2F%2Fwww.opengis.net%2Fgml%22%20xmlns%3Aogc%
+3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%20xmlns%3D%22http%3A%2F%2Fwww.ope
+ngis.net%2Fsld%22%3E%20%20%0A%3CNamedLayer%3E%0A%3CName%3Emtkshp250k%3Atiev
+iiva%3C%2FName%3E%0A%3CUserStyle%20xmlns%3D%22http%3A%2F%2Fwww.opengis.net%2
+Fsld%22%3E%0A%3CFeatureTypeStyle%3E%0A%3CRule%3E%0A%3Cogc%3AFilter%3E%0A%3C
+ogc%3AOr%3E%20%20%0A%3Cogc%3APropertyIsEqualTo%3E%0A%3Cogc%3APropertyName%
+3Ekohdeluokk%3C%2Fogc%3APropertyName%3E%0A%3Cogc%3ALiteral%3E12132%3C%2Fogc%
+3ALiteral%3E%0A%3C%2Fogc%3APropertyIsEqualTo%3E%0A%3Cogc%3APropertyIsEqualTo%3E
+%0A%3Cogc%3APropertyName%3Ekohdeluokk%3C%2Fogc%3APropertyName%3E%0A%3Cogc%
+3ALiteral%3E12131%3C%2Fogc%3ALiteral%3E%0A%3C%2Fogc%3APropertyIsEqualTo%3E%0A%
+3C%2Fogc%3AOr%3E%0A%3C%2Fogc%3AFilter%3E%0A%3CLineSymbolizer%3E%0A%3CStroke
+%3E%0A%3CCssParameter%20name%3D%22stroke%22%3E%23b4b6b8%3C%2FCssParameter%
+3E%0A%3CCssParameter%20name%3D%22stroke-
+width%22%3E1%3C%2FCssParameter%3E%20%0A%3C%2FStroke%3E%0A%3C%2FLineSymboliz
+er%3E%0A%3C%2FRule%3E%20%20%0A%20%3CRule%3E%20%0A%3Cogc%3AFilter%3E%0A%
+3Cogc%3AOr%3E%20%20%0A%3Cogc%3APropertyIsEqualTo%3E%0A%3Cogc%3APropertyName
+%3Ekohdeluokk%3C%2Fogc%3APropertyName%3E%0A%3Cogc%3ALiteral%3E12111%3C%2Fogc
+%3ALiteral%3E%0A%3C%2Fogc%3APropertyIsEqualTo%3E%0A%3Cogc%3APropertyIsEqualTo%3
+E%0A%3Cogc%3APropertyName%3Ekohdeluokk%3C%2Fogc%3APropertyName%3E%0A%3Cogc
+%3ALiteral%3E12112%3C%2Fogc%3ALiteral%3E%0A%3C%2Fogc%3APropertyIsEqualTo%3E%0A
+%3Cogc%3APropertyIsEqualTo%3E%0A%3Cogc%3APropertyName%3Ekohdeluokk%3C%2Fogc%
+3APropertyName%3E%0A%3Cogc%3ALiteral%3E12121%3C%2Fogc%3ALiteral%3E%0A%3C%2Fo
+gc%3APropertyIsEqualTo%3E%0A%3Cogc%3APropertyIsEqualTo%3E%0A%3Cogc%3APropertyNa
+me%3Ekohdeluokk%3C%2Fogc%3APropertyName%3E%0A%3Cogc%3ALiteral%3E12122%3C%2F
+ogc%3ALiteral%3E%0A%3C%2Fogc%3APropertyIsEqualTo%3E%0A%3C%2Fogc%3AOr%3E%0A%
+3C%2Fogc%3AFilter%3E%0A%3CLineSymbolizer%3E%0A%3CStroke%3E%0A%3CCssParameter
+%20name%3D%22stroke%22%3E%23ff0000%3C%2FCssParameter%3E%0A%3CCssParameter%2
+0name%3D%22stroke-
+width%22%3E2%3C%2FCssParameter%3E%20%20%0A%3C%2FStroke%3E%0A%3C%2FLineSym
+bolizer%3E%0A%3C%2FRule%3E%20%20%0A%3C%2FFeatureTypeStyle%3E%0A%3C%2FUserSt
+yle%3E%0A%3C%2FNamedLayer%3E%0A%3C%2FStyledLayerDescriptor%3E
+
+
+Jos halutaan kuva samalta alueelta ja samalla datalla, mutta taustakartta 160k esitystyylill‰ voidaan yll‰ olevaan GetMap-
+pyyntˆ‰ muokata korvaamalla &SLD_BODY LAYERS=mtkshp250k%3Atieviiva &STYLES=taustakartta_160k_tiet_rautatiet 
+parametreilla. T‰ss‰ tapauksessa m‰‰ritell‰‰n mitk‰ palvelusta lˆytyv‰‰ tasoa kysyt‰‰n ja mill‰ SLD-tyylill‰ se visualisoidaan.
+
+http://193.166.24.188/geoserver/wms?LAYERS=mtkshp250k%3Atieviiva&STYLES=taustakartta_160k_tiet_rautatiet&FORM
+AT=image%2Fpng&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&SRS=EPSG%3A3067&BBOX=362762.12744141,694
+3435.2502441,408368.93896485,6966238.6560059&WIDTH=1600&HEIGHT=800
+
+T‰m‰ ei viel‰ kartalta n‰yt‰, mutta kun lis‰t‰‰n useampi karttataso (layer) ja liitet‰‰n niihin oikeat esitystyylit, saadaan 
+Taustakartta 160k kartta seuraavalla pyynnˆll‰. T‰h‰n WMS GetMap-kyselyyn on lopuksi liitetty myˆs &BGCOLOR parametri, 
+jolla kuvaan saadaan vaaleanvihre‰ taustav‰ri.
+
+http://avoindata.maanmittauslaitos.fi/geoserver/wms?LAYERS=mtkshp250k:maasto2alue,mtkshp250k:taajamaalue,mtkshp2
+50k:maaalue,mtkshp250k:taajamapiste,mtkshp250k:peltoalue,mtkshp250k:vesialue,mtkshp250k:liikennealue,mtkshp250k:
+kiitotieviiva,mtkshp250k:vesiviiva,mtkshp250k%3Atieviiva,mtkshp250k:rautatieviiva,mtkshp250k:lentokenttapiste,mtkshp2
+50k:hallintoalueraja,mtk:karttanimi_100000&STYLES=taustakartta_160k,taustakartta_160k,taustakartta_160k,taustakartta_
+160k,taustakartta_160k,taustakartta_160k,taustakartta_160k,taustakartta_160k,taustakartta_160k,taustakartta_160k_tiet_r
+autatiet,taustakartta_160k_tiet_rautatiet,taustakartta_160k,taustakartta_160k,taustakartta_160k_paikannimi&FORMAT=im
+age%2Fpng&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&SRS=EPSG%3A3067&BBOX=362762.12744141,6943435.
+2502441,408368.93896485,6966238.6560059&WIDTH=1600&HEIGHT=800&BGCOLOR=0xdaf0e1
