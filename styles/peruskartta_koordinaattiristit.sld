@@ -7,10 +7,10 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>Peruskartta_koordinaattiristit</Name>
+    <Name>peruskartta_koordinaattiristit</Name>
     <UserStyle>
 
-      <Title>Peruskartta_koordinaattiristit</Title>
+      <Title>peruskartta_koordinaattiristit</Title>
       <Abstract>Kuvataan peruskartan koordinaattiristit</Abstract>
 
       <FeatureTypeStyle>

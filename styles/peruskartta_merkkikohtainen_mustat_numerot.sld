@@ -7,74 +7,42 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>peruskartta_tekstit_musta_merkkik</Name>
+    <Name>peruskartta_merkkikohtainen_mustat_numerot</Name>
     <UserStyle>
 
-      <Title>peruskartta_tekstit_musta_merkkik</Title>
+      <Title>peruskartta_merkkikohtainen_mustat_numerot</Title>
       <Abstract>merkkikohtaisten selite- ja muiden tekstien (paitsi nimist�n) kuvaustekniikan Peruskartalle</Abstract>
 
 
        <FeatureTypeStyle> 
       
         <Rule>
-
           <ogc:Filter>
-            <ogc:Or>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>teksti</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>teksti</ogc:PropertyName>
-                <ogc:Literal>1</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>teksti</ogc:PropertyName>
-                <ogc:Literal>2</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>teksti</ogc:PropertyName>
-                <ogc:Literal>3</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>teksti</ogc:PropertyName>
-                <ogc:Literal>4</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>teksti</ogc:PropertyName>
-                <ogc:Literal>5</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>teksti</ogc:PropertyName>
-                <ogc:Literal>6</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>teksti</ogc:PropertyName>
-                <ogc:Literal>7</ogc:Literal>
-              </ogc:PropertyIsEqualTo>  
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>teksti</ogc:PropertyName>
-                <ogc:Literal>8</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>teksti</ogc:PropertyName>
-                <ogc:Literal>9</ogc:Literal>
-              </ogc:PropertyIsEqualTo>  
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>teksti</ogc:PropertyName>
-                <ogc:Literal>.</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>teksti</ogc:PropertyName>
-                <ogc:Literal>,</ogc:Literal>
-              </ogc:PropertyIsEqualTo>  
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>teksti</ogc:PropertyName>
-                <ogc:Literal>-</ogc:Literal>
-              </ogc:PropertyIsEqualTo>          
-            </ogc:Or>      
-          </ogc:Filter>    
-        
+            <ogc:Not>
+              <ogc:Or>		
+                <ogc:PropertyIsLike  wildCard="*" singleChar="." escape="!">
+                  <ogc:PropertyName>teksti</ogc:PropertyName>
+                  <ogc:Literal>u</ogc:Literal>
+                </ogc:PropertyIsLike>
+                <ogc:PropertyIsLike  wildCard="*" singleChar="." escape="!">
+                  <ogc:PropertyName>teksti</ogc:PropertyName>
+                  <ogc:Literal>n</ogc:Literal>
+                </ogc:PropertyIsLike>
+                <ogc:PropertyIsLike  wildCard="*" singleChar="." escape="!">
+                  <ogc:PropertyName>teksti</ogc:PropertyName>
+                  <ogc:Literal>s</ogc:Literal>
+                </ogc:PropertyIsLike>
+                <ogc:PropertyIsLike  wildCard="*" singleChar="." escape="!">
+                  <ogc:PropertyName>teksti</ogc:PropertyName>
+                  <ogc:Literal>e</ogc:Literal>
+                </ogc:PropertyIsLike>
+                <ogc:PropertyIsLike  wildCard="*" singleChar="." escape="!">
+                  <ogc:PropertyName>teksti</ogc:PropertyName>
+                  <ogc:Literal>t</ogc:Literal>
+                </ogc:PropertyIsLike>				
+              </ogc:Or>			
+            </ogc:Not>			
+          </ogc:Filter>       
            <MaxScaleDenominator>10000</MaxScaleDenominator>
 
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
@@ -86,17 +54,17 @@
             
             <!-- Fontin valinta -->
 
-              <CssParameter name="font-family">    
-                  <ogc:Function name="if_then_else">            
-             <ogc:Function name="equalTo">
+              <CssParameter name="font-family">		
+                  <ogc:Function name="if_then_else">					  
+ 				    <ogc:Function name="equalTo">
                       <ogc:PropertyName>kirjasintyyppikoodi</ogc:PropertyName> 
-                      <ogc:Literal>10</ogc:Literal>          
+                      <ogc:Literal>10</ogc:Literal>					
                     </ogc:Function>                  
                    <ogc:Literal>Arial</ogc:Literal>                   
                  <ogc:Literal>Arial Lihavoitu</ogc:Literal>                                                     
                 </ogc:Function>           
               </CssParameter>
-        
+			  
            <!-- lasketaan fontin koko attribuutikent�n "kirjasinkoko" perusteella -->                
              <CssParameter name="font-size">
                 <ogc:Div>
@@ -137,7 +105,7 @@
                       <ogc:Literal>-10000</ogc:Literal> 
                     </ogc:Div>        
                   </ogc:Function> 
-                </Rotation>        
+                </Rotation>				
               </PointPlacement>
             </LabelPlacement>   
             <!-- tekstin maski -->         
@@ -148,14 +116,15 @@
             <Fill>
               <CssParameter name="fill">
                 <ogc:Literal>#000000</ogc:Literal>                                                            
-            </CssParameter>
+    	      </CssParameter>
             </Fill>
-            <!-- varmistetaan, ett� merkit piirtyv�t vaikka olisivat p��llekk�in -->      
-            <VendorOption name="conflictResolution">false</VendorOption>     
+            <!-- varmistetaan, ett� merkit piirtyv�t vaikka olisivat p��llekk�in -->			
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>		 
           </TextSymbolizer>
-        </Rule>              
+        </Rule>          	  
 
-      </FeatureTypeStyle>    
+      </FeatureTypeStyle>	  
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>

@@ -7,17 +7,17 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>peruskartta_korkeus_viivat</Name>
+    <Name>peruskartta_korkeus_viiva</Name>
     <UserStyle>
 
-      <Title>korkeus_viivat</Title>
+      <Title>peruskartta_korkeus_viiva</Title>
       <Abstract>sld</Abstract>
 
-<!-- Korkeuskï¿½yrï¿½, johtokï¿½yrï¿½ --> 
+<!-- Korkeusk�yr�, johtok�yr� --> 
       <FeatureTypeStyle>            
         <Rule>
-          <Name>Korkeuskï¿½yrï¿½, johtokï¿½yrï¿½</Name>
-          <Title>Korkeuskï¿½yrï¿½, johtokï¿½yrï¿½</Title>      
+          <Name>Korkeusk�yr�, johtok�yr�</Name>
+          <Title>Korkeusk�yr�, johtok�yr�</Title>      
       
  
           <ogc:Filter>
@@ -31,7 +31,7 @@
        
               <ogc:Or>
 
-                <ogc:And>  <!-- valitaan alle 100 m korkeuskï¿½yrï¿½t, jotka ovat johtokï¿½yriï¿½, eli 20, 40, 60, 80 m -->      
+                <ogc:And>  <!-- valitaan alle 100 m korkeusk�yr�t, jotka ovat johtok�yri�, eli 20, 40, 60, 80 m -->      
                   <ogc:And>        
                     <ogc:PropertyIsGreaterThanOrEqualTo>
                       <ogc:PropertyName>korkeusarvo</ogc:PropertyName>
@@ -119,7 +119,7 @@
                   </ogc:Or>          
                 </ogc:And>          
           
-                <ogc:And>  <!-- valitaan 100 - 1000 m korkeuskï¿½yrï¿½t, jotka ovat johtokï¿½yriï¿½, eli 100, 120, 140, 160, 180, 200 ,..., 980 m -->      
+                <ogc:And>  <!-- valitaan 100 - 1000 m korkeusk�yr�t, jotka ovat johtok�yri�, eli 100, 120, 140, 160, 180, 200 ,..., 980 m -->      
                   <ogc:And>        
                     <ogc:PropertyIsGreaterThanOrEqualTo>
                       <ogc:PropertyName>korkeusarvo</ogc:PropertyName>
@@ -220,7 +220,7 @@
                 </ogc:And>        
 
         
-                <ogc:And>  <!-- valitaan  1000 m korkeuskï¿½yrï¿½t ja suuremmat , jotka ovat johtokï¿½yriï¿½, eli 1000, 1020, 1040, 1060, 1080, 1100 ,..., 9980 m -->      
+                <ogc:And>  <!-- valitaan  1000 m korkeusk�yr�t ja suuremmat , jotka ovat johtok�yri�, eli 1000, 1020, 1040, 1060, 1080, 1100 ,..., 9980 m -->      
                   <ogc:And>        
                     <ogc:PropertyIsGreaterThanOrEqualTo>
                       <ogc:PropertyName>korkeusarvo</ogc:PropertyName>
@@ -339,11 +339,11 @@
     
     
     
-<!-- Korkeuskï¿½yrï¿½, vï¿½likï¿½yrï¿½ eli 5, 10, 15, 25, 30, 35, 45 --> 
+<!-- Korkeusk�yr�, v�lik�yr� eli 5, 10, 15, 25, 30, 35, 45 --> 
       <FeatureTypeStyle>            
         <Rule>
-          <Name>Korkeuskï¿½yrï¿½, vï¿½likï¿½yrï¿½</Name>
-          <Title>Korkeuskï¿½yrï¿½, vï¿½likï¿½yrï¿½</Title>      
+          <Name>Korkeusk�yr�, v�lik�yr�</Name>
+          <Title>Korkeusk�yr�, v�lik�yr�</Title>      
       
  
           <ogc:Filter>
@@ -362,7 +362,7 @@
                   <ogc:Literal>5000</ogc:Literal>
                 </ogc:PropertyIsEqualTo>          
 
-                  <!-- valitaan alle 100 m korkeuskï¿½yrï¿½t, jotka ovat joko 5 m tai 10 m, eli 10, 15, 20, 25 ,..., 95. (piirretï¿½ï¿½n myï¿½s johtokï¿½yrï¿½t, mutta se ei haittaa) -->      
+                  <!-- valitaan alle 100 m korkeusk�yr�t, jotka ovat joko 5 m tai 10 m, eli 10, 15, 20, 25 ,..., 95. (piirret��n my�s johtok�yr�t, mutta se ei haittaa) -->      
                 <ogc:And>        
                   <ogc:PropertyIsGreaterThanOrEqualTo>
                     <ogc:PropertyName>korkeusarvo</ogc:PropertyName>
@@ -400,7 +400,7 @@
 
       
             
-                  <!-- valitaan 100 - 1000 m korkeuskï¿½yrï¿½t, jotka ovat vï¿½likï¿½yriï¿½, eli 105, 110, 115, 125, 130,...,995 m -->      
+                  <!-- valitaan 100 - 1000 m korkeusk�yr�t, jotka ovat v�lik�yri�, eli 105, 110, 115, 125, 130,...,995 m -->      
                   <ogc:And>        
                     <ogc:PropertyIsGreaterThanOrEqualTo>
                       <ogc:PropertyName>korkeusarvo</ogc:PropertyName>
@@ -439,7 +439,7 @@
 
 
         
-                <ogc:And>  <!-- valitaan  1000 m korkeuskï¿½yrï¿½t ja suuremmat , jotka ovat vï¿½likï¿½yriï¿½, eli 1005, 1010, 1015, 1025, 1030,...,9995 m -->      
+                <ogc:And>  <!-- valitaan  1000 m korkeusk�yr�t ja suuremmat , jotka ovat v�lik�yri�, eli 1005, 1010, 1015, 1025, 1030,...,9995 m -->      
   
                   <ogc:And>        
                     <ogc:PropertyIsGreaterThanOrEqualTo>
@@ -582,11 +582,11 @@
     
     
     
-<!-- Korkeuskï¿½yrï¿½, apukï¿½yrï¿½--> 
+<!-- Korkeusk�yr�, apuk�yr�--> 
       <FeatureTypeStyle>            
         <Rule>
-          <Name>Korkeuskï¿½yrï¿½, apukï¿½yrï¿½</Name>
-          <Title>Korkeuskï¿½yrï¿½, apukï¿½yrï¿½</Title>      
+          <Name>Korkeusk�yr�, apuk�yr�</Name>
+          <Title>Korkeusk�yr�, apuk�yr�</Title>      
       
  
           <ogc:Filter>

@@ -7,10 +7,10 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>paikannimet yleiskartta 2000k</Name>
+    <Name>yleiskartta_2000k_paikannimi</Name>
     <UserStyle>
 
-      <Title>paikannimet yleiskartta 2000k</Title>
+      <Title>yleiskartta_2000k_paikannimi</Title>
       <Abstract>paikannimet yleiskartta 2000k</Abstract>
 
   
@@ -83,6 +83,7 @@
               <CssParameter name="fill">#000000</CssParameter>
             </Fill>
             <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>
           </TextSymbolizer>
        </Rule>            
   
@@ -163,6 +164,7 @@
               <CssParameter name="fill">#004dff</CssParameter>
             </Fill>
             <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>
           </TextSymbolizer>
        </Rule>      
       </FeatureTypeStyle>  

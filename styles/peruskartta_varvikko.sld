@@ -7,21 +7,21 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>Peruskartta_varvikko</Name>
+    <Name>peruskartta_varvikko</Name>
     <UserStyle>
 
-      <Title>Peruskartta_varvikko</Title>
-      <Abstract>Peruskartan varvikon perus SLD-tyyli. Pitï¿½ï¿½ olla oma SLD piirtojï¿½rjestyksen takia</Abstract>
+      <Title>peruskartta_varvikko</Title>
+      <Abstract>Peruskartan varvikko</Abstract>
 
-      <FeatureTypeStyle>    
+      <FeatureTypeStyle>	  
     
 <!--  39120 varvikko vaalennettu-->    
       
         
         <Rule> <!-- -2 m pikselikoko -->
           <Name>39120</Name>
-          <Title>39120 Varvikkko vaalennettu</Title>      
-      
+          <Title>39120 Varvikkko vaalennettu</Title>		  
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -29,33 +29,33 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
 
-      
-      <MaxScaleDenominator>10000</MaxScaleDenominator>
+		  
+		  <MaxScaleDenominator>10000</MaxScaleDenominator>
           
-      <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> <!-- Psuvv -->
-        <Fill>
-        <GraphicFill>
-          <Graphic>
-          <Mark>
-            <WellKnownName>shape://slash</WellKnownName>
-          <Stroke>
-            <CssParameter name="stroke">#f2cc00</CssParameter>
+		  <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> <!-- Psuvv -->
+		    <Fill>
+			  <GraphicFill>
+			    <Graphic>
+				  <Mark>
+				    <WellKnownName>shape://slash</WellKnownName>
+					<Stroke>
+					  <CssParameter name="stroke">#f2cc00</CssParameter>
                       <CssParameter name="stroke-width">5</CssParameter>
-                      <CssParameter name="stroke-linecap">square</CssParameter>            
-          </Stroke>
-            </Mark>
-          <Size>18.5</Size>
-        </Graphic>
+                      <CssParameter name="stroke-linecap">square</CssParameter>					  
+					</Stroke>
+			      </Mark>
+				  <Size>18.5</Size>
+				</Graphic>
               </GraphicFill>
             </Fill>
-          </PolygonSymbolizer>  
+          </PolygonSymbolizer>	
           
         </Rule>    
-    
+		
         <Rule> <!-- 4 m pikselikoko -->
           <Name>39120</Name>
-          <Title>39120 Varvikkko vaalennettu</Title>      
-      
+          <Title>39120 Varvikkko vaalennettu</Title>		  
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -63,31 +63,31 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
 
-      
+		  
           <MinScaleDenominator>10000</MinScaleDenominator>
           <MaxScaleDenominator>10000</MaxScaleDenominator> 
           
-      <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> <!-- Psuvv -->
-        <Fill>
-        <GraphicFill>
-          <Graphic>
-          <Mark>
-            <WellKnownName>shape://slash</WellKnownName>
-          <Stroke>
-            <CssParameter name="stroke">#f2cc00</CssParameter>
+		  <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> <!-- Psuvv -->
+		    <Fill>
+			  <GraphicFill>
+			    <Graphic>
+				  <Mark>
+				    <WellKnownName>shape://slash</WellKnownName>
+					<Stroke>
+					  <CssParameter name="stroke">#f2cc00</CssParameter>
                       <CssParameter name="stroke-width">5</CssParameter>
-                      <CssParameter name="stroke-linecap">square</CssParameter>            
-          </Stroke>
-            </Mark>
-          <Size>22</Size>
-        </Graphic>
+                      <CssParameter name="stroke-linecap">square</CssParameter>					  
+					</Stroke>
+			      </Mark>
+				  <Size>22</Size>
+				</Graphic>
               </GraphicFill>
             </Fill>
-          </PolygonSymbolizer>  
+          </PolygonSymbolizer>	
           
-        </Rule>     
+        </Rule> 		
 
-      </FeatureTypeStyle>    
+      </FeatureTypeStyle>	  
     </UserStyle>
   </NamedLayer>
-</StyledLayerDescriptor>
+</StyledLayerDescriptor>			

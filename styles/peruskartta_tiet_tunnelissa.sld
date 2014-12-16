@@ -15,7 +15,7 @@
 
 
       <FeatureTypeStyle> <!-- pinnan alla (tasosijainti = -11) eli tunnelissa ajotie ja autotiet katkoviivat -->
-    
+	  
 <!-- 12141 ajotie tunnelissa -->        
         
         <Rule>
@@ -23,7 +23,7 @@
           <Title>12141 Ajotie Tunnelissa</Title>
  
           <ogc:Filter>   
-           <ogc:And>      
+           <ogc:And>		  
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
               <ogc:Literal>12141</ogc:Literal>
@@ -31,14 +31,14 @@
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>tasosijainti</ogc:PropertyName>
               <ogc:Literal>-11</ogc:Literal>
-            </ogc:PropertyIsEqualTo>      
-       </ogc:And>
+            </ogc:PropertyIsEqualTo>			
+		   </ogc:And>
           </ogc:Filter> 
 
           <MaxScaleDenominator>10000</MaxScaleDenominator> 
          
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">         
-            <Geometry>      
+            <Geometry>		  
               <ogc:Function name="buffer"> 
                 <ogc:PropertyName>sijainti_viiva</ogc:PropertyName> 
                 <ogc:Literal>2</ogc:Literal>                 
@@ -48,15 +48,15 @@
             <Stroke>
               <CssParameter name="stroke">#000000</CssParameter>
               <CssParameter name="stroke-width">1.5</CssParameter>  
-              <CssParameter name="stroke-dasharray">40 20</CssParameter>          
-              <CssParameter name="stroke-linecap">butt</CssParameter>    
-              <CssParameter name="stroke-dashoffset">10</CssParameter>              
+              <CssParameter name="stroke-dasharray">40 20</CssParameter>  			  
+              <CssParameter name="stroke-linecap">butt</CssParameter>  	
+              <CssParameter name="stroke-dashoffset">10</CssParameter>		  			  
             </Stroke>            
           </LineSymbolizer> 
-      
-        </Rule>            
-    
-    
+		  
+        </Rule>        	  
+	  
+	  
 <!-- 12132 autotie 3b tunnelissa -->        
         
         <Rule>
@@ -64,7 +64,7 @@
           <Title>12132 Autotie 3b tunnelissa</Title>
  
           <ogc:Filter>   
-           <ogc:And>      
+           <ogc:And>		  
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
               <ogc:Literal>12132</ogc:Literal>
@@ -72,14 +72,14 @@
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>tasosijainti</ogc:PropertyName>
               <ogc:Literal>-11</ogc:Literal>
-            </ogc:PropertyIsEqualTo>      
-       </ogc:And>
+            </ogc:PropertyIsEqualTo>			
+		   </ogc:And>
           </ogc:Filter> 
 
           <MaxScaleDenominator>10000</MaxScaleDenominator> 
          
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">         
-            <Geometry>      
+            <Geometry>		  
               <ogc:Function name="buffer"> 
                 <ogc:PropertyName>sijainti_viiva</ogc:PropertyName> 
                 <ogc:Literal>3</ogc:Literal>                 
@@ -89,15 +89,15 @@
             <Stroke>
               <CssParameter name="stroke">#000000</CssParameter>
               <CssParameter name="stroke-width">2</CssParameter>  
-              <CssParameter name="stroke-dasharray">40 20</CssParameter>          
-              <CssParameter name="stroke-linecap">butt</CssParameter>    
-              <CssParameter name="stroke-dashoffset">10</CssParameter>                
+              <CssParameter name="stroke-dasharray">40 20</CssParameter>  			  
+              <CssParameter name="stroke-linecap">butt</CssParameter>  	
+              <CssParameter name="stroke-dashoffset">10</CssParameter>			  			  
             </Stroke>            
           </LineSymbolizer> 
-      
-        </Rule>    
-    
-    
+		  
+        </Rule>	  
+	  
+	  
 <!-- 12131 autotie 3a tunnelissa -->        
         
         <Rule>
@@ -105,7 +105,7 @@
           <Title>12131 Autotie 3a tunnelissa</Title>
  
           <ogc:Filter>   
-           <ogc:And>      
+           <ogc:And>		  
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
               <ogc:Literal>12131</ogc:Literal>
@@ -113,14 +113,14 @@
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>tasosijainti</ogc:PropertyName>
               <ogc:Literal>-11</ogc:Literal>
-            </ogc:PropertyIsEqualTo>      
-       </ogc:And>
+            </ogc:PropertyIsEqualTo>			
+		   </ogc:And>
           </ogc:Filter> 
 
           <MaxScaleDenominator>10000</MaxScaleDenominator> 
          
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">         
-            <Geometry>      
+            <Geometry>		  
               <ogc:Function name="buffer"> 
                 <ogc:PropertyName>sijainti_viiva</ogc:PropertyName> 
                 <ogc:Literal>4</ogc:Literal>                 
@@ -130,14 +130,14 @@
             <Stroke>
               <CssParameter name="stroke">#000000</CssParameter>
               <CssParameter name="stroke-width">2</CssParameter>  
-              <CssParameter name="stroke-dasharray">40 20</CssParameter>          
-              <CssParameter name="stroke-linecap">butt</CssParameter>    
-              <CssParameter name="stroke-dashoffset">10</CssParameter>              
+              <CssParameter name="stroke-dasharray">40 20</CssParameter>  			  
+              <CssParameter name="stroke-linecap">butt</CssParameter>  	
+              <CssParameter name="stroke-dashoffset">10</CssParameter>		  			  
             </Stroke>            
           </LineSymbolizer> 
-      
-        </Rule>    
-    
+		  
+        </Rule>	  
+		
 <!-- 12122 autotie 2b tunnelissa -->        
         
         <Rule>
@@ -145,7 +145,7 @@
           <Title>12122 Autotie 2b tunnelissa</Title>
  
           <ogc:Filter>   
-           <ogc:And>      
+           <ogc:And>		  
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
               <ogc:Literal>12122</ogc:Literal>
@@ -153,14 +153,14 @@
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>tasosijainti</ogc:PropertyName>
               <ogc:Literal>-11</ogc:Literal>
-            </ogc:PropertyIsEqualTo>      
-       </ogc:And>
+            </ogc:PropertyIsEqualTo>			
+		   </ogc:And>
           </ogc:Filter> 
 
           <MaxScaleDenominator>10000</MaxScaleDenominator> 
          
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">         
-            <Geometry>      
+            <Geometry>		  
               <ogc:Function name="buffer"> 
                 <ogc:PropertyName>sijainti_viiva</ogc:PropertyName> 
                 <ogc:Literal>5</ogc:Literal>                 
@@ -170,14 +170,14 @@
             <Stroke>
               <CssParameter name="stroke">#000000</CssParameter>
               <CssParameter name="stroke-width">2</CssParameter>  
-              <CssParameter name="stroke-dasharray">40 20</CssParameter>          
-              <CssParameter name="stroke-linecap">butt</CssParameter>    
-              <CssParameter name="stroke-dashoffset">10</CssParameter>              
+              <CssParameter name="stroke-dasharray">40 20</CssParameter>  			  
+              <CssParameter name="stroke-linecap">butt</CssParameter>  	
+              <CssParameter name="stroke-dashoffset">10</CssParameter>		  			  
             </Stroke>            
           </LineSymbolizer> 
-      
-        </Rule>        
-    
+		  
+        </Rule>	  		
+		
 <!-- 12121 autotie 2a tunnelissa -->        
         
         <Rule>
@@ -185,7 +185,7 @@
           <Title>12121 Autotie 2a tunnelissa</Title>
  
           <ogc:Filter>   
-           <ogc:And>      
+           <ogc:And>		  
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
               <ogc:Literal>12121</ogc:Literal>
@@ -193,14 +193,14 @@
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>tasosijainti</ogc:PropertyName>
               <ogc:Literal>-11</ogc:Literal>
-            </ogc:PropertyIsEqualTo>      
-       </ogc:And>
+            </ogc:PropertyIsEqualTo>			
+		   </ogc:And>
           </ogc:Filter> 
 
           <MaxScaleDenominator>10000</MaxScaleDenominator> 
          
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">         
-            <Geometry>      
+            <Geometry>		  
               <ogc:Function name="buffer"> 
                 <ogc:PropertyName>sijainti_viiva</ogc:PropertyName> 
                 <ogc:Literal>6</ogc:Literal>                 
@@ -210,13 +210,13 @@
             <Stroke>
               <CssParameter name="stroke">#000000</CssParameter>
               <CssParameter name="stroke-width">2</CssParameter>  
-              <CssParameter name="stroke-dasharray">40 20</CssParameter>          
-              <CssParameter name="stroke-linecap">butt</CssParameter>    
-              <CssParameter name="stroke-dashoffset">10</CssParameter>              
+              <CssParameter name="stroke-dasharray">40 20</CssParameter>  			  
+              <CssParameter name="stroke-linecap">butt</CssParameter>  	
+              <CssParameter name="stroke-dashoffset">10</CssParameter>		  			  
             </Stroke>            
           </LineSymbolizer> 
-      
-        </Rule>    
+		  
+        </Rule>		
 
 <!-- 12112 autotie 1b tunnelissa -->        
         
@@ -225,7 +225,7 @@
           <Title>12112 Autotie 1b tunnelissa</Title>
  
           <ogc:Filter>   
-           <ogc:And>      
+           <ogc:And>		  
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
               <ogc:Literal>12112</ogc:Literal>
@@ -233,14 +233,14 @@
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>tasosijainti</ogc:PropertyName>
               <ogc:Literal>-11</ogc:Literal>
-            </ogc:PropertyIsEqualTo>      
-       </ogc:And>
+            </ogc:PropertyIsEqualTo>			
+		   </ogc:And>
           </ogc:Filter> 
 
           <MaxScaleDenominator>10000</MaxScaleDenominator> 
          
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">         
-            <Geometry>      
+            <Geometry>		  
               <ogc:Function name="buffer"> 
                 <ogc:PropertyName>sijainti_viiva</ogc:PropertyName> 
                 <ogc:Literal>8</ogc:Literal>                 
@@ -250,15 +250,15 @@
             <Stroke>
               <CssParameter name="stroke">#000000</CssParameter>
               <CssParameter name="stroke-width">2</CssParameter>  
-              <CssParameter name="stroke-dasharray">40 20</CssParameter>          
-              <CssParameter name="stroke-linecap">butt</CssParameter>    
-              <CssParameter name="stroke-dashoffset">10</CssParameter>                
+              <CssParameter name="stroke-dasharray">40 20</CssParameter>  			  
+              <CssParameter name="stroke-linecap">butt</CssParameter>  	
+              <CssParameter name="stroke-dashoffset">10</CssParameter>			  			  
             </Stroke>            
           </LineSymbolizer> 
-      
-        </Rule>      
-    
-    
+		  
+        </Rule>			
+		
+		
 <!-- 12111 autotie 1a tunnelissa -->        
         
         <Rule>
@@ -266,7 +266,7 @@
           <Title>12111 Autotie 1a tunnelissa</Title>
  
           <ogc:Filter>   
-           <ogc:And>      
+           <ogc:And>		  
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
               <ogc:Literal>12111</ogc:Literal>
@@ -274,14 +274,14 @@
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>tasosijainti</ogc:PropertyName>
               <ogc:Literal>-11</ogc:Literal>
-            </ogc:PropertyIsEqualTo>      
-       </ogc:And>
+            </ogc:PropertyIsEqualTo>			
+		   </ogc:And>
           </ogc:Filter> 
 
           <MaxScaleDenominator>10000</MaxScaleDenominator> 
          
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">         
-            <Geometry>      
+            <Geometry>		  
               <ogc:Function name="buffer"> 
                 <ogc:PropertyName>sijainti_viiva</ogc:PropertyName> 
                 <ogc:Literal>6</ogc:Literal>                 
@@ -291,17 +291,17 @@
             <Stroke>
               <CssParameter name="stroke">#000000</CssParameter>
               <CssParameter name="stroke-width">2</CssParameter>  
-              <CssParameter name="stroke-dasharray">40 20</CssParameter>          
-              <CssParameter name="stroke-linecap">butt</CssParameter>    
-              <CssParameter name="stroke-dashoffset">10</CssParameter>              
+              <CssParameter name="stroke-dasharray">40 20</CssParameter>  			  
+              <CssParameter name="stroke-linecap">butt</CssParameter>  	
+              <CssParameter name="stroke-dashoffset">10</CssParameter>		  			  
             </Stroke>            
           </LineSymbolizer> 
-      
-        </Rule>      
-    
-    
-      </FeatureTypeStyle>    
+		  
+        </Rule>			
+	  
+	  
+      </FeatureTypeStyle>	  
 
-  </UserStyle>
+	</UserStyle>
   </NamedLayer>
-</StyledLayerDescriptor>
+</StyledLayerDescriptor>	

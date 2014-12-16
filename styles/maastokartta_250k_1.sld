@@ -7,11 +7,11 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>mtk_maastokartta_250k</Name>
+    <Name>maastokartta_250k_1</Name>
     <UserStyle>
 
-      <Title>mtk_maastokartta_250k</Title>
-      <Abstract>sld </Abstract>     
+      <Title>maastokartta_250k_1</Title>
+      <Abstract>sld</Abstract>     
      <FeatureTypeStyle>   
 <!--  39120 Kallio --> 
         
@@ -20,18 +20,10 @@
           
       
           <ogc:Filter> 
-        <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
-                <ogc:Literal>34100</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsGreaterThanOrEqualTo>       <!-- pinta-alayleistys yli 5000 m2 piirretï¿½ï¿½n -->
-                <ogc:Function name="area"> 
-                  <ogc:PropertyName>geom</ogc:PropertyName>                
-                </ogc:Function> 
-                <ogc:Literal>5000</ogc:Literal>
-              </ogc:PropertyIsGreaterThanOrEqualTo>          
-            </ogc:And>       
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
+              <ogc:Literal>34100</ogc:Literal>
+            </ogc:PropertyIsEqualTo>   
           </ogc:Filter>       
 
       <MinScaleDenominator>90000</MinScaleDenominator>
@@ -50,19 +42,11 @@
           <Name>35401</Name>
           
           <ogc:Filter> 
-        <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
-                <ogc:Literal>35401</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsGreaterThanOrEqualTo>       <!-- pinta-alayleistys yli 12000 m2 piirretï¿½ï¿½n -->
-                <ogc:Function name="area"> 
-                  <ogc:PropertyName>geom</ogc:PropertyName>                
-                </ogc:Function> 
-                <ogc:Literal>12000</ogc:Literal>
-              </ogc:PropertyIsGreaterThanOrEqualTo>          
-            </ogc:And>       
-          </ogc:Filter>   
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
+              <ogc:Literal>35401</ogc:Literal>
+            </ogc:PropertyIsEqualTo>   
+          </ogc:Filter>    
 
       <MinScaleDenominator>90000</MinScaleDenominator>
       <MaxScaleDenominator>180000</MaxScaleDenominator>  
@@ -74,25 +58,18 @@
           </PolygonSymbolizer>  
         </Rule>
                          
-<!--  35402 suo metsï¿½?Â¤ï¿½?Â¤ kasvaa -->
+<!--  35402 suo mets�?¤�?¤ kasvaa -->
         
         <Rule>
           <Name>35402</Name>
           
           <ogc:Filter> 
-        <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
-                <ogc:Literal>35402</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsGreaterThanOrEqualTo>       <!-- pinta-alayleistys yli 12000 m2 piirretï¿½ï¿½n -->
-                <ogc:Function name="area"> 
-                  <ogc:PropertyName>geom</ogc:PropertyName>                
-                </ogc:Function> 
-                <ogc:Literal>12000</ogc:Literal>
-              </ogc:PropertyIsGreaterThanOrEqualTo>          
-            </ogc:And>       
-          </ogc:Filter>   
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
+              <ogc:Literal>35402</ogc:Literal>
+            </ogc:PropertyIsEqualTo>   
+          </ogc:Filter> 
+      
       <MinScaleDenominator>90000</MinScaleDenominator>
       <MaxScaleDenominator>180000</MaxScaleDenominator>    
       

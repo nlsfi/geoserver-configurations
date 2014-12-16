@@ -7,10 +7,10 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>peruskartta_rakennukset</Name>
+    <Name>peruskartta_rakennukset_reunaviiva</Name>
     <UserStyle>
 
-      <Title>peruskartta_rakennukset</Title>
+      <Title>peruskartta_rakennukset_reunaviiva</Title>
       <Abstract>sld</Abstract>
 
 
@@ -125,36 +125,7 @@
   
   
   
-<!-- reunaviivat  vesitorni, joka pitï¿½ï¿½ piirtï¿½ï¿½ ympyrï¿½nï¿½ -->
-        
-<!--         <Rule>
-          <Name>42160</Name>
-      <Title>Vesitornin reunaviiva</Title>
-        
-          
-          <ogc:Filter>
- 
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
-                <ogc:Literal>421601111</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
 
-          </ogc:Filter>  
-
-          <MaxScaleDenominator>10000</MaxScaleDenominator> 
-          
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-      
-
-      
-            <Stroke>
-              <CssParameter name="stroke">#000000</CssParameter>  
-              <CssParameter name="stroke-width">2</CssParameter>
-              <CssParameter name="stroke-linecap">square</CssParameter>          
-            </Stroke>               
-          </LineSymbolizer>
-          
-        </Rule>     -->
   
     
       </FeatureTypeStyle>

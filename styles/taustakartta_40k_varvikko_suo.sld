@@ -11,7 +11,7 @@
     <UserStyle>
 
       <Title>taustakartta_40k_varvikko_suo</Title>
-      <Abstract>t�m� sld sis�lt�� kuvaustyylit taustakartta 40k useammille kohteille.</Abstract>
+      <Abstract>sld</Abstract>
       
 
 
@@ -23,20 +23,12 @@
           <Name>39120</Name>
           <Title>39120 Varvikko vaalennettu</Title>
           
-          <ogc:Filter> 
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
-                <ogc:Literal>39120</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsGreaterThanOrEqualTo>       <!-- pinta-alayleistys yli 20000 m2 piirret��n -->
-                <ogc:Function name="area"> 
-                  <ogc:PropertyName>geom</ogc:PropertyName>                
-                </ogc:Function> 
-                <ogc:Literal>20000</ogc:Literal>
-              </ogc:PropertyIsGreaterThanOrEqualTo>          
-            </ogc:And>             
-          </ogc:Filter>
+            <ogc:Filter> 
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
+              <ogc:Literal>39120</ogc:Literal>
+            </ogc:PropertyIsEqualTo>	 
+          </ogc:Filter> 
 
           <MinScaleDenominator>20000</MinScaleDenominator>
           <MaxScaleDenominator>40000</MaxScaleDenominator>
@@ -129,7 +121,7 @@
           </PolygonSymbolizer>
           
         </Rule>
-    
+		
 <!--  35421 suo, vaikeakulkuinen, puuton -->
         
         <Rule>
@@ -163,8 +155,8 @@
             </Fill>
           </PolygonSymbolizer>
           
-        </Rule>    
-    
+        </Rule>		
+		
 <!--  35422 suo, vaikeakulkuinen, mets�� kasvaa -->
         
         <Rule>
@@ -199,8 +191,8 @@
           </PolygonSymbolizer>
           
         </Rule>
-    
-      </FeatureTypeStyle>    
+		
+      </FeatureTypeStyle>	  
 
 
     

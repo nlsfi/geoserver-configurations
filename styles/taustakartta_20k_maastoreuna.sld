@@ -7,17 +7,17 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>taustakartta_maastoreuna_20k</Name>
+    <Name>taustakartta_20k_maastoreuna</Name>
     <UserStyle>
 
-      <Title>taustakartta_maastoreuna_20</Title>
+      <Title>taustakartta_20k_maastoreuna</Title>
       <Abstract>sld</Abstract>
 
 
-  
-  
-  
-  
+	
+	
+	
+	
  <FeatureTypeStyle>
 
 
@@ -30,7 +30,14 @@
           <ogc:Filter>
             <ogc:And>     
               <ogc:Or>             
-
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>kartografinenluokka</ogc:PropertyName>
+                  <ogc:Literal>32411</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>kartografinenluokka</ogc:PropertyName>
+                  <ogc:Literal>32412</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>kartografinenluokka</ogc:PropertyName>
                   <ogc:Literal>32414</ogc:Literal>
@@ -71,74 +78,13 @@
             </Stroke>
           </LineSymbolizer>
         </Rule>  
-    
-        <Rule>
-      <Name>30211 kiitotie</Name>
-          <Title>30211 Yksik�sitteinen maastoreuna kiitotie p��llystetty</Title>    
-      <ogc:Filter>
-        <ogc:And>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>kartografinenluokka</ogc:PropertyName>
-                  <ogc:Literal>32411</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-                <ogc:PropertyIsEqualTo>  
-                  <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
-                  <ogc:Literal>30211</ogc:Literal>
-                </ogc:PropertyIsEqualTo>                
-              </ogc:And>
-          </ogc:Filter> 
-
-          <MinScaleDenominator>10000</MinScaleDenominator>
-          <MaxScaleDenominator>20000</MaxScaleDenominator>      
-
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#918a8c</CssParameter>
-              <CssParameter name="stroke-width">8</CssParameter>              
-              <CssParameter name="stroke-linecap">round</CssParameter>
-            </Stroke>
-          </LineSymbolizer>      
-    </Rule>
-    
-    <Rule>
-      <Name>30211 kiitotie, ei p��llystetty</Name>
-          <Title>30211 Yksik�sitteinen maastoreuna kiitotie ei-p��llystetty</Title>      
-      <ogc:Filter>
-        <ogc:And>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>kartografinenluokka</ogc:PropertyName>
-                  <ogc:Literal>32412</ogc:Literal>
-                </ogc:PropertyIsEqualTo> 
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
-                  <ogc:Literal>30211</ogc:Literal>
-                </ogc:PropertyIsEqualTo>                
-            </ogc:And>
-          </ogc:Filter> 
-
-          <MinScaleDenominator>10000</MinScaleDenominator>
-          <MaxScaleDenominator>20000</MaxScaleDenominator>  
-      
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#918a8c</CssParameter>
-              <CssParameter name="stroke-width">6</CssParameter>              
-              <CssParameter name="stroke-linecap">round</CssParameter>
-            </Stroke>
-          </LineSymbolizer>      
-    </Rule>        
-
-
-    
-    
-    
-    
-    
-    
-      </FeatureTypeStyle>          
-  
-  
-  
-  </UserStyle>
+		
+		
+		
+      </FeatureTypeStyle>	  	  	
+	
+	
+	
+	</UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>

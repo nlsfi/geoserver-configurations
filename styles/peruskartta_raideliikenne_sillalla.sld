@@ -14,11 +14,11 @@
       <Abstract>sld</Abstract>    
       <FeatureTypeStyle> <!-- sillalla (tasosijainti = 1) viiva1 -->
     
-<!-- 14111 sï¿½hkï¿½istetty rautatie sillalla -->    
+<!-- 14111 s�hk�istetty rautatie sillalla -->    
         
         <Rule>
           <Name>14111</Name>
-          <Title>14111 Sï¿½hkï¿½istetty rautatie sillalla</Title>      
+          <Title>14111 S�hk�istetty rautatie sillalla</Title>      
       
  
           <ogc:Filter> 
@@ -50,11 +50,11 @@
       
         </Rule>
         
-<!-- 14112 Ei-sï¿½hkï¿½istetty rautatie sillalla -->    
+<!-- 14112 Ei-s�hk�istetty rautatie sillalla -->    
         
         <Rule>
           <Name>14112</Name>
-          <Title>14112 Ei-sï¿½hkï¿½istetty rautatie sillalla</Title>      
+          <Title>14112 Ei-s�hk�istetty rautatie sillalla</Title>      
       
  
           <ogc:Filter> 

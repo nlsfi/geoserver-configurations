@@ -7,10 +7,10 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>paikannimet yleiskartta 2000k</Name>
+    <Name>yleiskartta_2000k_paikannimi_avaus</Name>
     <UserStyle>
 
-      <Title>paikannimet yleiskartta 2000k</Title>
+      <Title>yleiskartta_2000k_paikannimi_avaus</Title>
       <Abstract>paikannimien avaus</Abstract>
 
   
@@ -91,6 +91,7 @@
               <CssParameter name="fill">#ffffff</CssParameter>
             </Fill>
             <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>
           </TextSymbolizer>
        </Rule>            
  
@@ -178,6 +179,7 @@
               <CssParameter name="fill">#ffffff</CssParameter>
             </Fill>
             <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>
           </TextSymbolizer>
        </Rule>      
       </FeatureTypeStyle>  

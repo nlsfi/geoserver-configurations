@@ -7,27 +7,26 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>mtk_maastokartta_250k</Name>
+    <Name>maastokartta_250k</Name>
     <UserStyle>
 
-      <Title>mtk_maastokartta_250k</Title>
+      <Title>maastokartta_250k</Title>
       <Abstract>sld </Abstract>
 
 
 
       <FeatureTypeStyle> <!-- 250k maastokartta -->
         
-    <!-- 250k -->
 <!--  39120 varvikko vaalennettu-->
         
         <Rule>
           <Name>39120</Name>
       
           <ogc:Filter>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
-                <ogc:Literal>39120</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
+              <ogc:Literal>39120</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
           </ogc:Filter>
 
       <MinScaleDenominator>90000</MinScaleDenominator>
@@ -618,19 +617,11 @@ xlink:href="maastokartta_250k/Phko.svg"/> <!-- Phko 0 0 0 100 v�rill� -->
           <Name>34700</Name>
       
           <ogc:Filter> 
-        <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
-                <ogc:Literal>34700</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsGreaterThanOrEqualTo>       <!-- pinta-alayleistys yli 5000 m2 piirret��n -->
-                <ogc:Function name="area"> 
-                  <ogc:PropertyName>geom</ogc:PropertyName>                
-                </ogc:Function> 
-                <ogc:Literal>5000</ogc:Literal>
-              </ogc:PropertyIsGreaterThanOrEqualTo>          
-            </ogc:And>       
-          </ogc:Filter>   
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
+              <ogc:Literal>34700</ogc:Literal>
+            </ogc:PropertyIsEqualTo>   
+          </ogc:Filter> 
       
       <MinScaleDenominator>90000</MinScaleDenominator>
       <MaxScaleDenominator>180000</MaxScaleDenominator>    
@@ -1117,104 +1108,6 @@ xlink:href="maastokartta_250k/Pkivikko_0_0_0_100.svg"/>
           </LineSymbolizer>           
         </Rule>          
       
-        <Rule>
-          <Name>Suojelualueiden reunaviiva 250k maastokarttat</Name>
-          <Title>Suojelualueiden reunaviivat 250k maastokartta</Title>
-          <Abstract>Suojelualueita ovat 72200 Muu luonnonsuojelualue, 72201 Luonnonpuisto,72202 Kansallispuisto, 72700 Er�maa-alue,72800 Retkeilyalue</Abstract>
-
-    
-      
-          <ogc:Filter>
-            <ogc:Or>          
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
-                <ogc:Literal>72700</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
-                <ogc:Literal>72000</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
-                <ogc:Literal>72200</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
-                <ogc:Literal>72201</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
-                <ogc:Literal>72202</ogc:Literal>
-              </ogc:PropertyIsEqualTo>        
-            </ogc:Or>        
-          </ogc:Filter> 
-      
-      
-          <MinScaleDenominator>90000</MinScaleDenominator>
-          <MaxScaleDenominator>180000</MaxScaleDenominator>
-          
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> <!-- draw the original geometry with a green outline -->
-            <Stroke>
-              <CssParameter name="stroke">#00b300</CssParameter>
-              <CssParameter name="stroke-width">60</CssParameter>
-            </Stroke>
-          </LineSymbolizer>
-          <!-- draw the intersection of the original geometr and the offset geometry with a green ouline and a green fill -->
-<!--           <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> 
-    
-
-            <Geometry>
-              <ogc:Function name ="difference">      
-                <ogc:PropertyName>geom</ogc:PropertyName> 
-                <ogc:Function name="intersection"> 
-                  <ogc:Function name="intersection">        
-                    <ogc:Function name="intersection">        
-                      <ogc:Function name="offset"> 
-                        <ogc:PropertyName>geom</ogc:PropertyName> 
-                        <ogc:Literal>-100</ogc:Literal>
-                        <ogc:Literal>-100</ogc:Literal>          
-                      </ogc:Function> 
-                      <ogc:Function name="offset"> 
-                        <ogc:PropertyName>geom</ogc:PropertyName> 
-                        <ogc:Literal>100</ogc:Literal> 
-                        <ogc:Literal>100</ogc:Literal> 
-                      </ogc:Function> 
-                    </ogc:Function>
-                    <ogc:Function name="offset"> 
-                      <ogc:PropertyName>geom</ogc:PropertyName> 
-                      <ogc:Literal>100</ogc:Literal> 
-                      <ogc:Literal>-100</ogc:Literal> 
-                    </ogc:Function>
-                  </ogc:Function>        
-                  <ogc:Function name="offset"> 
-                    <ogc:PropertyName>geom</ogc:PropertyName> 
-                    <ogc:Literal>-100</ogc:Literal> 
-                    <ogc:Literal>100</ogc:Literal> 
-                  </ogc:Function>          
-                </ogc:Function>               
-              </ogc:Function>  
-            </Geometry> -->
-      <!-- green slash fill -->
-            <!-- <Fill> 
-              <GraphicFill>
-                <Graphic>
-                  <Mark>
-                    <WellKnownName>shape://slash</WellKnownName>
-                    <Stroke>
-                      <CssParameter name="stroke">#00b300</CssParameter>
-                      <CssParameter name="stroke-width">40</CssParameter>            
-                    </Stroke>
-                  </Mark>
-                  <Size>176</Size>
-                </Graphic>
-              </GraphicFill>
-            </Fill>
-          </PolygonSymbolizer>    -->
-
-
-      
-        </Rule>  
-      
   
     
 <!--  Ampuma-alue 62100 --> 
@@ -1233,7 +1126,6 @@ xlink:href="maastokartta_250k/Pkivikko_0_0_0_100.svg"/>
                 <ogc:PropertyName>kohderyhma</ogc:PropertyName>
                 <ogc:Literal>29</ogc:Literal>
               </ogc:PropertyIsEqualTo>
-        
             </ogc:And>        
           </ogc:Filter>
       
@@ -1247,15 +1139,9 @@ xlink:href="maastokartta_250k/Pkivikko_0_0_0_100.svg"/>
               <CssParameter name="stroke-linecap">round</CssParameter>  
             </Stroke>
           </LineSymbolizer>  
-            
         </Rule>      
     
-    
 
-  
-  
-
-      
 <!-- 39500 Mets�n raja --> 
        <Rule>
           <Name>39500</Name>
@@ -1474,7 +1360,7 @@ xlink:href="maastokartta_250k/Pkivikko_0_0_0_100.svg"/>
         </Rule>      
     
 <!--  kunnan raja 84113 --> 
-     <Rule>
+        <Rule>
           <Name>84113</Name>
           
           <ogc:Filter>
@@ -1500,7 +1386,7 @@ xlink:href="maastokartta_250k/Pkivikko_0_0_0_100.svg"/>
         </Rule>      
     
 <!--  AVI maakunnan raja 84115, aluehallintoviraston raja 84112 --> 
-     <Rule>
+        <Rule>
           <Name>84112</Name>
           
           <ogc:Filter>
@@ -1531,7 +1417,7 @@ xlink:href="maastokartta_250k/Pkivikko_0_0_0_100.svg"/>
         </Rule>        
     
 <!--  valtakunnan raja 84111 --> 
-     <Rule>
+        <Rule>
           <Name>84111</Name>
           
           <ogc:Filter>
@@ -1556,7 +1442,7 @@ xlink:href="maastokartta_250k/Pkivikko_0_0_0_100.svg"/>
         </Rule>          
     
 <!-- aluemeren ulkoraja 82100 --> 
-     <Rule>
+        <Rule>
           <Name>82100</Name>
           
           <ogc:Filter>
@@ -1608,7 +1494,7 @@ xlink:href="maastokartta_250k/Pkivikko_0_0_0_100.svg"/>
           </PointSymbolizer>
         </Rule>        
     
-<!-- 47. Aita tekoaines 44211 -->
+<!-- Aita tekoaines 44211 -->
 
         <Rule>
           <Name>44211</Name>
@@ -1641,7 +1527,7 @@ xlink:href="maastokartta_250k/Pkivikko_0_0_0_100.svg"/>
           </LineSymbolizer>  
         </Rule>    
 
-<!--  Lentokentt�symboli  32442-->
+<!--  Lentokentt�symboli 32442-->
 
 
         <Rule>

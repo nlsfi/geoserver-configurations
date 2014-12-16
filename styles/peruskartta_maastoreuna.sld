@@ -11,22 +11,21 @@
     <UserStyle>
 
       <Title>peruskartta_maastoreuna</Title>
-      <Abstract>maastoreuna sisï¿½ltï¿½ï¿½ kentï¿½n kartografinenluokka, joka aiheuttaa ongelmia muiden tasojen suhteen.
-    sld:ssï¿½ pitï¿½ï¿½ olla kaikki kentï¿½t samat. maastoreuna on myï¿½s viiva, joten sijainti_alue herjaa myï¿½s.</Abstract>
+      <Abstract>sld</Abstract>
 
 
-  
-  
-  
-  
+	
+	
+	
+	
  <FeatureTypeStyle>
 
 
-<!--  maastoreuna yksikï¿½sitteinen --> 
+<!--  maastoreuna yksik�sitteinen --> 
         
         <Rule>
           <Name>30211</Name>
-          <Title>30211 Yksikï¿½sitteiset maastoreunat lentoliikennealueille</Title>
+          <Title>30211 Yksik�sitteiset maastoreunat lentoliikennealueille</Title>
  
           <ogc:Filter>
             <ogc:And>     
@@ -51,6 +50,14 @@
                   <ogc:PropertyName>kartografinenluokka</ogc:PropertyName>
                   <ogc:Literal>32300</ogc:Literal>
                 </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>kartografinenluokka</ogc:PropertyName>
+                  <ogc:Literal>32411</ogc:Literal>
+                </ogc:PropertyIsEqualTo>			
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>kartografinenluokka</ogc:PropertyName>
+                  <ogc:Literal>32412</ogc:Literal>
+                </ogc:PropertyIsEqualTo>				
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>kartografinenluokka</ogc:PropertyName>
                   <ogc:Literal>32413</ogc:Literal>
@@ -130,62 +137,7 @@
             </Stroke>
           </LineSymbolizer>
         </Rule>  
-    
-        <Rule>
-      <Name>30211 kiitotie</Name>
-          <Title>30211 Yksikï¿½sitteinen maastoreuna kiitotie pï¿½ï¿½llystetty</Title>    
-      <ogc:Filter>
-        <ogc:And>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>kartografinenluokka</ogc:PropertyName>
-                  <ogc:Literal>32411</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-                <ogc:PropertyIsEqualTo>  
-                  <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
-                  <ogc:Literal>30211</ogc:Literal>
-                </ogc:PropertyIsEqualTo>                
-              </ogc:And>
-          </ogc:Filter> 
-
-          <!-- <MinScaleDenominator>15000</MinScaleDenominator> -->
-          <MaxScaleDenominator>10000</MaxScaleDenominator>      
-
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#000000</CssParameter>
-              <CssParameter name="stroke-width">4</CssParameter>              
-              <CssParameter name="stroke-linecap">round</CssParameter>
-            </Stroke>
-          </LineSymbolizer>      
-    </Rule>
-    
-    <Rule>
-      <Name>30211 kiitotie, ei pï¿½ï¿½llystetty</Name>
-          <Title>30211 Yksikï¿½sitteinen maastoreuna kiitotie ei-pï¿½ï¿½llystetty</Title>      
-      <ogc:Filter>
-        <ogc:And>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>kartografinenluokka</ogc:PropertyName>
-                  <ogc:Literal>32412</ogc:Literal>
-                </ogc:PropertyIsEqualTo> 
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
-                  <ogc:Literal>30211</ogc:Literal>
-                </ogc:PropertyIsEqualTo>                
-            </ogc:And>
-          </ogc:Filter> 
-
-          <!-- <MinScaleDenominator>15000</MinScaleDenominator> -->
-          <MaxScaleDenominator>10000</MaxScaleDenominator>  
-      
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#000000</CssParameter>
-              <CssParameter name="stroke-width">3</CssParameter>              
-              <CssParameter name="stroke-linecap">round</CssParameter>
-            </Stroke>
-          </LineSymbolizer>      
-    </Rule>        
+		
 
 <!--  30100 keinotekoinen rantaviiva -->
         
@@ -206,15 +158,17 @@
             <Stroke>
               <CssParameter name="stroke">#000000</CssParameter>
               <CssParameter name="stroke-width">2.5</CssParameter>  
-              <CssParameter name="stroke-linecap">round</CssParameter>          
+              <CssParameter name="stroke-linecap">round</CssParameter>  			  
             </Stroke>
           </LineSymbolizer>          
-        </Rule>       
-    <!-- maastoreuna epï¿½mï¿½ï¿½rï¿½inen -->
+        </Rule> 	
+
+		
+<!-- maastoreunat, ep�m��r�inen -->
         
         <Rule>
           <Name>30212</Name>
-          <Title>30212 Maastoreuna epï¿½mï¿½ï¿½rï¿½inen</Title>
+          <Title>30212 Maastoreuna ep�m��r�inen</Title>
  
           <ogc:Filter>
             <ogc:And>     
@@ -275,7 +229,6 @@
                   <ogc:PropertyName>kartografinenluokka</ogc:PropertyName>
                   <ogc:Literal>32421</ogc:Literal>
                 </ogc:PropertyIsEqualTo>
-
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>kartografinenluokka</ogc:PropertyName>
                   <ogc:Literal>32611</ogc:Literal>
@@ -319,25 +272,25 @@
               <CssParameter name="stroke-linecap">round</CssParameter>
               <CssParameter name="stroke-dasharray">1.5 7.5</CssParameter>
             </Stroke>
-          </LineSymbolizer>           
+          </LineSymbolizer>	         
         </Rule>   
-    
-    
-    
-    
-    
+		
+		
+		
+		
+		
 
-    
+		
 
-    
-    
-    
-    
-    
-      </FeatureTypeStyle>          
-  
-  
-  
-  </UserStyle>
+		
+		
+		
+		
+		
+      </FeatureTypeStyle>	  	  	
+	
+	
+	
+	</UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>

@@ -285,10 +285,11 @@
           <MinScaleDenominator>20000</MinScaleDenominator> 
           <MaxScaleDenominator>40000</MaxScaleDenominator> 
          <!--harmaa tausta -->
+
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#a1a1a1</CssParameter>
-              <CssParameter name="stroke-width">17.5</CssParameter>                           
+              <CssParameter name="stroke-width">23</CssParameter>                           
               <CssParameter name="stroke-linecap">butt</CssParameter>                           
             </Stroke>
           </LineSymbolizer>
@@ -296,8 +297,8 @@
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">            
             <Stroke>
               <CssParameter name="stroke">#FCFCFC</CssParameter>
-              <CssParameter name="stroke-width">5</CssParameter>              
-              <CssParameter name="stroke-dasharray">37.5</CssParameter>              
+              <CssParameter name="stroke-width">6</CssParameter>              
+              <CssParameter name="stroke-dasharray">60 60</CssParameter>              
               <CssParameter name="stroke-linecap">butt</CssParameter>
             </Stroke>            
           </LineSymbolizer>

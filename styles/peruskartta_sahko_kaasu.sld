@@ -7,21 +7,21 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>peruskartta sï¿½hkï¿½- ja putkijohdot</Name>
+    <Name>peruskartta_sahko_kaasu</Name>
     <UserStyle>
 
-      <Title>peruskartta sï¿½hkï¿½- ja putkijohdot</Title>
-      <Abstract>johodt sisï¿½ltï¿½ï¿½ kentï¿½n tasosijainti, joka aiheuttaa ongelmia muiden tasojen suhteen.
-    sld:ssï¿½ pitï¿½ï¿½ olla kaikki kentï¿½t samat.</Abstract>
+      <Title>peruskartta_sahko_kaasu</Title>
+      <Abstract>johodt sis�lt�� kent�n tasosijainti, joka aiheuttaa ongelmia muiden tasojen suhteen.
+    sld:ss� pit�� olla kaikki kent�t samat.</Abstract>
 
 
       <FeatureTypeStyle>    
       
-<!--  22311 sï¿½hkï¿½linja, suurjï¿½nnite, pinnan alla tasosijainti = -1  -->
+<!--  22311 s�hk�linja, suurj�nnite, pinnan alla tasosijainti = -1  -->
         
         <Rule>
           <Name>22311</Name>
-          <Title>22311 Sï¿½hkï¿½linja suurjï¿½nnite pinnan alla</Title>
+          <Title>22311 S�hk�linja suurj�nnite pinnan alla</Title>
       
           <ogc:Filter>  
            <ogc:And>      
@@ -49,11 +49,11 @@
           </LineSymbolizer>
         </Rule>  
         
-<!-- 2231 sï¿½hkï¿½linja, jakelujï¿½nnite, pinnan alla tasosijainti = -1 -->
+<!-- 2231 s�hk�linja, jakeluj�nnite, pinnan alla tasosijainti = -1 -->
         
         <Rule>
           <Name>22312</Name>
-          <Title>22312 Sï¿½hkï¿½linja jakelujï¿½nnite, pinnalla</Title>
+          <Title>22312 S�hk�linja jakeluj�nnite, pinnalla</Title>
       
           <ogc:Filter>  
            <ogc:And>      
@@ -114,11 +114,11 @@
           </LineSymbolizer>
         </Rule>       
 
-<!--  22311 sï¿½hkï¿½linja, suurjï¿½nnite, pinnalla tasosijainti = 0  -->
+<!--  22311 s�hk�linja, suurj�nnite, pinnalla tasosijainti = 0  -->
         
         <Rule>
           <Name>22311</Name>
-          <Title>22311 Sï¿½hkï¿½linja suurjï¿½nnite pinnalla</Title>
+          <Title>22311 S�hk�linja suurj�nnite pinnalla</Title>
       
           <ogc:Filter>  
            <ogc:And>      
@@ -145,11 +145,11 @@
           </LineSymbolizer>
         </Rule>  
         
-<!-- 2231 sï¿½hkï¿½linja, jakelujï¿½nnite, pinnalla tasosijainti = 0 -->
+<!-- 2231 s�hk�linja, jakeluj�nnite, pinnalla tasosijainti = 0 -->
         
         <Rule>
           <Name>22312</Name>
-          <Title>22312 Sï¿½hkï¿½linja jakelujï¿½nnite, pinnalla</Title>
+          <Title>22312 S�hk�linja jakeluj�nnite, pinnalla</Title>
       
           <ogc:Filter>  
            <ogc:And>      
@@ -208,11 +208,11 @@
           </LineSymbolizer>
         </Rule>     
 
-<!-- 26112 Kiinteï¿½ johto -->
+<!-- 26112 Kiinte� johto -->
         
         <Rule>
           <Name>26112</Name>
-          <Title>26112 Kiinteï¿½ johto</Title>
+          <Title>26112 Kiinte� johto</Title>
       
           <ogc:Filter>  
            <ogc:And>      
@@ -239,11 +239,11 @@
           </LineSymbolizer>
         </Rule>   
 
-<!-- 26113 Lï¿½mpï¿½johto -->
+<!-- 26113 L�mp�johto -->
         
         <Rule>
           <Name>26113</Name>
-          <Title>26113 Lï¿½mpï¿½johto</Title>
+          <Title>26113 L�mp�johto</Title>
       
           <ogc:Filter>  
            <ogc:And>      
@@ -301,11 +301,11 @@
           </LineSymbolizer>
         </Rule>     
 
-<!-- 26115 Vesihï¿½yryjohto -->
+<!-- 26115 Vesih�yryjohto -->
         
         <Rule>
           <Name>26115</Name>
-          <Title>26115 Vesihï¿½yryjohto</Title>
+          <Title>26115 Vesih�yryjohto</Title>
       
           <ogc:Filter>  
            <ogc:And>      
@@ -332,11 +332,11 @@
           </LineSymbolizer>
         </Rule>   
 
-<!-- 26116 Viemï¿½rijohto -->
+<!-- 26116 Viem�rijohto -->
         
         <Rule>
           <Name>26116</Name>
-          <Title>26116 Viemï¿½rijohto</Title>
+          <Title>26116 Viem�rijohto</Title>
       
           <ogc:Filter>  
            <ogc:And>      
@@ -363,11 +363,11 @@
           </LineSymbolizer>
         </Rule>    
     
-<!-- 26117 ï¿½ljyjohto -->
+<!-- 26117 �ljyjohto -->
         
         <Rule>
           <Name>26117</Name>
-          <Title>26117 ï¿½ljyjohto</Title>
+          <Title>26117 �ljyjohto</Title>
       
           <ogc:Filter>  
            <ogc:And>      
@@ -394,11 +394,11 @@
           </LineSymbolizer>
         </Rule>      
     
-<!-- 82. 22311 sï¿½hkï¿½linja, suurjï¿½nnite, pinnan yllï¿½, tasosijainti = 1  -->
+<!-- 82. 22311 s�hk�linja, suurj�nnite, pinnan yll�, tasosijainti = 1  -->
         
         <Rule>
           <Name>22311</Name>
-          <Title>22311 Sï¿½hkï¿½linja suurjï¿½nnite, pinnan yllï¿½</Title>
+          <Title>22311 S�hk�linja suurj�nnite, pinnan yll�</Title>
       
           <ogc:Filter>  
            <ogc:And>      
@@ -425,11 +425,11 @@
           </LineSymbolizer>
         </Rule>  
 
-<!-- 2231 sï¿½hkï¿½linja, jakelujï¿½nnite, pinnan yllï¿½ = 1 -->
+<!-- 2231 s�hk�linja, jakeluj�nnite, pinnan yll� = 1 -->
         
         <Rule>
           <Name>22312</Name>
-          <Title>22312 Sï¿½hkï¿½linja jakelujï¿½nnite, pinnan yllï¿½</Title>
+          <Title>22312 S�hk�linja jakeluj�nnite, pinnan yll�</Title>
       
           <ogc:Filter>  
            <ogc:And>      
@@ -457,11 +457,11 @@
           </LineSymbolizer>
         </Rule>     
     
-<!-- 26111 kasujohto, pinnan yllï¿½ tasosijainti =1 -->
+<!-- 26111 kasujohto, pinnan yll� tasosijainti =1 -->
         
         <Rule>
           <Name>26111</Name>
-          <Title>26111 Kaasujohto, pinnan yllï¿½</Title>
+          <Title>26111 Kaasujohto, pinnan yll�</Title>
       
           <ogc:Filter>  
            <ogc:And>      
@@ -488,11 +488,11 @@
           </LineSymbolizer>
         </Rule>     
 
-<!-- 26112 Kiinteï¿½ johto, pinnan yllï¿½ tasosijainti =1 -->
+<!-- 26112 Kiinte� johto, pinnan yll� tasosijainti =1 -->
         
         <Rule>
           <Name>26112</Name>
-          <Title>26112 Kiinteï¿½ johto, pinnan yllï¿½</Title>
+          <Title>26112 Kiinte� johto, pinnan yll�</Title>
       
           <ogc:Filter>  
            <ogc:And>      
@@ -519,11 +519,11 @@
           </LineSymbolizer>
         </Rule>   
 
-<!-- 26113 Lï¿½mpï¿½johto, pinnan yllï¿½ tasosijainti =1 -->
+<!-- 26113 L�mp�johto, pinnan yll� tasosijainti =1 -->
         
         <Rule>
           <Name>26113</Name>
-          <Title>26113 Lï¿½mpï¿½johto, pinnan yllï¿½</Title>
+          <Title>26113 L�mp�johto, pinnan yll�</Title>
       
           <ogc:Filter>  
            <ogc:And>      
@@ -550,11 +550,11 @@
           </LineSymbolizer>
         </Rule>   
 
-<!-- 26114 Vesijohto, pinnan yllï¿½ tasosijainti =1 -->
+<!-- 26114 Vesijohto, pinnan yll� tasosijainti =1 -->
         
         <Rule>
           <Name>26114</Name>
-          <Title>26114 Vesijohto, pinnan yllï¿½</Title>
+          <Title>26114 Vesijohto, pinnan yll�</Title>
       
           <ogc:Filter>  
            <ogc:And>      
@@ -581,11 +581,11 @@
           </LineSymbolizer>
         </Rule>     
 
-<!-- 26115 Vesihï¿½yryjohto, pinnan yllï¿½ tasosijainti =1 -->
+<!-- 26115 Vesih�yryjohto, pinnan yll� tasosijainti =1 -->
         
         <Rule>
           <Name>26115</Name>
-          <Title>26115 Vesihï¿½yryjohto, pinnan yllï¿½</Title>
+          <Title>26115 Vesih�yryjohto, pinnan yll�</Title>
       
           <ogc:Filter>  
            <ogc:And>      
@@ -612,11 +612,11 @@
           </LineSymbolizer>
         </Rule>   
 
-<!-- 26116 Viemï¿½rijohto , pinnan yllï¿½ tasosijainti =1 -->
+<!-- 26116 Viem�rijohto , pinnan yll� tasosijainti =1 -->
         
         <Rule>
           <Name>26116</Name>
-          <Title>26116 Viemï¿½rijohto, pinnan yllï¿½</Title>
+          <Title>26116 Viem�rijohto, pinnan yll�</Title>
       
           <ogc:Filter>  
            <ogc:And>      
@@ -643,11 +643,11 @@
           </LineSymbolizer>
         </Rule>    
     
-<!-- 26117 ï¿½ljyjohto, pinnan yllï¿½ tasosijainti =1 -->
+<!-- 26117 �ljyjohto, pinnan yll� tasosijainti =1 -->
         
         <Rule>
           <Name>26117</Name>
-          <Title>26117 ï¿½ljyjohto, pinnan yllï¿½</Title>
+          <Title>26117 �ljyjohto, pinnan yll�</Title>
       
           <ogc:Filter>  
            <ogc:And>      

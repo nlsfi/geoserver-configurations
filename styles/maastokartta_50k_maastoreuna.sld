@@ -7,26 +7,25 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>maastokartta_maastoreuna</Name>
+    <Name>maastokartta_50k_maastoreuna</Name>
     <UserStyle>
 
-      <Title>maastokartta_maastoreuna</Title>
-      <Abstract>maastoreuna sisï¿½ltï¿½ï¿½ kentï¿½n kartografinenluokka, joka aiheuttaa ongelmia muiden tasojen suhteen.
-    sld:ssï¿½ pitï¿½ï¿½ olla kaikki kentï¿½t samat. maastoreuna on myï¿½s viiva, joten sijainti_alue herjaa myï¿½s.</Abstract>
+      <Title>maastokartta_50k_maastoreuna</Title>
+      <Abstract>maastokartta_50k maastoreunat</Abstract>
 
 
-  
-  
-  
-  
+	
+	
+	
+	
  <FeatureTypeStyle>
 
 
-<!--  maastoreuna yksikï¿½sitteinen --> 
+<!--  maastoreuna yksik�sitteinen --> 
         
         <Rule>
           <Name>30211</Name>
-          <Title>30211 Yksikï¿½sitteiset maastoreunat</Title>
+          <Title>30211 Yksik�sitteiset maastoreunat</Title>
  
           <ogc:Filter>
             <ogc:And>     
@@ -59,6 +58,14 @@
                   <ogc:PropertyName>kartografinenluokka</ogc:PropertyName>
                   <ogc:Literal>32113</ogc:Literal>
                 </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>kartografinenluokka</ogc:PropertyName>
+                  <ogc:Literal>32411</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>kartografinenluokka</ogc:PropertyName>
+                  <ogc:Literal>32412</ogc:Literal>
+                </ogc:PropertyIsEqualTo>				
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>kartografinenluokka</ogc:PropertyName>
                   <ogc:Literal>32413</ogc:Literal>
@@ -108,7 +115,7 @@
           </ogc:Filter> 
 
           <MinScaleDenominator>10000</MinScaleDenominator>
-          <MaxScaleDenominator>20000</MaxScaleDenominator>   
+          <MaxScaleDenominator>20000</MaxScaleDenominator>	 
           
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
@@ -118,40 +125,14 @@
             </Stroke>
           </LineSymbolizer>
         </Rule>  
-    
-        <Rule>
-      <Name>30211 kiitotie</Name>
-          <Title>30211 Yksikï¿½sitteinen maastoreuna kiitotie pï¿½ï¿½llystetty</Title>    
-      <ogc:Filter>
-        <ogc:And>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>kartografinenluokka</ogc:PropertyName>
-                  <ogc:Literal>32411</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-                <ogc:PropertyIsEqualTo>  
-                  <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
-                  <ogc:Literal>30211</ogc:Literal>
-                </ogc:PropertyIsEqualTo>                
-              </ogc:And>
-          </ogc:Filter> 
+		
 
-          <MinScaleDenominator>10000</MinScaleDenominator>
-          <MaxScaleDenominator>20000</MaxScaleDenominator>     
-
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#000000</CssParameter>
-              <CssParameter name="stroke-width">8</CssParameter>              
-              <CssParameter name="stroke-linecap">round</CssParameter>
-            </Stroke>
-          </LineSymbolizer>      
-    </Rule>
-    
-    <Rule>
-      <Name>30211 puisto ja hautausmaa</Name>
-          <Title>30211 puisto ja hautausmaa</Title>      
-      <ogc:Filter>
-        <ogc:And>
+		
+		<Rule>
+		  <Name>30211 puisto ja hautausmaa</Name>
+          <Title>30211 puisto ja hautausmaa</Title>			
+		  <ogc:Filter>
+		    <ogc:And>
               <ogc:Or>
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>kartografinenluokka</ogc:PropertyName>
@@ -161,7 +142,7 @@
                   <ogc:PropertyName>kartografinenluokka</ogc:PropertyName>
                   <ogc:Literal>32200</ogc:Literal>
                 </ogc:PropertyIsEqualTo>
-              </ogc:Or>        
+              </ogc:Or>				
                 <ogc:PropertyIsEqualTo>  
                   <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                   <ogc:Literal>30211</ogc:Literal>
@@ -171,16 +152,16 @@
           </ogc:Filter> 
 
           <MinScaleDenominator>10000</MinScaleDenominator>
-          <MaxScaleDenominator>20000</MaxScaleDenominator>   
-      
+          <MaxScaleDenominator>20000</MaxScaleDenominator>	 
+		  
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#008000</CssParameter>
               <CssParameter name="stroke-width">4</CssParameter>              
               <CssParameter name="stroke-linecap">round</CssParameter>
             </Stroke>
-          </LineSymbolizer>      
-    </Rule>        
+          </LineSymbolizer>		  
+		</Rule>        
 
 <!--  30100 keinotekoinen rantaviiva -->
         
@@ -196,23 +177,23 @@
           </ogc:Filter> 
 
           <MinScaleDenominator>10000</MinScaleDenominator>
-          <MaxScaleDenominator>20000</MaxScaleDenominator>   
+          <MaxScaleDenominator>20000</MaxScaleDenominator>	 
          
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#000000</CssParameter>
               <CssParameter name="stroke-width">4</CssParameter>  
-              <CssParameter name="stroke-linecap">round</CssParameter>          
+              <CssParameter name="stroke-linecap">round</CssParameter>  			  
             </Stroke>
           </LineSymbolizer>          
-        </Rule>       
+        </Rule> 			
 
-    
-    <Rule>
-      <Name>30212 32800</Name>
-          <Title>epï¿½mï¿½ï¿½rï¿½inen niitynreuna</Title>      
-      <ogc:Filter>
-        <ogc:And>
+		
+		<Rule>
+		  <Name>30212 32800</Name>
+          <Title>ep�m��r�inen niitynreuna</Title>			
+		  <ogc:Filter>
+		    <ogc:And>
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>kartografinenluokka</ogc:PropertyName>
                   <ogc:Literal>32800</ogc:Literal>
@@ -225,8 +206,8 @@
           </ogc:Filter> 
 
           <MinScaleDenominator>10000</MinScaleDenominator>
-          <MaxScaleDenominator>20000</MaxScaleDenominator>   
-      
+          <MaxScaleDenominator>20000</MaxScaleDenominator>	 
+		  
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#000000</CssParameter>
@@ -234,22 +215,22 @@
               <CssParameter name="stroke-dasharray">3 15</CssParameter>              
               <CssParameter name="stroke-linecap">round</CssParameter>
             </Stroke>
-          </LineSymbolizer>      
-    </Rule>      
-    
-    
+          </LineSymbolizer>		  
+		</Rule>  		
+		
+		
 
-    
+		
 
-    
-    
-    
-    
-    
-      </FeatureTypeStyle>          
-  
-  
-  
-  </UserStyle>
+		
+		
+		
+		
+		
+      </FeatureTypeStyle>	  	  	
+	
+	
+	
+	</UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>

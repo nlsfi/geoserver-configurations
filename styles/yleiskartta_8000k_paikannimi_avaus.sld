@@ -7,10 +7,10 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>paikannimet yleiskartta 8000k</Name>
+    <Name>yleiskartta_8000k_paikannimi_avaus</Name>
     <UserStyle>
 
-      <Title>paikannimet yleiskartta 8000k</Title>
+      <Title>yleiskartta_8000k_paikannimi_avaus</Title>
       <Abstract>m��ritet��n paikanimien avaus</Abstract>
 
   
@@ -75,6 +75,7 @@
               <CssParameter name="fill">#ffffff</CssParameter>
             </Fill>
             <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>
           </TextSymbolizer>
        </Rule> 
 

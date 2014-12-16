@@ -7,17 +7,17 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>taustakartta_maastoreuna_10k</Name>
+    <Name>taustakartta_10k_maastoreuna</Name>
     <UserStyle>
 
-      <Title>taustakartta_maastoreuna_10</Title>
+      <Title>taustakartta_10k_maastoreuna</Title>
       <Abstract>sld</Abstract>
 
 
-  
-  
-  
-  
+	
+	
+	
+	
  <FeatureTypeStyle>
 
 
@@ -50,6 +50,14 @@
                   <ogc:PropertyName>kartografinenluokka</ogc:PropertyName>
                   <ogc:Literal>32300</ogc:Literal>
                 </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>kartografinenluokka</ogc:PropertyName>
+                  <ogc:Literal>32411</ogc:Literal>
+                </ogc:PropertyIsEqualTo>			
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>kartografinenluokka</ogc:PropertyName>
+                  <ogc:Literal>32412</ogc:Literal>
+                </ogc:PropertyIsEqualTo>				
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>kartografinenluokka</ogc:PropertyName>
                   <ogc:Literal>32413</ogc:Literal>
@@ -129,64 +137,10 @@
             </Stroke>
           </LineSymbolizer>
         </Rule>  
-    
-        <Rule>
-      <Name>30211 kiitotie</Name>
-          <Title>30211 Yksik�sitteinen maastoreuna kiitotie p��llystetty</Title>    
-      <ogc:Filter>
-        <ogc:And>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>kartografinenluokka</ogc:PropertyName>
-                  <ogc:Literal>32411</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-                <ogc:PropertyIsEqualTo>  
-                  <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
-                  <ogc:Literal>30211</ogc:Literal>
-                </ogc:PropertyIsEqualTo>                
-              </ogc:And>
-          </ogc:Filter> 
+		
+ 
 
-          <MinScaleDenominator>5000</MinScaleDenominator>
-          <MaxScaleDenominator>10000</MaxScaleDenominator>      
-
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#918a8c</CssParameter>
-              <CssParameter name="stroke-width">4</CssParameter>              
-              <CssParameter name="stroke-linecap">round</CssParameter>
-            </Stroke>
-          </LineSymbolizer>      
-    </Rule>
-    
-    <Rule>
-      <Name>30211 kiitotie, ei p��llystetty</Name>
-          <Title>30211 Yksik�sitteinen maastoreuna kiitotie ei-p��llystetty</Title>      
-      <ogc:Filter>
-        <ogc:And>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>kartografinenluokka</ogc:PropertyName>
-                  <ogc:Literal>32412</ogc:Literal>
-                </ogc:PropertyIsEqualTo> 
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
-                  <ogc:Literal>30211</ogc:Literal>
-                </ogc:PropertyIsEqualTo>                
-            </ogc:And>
-          </ogc:Filter> 
-
-          <MinScaleDenominator>5000</MinScaleDenominator>
-          <MaxScaleDenominator>10000</MaxScaleDenominator>  
-      
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#918a8c</CssParameter>
-              <CssParameter name="stroke-width">3</CssParameter>              
-              <CssParameter name="stroke-linecap">round</CssParameter>
-            </Stroke>
-          </LineSymbolizer>      
-    </Rule>        
-
-    <!-- maastoreuna ep�m��r�inen -->
+		<!-- maastoreuna ep�m��r�inen -->
         
         <Rule>
           <Name>30212</Name>
@@ -295,22 +249,22 @@
               <CssParameter name="stroke-linecap">round</CssParameter>
               <CssParameter name="stroke-dasharray">1.5 7.5</CssParameter>
             </Stroke>
-          </LineSymbolizer>           
+          </LineSymbolizer>	         
         </Rule>   
-    
-    
-    
+		
+		
+		
 
-    
-    
-    
-    
-    
-    
-      </FeatureTypeStyle>          
-  
-  
-  
-  </UserStyle>
+		
+		
+		
+		
+		
+		
+      </FeatureTypeStyle>	  	  	
+	
+	
+	
+	</UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>

@@ -7,17 +7,17 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>peruskartta_korkeus_pisteet</Name>
+    <Name>peruskartta_korkeus_piste</Name>
     <UserStyle>
 
-      <Title>korkeus_pisteet</Title>
+      <Title>peruskartta_korkeus_piste</Title>
       <Abstract>sld</Abstract>
 
     
     
       <FeatureTypeStyle>
     
-<!-- 52192 viettoviiva kï¿½yra ja apukï¿½yrï¿½ -->    
+<!-- 52192 viettoviiva k�yra ja apuk�yr� -->    
 
         <Rule>
           <Name>52192</Name>
@@ -85,7 +85,7 @@ xlink:href="peruskartta/Sviettov_korkeus.svg"/>
     
       <FeatureTypeStyle>
     
-<!-- 52192 viettoviiva syvyyskï¿½yrï¿½n -->    
+<!-- 52192 viettoviiva syvyysk�yr�n -->    
 
         <Rule>
           <Name>54192</Name>

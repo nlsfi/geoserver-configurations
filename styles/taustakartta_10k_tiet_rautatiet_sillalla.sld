@@ -11,7 +11,7 @@
     <UserStyle>
 
       <Title>taustakartta_10k_tiet_rautatiet_sillalla</Title>
-      <Abstract>tiet sisï¿½ltï¿½vï¿½t esim tasosijainti-kentï¿½n, jonka tï¿½hden nï¿½mï¿½ on eroteltava omaksi tyylitiedoksi.</Abstract>
+      <Abstract>tiet sis�lt�v�t esim tasosijainti-kent�n, jonka t�hden n�m� on eroteltava omaksi tyylitiedoksi.</Abstract>
 
 
 
@@ -69,7 +69,7 @@
         
         <Rule>
           <Name>14112</Name>
-          <Title>14112 Sï¿½hkï¿½istï¿½mï¿½tï¿½n sillalla</Title>
+          <Title>14112 S�hk�ist�m�t�n sillalla</Title>
  
           <ogc:Filter>  
           <ogc:And>
@@ -243,12 +243,57 @@
             </Stroke>
           </LineSymbolizer>
         </Rule>           
-   
-<!--  12314 kï¿½vely ja pyï¿½rï¿½tie-->        
+
+<!--  12313 Polku -->        
+        
+        <Rule>
+          <Name>12313</Name>
+          <Title>12313 Polku</Title>
+ 
+          <ogc:Filter>  
+            <ogc:And>        
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
+                <ogc:Literal>12313</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>valmiusaste</ogc:PropertyName>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Or>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>tasosijainti</ogc:PropertyName>
+                  <ogc:Literal>1</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>tasosijainti</ogc:PropertyName>
+                  <ogc:Literal>2</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>tasosijainti</ogc:PropertyName>
+                  <ogc:Literal>3</ogc:Literal>
+                </ogc:PropertyIsEqualTo>            
+              </ogc:Or>
+            </ogc:And>
+          </ogc:Filter>  
+
+          <MinScaleDenominator>5000</MinScaleDenominator>
+          <MaxScaleDenominator>10000</MaxScaleDenominator> 
+         
+          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <Stroke>
+              <CssParameter name="stroke">#b4b6b8</CssParameter>
+              <CssParameter name="stroke-width">4</CssParameter>              
+             <CssParameter name="stroke-linecap">round</CssParameter>          
+            </Stroke>
+          </LineSymbolizer>
+        </Rule>    
+    
+<!--  12314 k�vely ja py�r�tie-->        
         
         <Rule>
           <Name>12314</Name>
-          <Title>12314 Kï¿½vely- ja pyï¿½rï¿½tie sillalla</Title>
+          <Title>12314 K�vely- ja py�r�tie sillalla</Title>
  
           <ogc:Filter>  
             <ogc:And>        
@@ -339,7 +384,7 @@
      
      
   
-      <FeatureTypeStyle>      <!-- tiet 1ab 2ab ja 3ab tï¿½yttï¿½ sillalla +1 + 2 + 3 -->
+      <FeatureTypeStyle>      <!-- tiet 1ab 2ab ja 3ab t�ytt� sillalla +1 + 2 + 3 -->
 <!-- 12132 autotie 3 b -->        
         
         <Rule>

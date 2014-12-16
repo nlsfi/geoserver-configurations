@@ -64,7 +64,7 @@
                 <ExternalGraphic>
                   <OnlineResource
 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
-xlink:href="maastokartta/Slo.svg"/>
+xlink:href="maastokartta/Slo_Slo.svg"/>
                   <Format>image/svg+xml</Format>
                 </ExternalGraphic>
                 <Size>

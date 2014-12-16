@@ -7,10 +7,10 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>peruskartta_maastoreuna_vesitot</Name>
+    <Name>peruskartta_maastoreuna_vesistot</Name>
     <UserStyle>
 
-      <Title>peruskartta_maastoreuna_vesitot</Title>
+      <Title>peruskartta_maastoreuna_vesistot</Title>
       <Abstract>peruskartta_maastoreuna_vesitot</Abstract>
 
 
@@ -19,11 +19,11 @@
   
   
  <FeatureTypeStyle>    
-<!--  36313 36211 36200 mk rv jï¿½rvi-, meri- ja virtavesi epï¿½mï¿½ï¿½rï¿½inen -->
+<!--  36313 36211 36200 mk rv j�rvi-, meri- ja virtavesi ep�m��r�inen -->
         
         <Rule>
           <Name>36313 36211 36200</Name>
-          <Title>36313 36211 36200 epï¿½mï¿½ï¿½rï¿½inen jï¿½rven, meren ja virtaveden reunaviiva</Title>
+          <Title>36313 36211 36200 ep�m��r�inen j�rven, meren ja virtaveden reunaviiva</Title>
  
           <ogc:Filter>
             <ogc:And>     
@@ -61,11 +61,11 @@
           </LineSymbolizer>          
         </Rule>   
     
-<!-- 36313 36211 36200 mk rv jï¿½rvi-, meri- ja virtavesi yksikï¿½sitteinen -->
+<!-- 36313 36211 36200 mk rv j�rvi-, meri- ja virtavesi yksik�sitteinen -->
         
         <Rule>
           <Name>36313 36211 36200</Name>
-          <Title>36313 36211 36200 jï¿½rven, meren ja virtaveden yksikï¿½sitteinen reunaviiva</Title>
+          <Title>36313 36211 36200 j�rven, meren ja virtaveden yksik�sitteinen reunaviiva</Title>
  
           <ogc:Filter>
             <ogc:And>     

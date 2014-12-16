@@ -7,10 +7,10 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>mtk_maastokartta_100k</Name>
+    <Name>maastokartta_100k</Name>
     <UserStyle>
 
-      <Title>mtk_maastokartta_100k</Title>
+      <Title>maastokartta_100k</Title>
       <Abstract>sld</Abstract>
 
 
@@ -1988,11 +1988,11 @@ xlink:href="maastokartta_100k/jyrkanne_musta_alla.svg"/>
                     <Format>image/svg+xml</Format>
                   </ExternalGraphic>
                   <Size>
-                    <ogc:Literal>120</ogc:Literal>
+                    <ogc:Literal>125</ogc:Literal>
                   </Size>
                 </Graphic>
               </GraphicStroke>
-              <CssParameter name="stroke-dasharray">20 80</CssParameter>         
+              <CssParameter name="stroke-dasharray">25 80</CssParameter>         
             </Stroke>
           </LineSymbolizer>
         </Rule>    
@@ -2259,53 +2259,7 @@ xlink:href="maastokartta_100k/jyrkanne_musta_alla.svg"/>
 
         </Rule>      
     
-<!--  kirkko 42270 -->      
-              
-        <Rule>
-          <Name>kirkko</Name>
-          
-          <ogc:Filter>
-            <ogc:And>      
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
-                <ogc:Literal>42270</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>kohderyhma</ogc:PropertyName>
-                <ogc:Literal>75</ogc:Literal>
-              </ogc:PropertyIsEqualTo>  
-            </ogc:And>        
-          </ogc:Filter>      
-      
-      <MinScaleDenominator>20000</MinScaleDenominator>
-      <MaxScaleDenominator>90000</MaxScaleDenominator>      
 
-          <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-      
-
-            <Geometry>
-              <ogc:Function name ="offset">
-                <ogc:PropertyName>geom</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
-                <ogc:Literal>0</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>        
-            
-      
-            <Graphic>
-              <ExternalGraphic>
-                <OnlineResource
-xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
-xlink:href="maastokartta_100k/Skko.svg"/>
-                <Format>image/svg+xml</Format>
-              </ExternalGraphic>
-              <Size>
-                <ogc:Literal>170</ogc:Literal>
-              </Size>
-            </Graphic>
-          </PointSymbolizer>
-
-        </Rule>        
 
 <!--  kunnan raja 84113 --> 
      <Rule>

@@ -7,32 +7,32 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>peruskartta_vesistot_viiva</Name>
+    <Name>peruskartta_vesistot_viivat</Name>
     <UserStyle>
 
-      <Title>peruskartta_vesistot_viiva</Title>
+      <Title>peruskartta_vesistot_viivat</Title>
       <Abstract>sld</Abstract>
 
-    
-    
+	  
+	  
       <FeatureTypeStyle>
-    
+	  
 <!---  virtavesi leveys alle 2 m (pinnan alla) -->   
         <Rule>
           <Name>36311_alla</Name>
           <Title>36311 virtavesi alle 2 m, pinnan alla</Title>
  
           <ogc:Filter>
-        <ogc:And>  
+		    <ogc:And>  
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>36311</ogc:Literal>
-              </ogc:PropertyIsEqualTo>      
+              </ogc:PropertyIsEqualTo>			
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>tasosijainti</ogc:PropertyName>
                 <ogc:Literal>-1</ogc:Literal>
               </ogc:PropertyIsEqualTo>
-            </ogc:And>      
+            </ogc:And>			
           </ogc:Filter> 
 
           <MaxScaleDenominator>10000</MaxScaleDenominator>
@@ -42,29 +42,29 @@
               <CssParameter name="stroke">#0099ff</CssParameter>
               <CssParameter name="stroke-width">2.5</CssParameter>              
               <CssParameter name="stroke-linecap">round</CssParameter>  
-              <CssParameter name="stroke-dasharray">30 10</CssParameter>          
+              <CssParameter name="stroke-dasharray">30 10</CssParameter>  			  
             </Stroke>
           </LineSymbolizer>          
         </Rule>  
-    
+		
 <!---   virtavesi leveys 2 - 5 m (pinnan alla) -->   
         <Rule>
           <Name>36312_alla</Name>
            <Title>36312 virtavesi 2 - 5 m, pinnan alla</Title>
-       
+		   
           <ogc:Filter>
-      <ogc:And>  
+		  <ogc:And>  
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
               <ogc:Literal>36312</ogc:Literal>
-            </ogc:PropertyIsEqualTo>      
+            </ogc:PropertyIsEqualTo>			
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>tasosijainti</ogc:PropertyName>
               <ogc:Literal>-1</ogc:Literal>
             </ogc:PropertyIsEqualTo>
-           </ogc:And>      
+           </ogc:And>			
           </ogc:Filter> 
-      
+		  
           <MaxScaleDenominator>10000</MaxScaleDenominator>
          
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
@@ -72,20 +72,20 @@
               <CssParameter name="stroke">#0099ff</CssParameter>
               <CssParameter name="stroke-width">4</CssParameter>              
               <CssParameter name="stroke-linecap">round</CssParameter>  
-              <CssParameter name="stroke-dasharray">30 10</CssParameter>          
+              <CssParameter name="stroke-dasharray">30 10</CssParameter>  			  
             </Stroke>
           </LineSymbolizer>          
-        </Rule>      
+        </Rule>  		
 
 
 <!--- virtavesi leveys alle 2 m-->        
         
         <Rule>
           <Name>36311</Name>
-          <Title>36311 virtavesi alle 2 m</Title>      
+          <Title>36311 virtavesi alle 2 m</Title>		  
  
           <ogc:Filter>
-      <ogc:And>
+		  <ogc:And>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
               <ogc:Literal>36311</ogc:Literal>
@@ -96,8 +96,8 @@
               <ogc:Literal>0</ogc:Literal>
             </ogc:PropertyIsEqualTo>
 
-      </ogc:And>      
-          </ogc:Filter>     
+			</ogc:And>			
+          </ogc:Filter> 		
 
           <MaxScaleDenominator>10000</MaxScaleDenominator>
          
@@ -105,30 +105,30 @@
             <Stroke>
               <CssParameter name="stroke">#0099ff</CssParameter>
               <CssParameter name="stroke-width">2.5</CssParameter>
-              <CssParameter name="stroke-linecap">round</CssParameter>        
+              <CssParameter name="stroke-linecap">round</CssParameter>			  
             </Stroke>
           </LineSymbolizer>          
-        </Rule>    
+        </Rule>  	
 
 <!--- virtavesi leveys 2 - 5 m-->        
         
         <Rule>
           <Name>36312</Name>
-          <Title>36312 virtavesi 2-5 m</Title>      
+          <Title>36312 virtavesi 2-5 m</Title>		  
  
           <ogc:Filter>
-      <ogc:And>
+		  <ogc:And>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
               <ogc:Literal>36312</ogc:Literal>
             </ogc:PropertyIsEqualTo>
-  
+	
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>tasosijainti</ogc:PropertyName>
               <ogc:Literal>0</ogc:Literal>
             </ogc:PropertyIsEqualTo>
-           </ogc:And>      
-          </ogc:Filter>     
+           </ogc:And>			
+          </ogc:Filter> 		
 
           <MaxScaleDenominator>10000</MaxScaleDenominator>
          
@@ -136,21 +136,21 @@
             <Stroke>
               <CssParameter name="stroke">#0099ff</CssParameter>
               <CssParameter name="stroke-width">4</CssParameter>
-              <CssParameter name="stroke-linecap">round</CssParameter>        
+              <CssParameter name="stroke-linecap">round</CssParameter>			  
             </Stroke>
           </LineSymbolizer>          
-        </Rule>        
-    
-    
-    
-    
-      </FeatureTypeStyle>      
-    
-    
+        </Rule>  			
+		
+		
+		
+	  
+      </FeatureTypeStyle>		  
+	  
+	  
 
-    
-    
-    
-  </UserStyle>
+	  
+	  
+	  
+	</UserStyle>
   </NamedLayer>
-</StyledLayerDescriptor>
+</StyledLayerDescriptor>	  

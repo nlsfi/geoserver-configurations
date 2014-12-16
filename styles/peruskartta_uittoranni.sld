@@ -11,8 +11,7 @@
     <UserStyle>
 
       <Title>peruskartta_uittoranni</Title>
-      <Abstract>uittoranni tason kohdalla tehdï¿½ï¿½n buffer sijainti_viiva -viivalle. tï¿½mï¿½n takia sitï¿½ ei voi mï¿½ï¿½ritellï¿½ 
-    samassa tyylissï¿½ kuin aluemaiset kohteet.</Abstract>
+      <Abstract>sld</Abstract>
 
 
       <FeatureTypeStyle>
@@ -21,11 +20,11 @@
         
 
        
- <!--  39000 uittorï¿½nni -->
+ <!--  39000 uittor�nni -->
         
         <Rule>
           <Name>39000</Name>
-          <Title>39000 Uittorï¿½nni</Title>
+          <Title>39000 Uittor�nni</Title>
  
           <ogc:Filter>     
             <ogc:PropertyIsEqualTo>
@@ -34,7 +33,6 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter> 
 
-<!--           <MinScaleDenominator>7500</MinScaleDenominator> -->
           <MaxScaleDenominator>10000</MaxScaleDenominator>  
          
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">        

@@ -7,14 +7,14 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>peruskartta_nimisto</Name>
+    <Name>peruskartta_merkkikohtainen_nimisto</Name>
     <UserStyle>
 
-      <Title>peruskartta_nimisto</Title>
+      <Title>peruskartta_merkkikohtainen_nimisto</Title>
       <Abstract>Tama SLD-tyylitiedosto maarittaa pnr_Karttanimirekisterin nimien kuvaustekniikan Peruskartalle</Abstract>
 
 
-    <FeatureTypeStyle>     
+		<FeatureTypeStyle>	   
    
 <!-- Karttanimet mustat pysty eli kirjasinkallistuskulma 0 -->        
 
@@ -29,31 +29,31 @@
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72401</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>  
+              </ogc:PropertyIsNotEqualTo>	
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72502</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>  
+              </ogc:PropertyIsNotEqualTo>	
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72601</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>  
+              </ogc:PropertyIsNotEqualTo>	
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72201</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>  
+              </ogc:PropertyIsNotEqualTo>	
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72303</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>  
+              </ogc:PropertyIsNotEqualTo>	
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72403</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>  
+              </ogc:PropertyIsNotEqualTo>	
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72701</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>  
+              </ogc:PropertyIsNotEqualTo>	
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72801</ogc:Literal>
@@ -61,9 +61,9 @@
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kirjasinkallistuskulma</ogc:PropertyName>
                 <ogc:Literal>0</ogc:Literal>
-              </ogc:PropertyIsEqualTo>        
-            </ogc:And>      
-          </ogc:Filter>      
+              </ogc:PropertyIsEqualTo>			  
+            </ogc:And>			
+          </ogc:Filter>			
         
          <MaxScaleDenominator>10000</MaxScaleDenominator>
           
@@ -79,20 +79,20 @@
             
             <!-- Fontin valinta. Jos kirjasinkallistuskulma on -18 kaytetaann .
                  n valmiiksi taaksepainkallistettu, joten ta ratkaisee myos "kirjasinKallistuskulma" = -18. --> 
-         
-         
-              <CssParameter name="font-family">    
-                <ogc:Function name="if_then_else">            
-           <ogc:Function name="equalTo">
+				 
+				 
+              <CssParameter name="font-family">		
+                <ogc:Function name="if_then_else">					  
+ 				  <ogc:Function name="equalTo">
                     <ogc:PropertyName>kirjasintyyppikoodi</ogc:PropertyName> 
-                    <ogc:Literal>10</ogc:Literal>          
+                    <ogc:Literal>10</ogc:Literal>					
                   </ogc:Function>                  
                 <ogc:Literal>Arial</ogc:Literal>                  
                  <ogc:Literal>Arial Lihavoitu</ogc:Literal>                                                     
                 </ogc:Function>           
               </CssParameter>
-      
-        
+		  
+			  
 
         
            <!-- lasketaan fontin koko attribuutikentan "kirjasinkoko" perusteella -->                
@@ -140,9 +140,9 @@
               </PointPlacement>
             </LabelPlacement>   
          
-             <Halo>
+ <!--            <Halo>
               <Radius>1</Radius>
-            </Halo>
+            </Halo> -->
             <!-- karttanimen varin maarittaminen -->
             <!-- Jos attribuuttikentta "kirjasinvariKoodi" on 10, teksti piirretaan mustana. Jos muu (20), piirretaan sinisena-->            
             <Fill>
@@ -151,13 +151,14 @@
             </CssParameter>
             </Fill>
       
-            <VendorOption name="conflictResolution">false</VendorOption>     
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>     
           </TextSymbolizer>
-        </Rule>            
+        </Rule>  	   	   
 
-    
-    
-    <!-- Karttanimet mustat italic eli kirjasinkallistuskulma 18 -->        
+		
+		
+		<!-- Karttanimet mustat italic eli kirjasinkallistuskulma 18 -->        
 
         <Rule>
 
@@ -170,31 +171,31 @@
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72401</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>  
+              </ogc:PropertyIsNotEqualTo>	
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72502</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>  
+              </ogc:PropertyIsNotEqualTo>	
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72601</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>  
+              </ogc:PropertyIsNotEqualTo>	
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72201</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>  
+              </ogc:PropertyIsNotEqualTo>	
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72303</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>  
+              </ogc:PropertyIsNotEqualTo>	
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72403</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>  
+              </ogc:PropertyIsNotEqualTo>	
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72701</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>  
+              </ogc:PropertyIsNotEqualTo>	
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72801</ogc:Literal>
@@ -202,9 +203,9 @@
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kirjasinkallistuskulma</ogc:PropertyName>
                 <ogc:Literal>15</ogc:Literal>
-              </ogc:PropertyIsEqualTo>        
-            </ogc:And>      
-          </ogc:Filter>      
+              </ogc:PropertyIsEqualTo>			  
+            </ogc:And>			
+          </ogc:Filter>			
         
          <MaxScaleDenominator>10000</MaxScaleDenominator>
           
@@ -220,20 +221,20 @@
             
             <!-- Fontin valinta. Jos kirjasinkallistuskulma on -18 kaytetaann .
                  n valmiiksi taaksepainkallistettu, joten ta ratkaisee myos "kirjasinKallistuskulma" = -18. --> 
-         
-         
-              <CssParameter name="font-family">    
+				 
+				 
+              <CssParameter name="font-family">		
                 <ogc:Function name="if_then_else">
-           <ogc:Function name="equalTo">
+ 				  <ogc:Function name="equalTo">
                     <ogc:PropertyName>kirjasintyyppikoodi</ogc:PropertyName> 
-                    <ogc:Literal>10</ogc:Literal>          
+                    <ogc:Literal>10</ogc:Literal>					
                   </ogc:Function>                  
                 <ogc:Literal>Arial Etukeno</ogc:Literal>  
                  <ogc:Literal>Arial Lihavoitu Etukeno</ogc:Literal>                                                     
                 </ogc:Function>           
               </CssParameter>
-      
-        
+		  
+			  
 
         
            <!-- lasketaan fontin koko attribuutikentan "kirjasinkoko" perusteella -->                
@@ -279,9 +280,9 @@
               </PointPlacement>
             </LabelPlacement>   
          
-            <Halo>
+<!--            <Halo>
               <Radius>1</Radius>
-            </Halo>
+            </Halo> -->
             <!-- karttanimen varin maarittaminen -->
             <!-- Jos attribuuttikentta "kirjasinvariKoodi" on 10, teksti piirretaan mustana. Jos muu (20), piirretaan sinisena-->            
             <Fill>
@@ -297,10 +298,11 @@
             </CssParameter>
             </Fill>
       
-            <VendorOption name="conflictResolution">false</VendorOption>     
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>     
           </TextSymbolizer>
-        </Rule>       
-     
+        </Rule>  	   
+	   
 <!-- Karttanimet Siniset, kaikki kirjasinkallistuskulma -18 -->        
 
         <Rule>
@@ -314,31 +316,31 @@
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72401</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>  
+              </ogc:PropertyIsNotEqualTo>	
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72502</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>  
+              </ogc:PropertyIsNotEqualTo>	
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72601</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>  
+              </ogc:PropertyIsNotEqualTo>	
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72201</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>  
+              </ogc:PropertyIsNotEqualTo>	
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72303</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>  
+              </ogc:PropertyIsNotEqualTo>	
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72403</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>  
+              </ogc:PropertyIsNotEqualTo>	
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72701</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>  
+              </ogc:PropertyIsNotEqualTo>	
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72801</ogc:Literal>
@@ -346,9 +348,9 @@
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kirjasinkallistuskulma</ogc:PropertyName>
                 <ogc:Literal>-15</ogc:Literal>
-              </ogc:PropertyIsEqualTo>        
-            </ogc:And>      
-          </ogc:Filter>      
+              </ogc:PropertyIsEqualTo>			  
+            </ogc:And>			
+          </ogc:Filter>			
         
          <MaxScaleDenominator>10000</MaxScaleDenominator>
           
@@ -364,20 +366,20 @@
             
             <!-- Fontin valinta. Jos kirjasinkallistuskulma on -18 kaytetaann .
                  n valmiiksi taaksepainkallistettu, joten ta ratkaisee myos "kirjasinKallistuskulma" = -18. --> 
-         
-         
-              <CssParameter name="font-family">    
-                <ogc:Function name="if_then_else">            
-           <ogc:Function name="equalTo">
+				 
+				 
+              <CssParameter name="font-family">		
+                <ogc:Function name="if_then_else">					  
+ 				  <ogc:Function name="equalTo">
                     <ogc:PropertyName>kirjasintyyppikoodi</ogc:PropertyName> 
-                    <ogc:Literal>10</ogc:Literal>          
+                    <ogc:Literal>10</ogc:Literal>					
                   </ogc:Function>                  
                   <ogc:Literal>Arial Takakeno</ogc:Literal>                   
                   <ogc:Literal>Arial Lihavoitu Takakeno</ogc:Literal>                                                     
                 </ogc:Function>           
               </CssParameter>
-      
-        
+		  
+			  
         
            <!-- lasketaan fontin koko attribuutikentan "kirjasinkoko" perusteella -->                
              <CssParameter name="font-size">
@@ -424,9 +426,9 @@
               </PointPlacement>
             </LabelPlacement>   
          
-            <Halo>
+<!--            <Halo>
               <Radius>1</Radius>
-            </Halo>
+            </Halo> -->
             <!-- karttanimen varin maarittaminen -->
             <Fill>
               <CssParameter name="fill">
@@ -434,10 +436,11 @@
               </CssParameter>
             </Fill>
       
-            <VendorOption name="conflictResolution">false</VendorOption>     
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>     
           </TextSymbolizer>
         </Rule>              
-    
+		
 <!-- Karttanimet vihreat -->        
 
         <Rule>
@@ -451,37 +454,37 @@
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72401</ogc:Literal>
-              </ogc:PropertyIsEqualTo>  
+              </ogc:PropertyIsEqualTo>	
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72502</ogc:Literal>
-              </ogc:PropertyIsEqualTo>  
+              </ogc:PropertyIsEqualTo>	
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72601</ogc:Literal>
-              </ogc:PropertyIsEqualTo>  
+              </ogc:PropertyIsEqualTo>	
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72201</ogc:Literal>
-              </ogc:PropertyIsEqualTo>  
+              </ogc:PropertyIsEqualTo>	
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72303</ogc:Literal>
-              </ogc:PropertyIsEqualTo>  
+              </ogc:PropertyIsEqualTo>	
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72403</ogc:Literal>
-              </ogc:PropertyIsEqualTo>  
+              </ogc:PropertyIsEqualTo>	
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72701</ogc:Literal>
-              </ogc:PropertyIsEqualTo>  
+              </ogc:PropertyIsEqualTo>	
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72801</ogc:Literal>
-              </ogc:PropertyIsEqualTo>          
-            </ogc:Or>      
-          </ogc:Filter>      
+              </ogc:PropertyIsEqualTo>				  
+            </ogc:Or>			
+          </ogc:Filter>			
         
          <MaxScaleDenominator>10000</MaxScaleDenominator>
           
@@ -497,11 +500,11 @@
             
             <!-- Fontin valinta. Jos kirjasinkallistuskulma on -18 kaytetaann Caracasla Backslant, muuten Dialog.
                  Caracal Backslant on valmiiksi taaksepainkallistettu, joten ta ratkaisee myos "kirjasinKallistuskulma" = -18. --> 
-              <CssParameter name="font-family">    
-                  <ogc:Function name="if_then_else">            
-             <ogc:Function name="equalTo">
+              <CssParameter name="font-family">		
+                  <ogc:Function name="if_then_else">					  
+ 				    <ogc:Function name="equalTo">
                       <ogc:PropertyName>kirjasintyyppikoodi</ogc:PropertyName> 
-                      <ogc:Literal>10</ogc:Literal>          
+                      <ogc:Literal>10</ogc:Literal>					
                     </ogc:Function>                  
                    <ogc:Literal>Arial</ogc:Literal>                   
                  <ogc:Literal>Arial Lihavoitu</ogc:Literal>                                                     
@@ -589,9 +592,9 @@
               </PointPlacement>
             </LabelPlacement>   
          
-            <Halo>
+<!--            <Halo>
               <Radius>1</Radius>
-            </Halo>
+            </Halo> -->
             <!-- karttanimen varin maarittaminen -->
             <!-- Jos attribuuttikentta "kirjasinvariKoodi" on 10, teksti piirretaan mustana. Jos muu (20), piirretaan sinisena-->            
             <Fill>
@@ -600,9 +603,10 @@
               </CssParameter>
             </Fill>
       
-            <VendorOption name="conflictResolution">false</VendorOption>     
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>     
           </TextSymbolizer>
-        </Rule>                  
+        </Rule>              		
 
       </FeatureTypeStyle>    
     </UserStyle>

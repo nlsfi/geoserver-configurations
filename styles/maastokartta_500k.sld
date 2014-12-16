@@ -93,11 +93,11 @@
           
         </Rule>      
     
-<!--  Jï¿½rvivesi - alue ja reunaviiva --> 
+<!--  J�rvivesi - alue ja reunaviiva --> 
         
         <Rule>
           <Name>36200</Name>
-          <Title>36200 Jï¿½rvivesi - alue ja reunaviiva</Title>          
+          <Title>36200 J�rvivesi - alue ja reunaviiva</Title>          
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -126,11 +126,11 @@
       
         </Rule>        
 
-<!--  Yli 500 m leveï¿½ virtavesi - alue ja reunaviiva --> 
+<!--  Yli 500 m leve� virtavesi - alue ja reunaviiva --> 
         
         <Rule>
           <Name>36325</Name>
-          <Title>36325 Yli 500 m leveï¿½ virtavesi - alue ja reunaviiva</Title>          
+          <Title>36325 Yli 500 m leve� virtavesi - alue ja reunaviiva</Title>          
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -187,11 +187,11 @@
       
         </Rule>      
     
-<!--  Metsï¿½inen suo --> 
+<!--  Mets�inen suo --> 
         
         <Rule>
           <Name>35402</Name>
-          <Title>35402 Metsï¿½inen suo</Title>          
+          <Title>35402 Mets�inen suo</Title>          
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -337,11 +337,11 @@ xlink:href="maastokartta_500k/Phko.svg"/>
       
         </Rule>        
 
-<!--  Eloperï¿½isen maa-aineksen ottoalue --> 
+<!--  Eloper�isen maa-aineksen ottoalue --> 
         
         <Rule>
           <Name>32113</Name>
-          <Title>32113 Eloperï¿½isen maa-aineksen ottoalue</Title>          
+          <Title>32113 Eloper�isen maa-aineksen ottoalue</Title>          
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -441,11 +441,11 @@ xlink:href="maastokartta_500k/Phko.svg"/>
       
         </Rule>      
     
-<!--  125-500 m leveï¿½ virtavesi --> 
+<!--  125-500 m leve� virtavesi --> 
         
         <Rule>
           <Name>36324</Name>
-          <Title>36324 125-500 m leveï¿½ virtavesi</Title>          
+          <Title>36324 125-500 m leve� virtavesi</Title>          
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -469,11 +469,11 @@ xlink:href="maastokartta_500k/Phko.svg"/>
       
         </Rule>        
     
-<!--  50-125 m leveï¿½ virtavesi --> 
+<!--  50-125 m leve� virtavesi --> 
         
         <Rule>
           <Name>36322</Name>
-          <Title>36322 50-125 m leveï¿½ virtavesi</Title>          
+          <Title>36322 50-125 m leve� virtavesi</Title>          
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -497,11 +497,11 @@ xlink:href="maastokartta_500k/Phko.svg"/>
       
         </Rule>        
     
-<!--  20-50 m leveï¿½ virtavesi --> 
+<!--  20-50 m leve� virtavesi --> 
         
         <Rule>
           <Name>36321</Name>
-          <Title>36321 20-50 m leveï¿½ virtavesi</Title>          
+          <Title>36321 20-50 m leve� virtavesi</Title>          
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -525,11 +525,11 @@ xlink:href="maastokartta_500k/Phko.svg"/>
       
         </Rule>        
     
-<!--  5-20 m leveï¿½ virtavesi --> 
+<!--  5-20 m leve� virtavesi --> 
         
         <Rule>
           <Name>36314</Name>
-          <Title>36314 5-20 m leveï¿½ virtavesi</Title>          
+          <Title>36314 5-20 m leve� virtavesi</Title>          
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -553,11 +553,11 @@ xlink:href="maastokartta_500k/Phko.svg"/>
       
         </Rule>      
     
-<!--  alle 5 m leveï¿½ virtavesi --> 
+<!--  alle 5 m leve� virtavesi --> 
         
         <Rule>
           <Name>36312</Name>
-          <Title>36312 allle 5 m leveï¿½ virtavesi</Title>          
+          <Title>36312 allle 5 m leve� virtavesi</Title>          
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -581,11 +581,11 @@ xlink:href="maastokartta_500k/Phko.svg"/>
       
         </Rule>          
     
-<!--  Erï¿½maa-alue --> 
+<!--  Er�maa-alue --> 
         
         <Rule>
           <Name>72700</Name>
-          <Title>72700 Erï¿½maa-alue</Title>          
+          <Title>72700 Er�maa-alue</Title>          
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -839,44 +839,15 @@ xlink:href="maastokartta_500k/Phko.svg"/>
         </Rule>          
 
     
-<!--   Taajamapiste -->    
-
-        <Rule>
-          <Name>40200</Name>
-          <Title>40200 Taajamapiste</Title>
-      
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
-              <ogc:Literal>40200</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-
-          <MinScaleDenominator>180000</MinScaleDenominator>
-          <MaxScaleDenominator>300000</MaxScaleDenominator>    
-      
-          <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Graphic>
-              <Mark>
-                <WellKnownName>circle</WellKnownName>
-                <Fill>
-                  <CssParameter name="fill">#ffb3f2</CssParameter>
-                </Fill>
-              </Mark>
-              <Size>750</Size>
-            </Graphic>              
-          </PointSymbolizer>
-      
-      
-        </Rule>      
     
     
     
-<!--   Lentokenttï¿½piste -->    
+    
+<!--   Lentokentt�piste -->    
 
         <Rule>
           <Name>32441</Name>
-          <Title>32441 Lentokenttï¿½piste</Title>
+          <Title>32441 Lentokentt�piste</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>

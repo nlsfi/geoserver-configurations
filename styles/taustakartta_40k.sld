@@ -11,7 +11,7 @@
     <UserStyle>
 
       <Title>taustakartta_40k</Title>
-      <Abstract>t�m� sld sis�lt�� kuvaustyylit taustakartta 40k useammille kohteille.</Abstract>
+      <Abstract>sld</Abstract>
       
 
 
@@ -143,11 +143,11 @@
           
         </Rule>      
       
-<!--  sorakuoppa-->
+<!--  Karkean kivennäismaa-ainksen ottoalue-->
         
         <Rule>
           <Name>32111</Name>
-          <Title>32111 Sorakuoppa</Title>
+          <Title>32111 Karkean kivennäismaa-ainksen ottoalue</Title>
           
           <ogc:Filter> 
             <ogc:PropertyIsEqualTo>
@@ -184,11 +184,11 @@ xlink:href="taustakartta_40k/Phko_0_11_9_86.svg"/>
           </PolygonSymbolizer>          
         </Rule>     
   
-<!--  turpeenottoalue -->
+<!--  Eloperäisen maa-aineksen ottoalue -->
         
         <Rule>
           <Name>32113</Name>
-          <Title>32113 Savenottoalue</Title>
+          <Title>32113 Eloperäisen maa-aineksen ottoalue</Title>
           
           <ogc:Filter> 
             <ogc:PropertyIsEqualTo>
@@ -208,7 +208,7 @@ xlink:href="taustakartta_40k/Phko_0_11_9_86.svg"/>
           
         </Rule>       
   
-<!--  Savenottoalue -->
+<!--  Hienon kivännäismaa-aineksen ottoalue -->
         
         <Rule>
           <Name>32112</Name>
@@ -379,11 +379,11 @@ xlink:href="taustakartta_40k/Phko_0_11_9_86.svg"/>
           
         </Rule>      
     
-<!--  t�ytemaa -->
+<!--  täytemaa -->
         
         <Rule>
           <Name>33000</Name>
-          <Title>33000 T�ytemaa</Title>
+          <Title>33000 Täytemaa</Title>
           
           <ogc:Filter> 
             <ogc:PropertyIsEqualTo>
@@ -439,26 +439,19 @@ xlink:href="taustakartta_40k/Psoist_3_2_0_64.svg"/>
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#86bfe3</CssParameter>
-              <CssParameter name="stroke-width">15</CssParameter>
+              <CssParameter name="stroke-width">16</CssParameter>
               <CssParameter name="stroke-linecap">round</CssParameter>                
             </Stroke>      
           </LineSymbolizer>        
-      <!-- t�ll� viivalla poistetaan karttalehtijaon aiheuttama viiva -->
-         <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> 
-            <Stroke>
-              <CssParameter name="stroke">#c3e6fa</CssParameter>
-              <CssParameter name="stroke-width">1</CssParameter>
-              <CssParameter name="stroke-linecap">round</CssParameter>                
-            </Stroke>      
-          </LineSymbolizer>  
+
 
         </Rule>        
     
-<!--  36200 j�rvivesi reunaviiva -->        
+<!--  36200 järvivesi reunaviiva -->        
         
         <Rule>
           <Name>36200</Name>
-          <Title>36200 J�rvivesi reunaviiva</Title>
+          <Title>36200 Järvivesi reunaviiva</Title>
           
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -473,18 +466,11 @@ xlink:href="taustakartta_40k/Psoist_3_2_0_64.svg"/>
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#86bfe3</CssParameter>
-              <CssParameter name="stroke-width">40</CssParameter>
+              <CssParameter name="stroke-width">16</CssParameter>
               <CssParameter name="stroke-linecap">round</CssParameter>                
             </Stroke>      
           </LineSymbolizer>        
-      <!-- t�ll� viivalla poistetaan karttalehtijaon aiheuttama viiva -->
-         <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> 
-            <Stroke>
-              <CssParameter name="stroke">#c3e6fa</CssParameter>
-              <CssParameter name="stroke-width">5</CssParameter>
-              <CssParameter name="stroke-linecap">round</CssParameter>                
-            </Stroke>      
-          </LineSymbolizer>  
+
 
         </Rule>    
 
@@ -508,18 +494,11 @@ xlink:href="taustakartta_40k/Psoist_3_2_0_64.svg"/>
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#86bfe3</CssParameter>
-              <CssParameter name="stroke-width">40</CssParameter>
+              <CssParameter name="stroke-width">16</CssParameter>
               <CssParameter name="stroke-linecap">round</CssParameter>                
             </Stroke>      
           </LineSymbolizer>        
-      <!-- t�ll� viivalla poistetaan karttalehtijaon aiheuttama viiva -->
-         <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> 
-            <Stroke>
-              <CssParameter name="stroke">#c3e6fa</CssParameter>
-              <CssParameter name="stroke-width">5</CssParameter>
-              <CssParameter name="stroke-linecap">round</CssParameter>                
-            </Stroke>      
-          </LineSymbolizer>  
+
 
         </Rule>    
     
@@ -542,27 +521,20 @@ xlink:href="taustakartta_40k/Psoist_3_2_0_64.svg"/>
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#86bfe3</CssParameter>
-              <CssParameter name="stroke-width">60</CssParameter>
+              <CssParameter name="stroke-width">16</CssParameter>
               <CssParameter name="stroke-linecap">round</CssParameter>                
             </Stroke>      
           </LineSymbolizer>        
-      <!-- t�ll� viivalla poistetaan karttalehtijaon aiheuttama viiva -->
-         <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> 
-            <Stroke>
-              <CssParameter name="stroke">#c3e6fa</CssParameter>
-              <CssParameter name="stroke-width">5</CssParameter>
-              <CssParameter name="stroke-linecap">round</CssParameter>                
-            </Stroke>      
-          </LineSymbolizer>  
+
 
         </Rule>      
       </FeatureTypeStyle>  
     <FeatureTypeStyle>  
-<!--  j�rvivesi -->
+<!--  järvivesi -->
         
         <Rule>
           <Name>36200</Name>
-          <Title>36200 J�rvivesi</Title>
+          <Title>36200 Järvivesi</Title>
           
           <ogc:Filter> 
             <ogc:PropertyIsEqualTo>
@@ -708,18 +680,18 @@ xlink:href="taustakartta_40k/Psoist_3_2_0_64.svg"/>
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#bec0c2</CssParameter>
-              <CssParameter name="stroke-width">10</CssParameter>
+              <CssParameter name="stroke-width">16</CssParameter>
               <CssParameter name="stroke-linecap">round</CssParameter>        
             </Stroke>
           </LineSymbolizer>        
           
         </Rule>    
     
-<!--  32442 Lentoasema -->
+<!--  32442 Lentokenttä -->
         
         <Rule>
           <Name>32442</Name>
-          <Title>32442 Lentokentt�</Title>
+          <Title>32442 Lentokenttä</Title>
           
           <ogc:Filter> 
             <ogc:PropertyIsEqualTo>
@@ -740,7 +712,7 @@ xlink:href="taustakartta_40k/Psoist_3_2_0_64.svg"/>
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#bec0c2</CssParameter>
-              <CssParameter name="stroke-width">10</CssParameter>
+              <CssParameter name="stroke-width">16</CssParameter>
               <CssParameter name="stroke-linecap">round</CssParameter>        
             </Stroke>
           </LineSymbolizer>        
@@ -765,16 +737,16 @@ xlink:href="taustakartta_40k/Psoist_3_2_0_64.svg"/>
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#fccab6</CssParameter>
-              <CssParameter name="stroke-width">40</CssParameter>
+              <CssParameter name="stroke-width">48</CssParameter>
               <CssParameter name="stroke-linecap">butt</CssParameter>        
             </Stroke>
           </LineSymbolizer>           
         </Rule>    
     
-<!-- 32432 lentokent�n kiitotie -->
+<!-- 32432 lentokentän kiitotie -->
         <Rule>
           <Name>32432</Name>
-          <Title>32432 Lentokent�n kiitotie</Title>
+          <Title>32432 Lentokentän kiitotie</Title>
           
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -789,7 +761,7 @@ xlink:href="taustakartta_40k/Psoist_3_2_0_64.svg"/>
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#fccab6</CssParameter>
-              <CssParameter name="stroke-width">33</CssParameter>
+              <CssParameter name="stroke-width">40</CssParameter>
               <CssParameter name="stroke-linecap">butt</CssParameter>        
             </Stroke>
           </LineSymbolizer>           
@@ -813,7 +785,7 @@ xlink:href="taustakartta_40k/Psoist_3_2_0_64.svg"/>
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#86bfe3</CssParameter>
-              <CssParameter name="stroke-width">6</CssParameter>
+              <CssParameter name="stroke-width">10</CssParameter>
               <CssParameter name="stroke-linecap">round</CssParameter>        
             </Stroke>
           </LineSymbolizer>           
@@ -838,7 +810,7 @@ xlink:href="taustakartta_40k/Psoist_3_2_0_64.svg"/>
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#86bfe3</CssParameter>
-              <CssParameter name="stroke-width">6</CssParameter>
+              <CssParameter name="stroke-width">10</CssParameter>
               <CssParameter name="stroke-linecap">round</CssParameter>        
             </Stroke>
           </LineSymbolizer>           
@@ -863,7 +835,7 @@ xlink:href="taustakartta_40k/Psoist_3_2_0_64.svg"/>
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#86bfe3</CssParameter>
-              <CssParameter name="stroke-width">15</CssParameter>
+              <CssParameter name="stroke-width">16</CssParameter>
               <CssParameter name="stroke-linecap">round</CssParameter>        
             </Stroke>
           </LineSymbolizer>           
@@ -894,7 +866,7 @@ xlink:href="taustakartta_40k/Psoist_3_2_0_64.svg"/>
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#86bfe3</CssParameter>
-              <CssParameter name="stroke-width">15</CssParameter>
+              <CssParameter name="stroke-width">16</CssParameter>
               <CssParameter name="stroke-linecap">round</CssParameter>        
             </Stroke>
           </LineSymbolizer>           
@@ -924,7 +896,7 @@ xlink:href="taustakartta_40k/Psoist_3_2_0_64.svg"/>
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#918a8c</CssParameter>
-              <CssParameter name="stroke-width">6.25</CssParameter>
+              <CssParameter name="stroke-width">10</CssParameter>
               <CssParameter name="stroke-linecap">round</CssParameter>        
             </Stroke>
           </LineSymbolizer>           
@@ -948,7 +920,7 @@ xlink:href="taustakartta_40k/Psoist_3_2_0_64.svg"/>
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#ae9dd1</CssParameter>
-              <CssParameter name="stroke-width">12.5</CssParameter>
+              <CssParameter name="stroke-width">20</CssParameter>
               <CssParameter name="stroke-linecap">round</CssParameter>        
             </Stroke>
           </LineSymbolizer>           
@@ -972,16 +944,16 @@ xlink:href="taustakartta_40k/Psoist_3_2_0_64.svg"/>
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#ae9dd1</CssParameter>
-              <CssParameter name="stroke-width">17.5</CssParameter>
+              <CssParameter name="stroke-width">28</CssParameter>
               <CssParameter name="stroke-linecap">round</CssParameter>        
             </Stroke>
           </LineSymbolizer>           
         </Rule>      
 
-<!-- L��nin raja -->
+<!-- Aluehallintoviraston raja -->
         <Rule>
           <Name>84112</Name>
-          <Title>84112 L��nin raja</Title>
+          <Title>84112 Aluehallintoviraston raja</Title>
           
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -996,7 +968,7 @@ xlink:href="taustakartta_40k/Psoist_3_2_0_64.svg"/>
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#ae9dd1</CssParameter>
-              <CssParameter name="stroke-width">17.5</CssParameter>
+              <CssParameter name="stroke-width">28</CssParameter>
               <CssParameter name="stroke-linecap">round</CssParameter>        
             </Stroke>
           </LineSymbolizer>           
@@ -1020,7 +992,7 @@ xlink:href="taustakartta_40k/Psoist_3_2_0_64.svg"/>
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#ae9dd1</CssParameter>
-              <CssParameter name="stroke-width">17.5</CssParameter>
+              <CssParameter name="stroke-width">28</CssParameter>
               <CssParameter name="stroke-linecap">round</CssParameter>        
             </Stroke>
           </LineSymbolizer>           
@@ -1044,47 +1016,20 @@ xlink:href="taustakartta_40k/Psoist_3_2_0_64.svg"/>
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#ae9dd1</CssParameter>
-              <CssParameter name="stroke-width">20</CssParameter>
+              <CssParameter name="stroke-width">32</CssParameter>
               <CssParameter name="stroke-linecap">round</CssParameter>        
             </Stroke>
           </LineSymbolizer>           
         </Rule>        
     
 
-      
-<!-- 22311 S�hk�linja, suurj�nnite -->        
-        
-        <Rule>
-          <Name>22311</Name>
-          <Title>22311 S�hk�linja, suurj�nnite</Title>      
- 
-          <ogc:Filter>    
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
-              <ogc:Literal>22311</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
 
-          <MinScaleDenominator>20000</MinScaleDenominator> 
-          <MaxScaleDenominator>40000</MaxScaleDenominator> 
-         
-
-
-
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">            
-            <Stroke>
-              <CssParameter name="stroke">#918a8c</CssParameter>
-              <CssParameter name="stroke-width">6.25</CssParameter>                      
-              <CssParameter name="stroke-linecap">round</CssParameter>            
-            </Stroke>            
-          </LineSymbolizer>      
-        </Rule>  
     
-<!-- 16511 Laivav�yl� -->        
+<!-- 16511 Laivaväylä -->        
         
         <Rule>
           <Name>16511</Name>
-          <Title>16511 Laivav�yl�</Title>      
+          <Title>16511 Laivaväylä</Title>      
  
           <ogc:Filter>    
             <ogc:PropertyIsEqualTo>
@@ -1102,7 +1047,7 @@ xlink:href="taustakartta_40k/Psoist_3_2_0_64.svg"/>
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">            
             <Stroke>
               <CssParameter name="stroke">#918a8c</CssParameter>
-              <CssParameter name="stroke-width">6.25</CssParameter>                      
+              <CssParameter name="stroke-width">10</CssParameter>                      
               <CssParameter name="stroke-linecap">round</CssParameter>            
             </Stroke>            
           </LineSymbolizer>      

@@ -7,10 +7,10 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>maastokartta_50k selite</Name>
+    <Name>maastokartta_50k_selite</Name>
     <UserStyle>
 
-      <Title>maastokartta_50k selite</Title>
+      <Title>maastokartta_50k_selite</Title>
       <Abstract>maastokartta_50k selite</Abstract>
 
 
@@ -99,7 +99,7 @@
                 <ogc:PropertyName>kirjasinvalyskerroin</ogc:PropertyName>
                 <ogc:Literal>7</ogc:Literal>
               </ogc:PropertyIsEqualTo>  
-        
+			  
             </ogc:And>      
           </ogc:Filter>    
         
@@ -172,9 +172,9 @@
               </PointPlacement>
             </LabelPlacement>   
             <!-- tekstin maski -->         
-            <Halo>
+<!--            <Halo>
               <Radius>2</Radius>
-            </Halo>
+            </Halo> -->
             <!-- karttanimen v�rin m��ritt�minen -->            
             <Fill>
               <CssParameter name="fill">
@@ -182,7 +182,8 @@
             </CssParameter>
             </Fill>
             <!-- varmistetaan, ett� merkit piirtyv�t vaikka olisivat p��llekk�in -->      
-            <VendorOption name="conflictResolution">false</VendorOption>     
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>     
           </TextSymbolizer>
         </Rule>              
 
@@ -192,7 +193,7 @@
           <ogc:Filter>
         
             <ogc:And>
-          <ogc:Or>
+			    <ogc:Or>
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72202</ogc:Literal>
@@ -235,7 +236,7 @@
                 <ogc:PropertyName>kirjasinvalyskerroin</ogc:PropertyName>
                 <ogc:Literal>7</ogc:Literal>
               </ogc:PropertyIsEqualTo>  
-              
+			  			
             </ogc:And>      
           </ogc:Filter>    
         
@@ -307,9 +308,9 @@
               </PointPlacement>
             </LabelPlacement>   
             <!-- tekstin maski -->         
-            <Halo>
+<!--            <Halo>
               <Radius>2</Radius>
-            </Halo>
+            </Halo> -->
             <!-- karttanimen v�rin m��ritt�minen -->            
             <Fill>
               <CssParameter name="fill">
@@ -317,7 +318,8 @@
             </CssParameter>
             </Fill>
             <!-- varmistetaan, ett� merkit piirtyv�t vaikka olisivat p��llekk�in -->      
-            <VendorOption name="conflictResolution">false</VendorOption>     
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>     
           </TextSymbolizer>
         </Rule>         
     
@@ -337,11 +339,11 @@
                 <ogc:Literal>62202</ogc:Literal>
               </ogc:PropertyIsEqualTo>                 
             </ogc:Or>
-                    <ogc:PropertyIsEqualTo>
+			              <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kirjasinvalyskerroin</ogc:PropertyName>
                 <ogc:Literal>7</ogc:Literal>
               </ogc:PropertyIsEqualTo>  
-              
+			  			
             </ogc:And>      
           </ogc:Filter>    
         
@@ -413,9 +415,9 @@
               </PointPlacement>
             </LabelPlacement>   
             <!-- tekstin maski -->         
-            <Halo>
+<!--            <Halo>
               <Radius>2</Radius>
-            </Halo>
+            </Halo> -->
             <!-- karttanimen v�rin m��ritt�minen -->            
             <Fill>
               <CssParameter name="fill">
@@ -423,7 +425,8 @@
             </CssParameter>
             </Fill>
             <!-- varmistetaan, ett� merkit piirtyv�t vaikka olisivat p��llekk�in -->      
-            <VendorOption name="conflictResolution">false</VendorOption>     
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>     
           </TextSymbolizer>
         </Rule>             
     

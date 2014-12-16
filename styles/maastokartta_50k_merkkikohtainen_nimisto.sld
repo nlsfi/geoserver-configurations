@@ -132,17 +132,18 @@
              <!--Halo>
               <Radius>3</Radius>
             </Halo-->
-      
+			
             <Fill>
               <CssParameter name="fill">
                 <ogc:Literal>#000000</ogc:Literal>  
             </CssParameter>
             </Fill>
       
-            <VendorOption name="conflictResolution">false</VendorOption>     
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>     
           </TextSymbolizer>
         </Rule>   
-    
+		
 <!-- Karttanimet mustat italic eli kirjasinkallistuskulma 15 -->        
 
         <Rule>
@@ -272,7 +273,8 @@
             </CssParameter>
             </Fill>
       
-            <VendorOption name="conflictResolution">false</VendorOption>     
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>     
           </TextSymbolizer>
         </Rule>       
      
@@ -400,7 +402,8 @@
               </CssParameter>
             </Fill>
       
-            <VendorOption name="conflictResolution">false</VendorOption>     
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>     
           </TextSymbolizer>
         </Rule>              
     
@@ -520,7 +523,8 @@
               </CssParameter>
             </Fill>
       
-            <VendorOption name="conflictResolution">false</VendorOption>     
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>     
           </TextSymbolizer>
         </Rule>                  
 

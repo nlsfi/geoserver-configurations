@@ -230,8 +230,8 @@
           
         </Rule>    
     
-<!-- reunaviivat  vesitorni, joka pitï¿½ï¿½ piirtï¿½ï¿½ ympyrï¿½nï¿½ -->
-        <!-- tama hoidettu tihennetyllï¿½ aineistolla -->
+<!-- reunaviivat  vesitorni, joka pit�� piirt�� ympyr�n� -->
+        <!-- tama hoidettu tihennetyll� aineistolla -->
     <!--     <Rule>
           <Name>42160</Name>
       <Title>Vesitornin reunaviiva</Title>

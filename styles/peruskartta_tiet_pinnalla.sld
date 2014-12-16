@@ -7,10 +7,10 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>peruskartta_liikenneverkosto_pinnalla</Name>
+    <Name>peruskartta_tiet_pinnalla</Name>
     <UserStyle>
 
-      <Title>peruskartta_liikenneverkostot_pinnalla</Title>
+      <Title>peruskartta_tiet_pinnalla</Title>
       <Abstract>sld</Abstract>
     
   
@@ -105,7 +105,8 @@
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>tasosijainti</ogc:PropertyName>
                   <ogc:Literal>-1</ogc:Literal>
-                </ogc:PropertyIsEqualTo>        
+                </ogc:PropertyIsEqualTo>
+        
         </ogc:Or>
         </ogc:And>
           </ogc:Filter>  
@@ -210,11 +211,11 @@
           </LineSymbolizer>
         </Rule>            
     
-<!--  12314 kï¿½vely ja pyï¿½rï¿½tie-->        
+<!--  12314 k�vely ja py�r�tie-->        
         
         <Rule>
           <Name>12314</Name>
-          <Title>12314 Kï¿½vely- ja pyï¿½rï¿½tie</Title>
+          <Title>12314 K�vely- ja py�r�tie</Title>
  
           <ogc:Filter>  
            <ogc:And>      
@@ -828,14 +829,14 @@
     
     
       </FeatureTypeStyle>
-      <FeatureTypeStyle>  <!-- pinnalla, (tasosijainti = 0 tai -1) tï¿½ytï¿½t -->  
+      <FeatureTypeStyle>  <!-- pinnalla, (tasosijainti = 0 tai -1) t�yt�t -->  
     
     
-<!-- 12132 autotie 3b tï¿½yttï¿½ -->        
+<!-- 12132 autotie 3b t�ytt� -->        
         
         <Rule>
           <Name>12132</Name>
-          <Title>12132 Autotie 3a tï¿½yttï¿½</Title>
+          <Title>12132 Autotie 3a t�ytt�</Title>
  
           <ogc:Filter>  
            <ogc:And>      
@@ -871,11 +872,11 @@
 
         </Rule>    
     
-<!-- 12131 autotie 3a tï¿½yttï¿½ -->        
+<!-- 12131 autotie 3a t�ytt� -->        
         
         <Rule>
           <Name>12131</Name>
-          <Title>12131 Autotie 3a tï¿½yttï¿½</Title>
+          <Title>12131 Autotie 3a t�ytt�</Title>
  
           <ogc:Filter>  
            <ogc:And>      
@@ -911,11 +912,11 @@
 
         </Rule>      
     
-<!-- 12122 autotie 2b tï¿½yttï¿½ -->        
+<!-- 12122 autotie 2b t�ytt� -->        
         
         <Rule>
           <Name>12122</Name>
-          <Title>12122 Autotie 2b tï¿½yttï¿½</Title>
+          <Title>12122 Autotie 2b t�ytt�</Title>
  
           <ogc:Filter>  
            <ogc:And>      
@@ -951,11 +952,11 @@
 
         </Rule>        
     
-<!-- 12121 autotie 2a tï¿½ytttï¿½ -->        
+<!-- 12121 autotie 2a t�yttt� -->        
         
         <Rule>
           <Name>12121</Name>
-          <Title>12121 Autotie 2a tï¿½yttï¿½</Title>
+          <Title>12121 Autotie 2a t�ytt�</Title>
  
           <ogc:Filter>  
            <ogc:And>      
@@ -991,11 +992,11 @@
 
         </Rule>      
     
-<!-- 12112 autotie 1b tï¿½yttï¿½ -->        
+<!-- 12112 autotie 1b t�ytt� -->        
         
         <Rule>
           <Name>12112</Name>
-          <Title>12122 Autotie 1b tï¿½yttï¿½</Title>
+          <Title>12122 Autotie 1b t�ytt�</Title>
  
           <ogc:Filter>  
            <ogc:And>      
@@ -1031,11 +1032,11 @@
 
         </Rule>      
     
-<!-- 12111 autotie 1a tï¿½yttï¿½ -->        
+<!-- 12111 autotie 1a t�ytt� -->        
         
         <Rule>
           <Name>12111</Name>
-          <Title>12111 Autotie 1a tï¿½yttï¿½</Title>
+          <Title>12111 Autotie 1a t�ytt�</Title>
  
           <ogc:Filter>  
            <ogc:And>      
@@ -1071,19 +1072,61 @@
 
         </Rule>     
     
+<!-- 12111 autotie 1a reuna, suunnitteilla, valmiusaste = 3 -->        
+        
+        <Rule>
+          <Name>12111</Name>
+          <Title>12111 Autotie 1a reunaviivat, suunnitteilla</Title>
+ 
+          <ogc:Filter>  
+           <ogc:And>      
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
+              <ogc:Literal>12111</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>valmiusaste</ogc:PropertyName>
+              <ogc:Literal>3</ogc:Literal>
+            </ogc:PropertyIsEqualTo>      
+        <ogc:Or>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>tasosijainti</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>tasosijainti</ogc:PropertyName>
+                  <ogc:Literal>-1</ogc:Literal>
+                </ogc:PropertyIsEqualTo>        
+        </ogc:Or>
+        </ogc:And>
+          </ogc:Filter> 
+
+          <MaxScaleDenominator>10000</MaxScaleDenominator> 
+         
+          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <Stroke>
+              <CssParameter name="stroke">#d1d1d1</CssParameter>
+              <CssParameter name="stroke-width">14</CssParameter>                          
+              <CssParameter name="stroke-dasharray">100 30</CssParameter>                                  
+              <CssParameter name="stroke-dashoffset">85</CssParameter>                                  
+            </Stroke>
+          </LineSymbolizer>
+
+        </Rule>     
+    
     </FeatureTypeStyle>    
 
 
 
 
-      <FeatureTypeStyle> <!-- rakenteilla olevat tiet 1ab 2ab 3ab tï¿½yttï¿½ 1 (valkoinen) -->
+      <FeatureTypeStyle> <!-- rakenteilla olevat tiet 1ab 2ab 3ab t�ytt� 1 (valkoinen) -->
     
         
-<!-- 12132 autotie 3b rakenteilla tï¿½yttï¿½ 1 -->        
+<!-- 12132 autotie 3b rakenteilla t�ytt� 1 -->        
         
         <Rule>
           <Name>12132</Name>
-          <Title>12132 Autotie 3b rakenteilla tï¿½yttï¿½ 1</Title>
+          <Title>12132 Autotie 3b rakenteilla t�ytt� 1</Title>
  
           <ogc:Filter>  
            <ogc:And>      
@@ -1119,11 +1162,11 @@
 
         </Rule>    
     
-<!-- 12131 autotie 3a rakenteilla tï¿½yttï¿½ 1 -->        
+<!-- 12131 autotie 3a rakenteilla t�ytt� 1 -->        
         
         <Rule>
           <Name>12131</Name>
-          <Title>12131 Autotie 3a rakenteilla tï¿½yttï¿½ 1</Title>
+          <Title>12131 Autotie 3a rakenteilla t�ytt� 1</Title>
  
           <ogc:Filter>  
            <ogc:And>      
@@ -1159,11 +1202,11 @@
 
         </Rule>      
     
-<!--  12122 autotie 2b reuna rakenteilla tï¿½yttï¿½ 1 -->        
+<!--  12122 autotie 2b reuna rakenteilla t�ytt� 1 -->        
         
         <Rule>
           <Name>12122</Name>
-          <Title>12122 Autotie 2b rakenteilla tï¿½yttï¿½ 1</Title>
+          <Title>12122 Autotie 2b rakenteilla t�ytt� 1</Title>
  
           <ogc:Filter>  
            <ogc:And>      
@@ -1199,11 +1242,11 @@
 
         </Rule>        
     
-<!--  12121 autotie 2a rakenteilla tï¿½yttï¿½ 1 -->        
+<!--  12121 autotie 2a rakenteilla t�ytt� 1 -->        
         
         <Rule>
           <Name>12121</Name>
-          <Title>12121 Autotie 2a rakenteilla tï¿½yttï¿½ 1</Title>
+          <Title>12121 Autotie 2a rakenteilla t�ytt� 1</Title>
  
           <ogc:Filter>  
            <ogc:And>      
@@ -1239,11 +1282,11 @@
 
         </Rule>      
     
-<!-- 12112 autotie 1b rakenteilla tï¿½yttï¿½ 1 -->        
+<!-- 12112 autotie 1b rakenteilla t�ytt� 1 -->        
         
         <Rule>
           <Name>12112</Name>
-          <Title>12112 Autotie 1b rakenteilla tï¿½yttï¿½ 1</Title>
+          <Title>12112 Autotie 1b rakenteilla t�ytt� 1</Title>
  
           <ogc:Filter>  
            <ogc:And>      
@@ -1279,11 +1322,11 @@
 
         </Rule>      
     
-<!-- 12111 autotie 1a rakenteilla tï¿½yttï¿½ 1 -->            
+<!-- 12111 autotie 1a rakenteilla t�ytt� 1 -->            
         
         <Rule>
           <Name>12111</Name>
-          <Title>12111 Autotie 1a rakentilla tï¿½yttï¿½ 1</Title>
+          <Title>12111 Autotie 1a rakentilla t�ytt� 1</Title>
  
           <ogc:Filter>  
            <ogc:And>      
@@ -1321,14 +1364,14 @@
     
 
     </FeatureTypeStyle>    
-      <FeatureTypeStyle> <!-- rakenteilla olevat tiet 1ab 2ab 3ab tï¿½yttï¿½ 2  -->
+      <FeatureTypeStyle> <!-- rakenteilla olevat tiet 1ab 2ab 3ab t�ytt� 2  -->
     
     
-<!-- 12132 autotie 3b rakenteilla tï¿½yttï¿½ 2 -->        
+<!-- 12132 autotie 3b rakenteilla t�ytt� 2 -->        
         
         <Rule>
           <Name>12132</Name>
-          <Title>12132 Autotie 3b rakenteilla tï¿½yttï¿½ 2</Title>
+          <Title>12132 Autotie 3b rakenteilla t�ytt� 2</Title>
  
           <ogc:Filter>  
            <ogc:And>      
@@ -1366,11 +1409,11 @@
 
         </Rule>    
     
-<!-- 12131 autotie 3a rakenteilla tï¿½yttï¿½ 2 -->        
+<!-- 12131 autotie 3a rakenteilla t�ytt� 2 -->        
         
         <Rule>
           <Name>12131</Name>
-          <Title>12131 Autotie 3a rakenteilla tï¿½yttï¿½ 2</Title>
+          <Title>12131 Autotie 3a rakenteilla t�ytt� 2</Title>
  
           <ogc:Filter>  
            <ogc:And>      
@@ -1408,11 +1451,11 @@
 
         </Rule>      
     
-<!-- 12122 autotie 2b rakenteilla tï¿½yttï¿½ 2 -->        
+<!-- 12122 autotie 2b rakenteilla t�ytt� 2 -->        
         
         <Rule>
           <Name>12122</Name>
-          <Title>12122 Autotie 2b rakenteilla tï¿½yttï¿½ 2</Title>
+          <Title>12122 Autotie 2b rakenteilla t�ytt� 2</Title>
  
           <ogc:Filter>  
            <ogc:And>      
@@ -1450,11 +1493,11 @@
 
         </Rule>        
     
-<!-- 12121 autotie 2a rakenteilla tï¿½yttï¿½ 2 -->        
+<!-- 12121 autotie 2a rakenteilla t�ytt� 2 -->        
         
         <Rule>
           <Name>12121</Name>
-          <Title>12121 Autotie 2a rakenteilla tï¿½yttï¿½ 2</Title>
+          <Title>12121 Autotie 2a rakenteilla t�ytt� 2</Title>
  
           <ogc:Filter>  
            <ogc:And>      
@@ -1492,11 +1535,11 @@
 
         </Rule>      
     
-<!-- 12112 autotie 1b rakenteilla tï¿½yttï¿½ 2 -->        
+<!-- 12112 autotie 1b rakenteilla t�ytt� 2 -->        
         
         <Rule>
           <Name>12112</Name>
-          <Title>12112 Autotie 1b rakenteilla tï¿½yttï¿½ 2</Title>
+          <Title>12112 Autotie 1b rakenteilla t�ytt� 2</Title>
  
           <ogc:Filter>  
            <ogc:And>      
@@ -1534,11 +1577,11 @@
 
         </Rule>      
     
-<!-- 12111 autotie 1a rakenteilla tï¿½yttï¿½ 2 -->            
+<!-- 12111 autotie 1a rakenteilla t�ytt� 2 -->            
         
         <Rule>
           <Name>12111</Name>
-          <Title>12111 Autotie 1a rakenteilla tï¿½yttï¿½ 2</Title>
+          <Title>12111 Autotie 1a rakenteilla t�ytt� 2</Title>
  
           <ogc:Filter>  
            <ogc:And>      

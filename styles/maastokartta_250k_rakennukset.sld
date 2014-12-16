@@ -5,13 +5,13 @@
  xmlns:ogc="http://www.opengis.net/ogc" 
  xmlns:xlink="http://www.w3.org/1999/xlink" 
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <!-- a Named Layer is the basic building block of an SLD document -->
+
   <NamedLayer>
 
-    <Name>Suojelualue 250k maastokartta</Name>
+    <Name>maastokartta_250k_rakennukset</Name>
     <UserStyle>
-    <!-- Styles can have names, titles and abstracts -->
-      <Title>Suojelualue 250k maastokartta</Title>
+
+      <Title>maastokartta_250k_rakennukset</Title>
       <Abstract></Abstract>
       <FeatureTypeStyle>
     
@@ -93,7 +93,7 @@
 <!--  lomarakennus  -->      
               
         <Rule>
-          <Name>mï¿½kit</Name>
+          <Name>m�kit</Name>
           
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -142,33 +142,7 @@
           </PointSymbolizer>
         </Rule>          
 
-<!--  vesitorni 45800  -->      
-              
-        <Rule>
-          <Name>45800</Name>
-          
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
-              <ogc:Literal>45800</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>      
-      
-      <MinScaleDenominator>90000</MinScaleDenominator>
-      <MaxScaleDenominator>180000</MaxScaleDenominator>    
-      
-          <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Graphic>
-              <Mark>
-                <WellKnownName>circle</WellKnownName>
-                <Fill>
-                  <CssParameter name="fill">#000000</CssParameter>
-                </Fill>
-              </Mark>
-              <Size>200</Size>
-            </Graphic>              
-          </PointSymbolizer>
-        </Rule>    
+
 
       </FeatureTypeStyle>
     </UserStyle>

@@ -12,6 +12,8 @@
         <Title>kivi yleistys sk40 mk50k</Title>
         <Abstract>kivi yleistys sk40 mk50k</Abstract>
         <FeatureTypeStyle>
+		
+		
           <Transformation>
             <ogc:Function name="gs:PointStacker">
               <ogc:Function name="parameter">
@@ -42,8 +44,8 @@
             </ogc:Function>
           </Transformation>
 
-      
-  
+		  
+	
           <Rule>
             <Name>Kivi yleistys</Name>
             <Title>Kivi</Title>
@@ -53,29 +55,29 @@
               <ogc:PropertyIsGreaterThanOrEqualTo>
                 <ogc:PropertyName>count</ogc:PropertyName>
                 <ogc:Literal>1</ogc:Literal>
-              </ogc:PropertyIsGreaterThanOrEqualTo>      
-            </ogc:Filter>      
-      
+              </ogc:PropertyIsGreaterThanOrEqualTo>			
+            </ogc:Filter>			
+			
             <MinScaleDenominator>10000</MinScaleDenominator>
             <MaxScaleDenominator>20000</MaxScaleDenominator> 
-      
+		  
             <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> 
               <Graphic>
                 <ExternalGraphic>
                   <OnlineResource
 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
-xlink:href="maastokartta/Ski2.svg"/>
+xlink:href="maastokartta/Ski.svg"/>
                   <Format>image/svg+xml</Format>
                 </ExternalGraphic>
                 <Size>
-                  <ogc:Literal>64</ogc:Literal>
-                </Size>                
+                  <ogc:Literal>40</ogc:Literal>
+                </Size>			  			  
               </Graphic>
-            </PointSymbolizer>  
+            </PointSymbolizer>	
           </Rule>
 
-                
-        
+			  			  
+			  
         </FeatureTypeStyle>
       </UserStyle>
     </NamedLayer>

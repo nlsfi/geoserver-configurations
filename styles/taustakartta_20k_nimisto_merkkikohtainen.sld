@@ -7,11 +7,11 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>Taustakartta 20k nimisto</Name>
+    <Name>taustakartta_20k_nimisto_merkkikohtainen</Name>
     <UserStyle>
 
-      <Title>Taustakartta 20k nimisto</Title>
-      <Abstract>Taustakartta 20k nimisto</Abstract>
+      <Title>taustakartta_20k_nimisto_merkkikohtainen</Title>
+      <Abstract>sld</Abstract>
 
 
     <FeatureTypeStyle>     
@@ -58,6 +58,10 @@
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72801</ogc:Literal>
               </ogc:PropertyIsNotEqualTo>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
+                <ogc:Literal>12301</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>			  
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kirjasinkallistuskulma</ogc:PropertyName>
                 <ogc:Literal>0</ogc:Literal>
@@ -132,17 +136,18 @@
              <!--Halo>
               <Radius>3</Radius>
             </Halo-->
-      
+			
             <Fill>
               <CssParameter name="fill">
                 <ogc:Literal>#918a8c</ogc:Literal>  
             </CssParameter>
             </Fill>
       
-            <VendorOption name="conflictResolution">false</VendorOption>     
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>     
           </TextSymbolizer>
         </Rule>   
-    
+		
 <!-- Karttanimet mustat italic eli kirjasinkallistuskulma 15 -->        
 
         <Rule>
@@ -272,7 +277,8 @@
             </CssParameter>
             </Fill>
       
-            <VendorOption name="conflictResolution">false</VendorOption>     
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>     
           </TextSymbolizer>
         </Rule>       
      
@@ -400,7 +406,8 @@
               </CssParameter>
             </Fill>
       
-            <VendorOption name="conflictResolution">false</VendorOption>     
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>     
           </TextSymbolizer>
         </Rule>              
       

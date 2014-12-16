@@ -7,10 +7,10 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>paikannimet taustakartta 80k</Name>
+    <Name>taustakartta_80k_paikannimi_avaus</Name>
     <UserStyle>
 
-      <Title>paikannimet taustakartta 80k</Title>
+      <Title>taustakartta_80k_paikannimi_avaus</Title>
       <Abstract>t�m� esitystyyli m��ritt�� taustakartta80k:n nimien avauksen</Abstract>
 
   
@@ -133,6 +133,14 @@
                   <DisplacementX>0</DisplacementX>
                   <DisplacementY>-120</DisplacementY>
                 </Displacement>      
+                  <Rotation>
+                   <ogc:Function name="toDegrees">
+                    <ogc:Div>
+                       <ogc:PropertyName>suunta</ogc:PropertyName>
+                      <ogc:Literal>-10000</ogc:Literal> 
+                    </ogc:Div>        
+                  </ogc:Function> 
+                </Rotation>         
               </PointPlacement>
             </LabelPlacement>     
 
@@ -144,6 +152,7 @@
            <CssParameter name="fill">#ffffff</CssParameter>
          </Fill>
          <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>
        </TextSymbolizer>
        </Rule>                  
   
@@ -248,6 +257,7 @@
            <CssParameter name="fill">#ffffff</CssParameter>
          </Fill>
          <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>
 
        </TextSymbolizer>
        </Rule>          
@@ -330,6 +340,14 @@
                   <DisplacementX>0</DisplacementX>
                   <DisplacementY>-120</DisplacementY>
                 </Displacement>      
+                  <Rotation>
+                   <ogc:Function name="toDegrees">
+                    <ogc:Div>
+                       <ogc:PropertyName>suunta</ogc:PropertyName>
+                      <ogc:Literal>-10000</ogc:Literal> 
+                    </ogc:Div>        
+                  </ogc:Function> 
+                </Rotation>         
               </PointPlacement>
             </LabelPlacement> 
 
@@ -341,6 +359,7 @@
            <CssParameter name="fill">#ffffff</CssParameter>
          </Fill>
          <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>
        </TextSymbolizer>
        </Rule>  
     

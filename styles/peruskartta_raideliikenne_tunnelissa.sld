@@ -16,11 +16,11 @@
 
       <FeatureTypeStyle> <!-- pinnan alla (tasosijainti = -11) eli tunnelissa ajotie ja autotiet katkoviivat -->
     
-<!-- 14111 Sï¿½hkï¿½istetty rautatie tunnelissa -->    
+<!-- 14111 S�hk�istetty rautatie tunnelissa -->    
         
         <Rule>
           <Name>14111</Name>
-          <Title>14111 Sï¿½hkï¿½istetty rautatie tunnelissa</Title>      
+          <Title>14111 S�hk�istetty rautatie tunnelissa</Title>      
       
  
           <ogc:Filter> 
@@ -57,11 +57,11 @@
       
         </Rule>
         
-<!-- 14112 Sï¿½hkï¿½istetty rautatie tunnelissa -->    
+<!-- 14112 Ei-S�hk�istetty rautatie tunnelissa -->    
         
         <Rule>
           <Name>14112</Name>
-          <Title>14112 Ei-sï¿½hkï¿½istetty rautatie tunnelissa</Title>      
+          <Title>14112 Ei-s�hk�istetty rautatie tunnelissa</Title>      
       
  
           <ogc:Filter> 
@@ -98,11 +98,11 @@
       
         </Rule>    
     
-<!-- 14121 kapearaitainen rautatie tunnelissa -->   
+<!-- 14121 kapearaiteinen rautatie tunnelissa -->   
         
         <Rule>
           <Name>14121</Name>
-          <Title>14121 Kapearaitainen rautatie tunnelissa</Title>      
+          <Title>14121 Kapearaiteinen rautatie tunnelissa</Title>      
       
  
           <ogc:Filter> 

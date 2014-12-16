@@ -438,19 +438,16 @@ xlink:href="taustakartta/Silmarata_1.svg"/>
                 <Format>image/svg+xml</Format>
               </ExternalGraphic>
               <Size>
-                <ogc:Literal>20</ogc:Literal>
+                <ogc:Literal>2.6</ogc:Literal>
               </Size>
         
               <Rotation> 
-                <ogc:Add>        
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
                   </ogc:Div>        
-        </ogc:Function>
-                  <ogc:Literal>90</ogc:Literal>
-                </ogc:Add>            
+                </ogc:Function>
               </Rotation>
         
             </Graphic>
@@ -493,15 +490,7 @@ xlink:href="taustakartta/Sktli.svg"/>
               <Size>
                 <ogc:Literal>41</ogc:Literal>
               </Size>
-        
-              <Rotation> 
-                <ogc:Function name="toDegrees">
-                  <ogc:Div>                  
-                    <ogc:PropertyName>suunta</ogc:PropertyName> 
-                    <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
-        </ogc:Function>
-              </Rotation>
+
         
             </Graphic>
           </PointSymbolizer>

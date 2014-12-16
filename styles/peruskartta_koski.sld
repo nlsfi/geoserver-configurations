@@ -7,10 +7,10 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>Peruskartta_koski</Name>
+    <Name>peruskartta_koski</Name>
     <UserStyle>
 
-      <Title>Peruskartta_koski</Title>
+      <Title>peruskartta_koski</Title>
       <Abstract>Peruskartta_koski</Abstract>
 
       <FeatureTypeStyle>

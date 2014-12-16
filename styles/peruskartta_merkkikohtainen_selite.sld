@@ -7,10 +7,10 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>peruskartta_tekstit_musta_merkkik</Name>
+    <Name>peruskartta_merkkikohtainen_selite</Name>
     <UserStyle>
 
-      <Title>peruskartta_tekstit_musta_merkkik</Title>
+      <Title>peruskartta_merkkikohtainen_selite</Title>
       <Abstract>merkkikohtaisten selite- ja muiden tekstien (paitsi nimist�n) kuvaustekniikan Peruskartalle</Abstract>
 
 
@@ -19,7 +19,7 @@
 
         <Rule>
 
-    
+		
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsNotEqualTo>
@@ -37,7 +37,7 @@
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>82202</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>        
+              </ogc:PropertyIsNotEqualTo>			  
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>82302</ogc:Literal>
@@ -53,7 +53,7 @@
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>95302</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>        
+              </ogc:PropertyIsNotEqualTo>			  
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72202</ogc:Literal>
@@ -73,7 +73,7 @@
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72404</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>        
+              </ogc:PropertyIsNotEqualTo>			  
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72501</ogc:Literal>
@@ -89,13 +89,13 @@
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72702</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>        
+              </ogc:PropertyIsNotEqualTo>			  
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72802</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>        
-            </ogc:And>      
-          </ogc:Filter>    
+              </ogc:PropertyIsNotEqualTo>			  
+            </ogc:And>			
+          </ogc:Filter>		
         
            <MaxScaleDenominator>10000</MaxScaleDenominator>
 
@@ -116,9 +116,9 @@
                    </ogc:Function>                                
                    <ogc:Literal>Arial</ogc:Literal>  
                    <ogc:Literal>Arial Lihavoitu</ogc:Literal>                                                     
-                 </ogc:Function>        
+                 </ogc:Function> 			 
              </CssParameter>
-        
+			  
            <!-- lasketaan fontin koko attribuutikent�n "kirjasinkoko" perusteella -->                
              <CssParameter name="font-size">
                 <ogc:Div>
@@ -161,25 +161,26 @@
                       <ogc:Literal>-10000</ogc:Literal> 
                     </ogc:Div>        
                   </ogc:Function> 
-                </Rotation>        
+                </Rotation>				
               </PointPlacement>
             </LabelPlacement>   
             <!-- tekstin maski -->         
-            <Halo>
+<!--            <Halo>
               <Radius>1</Radius>
-            </Halo>
+            </Halo> -->
             <!-- karttanimen v�rin m��ritt�minen -->            
             <Fill>
               <CssParameter name="fill">
                 <ogc:Literal>#000000</ogc:Literal>                                                            
-            </CssParameter>
+    	      </CssParameter>
             </Fill>
-            <!-- varmistetaan, ett� merkit piirtyv�t vaikka olisivat p��llekk�in -->      
-            <VendorOption name="conflictResolution">false</VendorOption>     
+            <!-- varmistetaan, ett� merkit piirtyv�t vaikka olisivat p��llekk�in -->			
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>		 
           </TextSymbolizer>
-        </Rule>              
+        </Rule>          	  
 
-    <!-- Vihre�t seliteteksit -->
+		<!-- Vihre�t seliteteksit -->
         <Rule>
 
           <ogc:Filter>
@@ -199,7 +200,7 @@
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72404</ogc:Literal>
-              </ogc:PropertyIsEqualTo>        
+              </ogc:PropertyIsEqualTo>			  
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72501</ogc:Literal>
@@ -215,13 +216,13 @@
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72702</ogc:Literal>
-              </ogc:PropertyIsEqualTo>        
+              </ogc:PropertyIsEqualTo>			  
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72802</ogc:Literal>
-              </ogc:PropertyIsEqualTo>        
-            </ogc:Or>      
-          </ogc:Filter>    
+              </ogc:PropertyIsEqualTo>			  
+            </ogc:Or>			
+          </ogc:Filter>		
         
            <MaxScaleDenominator>10000</MaxScaleDenominator>
 
@@ -242,9 +243,9 @@
                    </ogc:Function>                                
                    <ogc:Literal>Arial</ogc:Literal>  
                    <ogc:Literal>Arial Lihavoitu</ogc:Literal>                                                     
-                 </ogc:Function>        
+                 </ogc:Function> 			 
              </CssParameter>
-        
+			  
            <!-- lasketaan fontin koko attribuutikent�n "kirjasinkoko" perusteella -->                
              <CssParameter name="font-size">
                 <ogc:Div>
@@ -285,28 +286,29 @@
                       <ogc:Literal>-10000</ogc:Literal> 
                     </ogc:Div>        
                   </ogc:Function> 
-                </Rotation>        
+                </Rotation>				
               </PointPlacement>
             </LabelPlacement>   
             <!-- tekstin maski -->         
-            <Halo>
+<!--            <Halo>
               <Radius>1</Radius>
-            </Halo>
+            </Halo> -->
             <!-- karttanimen v�rin m��ritt�minen -->            
             <Fill>
               <CssParameter name="fill">
                 <ogc:Literal>#00b300</ogc:Literal>                                                            
-            </CssParameter>
+    	      </CssParameter>
             </Fill>
-            <!-- varmistetaan, ett� merkit piirtyv�t vaikka olisivat p��llekk�in -->      
-            <VendorOption name="conflictResolution">false</VendorOption>     
+            <!-- varmistetaan, ett� merkit piirtyv�t vaikka olisivat p��llekk�in -->			
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>		 
           </TextSymbolizer>
-        </Rule>         
-    
-  <!--Ampuma-alueen  ja suoja-alueen selte -->
+        </Rule>     		
+		
+	<!--Ampuma-alueen  ja suoja-alueen selte -->
         <Rule>
 
-    
+		
           <ogc:Filter>
             <ogc:Or>
               <ogc:PropertyIsEqualTo>
@@ -316,9 +318,9 @@
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>62202</ogc:Literal>
-              </ogc:PropertyIsEqualTo>                 
-            </ogc:Or>      
-          </ogc:Filter>    
+              </ogc:PropertyIsEqualTo>             	  
+            </ogc:Or>			
+          </ogc:Filter>		
         
            <MaxScaleDenominator>10000</MaxScaleDenominator>
 
@@ -339,9 +341,9 @@
                    </ogc:Function>                                
                    <ogc:Literal>Arial</ogc:Literal>  
                    <ogc:Literal>Arial Lihavoitu</ogc:Literal>                                                     
-                 </ogc:Function>        
+                 </ogc:Function> 			 
              </CssParameter>
-        
+			  
            <!-- lasketaan fontin koko attribuutikent�n "kirjasinkoko" perusteella -->                
              <CssParameter name="font-size">
                 <ogc:Div>
@@ -382,25 +384,26 @@
                       <ogc:Literal>-10000</ogc:Literal> 
                     </ogc:Div>        
                   </ogc:Function> 
-                </Rotation>        
+                </Rotation>				
               </PointPlacement>
             </LabelPlacement>   
             <!-- tekstin maski -->         
-            <Halo>
+<!--            <Halo>
               <Radius>1</Radius>
-            </Halo>
+            </Halo> -->
             <!-- karttanimen v�rin m��ritt�minen -->            
             <Fill>
               <CssParameter name="fill">
                 <ogc:Literal>#8000ff</ogc:Literal>                                                            
-            </CssParameter>
+    	      </CssParameter>
             </Fill>
-            <!-- varmistetaan, ett� merkit piirtyv�t vaikka olisivat p��llekk�in -->      
-            <VendorOption name="conflictResolution">false</VendorOption>     
+            <!-- varmistetaan, ett� merkit piirtyv�t vaikka olisivat p��llekk�in -->			
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>		 
           </TextSymbolizer>
-        </Rule>             
-    
-      </FeatureTypeStyle>    
+        </Rule>     				
+		
+      </FeatureTypeStyle>	  
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>

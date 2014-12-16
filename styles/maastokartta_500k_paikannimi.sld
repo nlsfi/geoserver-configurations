@@ -7,10 +7,10 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>paikannimet maastokartta 500k</Name>
+    <Name>maastokartta_500k_paikannimi</Name>
     <UserStyle>
 
-      <Title>paikannimet maastokartta 500k</Title>
+      <Title>maastokartta_500k_paikannimi</Title>
       <Abstract>paikannimet maastokartta 500k</Abstract>
 
   
@@ -72,6 +72,15 @@
                   <DisplacementX>0</DisplacementX>
                   <DisplacementY>-70</DisplacementY>
                 </Displacement>      
+
+                 <Rotation>
+                   <ogc:Function name="toDegrees">
+                    <ogc:Div>
+                       <ogc:PropertyName>suunta</ogc:PropertyName>
+                      <ogc:Literal>-10000</ogc:Literal> 
+                    </ogc:Div>        
+                  </ogc:Function> 
+                </Rotation>           
               </PointPlacement>
             </LabelPlacement>       
       
@@ -79,6 +88,7 @@
               <CssParameter name="fill">#000000</CssParameter>
             </Fill>
             <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>
           </TextSymbolizer>
        </Rule>            
   
@@ -139,6 +149,15 @@
                   <DisplacementX>0</DisplacementX>
                   <DisplacementY>-70</DisplacementY>
                 </Displacement>      
+
+                 <Rotation>
+                   <ogc:Function name="toDegrees">
+                    <ogc:Div>
+                       <ogc:PropertyName>suunta</ogc:PropertyName>
+                      <ogc:Literal>-10000</ogc:Literal> 
+                    </ogc:Div>        
+                  </ogc:Function> 
+                </Rotation>           
               </PointPlacement>
             </LabelPlacement>       
       
@@ -146,6 +165,7 @@
               <CssParameter name="fill">#000000</CssParameter>
             </Fill>
             <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>
           </TextSymbolizer>
        </Rule>     
 
@@ -223,6 +243,7 @@
               <CssParameter name="fill">#004dff</CssParameter>
             </Fill>
             <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>
           </TextSymbolizer>
        </Rule>            
   

@@ -7,10 +7,10 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>Maastokartta_50k_nimisto</Name>
+    <Name>Maastokartta_50k_nimisto_avaus</Name>
     <UserStyle>
 
-      <Title>maastokartta_50k_nimisto avaus</Title>
+      <Title>maastokartta_50k_nimisto_avaus</Title>
       <Abstract>maastokartta 50k nimiston avauksen piirtyminen</Abstract>
 
 
@@ -132,17 +132,18 @@
              <Halo>
               <Radius>3</Radius>
             </Halo>
-      
+			
             <Fill>
               <CssParameter name="fill">
                 <ogc:Literal>#ffffff</ogc:Literal>  
             </CssParameter>
             </Fill>
       
-            <VendorOption name="conflictResolution">false</VendorOption>     
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>     
           </TextSymbolizer>
         </Rule>   
-    
+		
 <!-- Karttanimet mustat italic eli kirjasinkallistuskulma 15 -->        
 
         <Rule>
@@ -272,7 +273,8 @@
             </CssParameter>
             </Fill>
       
-            <VendorOption name="conflictResolution">false</VendorOption>     
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>     
           </TextSymbolizer>
         </Rule>       
      
@@ -400,7 +402,8 @@
               </CssParameter>
             </Fill>
       
-            <VendorOption name="conflictResolution">false</VendorOption>     
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>     
           </TextSymbolizer>
         </Rule>              
     
@@ -520,7 +523,8 @@
               </CssParameter>
             </Fill>
       
-            <VendorOption name="conflictResolution">false</VendorOption>     
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>     
           </TextSymbolizer>
         </Rule>                  
 

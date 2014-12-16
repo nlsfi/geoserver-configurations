@@ -11,8 +11,8 @@
     <UserStyle>
 
       <Title>peruskartta_hallintorajat</Title>
-      <Abstract>kï¿½ytetï¿½ï¿½n kunnan-, maakunnan-, sisï¿½isten aluevesien ulko-, lï¿½ï¿½nin-, aluemerenulko- ja valtakunnan
-    rajan sld-tyylien mï¿½ï¿½rittelemiseen</Abstract>
+      <Abstract>k�ytet��n kunnan-, maakunnan-, sis�isten aluevesien ulko-, l��nin-, aluemerenulko- ja valtakunnan
+    rajan sld-tyylien m��rittelemiseen</Abstract>
 
 
       <FeatureTypeStyle>
@@ -75,11 +75,11 @@
           </LineSymbolizer> 
         </Rule>  
 
- <!--  82300 Sisï¿½isten aluevesien ulkoraja -->
+ <!--  82300 Sis�isten aluevesien ulkoraja -->
         
         <Rule>
           <Name>82300</Name>
-          <Title>82300 Sisï¿½isten aluevesien ulkoraja</Title>
+          <Title>82300 Sis�isten aluevesien ulkoraja</Title>
  
           <ogc:Filter>     
             <ogc:PropertyIsEqualTo>
@@ -102,11 +102,11 @@
           </LineSymbolizer> 
         </Rule>      
     
- <!--  84112 Lï¿½ï¿½nin raja -->
+ <!--  84112 L��nin raja -->
         
         <Rule>
           <Name>84112</Name>
-          <Title>84112 Lï¿½ï¿½nin raja</Title>
+          <Title>84112 L��nin raja</Title>
  
           <ogc:Filter>     
             <ogc:PropertyIsEqualTo>

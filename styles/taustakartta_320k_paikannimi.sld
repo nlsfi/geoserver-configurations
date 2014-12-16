@@ -7,10 +7,10 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>paikannimet taustakartta 320k</Name>
+    <Name>taustakartta_320k_paikannimi</Name>
     <UserStyle>
 
-      <Title>paikannimet taustakartta 320k</Title>
+      <Title>taustakartta_320k_paikannimi</Title>
       <Abstract>paikannimet taustakartta 320k</Abstract>
 
   
@@ -76,6 +76,14 @@
                   <DisplacementX>0</DisplacementX>
                   <DisplacementY>-300</DisplacementY>
                 </Displacement>        
+                 <Rotation>
+                   <ogc:Function name="toDegrees">
+                    <ogc:Div>
+                       <ogc:PropertyName>suunta</ogc:PropertyName>
+                      <ogc:Literal>-10000</ogc:Literal> 
+                    </ogc:Div>        
+                  </ogc:Function> 
+                </Rotation>        
               </PointPlacement>
             </LabelPlacement>         
       
@@ -92,6 +100,7 @@
               <CssParameter name="fill">#4d4d4d</CssParameter>
             </Fill>
             <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>
           </TextSymbolizer>
        </Rule>            
   
@@ -150,7 +159,15 @@
                  <Displacement>
                   <DisplacementX>0</DisplacementX>
                   <DisplacementY>-300</DisplacementY>
-                </Displacement>    
+                </Displacement>  
+                 <Rotation>
+                   <ogc:Function name="toDegrees">
+                    <ogc:Div>
+                       <ogc:PropertyName>suunta</ogc:PropertyName>
+                      <ogc:Literal>-10000</ogc:Literal> 
+                    </ogc:Div>        
+                  </ogc:Function> 
+                </Rotation>        
               </PointPlacement>
             </LabelPlacement>       
       
@@ -167,6 +184,7 @@
               <CssParameter name="fill">#4d4d4d</CssParameter>
             </Fill>
             <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>
           </TextSymbolizer>
        </Rule>     
 
@@ -253,6 +271,7 @@
               <CssParameter name="fill">#4774b3</CssParameter>
             </Fill>
             <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>
           </TextSymbolizer>
        </Rule>            
 

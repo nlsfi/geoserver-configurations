@@ -42,8 +42,8 @@
             </ogc:Function>
           </Transformation>
 
-      
-  
+		  
+	
           <Rule>
             <Name>kivi vedenalainen yleistys</Name>
             <Title>kivi vedenalainen</Title>
@@ -53,29 +53,29 @@
               <ogc:PropertyIsGreaterThanOrEqualTo>
                 <ogc:PropertyName>count</ogc:PropertyName>
                 <ogc:Literal>1</ogc:Literal>
-              </ogc:PropertyIsGreaterThanOrEqualTo>      
-            </ogc:Filter>      
-      
+              </ogc:PropertyIsGreaterThanOrEqualTo>			
+            </ogc:Filter>			
+			
             <MinScaleDenominator>10000</MinScaleDenominator>
             <MaxScaleDenominator>20000</MaxScaleDenominator> 
-      
+		  
             <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> 
               <Graphic>
                 <ExternalGraphic>
                   <OnlineResource
 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
-xlink:href="maastokartta/Skiva2.svg"/>
+xlink:href="maastokartta/Skiva.svg"/>
                   <Format>image/svg+xml</Format>
                 </ExternalGraphic>
                 <Size>
-                  <ogc:Literal>64</ogc:Literal>
-                </Size>                
+                  <ogc:Literal>40</ogc:Literal>
+                </Size>			  			  
               </Graphic>
-            </PointSymbolizer>  
+            </PointSymbolizer>	
           </Rule>
 
-                
-        
+			  			  
+			  
         </FeatureTypeStyle>
       </UserStyle>
     </NamedLayer>

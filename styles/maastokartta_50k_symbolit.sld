@@ -11,26 +11,23 @@
     <UserStyle>
 
       <Title>maastokartta_symbolit</Title>
-      <Abstract>symbolit sisï¿½ltï¿½ï¿½ suunta-kentï¿½n.</Abstract>
+      <Abstract>symbolit sis�lt�� suunta-kent�n.</Abstract>
 
       <FeatureTypeStyle>
     
-<!-- 52192 viettoviiva kï¿½yra ja apukï¿½yrï¿½ -->    
+<!-- 52192 viettoviiva k�yra ja apuk�yr� -->    
 
         <Rule>
           <Name>52192</Name>
       
           <ogc:Filter> 
-            <ogc:Or>      
+
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>52192</ogc:Literal>
               </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
-                <ogc:Literal>52193</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:Or>        
+
+
           </ogc:Filter> 
 
           <MinScaleDenominator>10000</MinScaleDenominator>
@@ -64,7 +61,7 @@ xlink:href="maastokartta/Sviettov_korkeus.svg"/>
           </PointSymbolizer>
         </Rule>  
     
-<!-- 52192 viettoviiva syvyyskï¿½yrï¿½n -->    
+<!-- 52192 viettoviiva syvyysk�yr�n -->    
 
         <Rule>
           <Name>54192</Name>
@@ -323,11 +320,11 @@ xlink:href="maastokartta/SRmm.svg"/>
           </PointSymbolizer>
         </Rule>    
 
-<!-- 45000 Nï¿½kï¿½torni -->    
+<!-- 45000 N�k�torni -->    
 
         <Rule>
           <Name>45000</Name>
-          <Title>45000 Nï¿½kï¿½torni</Title>
+          <Title>45000 N�k�torni</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -627,11 +624,11 @@ xlink:href="maastokartta/Svesitorni.svg"/>
     
     
 
-<!-- 22392 Suurjï¿½nnitelinjan pylvï¿½s -->    
+<!-- 22392 Suurj�nnitelinjan pylv�s -->    
 
         <Rule>
           <Name>22392</Name>
-          <Title>22392 Suurjï¿½nnitelinjan pylvï¿½s</Title>
+          <Title>22392 Suurj�nnitelinjan pylv�s</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -683,11 +680,11 @@ xlink:href="maastokartta/Sslp.svg"/>
           </PointSymbolizer>
         </Rule>      
     
-<!-- 22394 sï¿½hkï¿½linjan z-merkki -->    
+<!-- 22394 s�hk�linjan z-merkki -->    
 
         <Rule>
           <Name>22394</Name>
-          <Title>22394 Suurjï¿½nnitelinjan z-merkki</Title>
+          <Title>22394 Suurj�nnitelinjan z-merkki</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -733,11 +730,11 @@ xlink:href="maastokartta/Sz.svg"/>
           </PointSymbolizer>
         </Rule>        
     
-<!--  14191 Sï¿½hkï¿½istyssymboli, rautatie -->    
+<!--  14191 S�hk�istyssymboli, rautatie -->    
 
         <Rule>
           <Name>14191</Name>
-          <Title>14191 Rautatien sï¿½hkï¿½istyssymboli</Title>
+          <Title>14191 Rautatien s�hk�istyssymboli</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -781,11 +778,11 @@ xlink:href="maastokartta/Sz.svg"/>
           </PointSymbolizer>
         </Rule>      
     
-<!-- 44591 Ilmaradan kannatinpylvï¿½s -->    
+<!-- 44591 Ilmaradan kannatinpylv�s -->    
 
         <Rule>
           <Name>44591</Name>
-          <Title>44591 Ilmaradan kannatinpylvï¿½s</Title>
+          <Title>44591 Ilmaradan kannatinpylv�s</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -875,13 +872,13 @@ xlink:href="maastokartta/SK.svg"/>
         </Rule>      
 
 
-<!-- 56505 Vesikulkuvï¿½ylï¿½n nimelliskulkusuunta -->    
+<!-- 56505 Vesikulkuv�yl�n nimelliskulkusuunta -->    
 
 
 
         <Rule>
           <Name>16505</Name>
-          <Title>16505 Vesikulkuvï¿½ylï¿½n nimelliskulkusuunta</Title>
+          <Title>16505 Vesikulkuv�yl�n nimelliskulkusuunta</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -927,11 +924,11 @@ xlink:href="maastokartta/Svknimsuun.svg"/>
           </PointSymbolizer>
         </Rule>    
 
-<!-- 36100 Lï¿½hde-->    
+<!-- 36100 L�hde-->    
 
         <Rule>
           <Name>36100</Name>
-          <Title>36100 Lï¿½hde</Title>
+          <Title>36100 L�hde</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -977,11 +974,11 @@ xlink:href="maastokartta/Svl.svg"/>
           </PointSymbolizer>
         </Rule>
 
-<!-- 36393 Leveï¿½n virtaveden juoksusuunta-->    
+<!-- 36393 Leve�n virtaveden juoksusuunta-->    
 
         <Rule>
           <Name>36393</Name>
-          <Title>36393 Leveï¿½n virtaveden juoksusuunta</Title>
+          <Title>36393 Leve�n virtaveden juoksusuunta</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -1128,7 +1125,7 @@ xlink:href="maastokartta/Svo.svg"/>
 
   <!--  34200 Harva louhikko -->    
 
-        <Rule>
+<!--         <Rule>
           <Name>34200</Name>
           <Title>34200 Harva louhikko</Title>
       
@@ -1162,23 +1159,16 @@ xlink:href="maastokartta/Slo.svg"/>
               <Size>
                 <ogc:Literal>20</ogc:Literal>
               </Size>
-              <!--<Rotation> 
-                <ogc:Function name="toDegrees">
-                  <ogc:Div>                  
-                    <ogc:PropertyName>suunta</ogc:PropertyName> 
-                    <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
-                </ogc:Function>
-              </Rotation>      -->  
+
             </Graphic>
           </PointSymbolizer>
-        </Rule>      
+        </Rule> -->      
     
   
     
 <!-- 34600 Kivi -->    
 
-        <Rule>
+<!--         <Rule>
           <Name>34600</Name>
           <Title>34600 Kivi</Title>
       
@@ -1222,13 +1212,13 @@ xlink:href="maastokartta/Ski.svg"/>
         
             </Graphic>
           </PointSymbolizer>
-        </Rule>          
+        </Rule>   -->        
 
 
   
 <!-- 38511 Vesikivi vedenalainen -->    
 
-        <Rule>
+<!--         <Rule>
           <Name>38511</Name>
           <Title>38511 Vesikivi vedenalainen</Title>
       
@@ -1274,12 +1264,12 @@ xlink:href="maastokartta/Skiva.svg"/>
         
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>   -->
 
 
 <!-- 38512 Vesikivi, keskiveden pinnassa -->    
 
-        <Rule>
+<!--         <Rule>
           <Name>38512</Name>
           <Title>38512 Vesikivi, keskiveden pinnassa</Title>
       
@@ -1325,16 +1315,16 @@ xlink:href="maastokartta/Skivt.svg"/>
         
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>   -->
     
 
 
 
-<!-- 38513 Vesikivi, vedenpï¿½ï¿½llinen -->    
+<!-- 38513 Vesikivi, vedenp��llinen -->    
 
-        <Rule>
+<!--         <Rule>
           <Name>38513</Name>
-          <Title>38513 Vesikivi, vedenpï¿½ï¿½llinen</Title>
+          <Title>38513 Vesikivi, vedenp��llinen</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -1378,7 +1368,7 @@ xlink:href="maastokartta/Ski.svg"/>
         
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>   -->
 
 
 <!-- 38800  Uittolaite -->    
@@ -1489,11 +1479,11 @@ xlink:href="maastokartta/Sankkuri.svg"/>
 
 
 
-<!-- 34900 Merkittï¿½vï¿½ luontokohde -->    
+<!-- 34900 Merkitt�v� luontokohde -->    
 
         <Rule>
           <Name>34900</Name>
-          <Title>34900 Merkittï¿½vï¿½ luontokohde</Title>
+          <Title>34900 Merkitt�v� luontokohde</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -1716,11 +1706,11 @@ xlink:href="maastokartta/Spuu.svg"/>
           </PointSymbolizer>
         </Rule>    
 
-<!-- 72330 Muinaisjï¿½ï¿½nnï¿½s -->    
+<!-- 72330 Muinaisj��nn�s -->    
 
         <Rule>
           <Name>72330</Name>
-          <Title>72330 Muinaisjï¿½ï¿½nnï¿½s</Title>
+          <Title>72330 Muinaisj��nn�s</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -2153,7 +2143,7 @@ xlink:href="maastokartta/SMaja.svg"/>
               <ExternalGraphic>
                 <OnlineResource
 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
-xlink:href="maastokartta/Stutkamerkki.svg"/>
+xlink:href="maastokartta/STutka.svg"/>
                 <Format>image/svg+xml</Format>
               </ExternalGraphic>
               <Size>
@@ -2202,7 +2192,7 @@ xlink:href="maastokartta/Stutkamerkki.svg"/>
               <ExternalGraphic>
                 <OnlineResource
 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
-xlink:href="maastokartta/Svaltutkamerkki.svg"/>
+xlink:href="maastokartta/STutka.svg"/>
                 <Format>image/svg+xml</Format>
               </ExternalGraphic>
               <Size>
@@ -2243,7 +2233,7 @@ xlink:href="maastokartta/Svaltutkamerkki.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
         
-                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -2301,7 +2291,7 @@ xlink:href="maastokartta/SVvas.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
         
-                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -2359,7 +2349,7 @@ xlink:href="maastokartta/SVoi.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
         
-                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -2395,11 +2385,11 @@ xlink:href="maastokartta/SVpo.svg"/>
           </PointSymbolizer>
         </Rule>  
 
-<!-- 16144 Merimerkki, etelï¿½ -->    
+<!-- 16144 Merimerkki, etel� -->    
 
         <Rule>
           <Name>16144</Name>
-          <Title>16144 Merimerkki, etelï¿½</Title>
+          <Title>16144 Merimerkki, etel�</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -2417,7 +2407,7 @@ xlink:href="maastokartta/SVpo.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
         
-                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -2453,11 +2443,11 @@ xlink:href="maastokartta/SVet.svg"/>
           </PointSymbolizer>
         </Rule>      
     
-<!-- 16145 Merimerkki, itï¿½ -->    
+<!-- 16145 Merimerkki, it� -->    
 
         <Rule>
           <Name>16145</Name>
-          <Title>16145 Merimerkki, itï¿½</Title>
+          <Title>16145 Merimerkki, it�</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -2475,7 +2465,7 @@ xlink:href="maastokartta/SVet.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
         
-                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -2512,11 +2502,11 @@ xlink:href="maastokartta/SVita.svg"/>
         </Rule>      
     
     
-<!-- 16146 Merimerkki, lï¿½nsi -->    
+<!-- 16146 Merimerkki, l�nsi -->    
 
         <Rule>
           <Name>16146</Name>
-          <Title>16146 Merimerkki, lï¿½nsi</Title>
+          <Title>16146 Merimerkki, l�nsi</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -2534,7 +2524,7 @@ xlink:href="maastokartta/SVita.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
         
-                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -2594,7 +2584,7 @@ xlink:href="maastokartta/SVla.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
         
-                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -2652,7 +2642,7 @@ xlink:href="maastokartta/SKari.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
         
-                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -2710,7 +2700,7 @@ xlink:href="maastokartta/STurva.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
         
-                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -2768,7 +2758,7 @@ xlink:href="maastokartta/SVeri.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
         
-                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -2826,7 +2816,7 @@ xlink:href="maastokartta/SVvas.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
         
-                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -2884,7 +2874,7 @@ xlink:href="maastokartta/SVoi.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
         
-                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -2920,11 +2910,11 @@ xlink:href="maastokartta/SVpo.svg"/>
           </PointSymbolizer>
         </Rule>  
 
-<!-- 16154 Viittapoiju, etelï¿½ -->    
+<!-- 16154 Viittapoiju, etel� -->    
 
         <Rule>
           <Name>16154</Name>
-          <Title>16154 Viittapoiju, etelï¿½</Title>
+          <Title>16154 Viittapoiju, etel�</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -2942,7 +2932,7 @@ xlink:href="maastokartta/SVpo.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
         
-                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -2979,11 +2969,11 @@ xlink:href="maastokartta/SVet.svg"/>
         </Rule>  
 
 
-<!-- 16155 Viittapoiju, itï¿½ -->    
+<!-- 16155 Viittapoiju, it� -->    
 
         <Rule>
           <Name>16155</Name>
-          <Title>16155 Viittapoiju, itï¿½</Title>
+          <Title>16155 Viittapoiju, it�</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -3001,7 +2991,7 @@ xlink:href="maastokartta/SVet.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
         
-                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -3037,11 +3027,11 @@ xlink:href="maastokartta/SVita.svg"/>
           </PointSymbolizer>
         </Rule>  
 
-<!-- 16156 Viittapoiju, lï¿½nsi -->    
+<!-- 16156 Viittapoiju, l�nsi -->    
 
         <Rule>
           <Name>16156</Name>
-          <Title>16156 Viittapoiju, lï¿½nsi</Title>
+          <Title>16156 Viittapoiju, l�nsi</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -3059,7 +3049,7 @@ xlink:href="maastokartta/SVita.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
         
-                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -3117,7 +3107,7 @@ xlink:href="maastokartta/SVla.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
         
-                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -3175,7 +3165,7 @@ xlink:href="maastokartta/SKari.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
         
-                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -3233,7 +3223,7 @@ xlink:href="maastokartta/STurva.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
         
-                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -3416,11 +3406,11 @@ xlink:href="maastokartta/SPpo.svg"/>
           </PointSymbolizer>
         </Rule>      
 
-<!-- 16164 Poiju, etelï¿½ -->    
+<!-- 16164 Poiju, etel� -->    
 
         <Rule>
           <Name>16164</Name>
-          <Title>16164 Poiju, etelï¿½</Title>
+          <Title>16164 Poiju, etel�</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -3465,11 +3455,11 @@ xlink:href="maastokartta/SPet.svg"/>
           </PointSymbolizer>
         </Rule>      
 
-<!-- 16165 Poiju, itï¿½ -->    
+<!-- 16165 Poiju, it� -->    
 
         <Rule>
           <Name>16165</Name>
-          <Title>16165 Poiju, itï¿½</Title>
+          <Title>16165 Poiju, it�</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -3514,11 +3504,11 @@ xlink:href="maastokartta/SPita.svg"/>
           </PointSymbolizer>
         </Rule>    
 
-<!-- 16166 Poiju, lï¿½nsi -->    
+<!-- 16166 Poiju, l�nsi -->    
 
         <Rule>
           <Name>16166</Name>
-          <Title>16166 Poiju, lï¿½nsi</Title>
+          <Title>16166 Poiju, l�nsi</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -3585,7 +3575,7 @@ xlink:href="maastokartta/SPla.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
         
-                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -3643,7 +3633,7 @@ xlink:href="maastokartta/SKari.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
         
-                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -3701,7 +3691,7 @@ xlink:href="maastokartta/STurva.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
         
-                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -3884,11 +3874,11 @@ xlink:href="maastokartta/SPpo.svg"/>
           </PointSymbolizer>
         </Rule>    
 
-<!-- 16174 Valopoiju, etelï¿½ -->    
+<!-- 16174 Valopoiju, etel� -->    
 
         <Rule>
           <Name>16174</Name>
-          <Title>16174 Valopoiju, etelï¿½</Title>
+          <Title>16174 Valopoiju, etel�</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -3934,11 +3924,11 @@ xlink:href="maastokartta/SPet.svg"/>
         </Rule>    
 
 
-<!-- 16175 Valopoiju, itï¿½ -->    
+<!-- 16175 Valopoiju, it� -->    
 
         <Rule>
           <Name>16175</Name>
-          <Title>16175 Valopoiju, itï¿½</Title>
+          <Title>16175 Valopoiju, it�</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -3983,11 +3973,11 @@ xlink:href="maastokartta/SPita.svg"/>
           </PointSymbolizer>
         </Rule>    
 
-<!-- 16176 Valopoiju, lï¿½nsi -->    
+<!-- 16176 Valopoiju, l�nsi -->    
 
         <Rule>
           <Name>16176</Name>
-          <Title>16176 Valopoiju, lï¿½nsi</Title>
+          <Title>16176 Valopoiju, l�nsi</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -4054,7 +4044,7 @@ xlink:href="maastokartta/SPla.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
         
-                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -4112,7 +4102,7 @@ xlink:href="maastokartta/SKari.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
         
-                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -4170,7 +4160,7 @@ xlink:href="maastokartta/STurva.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
         
-                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -4206,11 +4196,11 @@ xlink:href="maastokartta/SVeri.svg"/>
           </PointSymbolizer>
         </Rule>    
 
-<!-- 16181 Jï¿½ï¿½poiju, vasen -->    
+<!-- 16181 J��poiju, vasen -->    
 
         <Rule>
           <Name>16181</Name>
-          <Title>16181 Jï¿½ï¿½poiju, vasen</Title>
+          <Title>16181 J��poiju, vasen</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -4255,11 +4245,11 @@ xlink:href="maastokartta/SPvas.svg"/>
           </PointSymbolizer>
         </Rule>  
 
-<!-- 16182 Jï¿½ï¿½poiju, oikea -->    
+<!-- 16182 J��poiju, oikea -->    
 
         <Rule>
           <Name>16182</Name>
-          <Title>16182 Jï¿½ï¿½poiju, oikea</Title>
+          <Title>16182 J��poiju, oikea</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -4304,11 +4294,11 @@ xlink:href="maastokartta/SPoi.svg"/>
           </PointSymbolizer>
         </Rule>  
 
-<!-- 16183 Jï¿½ï¿½poiju, pohjois -->    
+<!-- 16183 J��poiju, pohjois -->    
 
         <Rule>
           <Name>16183</Name>
-          <Title>16183 Jï¿½ï¿½poiju, pohjois</Title>
+          <Title>16183 J��poiju, pohjois</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -4353,11 +4343,11 @@ xlink:href="maastokartta/SPpo.svg"/>
           </PointSymbolizer>
         </Rule>      
 
-<!-- 16184 Jï¿½ï¿½poiju, etelï¿½ -->    
+<!-- 16184 J��poiju, etel� -->    
 
         <Rule>
           <Name>16184</Name>
-          <Title>16184 Jï¿½ï¿½poiju, etelï¿½</Title>
+          <Title>16184 J��poiju, etel�</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -4402,11 +4392,11 @@ xlink:href="maastokartta/SPet.svg"/>
           </PointSymbolizer>
         </Rule>      
 
-<!-- 16185 Jï¿½ï¿½poiju, itï¿½ -->    
+<!-- 16185 J��poiju, it� -->    
 
         <Rule>
           <Name>16185</Name>
-          <Title>16185 Jï¿½ï¿½poiju, itï¿½</Title>
+          <Title>16185 J��poiju, it�</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -4451,11 +4441,11 @@ xlink:href="maastokartta/SPita.svg"/>
           </PointSymbolizer>
         </Rule>    
     
-<!-- 16186 Jï¿½ï¿½poiju, lï¿½nsi -->    
+<!-- 16186 J��poiju, l�nsi -->    
 
         <Rule>
           <Name>16186</Name>
-          <Title>16186 Jï¿½ï¿½poiju, lï¿½nsi</Title>
+          <Title>16186 J��poiju, l�nsi</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -4500,11 +4490,11 @@ xlink:href="maastokartta/SPla.svg"/>
           </PointSymbolizer>
         </Rule>  
 
-<!-- 16187 Jï¿½ï¿½poiju, kari -->    
+<!-- 16187 J��poiju, kari -->    
 
         <Rule>
           <Name>16187</Name>
-          <Title>16187 Jï¿½ï¿½poiju, kari</Title>
+          <Title>16187 J��poiju, kari</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -4522,7 +4512,7 @@ xlink:href="maastokartta/SPla.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
         
-                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -4558,11 +4548,11 @@ xlink:href="maastokartta/SKari.svg"/>
           </PointSymbolizer>
         </Rule>      
 
-<!-- 16188 Jï¿½ï¿½poiju, turva -->    
+<!-- 16188 J��poiju, turva -->    
 
         <Rule>
           <Name>16188</Name>
-          <Title>16188 Jï¿½ï¿½poiju, turva</Title>
+          <Title>16188 J��poiju, turva</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -4580,7 +4570,7 @@ xlink:href="maastokartta/SKari.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
         
-                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -4616,11 +4606,11 @@ xlink:href="maastokartta/STurva.svg"/>
           </PointSymbolizer>
         </Rule>  
 
-<!-- 16189 Jï¿½ï¿½poiju, erikois -->    
+<!-- 16189 J��poiju, erikois -->    
 
         <Rule>
           <Name>16189</Name>
-          <Title>16189 Jï¿½ï¿½poiju, erikois</Title>
+          <Title>16189 J��poiju, erikois</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -4638,7 +4628,7 @@ xlink:href="maastokartta/STurva.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
         
-                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -4674,11 +4664,11 @@ xlink:href="maastokartta/SVeri.svg"/>
           </PointSymbolizer>
         </Rule>  
 
-<!-- 16191 Valojï¿½ï¿½poiju, vasen -->    
+<!-- 16191 Valoj��poiju, vasen -->    
 
         <Rule>
           <Name>16191</Name>
-          <Title>16191 Valojï¿½ï¿½poiju, vasen</Title>
+          <Title>16191 Valoj��poiju, vasen</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -4723,11 +4713,11 @@ xlink:href="maastokartta/SPvas.svg"/>
           </PointSymbolizer>
         </Rule>    
 
-<!-- 16192 Valojï¿½ï¿½poiju, oikea -->    
+<!-- 16192 Valoj��poiju, oikea -->    
 
         <Rule>
           <Name>16192</Name>
-          <Title>16192 Valojï¿½ï¿½poiju, oikea</Title>
+          <Title>16192 Valoj��poiju, oikea</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -4773,11 +4763,11 @@ xlink:href="maastokartta/SPoi.svg"/>
         </Rule>        
     
 
-<!-- 16193 Valojï¿½ï¿½poiju, pohjois -->    
+<!-- 16193 Valoj��poiju, pohjois -->    
 
         <Rule>
           <Name>16193</Name>
-          <Title>16193 Valojï¿½ï¿½poiju, pohjois</Title>
+          <Title>16193 Valoj��poiju, pohjois</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -4822,11 +4812,11 @@ xlink:href="maastokartta/SPpo.svg"/>
           </PointSymbolizer>
         </Rule>    
 
-<!-- 16194 Valojï¿½ï¿½poiju, etelï¿½ -->    
+<!-- 16194 Valoj��poiju, etel� -->    
 
         <Rule>
           <Name>16194</Name>
-          <Title>16194 Valojï¿½ï¿½poiju, etelï¿½</Title>
+          <Title>16194 Valoj��poiju, etel�</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -4871,11 +4861,11 @@ xlink:href="maastokartta/SPet.svg"/>
           </PointSymbolizer>
         </Rule>  
 
-<!-- 16195 Valojï¿½ï¿½poiju, itï¿½ -->    
+<!-- 16195 Valoj��poiju, it� -->    
 
         <Rule>
           <Name>16195</Name>
-          <Title>16195 Valojï¿½ï¿½poiju, itï¿½</Title>
+          <Title>16195 Valoj��poiju, it�</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -4921,11 +4911,11 @@ xlink:href="maastokartta/SPita.svg"/>
         </Rule>  
 
 
-<!-- 16196 Valojï¿½ï¿½poiju, lï¿½nsi -->    
+<!-- 16196 Valoj��poiju, l�nsi -->    
 
         <Rule>
           <Name>16196</Name>
-          <Title>16196 Valojï¿½ï¿½poiju, lï¿½nsi</Title>
+          <Title>16196 Valoj��poiju, l�nsi</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -4970,11 +4960,11 @@ xlink:href="maastokartta/SPla.svg"/>
           </PointSymbolizer>
         </Rule>  
 
-<!-- 16197 Valojï¿½ï¿½poiju, kari -->    
+<!-- 16197 Valoj��poiju, kari -->    
 
         <Rule>
           <Name>16197</Name>
-          <Title>16197 Valojï¿½ï¿½poiju, kari</Title>
+          <Title>16197 Valoj��poiju, kari</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -4992,7 +4982,7 @@ xlink:href="maastokartta/SPla.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
         
-                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -5028,11 +5018,11 @@ xlink:href="maastokartta/SKari.svg"/>
           </PointSymbolizer>
         </Rule>    
 
-<!-- 16198 Valojï¿½ï¿½poiju, turva -->    
+<!-- 16198 Valoj��poiju, turva -->    
 
         <Rule>
           <Name>16198</Name>
-          <Title>16198 Valojï¿½ï¿½poiju, turva</Title>
+          <Title>16198 Valoj��poiju, turva</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -5050,7 +5040,7 @@ xlink:href="maastokartta/SKari.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
         
-                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -5086,11 +5076,11 @@ xlink:href="maastokartta/STurva.svg"/>
           </PointSymbolizer>
         </Rule>  
 
-<!-- 16199 Valojï¿½ï¿½poiju, erikois -->    
+<!-- 16199 Valoj��poiju, erikois -->    
 
         <Rule>
           <Name>16199</Name>
-          <Title>16199 Valojï¿½ï¿½poiju, erikois</Title>
+          <Title>16199 Valoj��poiju, erikois</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -5108,7 +5098,7 @@ xlink:href="maastokartta/STurva.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
         
-                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -5288,10 +5278,10 @@ xlink:href="maastokartta/SRpo.svg"/>
           </PointSymbolizer>
         </Rule>  
 
-<!-- 16204 Reunamerkki, etelï¿½ -->    
+<!-- 16204 Reunamerkki, etel� -->    
         <Rule>
           <Name>16204</Name>
-          <Title>16204 Reunamerkki, etelï¿½</Title>
+          <Title>16204 Reunamerkki, etel�</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -5336,10 +5326,10 @@ xlink:href="maastokartta/SRet.svg"/>
           </PointSymbolizer>
         </Rule>  
 
-<!-- 16205 Reunamerkki, itï¿½ -->    
+<!-- 16205 Reunamerkki, it� -->    
         <Rule>
           <Name>16205</Name>
-          <Title>16205 Reunamerkki, itï¿½</Title>
+          <Title>16205 Reunamerkki, it�</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -5384,10 +5374,10 @@ xlink:href="maastokartta/SRita.svg"/>
           </PointSymbolizer>
         </Rule>  
 
-<!-- 16206 Reunamerkki, lï¿½nsi -->    
+<!-- 16206 Reunamerkki, l�nsi -->    
         <Rule>
           <Name>16206</Name>
-          <Title>16206 Reunamerkki, lï¿½nsi</Title>
+          <Title>16206 Reunamerkki, l�nsi</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -5576,10 +5566,10 @@ xlink:href="maastokartta/SRpo.svg"/>
           </PointSymbolizer>
         </Rule>  
 
-<!-- 16214 Valaistu reunamerkki, etelï¿½ -->    
+<!-- 16214 Valaistu reunamerkki, etel� -->    
         <Rule>
           <Name>16214</Name>
-          <Title>16214 Valaistu reunamerkki, etelï¿½</Title>
+          <Title>16214 Valaistu reunamerkki, etel�</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -5624,10 +5614,10 @@ xlink:href="maastokartta/SRet.svg"/>
           </PointSymbolizer>
         </Rule>  
 
-<!-- 16215 Valaistu reunamerkki, itï¿½ -->    
+<!-- 16215 Valaistu reunamerkki, it� -->    
         <Rule>
           <Name>16215</Name>
-          <Title>16215 Valaistu reunamerkki, itï¿½</Title>
+          <Title>16215 Valaistu reunamerkki, it�</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -5672,10 +5662,10 @@ xlink:href="maastokartta/SRita.svg"/>
           </PointSymbolizer>
         </Rule>  
 
-<!-- 16216 Valaistu reunamerkki, lï¿½nsi -->    
+<!-- 16216 Valaistu reunamerkki, l�nsi -->    
         <Rule>
           <Name>16216</Name>
-          <Title>116216 Valaistu reunamerkki, lï¿½nsi</Title>
+          <Title>116216 Valaistu reunamerkki, l�nsi</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>

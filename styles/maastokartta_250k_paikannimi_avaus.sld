@@ -7,11 +7,11 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>paikannimet maastokartta 250k</Name>
+    <Name>maastokartta_250k_paikannimi_avaus</Name>
     <UserStyle>
 
-      <Title>paikannime maastokartta 250k</Title>
-      <Abstract>paikannime maastokartta 250k</Abstract>
+      <Title>maastokartta_250k_paikannimi_avaus</Title>
+      <Abstract>paikannimet avaus maastokartta 250k</Abstract>
 
   
       <FeatureTypeStyle> <!-- Paikannimet  -->
@@ -117,7 +117,15 @@
                  <Displacement>
                   <DisplacementX>0</DisplacementX>
                   <DisplacementY>-70</DisplacementY>
-                </Displacement>      
+                </Displacement> 
+                  <Rotation>
+                   <ogc:Function name="toDegrees">
+                    <ogc:Div>
+                       <ogc:PropertyName>suunta</ogc:PropertyName>
+                      <ogc:Literal>-10000</ogc:Literal> 
+                    </ogc:Div>        
+                  </ogc:Function> 
+                </Rotation>        
               </PointPlacement>
             </LabelPlacement> 
             <Halo>
@@ -128,6 +136,7 @@
               <CssParameter name="fill">#ffffff</CssParameter>
             </Fill>
             <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>
           </TextSymbolizer>
         </Rule>            
   
@@ -246,7 +255,15 @@
                  <Displacement>
                   <DisplacementX>0</DisplacementX>
                   <DisplacementY>-70</DisplacementY>
-                </Displacement>      
+                </Displacement>  
+                  <Rotation>
+                   <ogc:Function name="toDegrees">
+                    <ogc:Div>
+                       <ogc:PropertyName>suunta</ogc:PropertyName>
+                      <ogc:Literal>-10000</ogc:Literal> 
+                    </ogc:Div>        
+                  </ogc:Function> 
+                </Rotation>        
               </PointPlacement>
             </LabelPlacement> 
             <Halo>
@@ -258,6 +275,7 @@
               <CssParameter name="fill">#ffffff</CssParameter>
             </Fill>
             <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>
           </TextSymbolizer>
         </Rule>                  
   
@@ -358,6 +376,7 @@
               <CssParameter name="fill">#ffffff</CssParameter>
             </Fill>
             <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>
 
           </TextSymbolizer>
         </Rule>          
@@ -437,7 +456,15 @@
                  <Displacement>
                   <DisplacementX>0</DisplacementX>
                   <DisplacementY>-70</DisplacementY>
-                </Displacement>      
+                </Displacement>
+                  <Rotation>
+                   <ogc:Function name="toDegrees">
+                    <ogc:Div>
+                       <ogc:PropertyName>suunta</ogc:PropertyName>
+                      <ogc:Literal>-10000</ogc:Literal> 
+                    </ogc:Div>        
+                  </ogc:Function> 
+                </Rotation>        
               </PointPlacement>
             </LabelPlacement> 
 
@@ -450,6 +477,7 @@
               <CssParameter name="fill">#ffffff</CssParameter>
             </Fill>
             <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>
           </TextSymbolizer>
         </Rule>  
     
@@ -529,7 +557,15 @@
                  <Displacement>
                   <DisplacementX>0</DisplacementX>
                   <DisplacementY>-70</DisplacementY>
-                </Displacement>      
+                </Displacement>
+                  <Rotation>
+                   <ogc:Function name="toDegrees">
+                    <ogc:Div>
+                       <ogc:PropertyName>suunta</ogc:PropertyName>
+                      <ogc:Literal>-10000</ogc:Literal> 
+                    </ogc:Div>        
+                  </ogc:Function> 
+                </Rotation>        
               </PointPlacement>
             </LabelPlacement>          
 
@@ -542,6 +578,7 @@
               <CssParameter name="fill">#ffffff</CssParameter>
             </Fill>
             <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>
           </TextSymbolizer>
         </Rule>                    
     

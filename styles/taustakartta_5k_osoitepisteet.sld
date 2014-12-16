@@ -23,8 +23,8 @@
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>jarjestysnumero</ogc:PropertyName>
                 <ogc:Literal>1</ogc:Literal>
-              </ogc:PropertyIsEqualTo>     
-              <ogc:Or>      
+              </ogc:PropertyIsEqualTo>		 
+              <ogc:Or>		  
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                   <ogc:Literal>554221</ogc:Literal>
@@ -40,14 +40,14 @@
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                   <ogc:Literal>554224</ogc:Literal>
-                </ogc:PropertyIsEqualTo>       
+                </ogc:PropertyIsEqualTo>			 
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                   <ogc:Literal>554225</ogc:Literal>
-                </ogc:PropertyIsEqualTo>                
+                </ogc:PropertyIsEqualTo>				 			 
               </ogc:Or>
-            </ogc:And>      
-          </ogc:Filter>             
+            </ogc:And>			
+          </ogc:Filter>         		
           <MaxScaleDenominator>5000</MaxScaleDenominator>         
        
 
@@ -57,11 +57,11 @@
               <ogc:PropertyName>katunumero_merkki</ogc:PropertyName>
             </Label>
      
-            <Font>                    
-              <!-- Fontin valinta -->      
+            <Font>            			  
+              <!-- Fontin valinta -->			
               <CssParameter name="font-family">
                 <ogc:Literal>Arial</ogc:Literal>          
-              </CssParameter>        
+              </CssParameter>			  
         
              <!-- lasketaan fontin koko attribuutikentan "kirjasinkoko" perusteella -->                
              <CssParameter name="font-size">
@@ -77,7 +77,7 @@
             <!-- karttanimen sijainnin marittaminen -->            
             <LabelPlacement>
               <PointPlacement>
-        
+			  
                 <AnchorPoint>
                   <AnchorPointX>0</AnchorPointX>
                   <AnchorPointY>0</AnchorPointY>
@@ -101,11 +101,12 @@
             <!-- karttanimen varin maarittaminen -->
             <Fill>
               <CssParameter name="fill">                               
-                <ogc:Literal>#23070c</ogc:Literal>  
+                <ogc:Literal>#242020</ogc:Literal>  
               </CssParameter>
             </Fill>
       
-            <VendorOption name="conflictResolution">false</VendorOption>     
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>     
           </TextSymbolizer>
         </Rule>              
 

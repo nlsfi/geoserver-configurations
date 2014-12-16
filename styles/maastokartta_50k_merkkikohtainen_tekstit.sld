@@ -24,8 +24,8 @@
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohderyhma</ogc:PropertyName>
                 <ogc:Literal>62</ogc:Literal>
-              </ogc:PropertyIsEqualTo>      
-              <ogc:Or>      
+              </ogc:PropertyIsEqualTo>			
+              <ogc:Or>			
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                   <ogc:Literal>16503</ogc:Literal>
@@ -33,7 +33,7 @@
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                   <ogc:Literal>16504</ogc:Literal>
-                </ogc:PropertyIsEqualTo>        
+                </ogc:PropertyIsEqualTo>				
               </ogc:Or>
               <ogc:Or>
                 <ogc:PropertyIsEqualTo>
@@ -67,7 +67,7 @@
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>teksti</ogc:PropertyName>
                   <ogc:Literal>7</ogc:Literal>
-                </ogc:PropertyIsEqualTo>  
+                </ogc:PropertyIsEqualTo>	
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>teksti</ogc:PropertyName>
                   <ogc:Literal>8</ogc:Literal>
@@ -75,7 +75,7 @@
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>teksti</ogc:PropertyName>
                   <ogc:Literal>9</ogc:Literal>
-                </ogc:PropertyIsEqualTo>  
+                </ogc:PropertyIsEqualTo>	
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>teksti</ogc:PropertyName>
                   <ogc:Literal>.</ogc:Literal>
@@ -83,10 +83,10 @@
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>teksti</ogc:PropertyName>
                   <ogc:Literal>,</ogc:Literal>
-                </ogc:PropertyIsEqualTo>        
-              </ogc:Or>          
-            </ogc:And>        
-          </ogc:Filter>     
+                </ogc:PropertyIsEqualTo>			  
+              </ogc:Or>				  
+            </ogc:And>			  
+          </ogc:Filter> 		
         
            <MinScaleDenominator>10000</MinScaleDenominator>
            <MaxScaleDenominator>20000</MaxScaleDenominator>
@@ -100,17 +100,17 @@
             
             <!-- Fontin valinta -->
 
-              <CssParameter name="font-family">    
-                  <ogc:Function name="if_then_else">            
-             <ogc:Function name="equalTo">
+              <CssParameter name="font-family">		
+                  <ogc:Function name="if_then_else">					  
+ 				    <ogc:Function name="equalTo">
                       <ogc:PropertyName>kirjasintyyppikoodi</ogc:PropertyName> 
-                      <ogc:Literal>10</ogc:Literal>          
+                      <ogc:Literal>10</ogc:Literal>					
                     </ogc:Function>                  
                    <ogc:Literal>Arial</ogc:Literal>                   
                  <ogc:Literal>Arial Lihavoitu</ogc:Literal>                                                     
                 </ogc:Function>           
               </CssParameter>
-        
+			  
            <!-- lasketaan fontin koko attribuutikent�n "kirjasinkoko" perusteella -->                
              <CssParameter name="font-size">
                 <ogc:Div>
@@ -158,7 +158,7 @@
                       <ogc:Literal>-10000</ogc:Literal> 
                     </ogc:Div>        
                   </ogc:Function> 
-                </Rotation>        
+                </Rotation>				
               </PointPlacement>
             </LabelPlacement>   
             <!-- tekstin maski -->         
@@ -166,28 +166,29 @@
               <Radius>2</Radius>
               <Fill>
                 <CssParameter name="fill">#80ffff</CssParameter>
-              </Fill>        
+              </Fill>				
             </Halo>
             <!-- karttanimen v�rin m��ritt�minen -->            
             <Fill>
               <CssParameter name="fill">
                 <ogc:Literal>#000000</ogc:Literal>                                                            
-            </CssParameter>
+    	      </CssParameter>
             </Fill>
-            <!-- varmistetaan, ett� merkit piirtyv�t vaikka olisivat p��llekk�in -->      
-            <VendorOption name="conflictResolution">false</VendorOption>     
+            <!-- varmistetaan, ett� merkit piirtyv�t vaikka olisivat p��llekk�in -->			
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>		 
           </TextSymbolizer>
-        </Rule>    
-    
+        </Rule>	  
+	  
 <!-- syvyyspiste -->
         <Rule>
 
           <ogc:Filter>
-            <ogc:And>  
+            <ogc:And>	
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohderyhma</ogc:PropertyName>
                 <ogc:Literal>62</ogc:Literal>
-              </ogc:PropertyIsEqualTo>      
+              </ogc:PropertyIsEqualTo>			
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>54210</ogc:Literal>
@@ -224,7 +225,7 @@
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>teksti</ogc:PropertyName>
                   <ogc:Literal>7</ogc:Literal>
-                </ogc:PropertyIsEqualTo>  
+                </ogc:PropertyIsEqualTo>	
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>teksti</ogc:PropertyName>
                   <ogc:Literal>8</ogc:Literal>
@@ -232,7 +233,7 @@
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>teksti</ogc:PropertyName>
                   <ogc:Literal>9</ogc:Literal>
-                </ogc:PropertyIsEqualTo>  
+                </ogc:PropertyIsEqualTo>	
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>teksti</ogc:PropertyName>
                   <ogc:Literal>.</ogc:Literal>
@@ -240,10 +241,10 @@
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>teksti</ogc:PropertyName>
                   <ogc:Literal>,</ogc:Literal>
-                </ogc:PropertyIsEqualTo>        
-              </ogc:Or>          
-            </ogc:And>        
-          </ogc:Filter>     
+                </ogc:PropertyIsEqualTo>			  
+              </ogc:Or>				  
+            </ogc:And>			  
+          </ogc:Filter> 		
         
            <MinScaleDenominator>10000</MinScaleDenominator>
            <MaxScaleDenominator>20000</MaxScaleDenominator>
@@ -257,17 +258,17 @@
             
             <!-- Fontin valinta -->
 
-              <CssParameter name="font-family">    
-                  <ogc:Function name="if_then_else">            
-             <ogc:Function name="equalTo">
+              <CssParameter name="font-family">		
+                  <ogc:Function name="if_then_else">					  
+ 				    <ogc:Function name="equalTo">
                       <ogc:PropertyName>kirjasintyyppikoodi</ogc:PropertyName> 
-                      <ogc:Literal>10</ogc:Literal>          
+                      <ogc:Literal>10</ogc:Literal>					
                     </ogc:Function>                  
                    <ogc:Literal>Arial</ogc:Literal>                   
                  <ogc:Literal>Arial Lihavoitu</ogc:Literal>                                                     
                 </ogc:Function>           
               </CssParameter>
-        
+			  
            <!-- lasketaan fontin koko attribuutikent�n "kirjasinkoko" perusteella -->                
              <CssParameter name="font-size">
                 <ogc:Div>
@@ -320,7 +321,7 @@
                       <ogc:Literal>-10000</ogc:Literal> 
                     </ogc:Div>        
                   </ogc:Function> 
-                </Rotation>        
+                </Rotation>				
               </PointPlacement>
             </LabelPlacement>   
             <!-- tekstin maski -->         
@@ -328,29 +329,30 @@
               <Radius>2</Radius>
               <Fill>
                 <CssParameter name="fill">#80ffff</CssParameter>
-              </Fill>        
+              </Fill>				
             </Halo>
             <!-- karttanimen v�rin m��ritt�minen -->            
             <Fill>
               <CssParameter name="fill">
                 <ogc:Literal>#0080ff</ogc:Literal>                                                            
-            </CssParameter>
+    	      </CssParameter>
             </Fill>
-            <!-- varmistetaan, ett� merkit piirtyv�t vaikka olisivat p��llekk�in -->      
-            <VendorOption name="conflictResolution">false</VendorOption>     
+            <!-- varmistetaan, ett� merkit piirtyv�t vaikka olisivat p��llekk�in -->			
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>		 
           </TextSymbolizer>
-        </Rule>              
+        </Rule>          	  
 
 <!-- korkeuskayran korkeusarvo -->
         <Rule>
 
 
           <ogc:Filter>
-            <ogc:And>  
+            <ogc:And>	
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohderyhma</ogc:PropertyName>
                 <ogc:Literal>62</ogc:Literal>
-              </ogc:PropertyIsEqualTo>      
+              </ogc:PropertyIsEqualTo>			
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>52191</ogc:Literal>
@@ -387,7 +389,7 @@
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>teksti</ogc:PropertyName>
                   <ogc:Literal>7</ogc:Literal>
-                </ogc:PropertyIsEqualTo>  
+                </ogc:PropertyIsEqualTo>	
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>teksti</ogc:PropertyName>
                   <ogc:Literal>8</ogc:Literal>
@@ -395,7 +397,7 @@
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>teksti</ogc:PropertyName>
                   <ogc:Literal>9</ogc:Literal>
-                </ogc:PropertyIsEqualTo>  
+                </ogc:PropertyIsEqualTo>	
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>teksti</ogc:PropertyName>
                   <ogc:Literal>.</ogc:Literal>
@@ -403,10 +405,10 @@
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>teksti</ogc:PropertyName>
                   <ogc:Literal>,</ogc:Literal>
-                </ogc:PropertyIsEqualTo>        
-              </ogc:Or>          
-            </ogc:And>        
-          </ogc:Filter>   
+                </ogc:PropertyIsEqualTo>			  
+              </ogc:Or>				  
+            </ogc:And>			  
+          </ogc:Filter> 	
         
            <MinScaleDenominator>10000</MinScaleDenominator>
            <MaxScaleDenominator>20000</MaxScaleDenominator>
@@ -423,7 +425,7 @@
              <CssParameter name="font-family">
                <ogc:Literal>Arial</ogc:Literal>
              </CssParameter>
-        
+			  
            <!-- lasketaan fontin koko attribuutikent�n "kirjasinkoko" perusteella -->                
              <CssParameter name="font-size">
                 <ogc:Div>
@@ -462,8 +464,8 @@
                       <ogc:Literal>-14.04</ogc:Literal>
                     </ogc:Div>
                   </DisplacementY>
-                </Displacement>         
-        
+                </Displacement> 				
+				
                 <!--Displacement>
                   <DisplacementX>
                     <ogc:Div>
@@ -486,7 +488,7 @@
                       <ogc:Literal>-10000</ogc:Literal> 
                     </ogc:Div>        
                   </ogc:Function> 
-                </Rotation>        
+                </Rotation>				
               </PointPlacement>
             </LabelPlacement>   
             <!-- tekstin maski -->         
@@ -497,24 +499,25 @@
             <Fill>
               <CssParameter name="fill">
                 <ogc:Literal>#913d00</ogc:Literal>                                                            
-            </CssParameter>
-            </Fill>      
-            <!-- varmistetaan, ett� merkit piirtyv�t vaikka olisivat p��llekk�in -->      
-            <VendorOption name="conflictResolution">false</VendorOption>     
+    	      </CssParameter>
+            </Fill>			
+            <!-- varmistetaan, ett� merkit piirtyv�t vaikka olisivat p��llekk�in -->			
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>		 
           </TextSymbolizer>
-        </Rule>      
-    
+        </Rule>  		
+		
 <!-- syvyyskayran korkeusluku --> 
-           
+	         
         <Rule>
         
 
           <ogc:Filter>
-            <ogc:And>  
+            <ogc:And>	
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohderyhma</ogc:PropertyName>
                 <ogc:Literal>62</ogc:Literal>
-              </ogc:PropertyIsEqualTo>      
+              </ogc:PropertyIsEqualTo>			
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>54191</ogc:Literal>
@@ -551,7 +554,7 @@
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>teksti</ogc:PropertyName>
                   <ogc:Literal>7</ogc:Literal>
-                </ogc:PropertyIsEqualTo>  
+                </ogc:PropertyIsEqualTo>	
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>teksti</ogc:PropertyName>
                   <ogc:Literal>8</ogc:Literal>
@@ -559,7 +562,7 @@
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>teksti</ogc:PropertyName>
                   <ogc:Literal>9</ogc:Literal>
-                </ogc:PropertyIsEqualTo>  
+                </ogc:PropertyIsEqualTo>	
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>teksti</ogc:PropertyName>
                   <ogc:Literal>.</ogc:Literal>
@@ -567,9 +570,9 @@
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>teksti</ogc:PropertyName>
                   <ogc:Literal>,</ogc:Literal>
-                </ogc:PropertyIsEqualTo>        
-              </ogc:Or>          
-            </ogc:And>        
+                </ogc:PropertyIsEqualTo>			  
+              </ogc:Or>				  
+            </ogc:And>			  
           </ogc:Filter> 
         
            <MinScaleDenominator>10000</MinScaleDenominator>
@@ -584,17 +587,17 @@
             
             <!-- Fontin valinta -->
 
-              <CssParameter name="font-family">    
-                  <ogc:Function name="if_then_else">            
-             <ogc:Function name="equalTo">
+              <CssParameter name="font-family">		
+                  <ogc:Function name="if_then_else">					  
+ 				    <ogc:Function name="equalTo">
                       <ogc:PropertyName>kirjasintyyppikoodi</ogc:PropertyName> 
-                      <ogc:Literal>10</ogc:Literal>          
+                      <ogc:Literal>10</ogc:Literal>					
                     </ogc:Function>                  
                    <ogc:Literal>Arial</ogc:Literal>                   
                  <ogc:Literal>Arial Lihavoitu</ogc:Literal>                                                     
                 </ogc:Function>           
               </CssParameter>
-        
+			  
            <!-- lasketaan fontin koko attribuutikent�n "kirjasinkoko" perusteella -->                
              <CssParameter name="font-size">
                 <ogc:Div>
@@ -642,7 +645,7 @@
                       <ogc:Literal>-10000</ogc:Literal> 
                     </ogc:Div>        
                   </ogc:Function> 
-                </Rotation>        
+                </Rotation>				
               </PointPlacement>
             </LabelPlacement>   
             <!-- tekstin maski -->         
@@ -650,16 +653,17 @@
               <Radius>2</Radius>
               <Fill>
                 <CssParameter name="fill">#80ffff</CssParameter>
-              </Fill>        
+              </Fill>				
             </Halo>
             <!-- karttanimen v�rin m��ritt�minen -->            
             <Fill>
               <CssParameter name="fill">
                 <ogc:Literal>#0080ff</ogc:Literal>                                                            
-            </CssParameter>
-            </Fill>        
-            <!-- varmistetaan, ett� merkit piirtyv�t vaikka olisivat p��llekk�in -->      
-            <VendorOption name="conflictResolution">false</VendorOption>     
+    	      </CssParameter>
+            </Fill>				
+            <!-- varmistetaan, ett� merkit piirtyv�t vaikka olisivat p��llekk�in -->			
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>		 
           </TextSymbolizer>
         </Rule>  
 
@@ -670,15 +674,15 @@
         <Rule>
         
 
-      
+		  
 
           <ogc:Filter>
-            <ogc:And>  
+            <ogc:And>	
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohderyhma</ogc:PropertyName>
                 <ogc:Literal>62</ogc:Literal>
-              </ogc:PropertyIsEqualTo>      
-              <ogc:Or>      
+              </ogc:PropertyIsEqualTo>			
+              <ogc:Or>		  
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                   <ogc:Literal>12181</ogc:Literal>
@@ -686,11 +690,11 @@
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                   <ogc:Literal>12182</ogc:Literal>
-                </ogc:PropertyIsEqualTo>      
+                </ogc:PropertyIsEqualTo>		  
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                   <ogc:Literal>12183</ogc:Literal>
-                </ogc:PropertyIsEqualTo>        
+                </ogc:PropertyIsEqualTo>			  
               </ogc:Or>
               <ogc:Or>
                 <ogc:PropertyIsEqualTo>
@@ -724,7 +728,7 @@
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>teksti</ogc:PropertyName>
                   <ogc:Literal>7</ogc:Literal>
-                </ogc:PropertyIsEqualTo>  
+                </ogc:PropertyIsEqualTo>	
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>teksti</ogc:PropertyName>
                   <ogc:Literal>8</ogc:Literal>
@@ -732,7 +736,7 @@
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>teksti</ogc:PropertyName>
                   <ogc:Literal>9</ogc:Literal>
-                </ogc:PropertyIsEqualTo>  
+                </ogc:PropertyIsEqualTo>	
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>teksti</ogc:PropertyName>
                   <ogc:Literal>.</ogc:Literal>
@@ -740,10 +744,10 @@
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>teksti</ogc:PropertyName>
                   <ogc:Literal>,</ogc:Literal>
-                </ogc:PropertyIsEqualTo>        
-              </ogc:Or>          
-            </ogc:And>        
-          </ogc:Filter>       
+                </ogc:PropertyIsEqualTo>			  
+              </ogc:Or>				  
+            </ogc:And>			  
+          </ogc:Filter> 		  
         
            <MinScaleDenominator>10000</MinScaleDenominator>
            <MaxScaleDenominator>20000</MaxScaleDenominator>
@@ -757,17 +761,17 @@
             
             <!-- Fontin valinta -->
 
-              <CssParameter name="font-family">    
-                  <ogc:Function name="if_then_else">            
-             <ogc:Function name="equalTo">
+              <CssParameter name="font-family">		
+                  <ogc:Function name="if_then_else">					  
+ 				    <ogc:Function name="equalTo">
                       <ogc:PropertyName>kirjasintyyppikoodi</ogc:PropertyName> 
-                      <ogc:Literal>10</ogc:Literal>          
+                      <ogc:Literal>10</ogc:Literal>					
                     </ogc:Function>                  
                    <ogc:Literal>Arial</ogc:Literal>                   
                  <ogc:Literal>Arial Lihavoitu</ogc:Literal>                                                     
                 </ogc:Function>           
               </CssParameter>
-        
+			  
            <!-- lasketaan fontin koko attribuutikent�n "kirjasinkoko" perusteella -->                
              <CssParameter name="font-size">
                 <ogc:Div>
@@ -805,7 +809,7 @@
                       <ogc:Literal>-10000</ogc:Literal> 
                     </ogc:Div>        
                   </ogc:Function> 
-                </Rotation>        
+                </Rotation>				
               </PointPlacement>
             </LabelPlacement>   
             <!-- tekstin maski -->         
@@ -816,22 +820,23 @@
             <Fill>
               <CssParameter name="fill">
                 <ogc:Literal>#cc00ff</ogc:Literal>                                                            
-            </CssParameter>
-            </Fill>          
-            <!-- varmistetaan, ett� merkit piirtyv�t vaikka olisivat p��llekk�in -->      
-            <VendorOption name="conflictResolution">false</VendorOption>     
+    	      </CssParameter>
+            </Fill>					
+            <!-- varmistetaan, ett� merkit piirtyv�t vaikka olisivat p��llekk�in -->			
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>		 
           </TextSymbolizer>
-        </Rule>     
-    
+        </Rule> 		
+		
 <!-- vedenpinnan korkeusluvut -->
 
        <Rule>
-          <ogc:Filter>    
-            <ogc:And>    
+          <ogc:Filter>	  
+            <ogc:And>		
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohderyhma</ogc:PropertyName>
                 <ogc:Literal>62</ogc:Literal>
-              </ogc:PropertyIsEqualTo>        
+              </ogc:PropertyIsEqualTo>				
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>36291</ogc:Literal>
@@ -868,7 +873,7 @@
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>teksti</ogc:PropertyName>
                   <ogc:Literal>7</ogc:Literal>
-                </ogc:PropertyIsEqualTo>  
+                </ogc:PropertyIsEqualTo>	
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>teksti</ogc:PropertyName>
                   <ogc:Literal>8</ogc:Literal>
@@ -876,7 +881,7 @@
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>teksti</ogc:PropertyName>
                   <ogc:Literal>9</ogc:Literal>
-                </ogc:PropertyIsEqualTo>  
+                </ogc:PropertyIsEqualTo>	
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>teksti</ogc:PropertyName>
                   <ogc:Literal>.</ogc:Literal>
@@ -884,7 +889,7 @@
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>teksti</ogc:PropertyName>
                   <ogc:Literal>,</ogc:Literal>
-                </ogc:PropertyIsEqualTo>  
+                </ogc:PropertyIsEqualTo>	
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>teksti</ogc:PropertyName>
                   <ogc:Literal>-</ogc:Literal>
@@ -896,10 +901,10 @@
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>teksti</ogc:PropertyName>
                   <ogc:Literal>)</ogc:Literal>
-                </ogc:PropertyIsEqualTo>        
-              </ogc:Or>          
-            </ogc:And>        
-          </ogc:Filter>     
+                </ogc:PropertyIsEqualTo>				
+              </ogc:Or>				  
+            </ogc:And>			  
+          </ogc:Filter> 		
         
            <MinScaleDenominator>10000</MinScaleDenominator>
            <MaxScaleDenominator>20000</MaxScaleDenominator>
@@ -913,19 +918,19 @@
             
             <!-- Fontin valinta -->
 
-              <CssParameter name="font-family">    
-                <ogc:Function name="if_then_else">            
-           <ogc:Function name="equalTo">
+              <CssParameter name="font-family">		
+                <ogc:Function name="if_then_else">					  
+ 				  <ogc:Function name="equalTo">
                     <ogc:PropertyName>kirjasintyyppikoodi</ogc:PropertyName> 
-                    <ogc:Literal>10</ogc:Literal>          
+                    <ogc:Literal>10</ogc:Literal>					
                   </ogc:Function>                  
                   <ogc:Literal>Arial Takakeno</ogc:Literal>                   
                   <ogc:Literal>Arial Lihavoitu Takakeno</ogc:Literal>                                                     
                 </ogc:Function>           
               </CssParameter>
-       
-     
-        
+			 
+		 
+			  
            <!-- lasketaan fontin koko attribuutikent�n "kirjasinkoko" perusteella -->                
              <CssParameter name="font-size">
                 <ogc:Div>
@@ -966,7 +971,7 @@
                       <ogc:Literal>-10000</ogc:Literal> 
                     </ogc:Div>        
                   </ogc:Function> 
-                </Rotation>        
+                </Rotation>				
               </PointPlacement>
             </LabelPlacement>   
             <!-- tekstin maski -->         
@@ -977,14 +982,15 @@
             <Fill>
               <CssParameter name="fill">
                 <ogc:Literal>#0080ff</ogc:Literal>                                                            
-            </CssParameter>
+    	      </CssParameter>
             </Fill>
-            <!-- varmistetaan, ett� merkit piirtyv�t vaikka olisivat p��llekk�in -->      
-            <VendorOption name="conflictResolution">false</VendorOption>     
+            <!-- varmistetaan, ett� merkit piirtyv�t vaikka olisivat p��llekk�in -->			
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>		 
           </TextSymbolizer>
-        </Rule>              
-    
-      </FeatureTypeStyle>    
+        </Rule>          	  
+		
+      </FeatureTypeStyle>	  
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>

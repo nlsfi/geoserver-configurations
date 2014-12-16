@@ -14,13 +14,13 @@
       <Abstract>sld</Abstract>
 
     
-      <FeatureTypeStyle> <!-- kï¿½ytï¿½stï¿½ poistetut (valmiusaste =2), pinnalla (tasosijainti = 0 tai -1)viiva 1 -->
+      <FeatureTypeStyle> <!-- k�yt�st� poistetut (valmiusaste =2), pinnalla (tasosijainti = 0 tai -1)viiva 1 -->
 
-    <!-- 14112 kï¿½ytï¿½stï¿½ poistettu sï¿½hkï¿½istï¿½mï¿½tï¿½n rautatie -->        
+    <!-- 14112 k�yt�st� poistettu s�hk�ist�m�t�n rautatie -->        
         
         <Rule>
           <Name>14112</Name>
-          <Title>14112 Kï¿½ytï¿½stï¿½ poistettu sï¿½hkï¿½istï¿½mï¿½tï¿½n rautatie pinnalla, viiva 1</Title>
+          <Title>14112 K�yt�st� poistettu s�hk�ist�m�t�n rautatie pinnalla, viiva 1</Title>
       
           <ogc:Filter>  
            <ogc:And>      
@@ -57,14 +57,12 @@
           </LineSymbolizer>
 
         </Rule>               
-      </FeatureTypeStyle>
-    
-      <FeatureTypeStyle> <!-- kï¿½ytï¿½stï¿½ poistetut (valmiusaste =2), pinnalla (tasosijainti = 0 tai -1) viiva 2 sekï¿½ poistettu sillalla (taso = 1)-->
-<!--  14112 kï¿½ytï¿½stï¿½ poistettu sï¿½hkï¿½istï¿½mï¿½tï¿½n rautatie -->        
+ <!-- k�yt�st� poistetut (valmiusaste =2), pinnalla (tasosijainti = 0 tai -1) viiva 2 sek� poistettu sillalla (taso = 1)-->
+<!--  14112 k�yt�st� poistettu s�hk�ist�m�t�n rautatie -->        
         
         <Rule>
           <Name>14112</Name>
-           <Title>14112 kï¿½ytï¿½stï¿½ poistettu sï¿½hkï¿½istï¿½mï¿½tï¿½n rautatie pinnalla, viiva 2</Title>
+           <Title>14112 k�yt�st� poistettu s�hk�ist�m�t�n rautatie pinnalla, viiva 2</Title>
           <ogc:Filter>  
            <ogc:And>      
             <ogc:PropertyIsEqualTo>
@@ -101,11 +99,11 @@
         </Rule>               
     
     
-<!-- 14112 kï¿½ytï¿½stï¿½ poistettu sï¿½hkï¿½istï¿½mï¿½tï¿½n rautatie sillalla -->        
+<!-- 14112 k�yt�st� poistettu s�hk�ist�m�t�n rautatie sillalla -->        
         
         <Rule>
           <Name>14112</Name>
-          <Title>14112 Kï¿½ytï¿½stï¿½ poistettu sï¿½hkï¿½istï¿½mï¿½tï¿½n rautatie pinnalla sillalla</Title>
+          <Title>14112 K�yt�st� poistettu s�hk�ist�m�t�n rautatie pinnalla sillalla</Title>
        
           <ogc:Filter>  
             <ogc:And>      
@@ -134,23 +132,13 @@
           </LineSymbolizer>
 
         </Rule>               
-      </FeatureTypeStyle>    
-    
-
-
-
-
-
-
-
-
-      <FeatureTypeStyle> <!-- rakenteilla olevat, valm aste 1, viiva 1 -->
+ <!-- rakenteilla olevat, valm aste 1, viiva 1 -->
     
 <!-- 14111 rautatie rakenteilla -->    
         
         <Rule>
           <Name>14111</Name>
-          <Title>14111 Sï¿½hkï¿½istetty rautatie rakenteilla</Title>      
+          <Title>14111 S�hk�istetty rautatie rakenteilla</Title>      
             
           <ogc:Filter> 
             <ogc:And>      
@@ -195,7 +183,7 @@
         
         <Rule>
           <Name>14112</Name>
-          <Title>14112 Ei-sï¿½hkï¿½istetty rautatie rakenteilla</Title>      
+          <Title>14112 Ei-s�hk�istetty rautatie rakenteilla</Title>      
             
           <ogc:Filter> 
             <ogc:And>      
@@ -331,13 +319,13 @@
       </FeatureTypeStyle>    
 
 
-      <FeatureTypeStyle> <!-- rakenteilla olevat, valm aste 1, tï¿½ytï¿½t viiva 2 -->
+      <FeatureTypeStyle> <!-- rakenteilla olevat, valm aste 1, t�yt�t viiva 2 -->
     
-<!-- 14111 Sï¿½hkï¿½istetty rautatie rakenteilla, viiva 2 -->    
+<!-- 14111 S�hk�istetty rautatie rakenteilla, viiva 2 -->    
         
         <Rule>
           <Name>14111</Name>
-          <Title>14111 Sï¿½hkï¿½istetty rautatie rakenteilla, viiva 2</Title>      
+          <Title>14111 S�hk�istetty rautatie rakenteilla, viiva 2</Title>      
             
           <ogc:Filter> 
             <ogc:And>      
@@ -378,11 +366,11 @@
       
         </Rule>    
     
-<!-- 14112 Ei-Sï¿½hkï¿½istetty rautatie rakenteilla, viiva 2 -->    
+<!-- 14112 Ei-S�hk�istetty rautatie rakenteilla, viiva 2 -->    
         
         <Rule>
           <Name>14112</Name>
-          <Title>14112 Ei-sï¿½hkï¿½istetty rautatie rakenteilla, viiva 2</Title>      
+          <Title>14112 Ei-s�hk�istetty rautatie rakenteilla, viiva 2</Title>      
             
           <ogc:Filter> 
             <ogc:And>      
@@ -518,13 +506,13 @@
       </FeatureTypeStyle>    
     
     
-      <FeatureTypeStyle> <!-- rakenteilla olevat, valm aste 1, tï¿½ytï¿½t viiva 3 -->
+      <FeatureTypeStyle> <!-- rakenteilla olevat, valm aste 1, t�yt�t viiva 3 -->
     
-<!-- 14111 sï¿½hkï¿½itetty rautatie rakenteilla, viiva 3 -->    
+<!-- 14111 s�hk�itetty rautatie rakenteilla, viiva 3 -->    
         
         <Rule>
           <Name>14111</Name>
-          <Title>14111 Sï¿½hkï¿½istetty rautatie rakenteilla, viiva 3</Title>      
+          <Title>14111 S�hk�istetty rautatie rakenteilla, viiva 3</Title>      
             
           <ogc:Filter> 
             <ogc:And>         
@@ -565,11 +553,11 @@
       
         </Rule>    
     
-<!-- 14112 Ei-sï¿½hkï¿½itetty rautatie rakenteilla, viiva 3 -->    
+<!-- 14112 Ei-s�hk�itetty rautatie rakenteilla, viiva 3 -->    
         
         <Rule>
           <Name>14112</Name>
-          <Title>14112 Ei-sï¿½hkï¿½istetty rautatie rakenteilla, viiva 3</Title>      
+          <Title>14112 Ei-s�hk�istetty rautatie rakenteilla, viiva 3</Title>      
             
           <ogc:Filter> 
             <ogc:And>         
@@ -703,17 +691,13 @@
         </Rule>      
                 
     
-      </FeatureTypeStyle>    
+ <!-- pinnalla olevat (tasosijainti 0 tai -1) k�yt�ss� olevat (valmiusaste =0), viiva 1 -->
     
-    
-
-      <FeatureTypeStyle> <!-- pinnalla olevat (tasosijainti 0 tai -1) kï¿½ytï¿½ssï¿½ olevat (valmiusaste =0), viiva 1 -->
-    
-<!-- 14111 sï¿½hkï¿½istetty rautatie kï¿½ytï¿½ssï¿½ pinnalla, viiva1 -->    
+<!-- 14111 s�hk�istetty rautatie k�yt�ss� pinnalla, viiva1 -->    
         
         <Rule>
           <Name>14111</Name>
-          <Title>14111 Sï¿½hkï¿½istetty rautatie kï¿½ytï¿½ssï¿½ pinnalla, reunaviivat</Title>      
+          <Title>14111 S�hk�istetty rautatie k�yt�ss� pinnalla, reunaviivat</Title>      
             
           <ogc:Filter> 
             <ogc:And>      
@@ -752,11 +736,11 @@
       
         </Rule>    
     
-<!-- 14112 Ei-sï¿½hkï¿½istetty rautatie kï¿½ytï¿½ssï¿½ pinnalla, viiva1 -->    
+<!-- 14112 Ei-s�hk�istetty rautatie k�yt�ss� pinnalla, viiva1 -->    
         
         <Rule>
           <Name>14112</Name>
-          <Title>14112 Ei-sï¿½hkï¿½istetty rautatie kï¿½ytï¿½ssï¿½ pinnalla, reunaviivat</Title>      
+          <Title>14112 Ei-s�hk�istetty rautatie k�yt�ss� pinnalla, reunaviivat</Title>      
             
           <ogc:Filter> 
             <ogc:And>      
@@ -795,11 +779,11 @@
       
         </Rule>        
     
-<!-- 14131 metro kï¿½ytï¿½ssï¿½ pinnalla, viiva1 -->    
+<!-- 14131 metro k�yt�ss� pinnalla, viiva1 -->    
         
         <Rule>
           <Name>14131</Name>
-          <Title>14131 Metro kï¿½ytï¿½ssï¿½ pinnalla, reunaviivat</Title>      
+          <Title>14131 Metro k�yt�ss� pinnalla, reunaviivat</Title>      
             
           <ogc:Filter> 
             <ogc:And>      
@@ -839,11 +823,11 @@
         </Rule>    
     
 
-<!-- 14121 kapearaiteinen kï¿½ytï¿½ssï¿½, viiva1 -->    
+<!-- 14121 kapearaiteinen k�yt�ss�, viiva1 -->    
         
         <Rule>
           <Name>14121</Name>
-          <Title>14121 Kapearaiteinen kï¿½ytï¿½ssï¿½, reunviivat</Title>      
+          <Title>14121 Kapearaiteinen k�yt�ss�, reunviivat</Title>      
             
           <ogc:Filter> 
             <ogc:And>      
@@ -887,13 +871,13 @@
     
     
 
-      <FeatureTypeStyle> <!-- pinnalla olevat (valm aste 0 tai -1) kï¿½ytï¿½ssï¿½ olevat (valmiusaste =0), viiva 2 vï¿½ri katkot -->
+      <FeatureTypeStyle> <!-- pinnalla olevat (taso  0 tai -1) k�yt�ss� olevat (valmiusaste =0), viiva 2 v�ri katkot -->
     
-<!-- 14111 Sï¿½hkï¿½istetty rautatie kï¿½ytï¿½ssï¿½ pinnalla, viiva2 eli tï¿½yttï¿½ -->    
+<!-- 14111 S�hk�istetty rautatie k�yt�ss� pinnalla, viiva2 eli t�ytt� -->    
         
         <Rule>
           <Name>14111</Name>
-          <Title>14111 Sï¿½hkï¿½istetty rautatie kï¿½ytï¿½ssï¿½ pinnalla, tï¿½yttï¿½</Title>      
+          <Title>14111 S�hk�istetty rautatie k�yt�ss� pinnalla, t�ytt�</Title>      
             
           <ogc:Filter> 
             <ogc:And>      
@@ -933,11 +917,11 @@
       
         </Rule>    
     
-<!-- 14112 Ei-sï¿½hkï¿½istetty rautatie kï¿½ytï¿½ssï¿½ pinnalla, viiva2 eli tï¿½yttï¿½ -->    
+<!-- 14112 Ei-s�hk�istetty rautatie k�yt�ss� pinnalla, viiva2 eli t�ytt� -->    
         
         <Rule>
           <Name>14112</Name>
-          <Title>14112 Ei-sï¿½hkï¿½istetty rautatie kï¿½ytï¿½ssï¿½ pinnalla, tï¿½yttï¿½</Title>      
+          <Title>14112 Ei-s�hk�istetty rautatie k�yt�ss� pinnalla, t�ytt�</Title>      
             
           <ogc:Filter> 
             <ogc:And>      
@@ -978,11 +962,11 @@
         </Rule>        
     
     
-<!-- 14131 metro kï¿½ytï¿½ssï¿½ pinnalla, viiva2 -->    
+<!-- 14131 metro k�yt�ss� pinnalla, viiva2 -->    
         
         <Rule>
           <Name>14131</Name>
-          <Title>14131 Metro kï¿½ytï¿½ssï¿½ pinnalla, tï¿½yttï¿½</Title>      
+          <Title>14131 Metro k�yt�ss� pinnalla, t�ytt�</Title>      
             
           <ogc:Filter> 
             <ogc:And>      
@@ -1023,11 +1007,11 @@
         </Rule>    
     
 
-<!-- 14121 kapearaiteinen kï¿½ytï¿½ssï¿½, viiva2 -->    
+<!-- 14121 kapearaiteinen k�yt�ss�, viiva2 -->    
         
         <Rule>
           <Name>14121</Name>
-          <Title>14121 Kapearaiteinen kï¿½ytï¿½ssï¿½</Title>      
+          <Title>14121 Kapearaiteinen k�yt�ss�</Title>      
             
           <ogc:Filter> 
             <ogc:And>      

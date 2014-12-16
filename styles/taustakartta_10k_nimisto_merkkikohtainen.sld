@@ -7,20 +7,20 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>taustakartta_10k_nimisto</Name>
+    <Name>taustakartta_10k_nimisto_merkkikohtainen</Name>
     <UserStyle>
 
       <Title>taustakartta_10k_nimisto</Title>
-      <Abstract>Tama SLD-tyylitiedosto maarittaa pnr_Karttanimirekisterin nimien kuvaustekniikan 10k taustakartalle</Abstract>
+      <Abstract>Tama SLD-tyylitiedosto maarittaa nimien kuvaustekniikan 10k taustakartalle</Abstract>
 
 
        <FeatureTypeStyle> 
         
 <!-- Maastonimet 35111 -->
         <Rule>
-    
+		
           <ogc:Filter>
-            <ogc:Or>      
+            <ogc:Or>		  
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>34601</ogc:Literal>
@@ -77,10 +77,10 @@
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>38501</ogc:Literal>
               </ogc:PropertyIsEqualTo>
-            </ogc:Or>              
+            </ogc:Or>		  			  
           </ogc:Filter>         
-    
-    
+		
+		
           <MinScaleDenominator>5000</MinScaleDenominator>
           <MaxScaleDenominator>10000</MaxScaleDenominator>         
 
@@ -90,18 +90,18 @@
               <ogc:PropertyName>teksti</ogc:PropertyName>
             </Label>
      
-            <Font>                    
-              <!-- Fontin valinta -->      
-              <CssParameter name="font-family">    
+            <Font>            			  
+              <!-- Fontin valinta -->			
+              <CssParameter name="font-family">		
                 <ogc:Function name="if_then_else">
-           <ogc:Function name="equalTo">
+ 				  <ogc:Function name="equalTo">
                     <ogc:PropertyName>kirjasintyyppikoodi</ogc:PropertyName> 
-                    <ogc:Literal>10</ogc:Literal>          
+                    <ogc:Literal>10</ogc:Literal>					
                   </ogc:Function>                  
                 <ogc:Literal>Arial Etukeno</ogc:Literal>  
                  <ogc:Literal>Arial Lihavoitu Etukeno</ogc:Literal>                                                     
                 </ogc:Function>           
-              </CssParameter>                
+              </CssParameter>			  			  
         
              <!-- lasketaan fontin koko attribuutikentan "kirjasinkoko" perusteella -->                
              <CssParameter name="font-size">
@@ -119,7 +119,7 @@
             <!-- karttanimen sijainnin marittaminen -->            
             <LabelPlacement>
               <PointPlacement>
-        
+			  
                 <AnchorPoint>
                   <AnchorPointX>0</AnchorPointX>
                   <AnchorPointY>0</AnchorPointY>
@@ -152,9 +152,9 @@
               </PointPlacement>
             </LabelPlacement>   
          
-            <Halo>
+<!--            <Halo>
               <Radius>1</Radius>
-            </Halo>
+            </Halo> -->
             <!-- karttanimen varin maarittaminen -->
             <Fill>
               <CssParameter name="fill">                               
@@ -162,16 +162,17 @@
               </CssParameter>
             </Fill>
       
-            <VendorOption name="conflictResolution">false</VendorOption>     
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>     
           </TextSymbolizer>
         </Rule>              
 
 <!-- Vesistonimet 36111 -->
 
         <Rule>
-    
+		
           <ogc:Filter>
-            <ogc:Or>      
+            <ogc:Or>		  
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>36101</ogc:Literal>
@@ -200,10 +201,10 @@
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>38201</ogc:Literal>
               </ogc:PropertyIsEqualTo>
-            </ogc:Or>              
+            </ogc:Or>		  			  
           </ogc:Filter>         
-    
-    
+		
+		
           <MinScaleDenominator>5000</MinScaleDenominator>
           <MaxScaleDenominator>10000</MaxScaleDenominator>         
 
@@ -213,18 +214,18 @@
               <ogc:PropertyName>teksti</ogc:PropertyName>
             </Label>
      
-            <Font>                    
-              <!-- Fontin valinta -->      
-              <CssParameter name="font-family">    
-                <ogc:Function name="if_then_else">            
-           <ogc:Function name="equalTo">
+            <Font>            			  
+              <!-- Fontin valinta -->			
+              <CssParameter name="font-family">		
+                <ogc:Function name="if_then_else">					  
+ 				  <ogc:Function name="equalTo">
                     <ogc:PropertyName>kirjasintyyppikoodi</ogc:PropertyName> 
-                    <ogc:Literal>10</ogc:Literal>          
+                    <ogc:Literal>10</ogc:Literal>					
                   </ogc:Function>                  
                   <ogc:Literal>Arial Takakeno</ogc:Literal>                   
                   <ogc:Literal>Arial Lihavoitu Takakeno</ogc:Literal>                                                     
                 </ogc:Function>           
-              </CssParameter>          
+              </CssParameter>				  
         
              <!-- lasketaan fontin koko attribuutikentan "kirjasinkoko" perusteella -->                
              <CssParameter name="font-size">
@@ -242,7 +243,7 @@
             <!-- karttanimen sijainnin marittaminen -->            
             <LabelPlacement>
               <PointPlacement>
-        
+			  
                 <AnchorPoint>
                   <AnchorPointX>0</AnchorPointX>
                   <AnchorPointY>0</AnchorPointY>
@@ -275,9 +276,9 @@
               </PointPlacement>
             </LabelPlacement>   
          
-            <Halo>
+<!--            <Halo>
               <Radius>1</Radius>
-            </Halo>
+            </Halo> -->
             <!-- karttanimen varin maarittaminen -->
             <Fill>
               <CssParameter name="fill">                               
@@ -285,16 +286,17 @@
               </CssParameter>
             </Fill>
       
-            <VendorOption name="conflictResolution">false</VendorOption>     
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>     
           </TextSymbolizer>
-        </Rule>       
-    
-    
+        </Rule>   		
+		
+		
 <!-- Asutusnimet 48100 -->
         <Rule>
-    
+		
           <ogc:Filter>
-            <ogc:Or>      
+            <ogc:Or>		  
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>48111</ogc:Literal>
@@ -315,10 +317,10 @@
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>48190</ogc:Literal>
               </ogc:PropertyIsEqualTo>
-            </ogc:Or>              
+            </ogc:Or>		  			  
           </ogc:Filter>         
-    
-    
+		
+		
           <MinScaleDenominator>5000</MinScaleDenominator>
           <MaxScaleDenominator>10000</MaxScaleDenominator>         
 
@@ -328,18 +330,18 @@
               <ogc:PropertyName>teksti</ogc:PropertyName>
             </Label>
      
-            <Font>                    
-              <!-- Fontin valinta -->      
-              <CssParameter name="font-family">    
-                <ogc:Function name="if_then_else">            
-           <ogc:Function name="equalTo">
+            <Font>            			  
+              <!-- Fontin valinta -->			
+              <CssParameter name="font-family">		
+                <ogc:Function name="if_then_else">					  
+ 				  <ogc:Function name="equalTo">
                     <ogc:PropertyName>kirjasintyyppikoodi</ogc:PropertyName> 
-                    <ogc:Literal>10</ogc:Literal>          
+                    <ogc:Literal>10</ogc:Literal>					
                   </ogc:Function>                  
                 <ogc:Literal>Arial</ogc:Literal>                  
                  <ogc:Literal>Arial Lihavoitu</ogc:Literal>                                                     
                 </ogc:Function>           
-              </CssParameter>        
+              </CssParameter>			  
         
              <!-- lasketaan fontin koko attribuutikentan "kirjasinkoko" perusteella -->                
              <CssParameter name="font-size">
@@ -355,7 +357,7 @@
             <!-- karttanimen sijainnin marittaminen -->            
             <LabelPlacement>
               <PointPlacement>
-        
+			  
                 <AnchorPoint>
                   <AnchorPointX>0</AnchorPointX>
                   <AnchorPointY>0</AnchorPointY>
@@ -388,9 +390,9 @@
               </PointPlacement>
             </LabelPlacement>   
          
-            <Halo>
+<!--            <Halo>
               <Radius>1</Radius>
-            </Halo>
+            </Halo> -->
             <!-- karttanimen varin maarittaminen -->
             <Fill>
               <CssParameter name="fill">                               
@@ -398,10 +400,11 @@
               </CssParameter>
             </Fill>
       
-            <VendorOption name="conflictResolution">false</VendorOption>     
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>     
           </TextSymbolizer>
-        </Rule>                  
-    
+        </Rule>              		
+		
       </FeatureTypeStyle>    
     </UserStyle>
   </NamedLayer>

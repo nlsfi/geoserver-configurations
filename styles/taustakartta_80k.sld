@@ -11,7 +11,7 @@
     <UserStyle>
 
       <Title>taustakartta_80k</Title>
-      <Abstract>t�m� sld sis�lt�� kuvaustyylit taustakartta 80k useammille kohteille.</Abstract>
+      <Abstract>sld</Abstract>
       
 
 
@@ -26,20 +26,12 @@
           <Name>39120</Name>
           <Title>39120 Varvikko vaalennettu</Title>
           
-          <ogc:Filter> 
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
-                <ogc:Literal>39120</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsGreaterThanOrEqualTo>       <!-- pinta-alayleistys yli 20000 m2 piirret��n -->
-                <ogc:Function name="area"> 
-                  <ogc:PropertyName>geom</ogc:PropertyName>                
-                </ogc:Function> 
-                <ogc:Literal>20000</ogc:Literal>
-              </ogc:PropertyIsGreaterThanOrEqualTo>          
-            </ogc:And>             
-          </ogc:Filter>
+            <ogc:Filter> 
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
+              <ogc:Literal>39120</ogc:Literal>
+            </ogc:PropertyIsEqualTo>	 
+          </ogc:Filter> 
 
           <MinScaleDenominator>40000</MinScaleDenominator>
           <MaxScaleDenominator>90000</MaxScaleDenominator>
@@ -69,20 +61,12 @@
           <Name>35401</Name>
           <Title>35401 Suo, puuton eli avoin</Title>
           
-          <ogc:Filter> 
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
-                <ogc:Literal>35401</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsGreaterThanOrEqualTo>       <!-- pinta-alayleistys yli 10000 m2 piirret��n -->
-                <ogc:Function name="area"> 
-                  <ogc:PropertyName>geom</ogc:PropertyName>                
-                </ogc:Function> 
-                <ogc:Literal>10000</ogc:Literal>
-              </ogc:PropertyIsGreaterThanOrEqualTo>          
-            </ogc:And>             
-          </ogc:Filter>
+            <ogc:Filter> 
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
+              <ogc:Literal>35401</ogc:Literal>
+            </ogc:PropertyIsEqualTo>	 
+          </ogc:Filter> 
 
           <MinScaleDenominator>40000</MinScaleDenominator>
           <MaxScaleDenominator>90000</MaxScaleDenominator>
@@ -112,20 +96,12 @@
           <Name>35402</Name>
           <Title>35402 Suo, mets�� kasvaa</Title>
           
-          <ogc:Filter> 
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
-                <ogc:Literal>35402</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsGreaterThanOrEqualTo>       <!-- pinta-alayleistys yli 10000 m2 piirret��n -->
-                <ogc:Function name="area"> 
-                  <ogc:PropertyName>geom</ogc:PropertyName>                
-                </ogc:Function> 
-                <ogc:Literal>20000</ogc:Literal>
-              </ogc:PropertyIsGreaterThanOrEqualTo>          
-            </ogc:And>             
-          </ogc:Filter>
+            <ogc:Filter> 
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
+              <ogc:Literal>35402</ogc:Literal>
+            </ogc:PropertyIsEqualTo>	 
+          </ogc:Filter> 
 
           <MinScaleDenominator>40000</MinScaleDenominator>
           <MaxScaleDenominator>90000</MaxScaleDenominator>
@@ -165,22 +141,22 @@
           <MinScaleDenominator>40000</MinScaleDenominator>
           <MaxScaleDenominator>90000</MaxScaleDenominator>
           
-      <PolygonSymbolizer>
-        <Fill>
-        <CssParameter name="fill">#f5d0e1</CssParameter>
+		  <PolygonSymbolizer>
+		    <Fill>
+			  <CssParameter name="fill">#f5d0e1</CssParameter>
             </Fill>
-          </PolygonSymbolizer>  
+          </PolygonSymbolizer>	
           
         </Rule>        
 
-  <!-- 40200 ERM taajama piste -->  
+	<!-- 40200 ERM taajama piste -->  
         
        <Rule>
           <Name>40200</Name>
           <Title>40200 ERM taajama piste</Title>
           
           <ogc:Filter>
-         <ogc:And>
+		     <ogc:And>
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohderyhma</ogc:PropertyName>
                 <ogc:Literal>47</ogc:Literal>
@@ -188,12 +164,12 @@
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
                 <ogc:Literal>40200</ogc:Literal>
-              </ogc:PropertyIsEqualTo>        
-      </ogc:And>  
-          </ogc:Filter>    
+              </ogc:PropertyIsEqualTo>			  
+			</ogc:And>  
+          </ogc:Filter>		
 
-      <MinScaleDenominator>40000</MinScaleDenominator>
-      <MaxScaleDenominator>90000</MaxScaleDenominator>    
+		  <MinScaleDenominator>40000</MinScaleDenominator>
+		  <MaxScaleDenominator>90000</MaxScaleDenominator>	  
  
           <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Graphic>
@@ -225,14 +201,14 @@
           <MinScaleDenominator>40000</MinScaleDenominator>
           <MaxScaleDenominator>90000</MaxScaleDenominator>
           
-      <PolygonSymbolizer>
-        <Fill>
-        <CssParameter name="fill">#fffcd6</CssParameter>
+		  <PolygonSymbolizer>
+		    <Fill>
+			  <CssParameter name="fill">#fffcd6</CssParameter>
             </Fill>
-          </PolygonSymbolizer>  
+          </PolygonSymbolizer>	
           
-        </Rule>       
-  
+        </Rule>     	
+	
 <!--  puutarha vaalennettu-->
         
         <Rule>
@@ -249,14 +225,14 @@
           <MinScaleDenominator>40000</MinScaleDenominator>
           <MaxScaleDenominator>90000</MaxScaleDenominator>
           
-      <PolygonSymbolizer>
-        <Fill>
-        <CssParameter name="fill">#fffcd6</CssParameter>
+		  <PolygonSymbolizer>
+		    <Fill>
+			  <CssParameter name="fill">#fffcd6</CssParameter>
             </Fill>
-          </PolygonSymbolizer>  
+          </PolygonSymbolizer>	
           
-        </Rule>       
-  
+        </Rule>     	
+	
 <!--  sorakuoppa-->
         
         <Rule>
@@ -273,14 +249,14 @@
           <MinScaleDenominator>40000</MinScaleDenominator>
           <MaxScaleDenominator>90000</MaxScaleDenominator>
           
-      <PolygonSymbolizer>
-        <Fill>
-        <CssParameter name="fill">#fffcf0</CssParameter>
+		  <PolygonSymbolizer>
+		    <Fill>
+			  <CssParameter name="fill">#fffcf0</CssParameter>
             </Fill>
-          </PolygonSymbolizer>  
+          </PolygonSymbolizer>	
           
-        </Rule>     
-  
+        </Rule>   	
+	
 <!--  turpeenottoalue -->
         
         <Rule>
@@ -297,14 +273,14 @@
           <MinScaleDenominator>40000</MinScaleDenominator>
           <MaxScaleDenominator>90000</MaxScaleDenominator>
           
-      <PolygonSymbolizer>
-        <Fill>
-        <CssParameter name="fill">#e8dabc</CssParameter>
+		  <PolygonSymbolizer>
+		    <Fill>
+			  <CssParameter name="fill">#e8dabc</CssParameter>
             </Fill>
-          </PolygonSymbolizer>  
+          </PolygonSymbolizer>	
           
-        </Rule>       
-  
+        </Rule>   		
+	
 <!--  kaatopaikka -->
         
         <Rule>
@@ -321,14 +297,14 @@
           <MinScaleDenominator>40000</MinScaleDenominator>
           <MaxScaleDenominator>90000</MaxScaleDenominator>
           
-      <PolygonSymbolizer>
-        <Fill>
-        <CssParameter name="fill">#fffcf0</CssParameter>
+		  <PolygonSymbolizer>
+		    <Fill>
+			  <CssParameter name="fill">#fffcf0</CssParameter>
             </Fill>
-          </PolygonSymbolizer>  
+          </PolygonSymbolizer>	
           
-        </Rule>       
-    
+        </Rule>   		
+		
 <!--  36211 merivesi reunaviiva -->        
         
         <Rule>
@@ -342,27 +318,27 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           
-      <MinScaleDenominator>40000</MinScaleDenominator>
-      <MaxScaleDenominator>90000</MaxScaleDenominator> 
+		  <MinScaleDenominator>40000</MinScaleDenominator>
+		  <MaxScaleDenominator>90000</MaxScaleDenominator> 
 
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#86bfe3</CssParameter>
               <CssParameter name="stroke-width">32</CssParameter>
-              <CssParameter name="stroke-linecap">round</CssParameter>                
-            </Stroke>      
-          </LineSymbolizer>        
-      <!-- t�ll� viivalla poistetaan karttalehtijaon aiheuttama viiva -->
+              <CssParameter name="stroke-linecap">round</CssParameter>			  			  
+            </Stroke>			
+          </LineSymbolizer>			  
+		  <!-- t�ll� viivalla poistetaan karttalehtijaon aiheuttama viiva -->
 <!--          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> 
             <Stroke>
               <CssParameter name="stroke">#c3e6fa</CssParameter>
               <CssParameter name="stroke-width">5</CssParameter>
-              <CssParameter name="stroke-linecap">round</CssParameter>                
-            </Stroke>      
-          </LineSymbolizer> -->  
+              <CssParameter name="stroke-linecap">round</CssParameter>			  			  
+            </Stroke>			
+          </LineSymbolizer> -->	
 
-        </Rule>        
-    
+        </Rule>				
+		
 <!--  36200 j�rvivesi reunaviiva -->        
         
         <Rule>
@@ -376,27 +352,27 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           
-      <MinScaleDenominator>40000</MinScaleDenominator>
-      <MaxScaleDenominator>90000</MaxScaleDenominator> 
+		  <MinScaleDenominator>40000</MinScaleDenominator>
+		  <MaxScaleDenominator>90000</MaxScaleDenominator> 
 
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#86bfe3</CssParameter>
               <CssParameter name="stroke-width">60</CssParameter>
-              <CssParameter name="stroke-linecap">round</CssParameter>                
-            </Stroke>      
-          </LineSymbolizer>        
-      <!-- t�ll� viivalla poistetaan karttalehtijaon aiheuttama viiva -->
+              <CssParameter name="stroke-linecap">round</CssParameter>			  			  
+            </Stroke>			
+          </LineSymbolizer>			  
+		  <!-- t�ll� viivalla poistetaan karttalehtijaon aiheuttama viiva -->
          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> 
             <Stroke>
               <CssParameter name="stroke">#c3e6fa</CssParameter>
               <CssParameter name="stroke-width">5</CssParameter>
-              <CssParameter name="stroke-linecap">round</CssParameter>                
-            </Stroke>      
-          </LineSymbolizer>  
+              <CssParameter name="stroke-linecap">round</CssParameter>			  			  
+            </Stroke>			
+          </LineSymbolizer>	
 
-        </Rule>    
-    
+        </Rule>		
+		
 <!--  36323 virtavesi yli 125m reunaviiva -->        
         
         <Rule>
@@ -410,27 +386,27 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           
-      <MinScaleDenominator>40000</MinScaleDenominator>
-      <MaxScaleDenominator>90000</MaxScaleDenominator> 
+		  <MinScaleDenominator>40000</MinScaleDenominator>
+		  <MaxScaleDenominator>90000</MaxScaleDenominator> 
 
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#86bfe3</CssParameter>
               <CssParameter name="stroke-width">60</CssParameter>
-              <CssParameter name="stroke-linecap">round</CssParameter>                
-            </Stroke>      
-          </LineSymbolizer>        
-      <!-- t�ll� viivalla poistetaan karttalehtijaon aiheuttama viiva -->
+              <CssParameter name="stroke-linecap">round</CssParameter>			  			  
+            </Stroke>			
+          </LineSymbolizer>			  
+		  <!-- t�ll� viivalla poistetaan karttalehtijaon aiheuttama viiva -->
          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> 
             <Stroke>
               <CssParameter name="stroke">#c3e6fa</CssParameter>
               <CssParameter name="stroke-width">5</CssParameter>
-              <CssParameter name="stroke-linecap">round</CssParameter>                
-            </Stroke>      
-          </LineSymbolizer>  
+              <CssParameter name="stroke-linecap">round</CssParameter>			  			  
+            </Stroke>			
+          </LineSymbolizer>	
 
-        </Rule>    
-    
+        </Rule>		
+		
 <!--  44300 allas reunaviiva -->        
         
         <Rule>
@@ -444,28 +420,28 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           
-      <MinScaleDenominator>40000</MinScaleDenominator>
-      <MaxScaleDenominator>90000</MaxScaleDenominator> 
+		  <MinScaleDenominator>40000</MinScaleDenominator>
+		  <MaxScaleDenominator>90000</MaxScaleDenominator> 
 
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#86bfe3</CssParameter>
               <CssParameter name="stroke-width">60</CssParameter>
-              <CssParameter name="stroke-linecap">round</CssParameter>                
-            </Stroke>      
-          </LineSymbolizer>        
-      <!-- t�ll� viivalla poistetaan karttalehtijaon aiheuttama viiva -->
+              <CssParameter name="stroke-linecap">round</CssParameter>			  			  
+            </Stroke>			
+          </LineSymbolizer>			  
+		  <!-- t�ll� viivalla poistetaan karttalehtijaon aiheuttama viiva -->
          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> 
             <Stroke>
               <CssParameter name="stroke">#c3e6fa</CssParameter>
               <CssParameter name="stroke-width">5</CssParameter>
-              <CssParameter name="stroke-linecap">round</CssParameter>                
-            </Stroke>      
-          </LineSymbolizer>  
+              <CssParameter name="stroke-linecap">round</CssParameter>			  			  
+            </Stroke>			
+          </LineSymbolizer>	
 
-        </Rule>      
-      </FeatureTypeStyle>  
-    <FeatureTypeStyle>  
+        </Rule>			
+      </FeatureTypeStyle>	
+	  <FeatureTypeStyle>	
 <!--  j�rvivesi -->
         
         <Rule>
@@ -482,14 +458,14 @@
           <MinScaleDenominator>40000</MinScaleDenominator>
           <MaxScaleDenominator>90000</MaxScaleDenominator>
           
-      <PolygonSymbolizer>
-        <Fill>
-        <CssParameter name="fill">#b6e6fa</CssParameter>
+		  <PolygonSymbolizer>
+		    <Fill>
+			  <CssParameter name="fill">#b6e6fa</CssParameter>
             </Fill>
-          </PolygonSymbolizer>  
+          </PolygonSymbolizer>	
           
-        </Rule>     
-    
+        </Rule>   	
+		
 <!--  merivesi -->
         
         <Rule>
@@ -506,13 +482,13 @@
           <MinScaleDenominator>40000</MinScaleDenominator>
           <MaxScaleDenominator>90000</MaxScaleDenominator>
           
-      <PolygonSymbolizer>
-        <Fill>
-        <CssParameter name="fill">#b6e6fa</CssParameter>
+		  <PolygonSymbolizer>
+		    <Fill>
+			  <CssParameter name="fill">#b6e6fa</CssParameter>
             </Fill>
-          </PolygonSymbolizer>  
+          </PolygonSymbolizer>	
           
-        </Rule>       
+        </Rule>   		
 
 <!--  virtavesi yli 125m -->
         
@@ -530,13 +506,13 @@
           <MinScaleDenominator>40000</MinScaleDenominator>
           <MaxScaleDenominator>90000</MaxScaleDenominator>
           
-      <PolygonSymbolizer>
-        <Fill>
-        <CssParameter name="fill">#b6e6fa</CssParameter>
+		  <PolygonSymbolizer>
+		    <Fill>
+			  <CssParameter name="fill">#b6e6fa</CssParameter>
             </Fill>
-          </PolygonSymbolizer>  
+          </PolygonSymbolizer>	
           
-        </Rule>    
+        </Rule>		
     
 <!--  allas -->
         
@@ -554,14 +530,14 @@
           <MinScaleDenominator>40000</MinScaleDenominator>
           <MaxScaleDenominator>90000</MaxScaleDenominator>
           
-      <PolygonSymbolizer>
-        <Fill>
-        <CssParameter name="fill">#b6e6fa</CssParameter>
+		  <PolygonSymbolizer>
+		    <Fill>
+			  <CssParameter name="fill">#b6e6fa</CssParameter>
             </Fill>
-          </PolygonSymbolizer>  
+          </PolygonSymbolizer>	
           
-        </Rule>    
-    
+        </Rule>		
+		
 <!--  kanava -->
         
         <Rule>
@@ -577,20 +553,20 @@
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
                 <ogc:Literal>36316</ogc:Literal>
-              </ogc:PropertyIsEqualTo>        
+              </ogc:PropertyIsEqualTo>			  
              </ogc:And>
           </ogc:Filter>
 
           <MinScaleDenominator>40000</MinScaleDenominator>
           <MaxScaleDenominator>90000</MaxScaleDenominator>
           
-      <PolygonSymbolizer>
-        <Fill>
-        <CssParameter name="fill">#b6e6fa</CssParameter>
+		  <PolygonSymbolizer>
+		    <Fill>
+			  <CssParameter name="fill">#b6e6fa</CssParameter>
             </Fill>
-          </PolygonSymbolizer>  
+          </PolygonSymbolizer>	
           
-        </Rule>      
+        </Rule>			
 <!--  32441 Lentoasema -->
         
         <Rule>
@@ -610,19 +586,19 @@
             <Stroke>
               <CssParameter name="stroke">#bec0c2</CssParameter>
               <CssParameter name="stroke-width">32</CssParameter>
-              <CssParameter name="stroke-linecap">round</CssParameter>        
+              <CssParameter name="stroke-linecap">round</CssParameter>			  
             </Stroke>
-          </LineSymbolizer>         
-      <PolygonSymbolizer>
-        <Fill>
-        <CssParameter name="fill">#fffcd1</CssParameter>
+          </LineSymbolizer>	       
+		  <PolygonSymbolizer>
+		    <Fill>
+			  <CssParameter name="fill">#fffcd1</CssParameter>
             </Fill>
-          </PolygonSymbolizer>  
-    <!-- reunaviiva -->
-      
+          </PolygonSymbolizer>	
+		<!-- reunaviiva -->
+		  
           
-        </Rule>    
-    
+        </Rule>		
+		
 <!-- 32431 lentoaseman kiitotie -->
         <Rule>
           <Name>32431</Name>
@@ -635,18 +611,18 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           
-      <MinScaleDenominator>40000</MinScaleDenominator>
-      <MaxScaleDenominator>90000</MaxScaleDenominator>
-      
+		  <MinScaleDenominator>40000</MinScaleDenominator>
+		  <MaxScaleDenominator>90000</MaxScaleDenominator>
+		  
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#fccab6</CssParameter>
               <CssParameter name="stroke-width">96</CssParameter>
-              <CssParameter name="stroke-linecap">butt</CssParameter>        
+              <CssParameter name="stroke-linecap">butt</CssParameter>			  
             </Stroke>
-          </LineSymbolizer>           
-        </Rule>    
-  
+          </LineSymbolizer>		 		  
+        </Rule>		
+	
 <!-- Virtavesi leveys 5-20 m -->
         <Rule>
           <Name>36314</Name>
@@ -659,18 +635,18 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           
-      <MinScaleDenominator>40000</MinScaleDenominator>
-      <MaxScaleDenominator>90000</MaxScaleDenominator>
-      
+		  <MinScaleDenominator>40000</MinScaleDenominator>
+		  <MaxScaleDenominator>90000</MaxScaleDenominator>
+		  
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#86bfe3</CssParameter>
               <CssParameter name="stroke-width">20</CssParameter>
-              <CssParameter name="stroke-linecap">round</CssParameter>        
+              <CssParameter name="stroke-linecap">round</CssParameter>			  
             </Stroke>
-          </LineSymbolizer>           
-        </Rule>      
-    
+          </LineSymbolizer>		 		  
+        </Rule>			
+		
 <!-- Virtavesi leveys 20-50 m -->
         <Rule>
           <Name>36321</Name>
@@ -683,18 +659,18 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           
-      <MinScaleDenominator>40000</MinScaleDenominator>
-      <MaxScaleDenominator>90000</MaxScaleDenominator>
-      
+		  <MinScaleDenominator>40000</MinScaleDenominator>
+		  <MaxScaleDenominator>90000</MaxScaleDenominator>
+		  
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#86bfe3</CssParameter>
               <CssParameter name="stroke-width">40</CssParameter>
-              <CssParameter name="stroke-linecap">round</CssParameter>        
+              <CssParameter name="stroke-linecap">round</CssParameter>			  
             </Stroke>
-          </LineSymbolizer>           
-        </Rule>        
-    
+          </LineSymbolizer>		 		  
+        </Rule>				
+		
 <!-- Virtavesi leveys 50-125 m -->
         <Rule>
           <Name>36322</Name>
@@ -707,18 +683,18 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           
-      <MinScaleDenominator>40000</MinScaleDenominator>
-      <MaxScaleDenominator>90000</MaxScaleDenominator>
-      
+		  <MinScaleDenominator>40000</MinScaleDenominator>
+		  <MaxScaleDenominator>90000</MaxScaleDenominator>
+		  
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#86bfe3</CssParameter>
               <CssParameter name="stroke-width">40</CssParameter>
-              <CssParameter name="stroke-linecap">round</CssParameter>        
+              <CssParameter name="stroke-linecap">round</CssParameter>			  
             </Stroke>
-          </LineSymbolizer>           
-        </Rule>        
-    
+          </LineSymbolizer>		 		  
+        </Rule>				
+		
 <!-- Kanava, viiva -->
         <Rule>
           <Name>36316</Name>
@@ -731,17 +707,17 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           
-      <MinScaleDenominator>40000</MinScaleDenominator>
-      <MaxScaleDenominator>90000</MaxScaleDenominator>
-      
+		  <MinScaleDenominator>40000</MinScaleDenominator>
+		  <MaxScaleDenominator>90000</MaxScaleDenominator>
+		  
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#86bfe3</CssParameter>
               <CssParameter name="stroke-width">40</CssParameter>
-              <CssParameter name="stroke-linecap">round</CssParameter>        
+              <CssParameter name="stroke-linecap">round</CssParameter>			  
             </Stroke>
-          </LineSymbolizer>           
-        </Rule>    
+          </LineSymbolizer>		 		  
+        </Rule>		
 
 <!-- Kunnan raja -->
         <Rule>
@@ -755,18 +731,18 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           
-      <MinScaleDenominator>40000</MinScaleDenominator>
-      <MaxScaleDenominator>90000</MaxScaleDenominator>
-      
+		  <MinScaleDenominator>40000</MinScaleDenominator>
+		  <MaxScaleDenominator>90000</MaxScaleDenominator>
+		  
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#ae9dd1</CssParameter>
               <CssParameter name="stroke-width">40</CssParameter>
-              <CssParameter name="stroke-linecap">round</CssParameter>        
+              <CssParameter name="stroke-linecap">round</CssParameter>			  
             </Stroke>
-          </LineSymbolizer>           
-        </Rule>    
-    
+          </LineSymbolizer>		 		  
+        </Rule>		
+		
 <!-- Maakunnan raja -->
         <Rule>
           <Name>84115</Name>
@@ -779,17 +755,17 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           
-      <MinScaleDenominator>40000</MinScaleDenominator>
-      <MaxScaleDenominator>90000</MaxScaleDenominator>
-      
+		  <MinScaleDenominator>40000</MinScaleDenominator>
+		  <MaxScaleDenominator>90000</MaxScaleDenominator>
+		  
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#ae9dd1</CssParameter>
               <CssParameter name="stroke-width">56</CssParameter>
-              <CssParameter name="stroke-linecap">round</CssParameter>        
+              <CssParameter name="stroke-linecap">round</CssParameter>			  
             </Stroke>
-          </LineSymbolizer>           
-        </Rule>      
+          </LineSymbolizer>		 		  
+        </Rule>			
 
 <!-- L��nin raja -->
         <Rule>
@@ -803,17 +779,17 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           
-      <MinScaleDenominator>40000</MinScaleDenominator>
-      <MaxScaleDenominator>90000</MaxScaleDenominator>
-      
+		  <MinScaleDenominator>40000</MinScaleDenominator>
+		  <MaxScaleDenominator>90000</MaxScaleDenominator>
+		  
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#ae9dd1</CssParameter>
               <CssParameter name="stroke-width">56</CssParameter>
-              <CssParameter name="stroke-linecap">round</CssParameter>        
+              <CssParameter name="stroke-linecap">round</CssParameter>			  
             </Stroke>
-          </LineSymbolizer>           
-        </Rule>    
+          </LineSymbolizer>		 		  
+        </Rule>		
 
 <!-- Aluemeren ulkoraja -->
         <Rule>
@@ -827,17 +803,17 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           
-      <MinScaleDenominator>40000</MinScaleDenominator>
-      <MaxScaleDenominator>90000</MaxScaleDenominator>
-      
+		  <MinScaleDenominator>40000</MinScaleDenominator>
+		  <MaxScaleDenominator>90000</MaxScaleDenominator>
+		  
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#ae9dd1</CssParameter>
               <CssParameter name="stroke-width">56</CssParameter>
-              <CssParameter name="stroke-linecap">round</CssParameter>        
+              <CssParameter name="stroke-linecap">round</CssParameter>			  
             </Stroke>
-          </LineSymbolizer>           
-        </Rule>    
+          </LineSymbolizer>		 		  
+        </Rule>		
 
 <!-- Valltakunnan raja -->
         <Rule>
@@ -851,19 +827,19 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           
-      <MinScaleDenominator>40000</MinScaleDenominator>
-      <MaxScaleDenominator>90000</MaxScaleDenominator>
-      
+		  <MinScaleDenominator>40000</MinScaleDenominator>
+		  <MaxScaleDenominator>90000</MaxScaleDenominator>
+		  
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#ae9dd1</CssParameter>
               <CssParameter name="stroke-width">64</CssParameter>
-              <CssParameter name="stroke-linecap">round</CssParameter>        
+              <CssParameter name="stroke-linecap">round</CssParameter>			  
             </Stroke>
-          </LineSymbolizer>           
-        </Rule>        
-  
-<!--  Lentokentt�symboli  32442-->
+          </LineSymbolizer>		 		  
+        </Rule>				
+	
+<!--  Lentokentt�symboli	32442-->
 
 
         <Rule>
@@ -876,21 +852,21 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
 
-      <MinScaleDenominator>40000</MinScaleDenominator>
-      <MaxScaleDenominator>90000</MaxScaleDenominator>  
-      
+		  <MinScaleDenominator>40000</MinScaleDenominator>
+		  <MaxScaleDenominator>90000</MaxScaleDenominator>  
+		  
           <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-      
-      
+		  
+		  
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>geom</ogc:PropertyName>
-                <ogc:Literal>-50</ogc:Literal>        
+                <ogc:Literal>-50</ogc:Literal>				
                 <ogc:Literal>0</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>        
-            
-      
+              </ogc:Function>				
+            </Geometry>			  
+		  		  
+		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -904,8 +880,8 @@ xlink:href="taustakartta/SLentokone.svg"/>
         
             </Graphic>
           </PointSymbolizer>
-      
-        </Rule>    
+		  
+        </Rule>  	
 
 <!--  Merimajakka 16126-->
 
@@ -920,21 +896,21 @@ xlink:href="taustakartta/SLentokone.svg"/>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
 
-      <MinScaleDenominator>40000</MinScaleDenominator>
-      <MaxScaleDenominator>90000</MaxScaleDenominator>  
-      
+		  <MinScaleDenominator>40000</MinScaleDenominator>
+		  <MaxScaleDenominator>90000</MaxScaleDenominator>  
+		  
           <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-      
-      
+		  
+		  
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>geom</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>0</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>        
-            
-      
+              </ogc:Function>				
+            </Geometry>			  
+		  		  
+		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -948,9 +924,9 @@ xlink:href="taustakartta/Smaja.svg"/>
         
             </Graphic>
           </PointSymbolizer>
-      
+		  
         </Rule>  
-    
+		
       </FeatureTypeStyle>    
     
       </UserStyle>

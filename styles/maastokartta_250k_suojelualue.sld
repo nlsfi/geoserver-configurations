@@ -5,14 +5,14 @@
  xmlns:ogc="http://www.opengis.net/ogc" 
  xmlns:xlink="http://www.w3.org/1999/xlink" 
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <!-- a Named Layer is the basic building block of an SLD document -->
+
   <NamedLayer>
 
-    <Name>Suojelualue 250k maastokartta</Name>
+    <Name>maastokartta_250k_suojelualue</Name>
     <UserStyle>
-    <!-- Styles can have names, titles and abstracts -->
-      <Title>Suojelualue 250k maastokartta</Title>
-      <Abstract></Abstract>
+
+      <Title>maastokartta_250k_suojelualue</Title>
+      <Abstract>sld</Abstract>
       <FeatureTypeStyle>
     
         <Rule>
@@ -20,16 +20,6 @@
           <Title>Suojelualueiden reunaviivat 250k maastokartta</Title>
           <Abstract>Suojelualueita ovat 72200 Muu luonnonsuojelualue, 72201 Luonnonpuisto,72202 Kansallispuisto, 72700 Er�maa-alue,72800 Retkeilyalue</Abstract>
 
-
-          <ogc:Filter>
-           
-              <ogc:PropertyIsNotEqualTo>
-                <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
-                <ogc:Literal>1</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>
-           
-          </ogc:Filter> 
-      
       
           <MinScaleDenominator>90000</MinScaleDenominator>
           <MaxScaleDenominator>180000</MaxScaleDenominator>
@@ -91,46 +81,9 @@
               </GraphicFill>
             </Fill>
           </PolygonSymbolizer>   
-
-
       
         </Rule>        
     
-       <Rule>
-          <Name>Suojelualueiden reunaviiva 250k maastokarttat</Name>
-          <Title>Suojelualueiden reunaviivat 250k maastokartta</Title>
-          <Abstract>Suojelualueita ovat 72200 Muu luonnonsuojelualue, 72201 Luonnonpuisto,72202 Kansallispuisto, 72700 Er�maa-alue,72800 Retkeilyalue</Abstract>
-
-
-          <ogc:Filter>
-           
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
-                <ogc:Literal>1</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-           
-          </ogc:Filter> 
-      
-      
-          <MinScaleDenominator>90000</MinScaleDenominator>
-          <MaxScaleDenominator>180000</MaxScaleDenominator>
-          
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> <!-- draw the original geometry with a green outline -->
-            <Stroke>
-              <CssParameter name="stroke">#00b300</CssParameter>
-              <CssParameter name="stroke-width">60</CssParameter>
-            </Stroke>
-          </LineSymbolizer>
-          
-         
-
-
-      
-        </Rule>            
-    
-
-    
-                 
       </FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>

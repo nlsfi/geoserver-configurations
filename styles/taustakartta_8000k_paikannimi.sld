@@ -7,11 +7,11 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>paikannimet taustakartta 8000k  </Name>
+    <Name>taustakartta_8000k_paikannimi</Name>
     <UserStyle>
 
-      <Title>paikannimet taustakartta 8000k  </Title>
-      <Abstract>paikannimet taustakartta 8000k  </Abstract>
+      <Title>taustakartta_8000k_paikannimi</Title>
+      <Abstract>sld</Abstract>
 
   
       <FeatureTypeStyle> 
@@ -70,6 +70,7 @@
               <CssParameter name="fill">#4d4d4d</CssParameter>
             </Fill>
             <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>
           </TextSymbolizer>
        </Rule> 
 

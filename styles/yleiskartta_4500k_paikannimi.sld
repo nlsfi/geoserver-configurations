@@ -7,10 +7,10 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>paikannimet yleiskartta 4500k</Name>
+    <Name>yleiskartta_4500k_paikannimi</Name>
     <UserStyle>
 
-      <Title>paikannimet yleiskartta 4500k</Title>
+      <Title>yleiskartta_4500k_paikannimi</Title>
       <Abstract>paikannimet yleiskartta 4500k </Abstract>
 
  
@@ -81,6 +81,7 @@
               <CssParameter name="fill">#000000</CssParameter>
             </Fill>
             <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>
           </TextSymbolizer>
        </Rule>            
   
@@ -160,6 +161,7 @@
               <CssParameter name="fill">#004dff</CssParameter>
             </Fill>
             <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>
           </TextSymbolizer>
        </Rule> 
 

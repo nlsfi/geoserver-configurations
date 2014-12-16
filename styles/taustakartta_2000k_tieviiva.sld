@@ -16,34 +16,7 @@
 
 
       <FeatureTypeStyle> 
-<!--  Lautta --> 
-        
-        <Rule>
-          <Name>Lautta tieluokka 9</Name>
-          <Title>Lautta tieluokka 9</Title>          
-      
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>tieluokka</ogc:PropertyName>
-              <ogc:Literal>9</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>      
 
-          <MinScaleDenominator>600000</MinScaleDenominator>
-          <MaxScaleDenominator>1500000</MaxScaleDenominator>
-
-          
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#b4b4b8</CssParameter>
-              <CssParameter name="stroke-width">600</CssParameter>
-              <CssParameter name="stroke-dasharray">1400 600</CssParameter>              
-              <CssParameter name="stroke-linecap">butt</CssParameter>
-              <CssParameter name="stroke-linejoin">round</CssParameter>        
-            </Stroke>
-          </LineSymbolizer>      
-      
-        </Rule>      
     
 <!--  Tieluokka 3, sisï¿½ltï¿½ï¿½ mantereen seututiet ja Ahvenanmaan isoja teitï¿½ --> 
         

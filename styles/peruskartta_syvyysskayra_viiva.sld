@@ -7,37 +7,37 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>teema:korkeus_viivat, syvyyskï¿½yrï¿½</Name>
+    <Name>peruskartta_syvyyskayra_viiva</Name>
     <UserStyle>
 
-      <Title>syvyyskï¿½yrï¿½_viivat</Title>
+      <Title>peruskartta_syvyyskayra_viiva</Title>
       <Abstract>sld</Abstract>
 
-<!-- Syvyyskï¿½yrï¿½  --> 
-      <FeatureTypeStyle>            
-    
-<!-- Syvyyskï¿½yrï¿½ 1.5 -->     
-    
+<!-- Syvyysk�yr�  --> 
+      <FeatureTypeStyle> 	         
+	  
+<!-- Syvyysk�yr� 1.5 --> 	  
+	  
         <Rule>
-          <Name>syvyyskï¿½yrï¿½ 1.5</Name>
-          <Title>syvyyskï¿½yrï¿½ 1.5</Title>                       
+          <Name>syvyysk�yr� 1.5</Name>
+          <Title>syvyysk�yr� 1.5</Title>		  		             
 
-      
-      
+		  
+		  
           <ogc:Filter>
-            <ogc:And>      
+            <ogc:And>		  
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>54100</ogc:Literal>
-              </ogc:PropertyIsEqualTo>                               
+              </ogc:PropertyIsEqualTo>				               			  
               <ogc:PropertyIsEqualTo>
                  <ogc:PropertyName>syvyysarvo</ogc:PropertyName>
                  <ogc:Literal>1500</ogc:Literal>
-              </ogc:PropertyIsEqualTo>                          
-            </ogc:And>          
-          </ogc:Filter>        
+              </ogc:PropertyIsEqualTo>				                  
+            </ogc:And>  			  
+          </ogc:Filter>  		  
 
-      
+		  
           <MaxScaleDenominator>10000</MaxScaleDenominator> 
          
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">               
@@ -45,167 +45,167 @@
               <CssParameter name="stroke">#0080ff</CssParameter>
               <CssParameter name="stroke-width">3.5</CssParameter>  
               <CssParameter name="stroke-linecap">round</CssParameter> 
-              <CssParameter name="stroke-dasharray">2 15</CssParameter>         
+              <CssParameter name="stroke-dasharray">2 15</CssParameter> 			  
             </Stroke>            
-          </LineSymbolizer>      
+          </LineSymbolizer> 		 
 
-        </Rule>  
+        </Rule>	
 
-    
-<!-- Syvyyskï¿½yrï¿½ 3 -->     
-    
+	  
+<!-- Syvyysk�yr� 3 --> 	  
+	  
         <Rule>
-          <Name>syvyyskï¿½yrï¿½ 3</Name>
-          <Title>syvyyskï¿½yrï¿½ 3</Title>                       
+          <Name>syvyysk�yr� 3</Name>
+          <Title>syvyysk�yr� 3</Title>		  		             
 
-      
-      
+		  
+		  
           <ogc:Filter>
-            <ogc:And>      
+            <ogc:And>		  
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>54100</ogc:Literal>
-              </ogc:PropertyIsEqualTo>                               
+              </ogc:PropertyIsEqualTo>				               			  
               <ogc:PropertyIsEqualTo>
                  <ogc:PropertyName>syvyysarvo</ogc:PropertyName>
                  <ogc:Literal>3000</ogc:Literal>
-              </ogc:PropertyIsEqualTo>                          
-            </ogc:And>          
-          </ogc:Filter>        
+              </ogc:PropertyIsEqualTo>				                  
+            </ogc:And>  			  
+          </ogc:Filter>  		  
 
-      
+		  
           <MaxScaleDenominator>10000</MaxScaleDenominator> 
          
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">               
             <Stroke>
               <CssParameter name="stroke">#0080ff</CssParameter>
               <CssParameter name="stroke-width">2.5</CssParameter>  
-              <CssParameter name="stroke-linecap">round</CssParameter>    
-              <CssParameter name="stroke-dasharray">20 10</CssParameter>                 
-              <CssParameter name="stroke-dashoffset">25</CssParameter>                 
+              <CssParameter name="stroke-linecap">round</CssParameter>  	
+              <CssParameter name="stroke-dasharray">20 10</CssParameter> 			  			  
+              <CssParameter name="stroke-dashoffset">25</CssParameter> 			  			  
             </Stroke>            
-          </LineSymbolizer>      
+          </LineSymbolizer> 		 
 
-        </Rule>  
-    
-    
-<!-- Syvyyskï¿½yrï¿½ 6 -->     
-    
+        </Rule>	
+		
+		
+<!-- Syvyysk�yr� 6 --> 	  
+	  
         <Rule>
-          <Name>syvyyskï¿½yrï¿½ 6</Name>
-          <Title>syvyyskï¿½yrï¿½ 6</Title>                       
+          <Name>syvyysk�yr� 6</Name>
+          <Title>syvyysk�yr� 6</Title>		  		             
 
-      
-      
+		  
+		  
           <ogc:Filter>
-            <ogc:And>      
+            <ogc:And>		  
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>54100</ogc:Literal>
-              </ogc:PropertyIsEqualTo>                               
+              </ogc:PropertyIsEqualTo>				               			  
               <ogc:PropertyIsEqualTo>
                  <ogc:PropertyName>syvyysarvo</ogc:PropertyName>
                  <ogc:Literal>6000</ogc:Literal>
-              </ogc:PropertyIsEqualTo>                          
-            </ogc:And>          
-          </ogc:Filter>        
+              </ogc:PropertyIsEqualTo>				                  
+            </ogc:And>  			  
+          </ogc:Filter>  		  
 
-      
+		  
           <MaxScaleDenominator>10000</MaxScaleDenominator> 
          
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">               
             <Stroke>
               <CssParameter name="stroke">#0080ff</CssParameter>
               <CssParameter name="stroke-width">2.5</CssParameter>  
-              <CssParameter name="stroke-linecap">round</CssParameter>    
-              <CssParameter name="stroke-dasharray">40 10</CssParameter>                 
-              <CssParameter name="stroke-dashoffset">50</CssParameter>                 
+              <CssParameter name="stroke-linecap">round</CssParameter>  	
+              <CssParameter name="stroke-dasharray">40 10</CssParameter> 			  			  
+              <CssParameter name="stroke-dashoffset">50</CssParameter> 			  			  
             </Stroke>            
-          </LineSymbolizer>      
+          </LineSymbolizer> 		 
 
-        </Rule>    
+        </Rule>		
 
 
-<!-- Syvyyskï¿½yrï¿½ 10-40 -->     
-    
+<!-- Syvyysk�yr� 10-40 --> 	  
+	  
         <Rule>
-          <Name>syvyyskï¿½yrï¿½ 10-40</Name>
-          <Title>syvyyskï¿½yrï¿½ 10-40</Title>                       
+          <Name>syvyysk�yr� 10-40</Name>
+          <Title>syvyysk�yr� 10-40</Title>		  		             
 
-      
-      
+		  
+		  
           <ogc:Filter>
-            <ogc:And>      
+            <ogc:And>		  
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>54100</ogc:Literal>
               </ogc:PropertyIsEqualTo>
-              <ogc:And>        
+              <ogc:And>			  
                 <ogc:PropertyIsGreaterThanOrEqualTo>
                    <ogc:PropertyName>syvyysarvo</ogc:PropertyName>
                    <ogc:Literal>10000</ogc:Literal>
-                </ogc:PropertyIsGreaterThanOrEqualTo>                          
+                </ogc:PropertyIsGreaterThanOrEqualTo>				                  
                 <ogc:PropertyIsLessThanOrEqualTo>
                    <ogc:PropertyName>syvyysarvo</ogc:PropertyName>
                    <ogc:Literal>40000</ogc:Literal>
-                </ogc:PropertyIsLessThanOrEqualTo>                          
+                </ogc:PropertyIsLessThanOrEqualTo>				                  
               </ogc:And> 
-            </ogc:And>          
-          </ogc:Filter>        
+            </ogc:And>  			  
+          </ogc:Filter>  		  
 
-      
+		  
           <MaxScaleDenominator>10000</MaxScaleDenominator> 
          
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">               
             <Stroke>
               <CssParameter name="stroke">#0080ff</CssParameter>
               <CssParameter name="stroke-width">2.5</CssParameter>  
-              <CssParameter name="stroke-linecap">round</CssParameter>    
-                
+              <CssParameter name="stroke-linecap">round</CssParameter>  	
+			  			  
             </Stroke>            
-          </LineSymbolizer>      
+          </LineSymbolizer> 		 
 
-        </Rule>    
-    
-    
-    
-<!-- Syvyyskï¿½yrï¿½ 50- -->     
-    
+        </Rule>		
+		
+		
+		
+<!-- Syvyysk�yr� 50- --> 	  
+	  
         <Rule>
-          <Name>syvyyskï¿½yrï¿½ 50-</Name>
-          <Title>syvyyskï¿½yrï¿½ 50-</Title>                       
+          <Name>syvyysk�yr� 50-</Name>
+          <Title>syvyysk�yr� 50-</Title>		  		             
 
-      
-      
+		  
+		  
           <ogc:Filter>
-            <ogc:And>      
+            <ogc:And>		  
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>54100</ogc:Literal>
-              </ogc:PropertyIsEqualTo>                               
+              </ogc:PropertyIsEqualTo>				               			  
               <ogc:PropertyIsGreaterThanOrEqualTo>
                  <ogc:PropertyName>syvyysarvo</ogc:PropertyName>
                  <ogc:Literal>50000</ogc:Literal>
-              </ogc:PropertyIsGreaterThanOrEqualTo>                          
-            </ogc:And>          
-          </ogc:Filter>        
+              </ogc:PropertyIsGreaterThanOrEqualTo>				                  
+            </ogc:And>  			  
+          </ogc:Filter>  		  
 
-      
+		  
           <MaxScaleDenominator>10000</MaxScaleDenominator> 
          
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">               
             <Stroke>
               <CssParameter name="stroke">#0080ff</CssParameter>
               <CssParameter name="stroke-width">3.5</CssParameter>  
-              <CssParameter name="stroke-linecap">round</CssParameter>                  
+              <CssParameter name="stroke-linecap">round</CssParameter>  			  			  
             </Stroke>            
-          </LineSymbolizer>      
+          </LineSymbolizer> 		 
 
-        </Rule>        
-    
-      </FeatureTypeStyle>    
-    
-    
-  </UserStyle>
+        </Rule>				
+		
+      </FeatureTypeStyle>	  
+	  
+	  
+	</UserStyle>
   </NamedLayer>
-</StyledLayerDescriptor>
+</StyledLayerDescriptor>		  

@@ -7,10 +7,10 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>paikannimet yleiskartta 1000k</Name>
+    <Name>yleiskartta_1000k_paikannimi</Name>
     <UserStyle>
 
-      <Title>paikannimet yleiskartta 1000k</Title>
+      <Title>yleiskartta_1000k_paikannimi</Title>
       <Abstract>paikannimet yleiskartta 1000k</Abstract>
 
   
@@ -76,6 +76,14 @@
                   <DisplacementY>-500</DisplacementY>
 
                 </Displacement>        
+                 <Rotation>
+                   <ogc:Function name="toDegrees">
+                    <ogc:Div>
+                       <ogc:PropertyName>suunta</ogc:PropertyName>
+                      <ogc:Literal>-10000</ogc:Literal> 
+                    </ogc:Div>        
+                  </ogc:Function> 
+                </Rotation>         
               </PointPlacement>
             </LabelPlacement>         
       
@@ -85,6 +93,7 @@
               <CssParameter name="fill">#000000</CssParameter>
             </Fill>
             <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>
           </TextSymbolizer>
        </Rule>            
   
@@ -145,6 +154,14 @@
                   <DisplacementY>-250</DisplacementY>
 
                 </Displacement>    
+                 <Rotation>
+                   <ogc:Function name="toDegrees">
+                    <ogc:Div>
+                       <ogc:PropertyName>suunta</ogc:PropertyName>
+                      <ogc:Literal>-10000</ogc:Literal> 
+                    </ogc:Div>        
+                  </ogc:Function> 
+                </Rotation>         
               </PointPlacement>
             </LabelPlacement>       
       
@@ -154,10 +171,11 @@
               <CssParameter name="fill">#000000</CssParameter>
             </Fill>
             <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>
           </TextSymbolizer>
        </Rule>     
 
-<!-- siniset (kirjasinvarikoodi=55) ja kirjasinkallistuskulma -15 -->
+<!-- siniset (kirjasinvarikoodi=20) ja kirjasinkallistuskulma -15 -->
         <Rule>
         
           <ogc:Filter>
@@ -233,6 +251,7 @@
               <CssParameter name="fill">#004dff</CssParameter>
             </Fill>
             <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="partials">true</VendorOption>
           </TextSymbolizer>
        </Rule>            
 

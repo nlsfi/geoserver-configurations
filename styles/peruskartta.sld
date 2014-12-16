@@ -7,12 +7,11 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>Peruskartta</Name>
+    <Name>peruskartta</Name>
     <UserStyle>
 
-      <Title>Peruskartta</Title>
-      <Abstract>Peruskartan perus SLD-tyyli. T&#228;m&#228;n lis&#228;ksi on erillis&#228; SLD-tyylej&#228;, joiden m&#228;
-&#228;rittelyss&#228; k&#228;ytet&#228;&#228;n muita kuin tavallisimpia ominaisuuskentti&#228;</Abstract>
+      <Title>peruskartta</Title>
+      <Abstract>Peruskartta</Abstract>
 
       <FeatureTypeStyle>    
     
@@ -322,13 +321,11 @@
         </Rule>        
          
     
-<!-- 32111 Karkean kivenn&#228;
-ismaanottoalue alue -->            
+<!-- 32111 Karkean kivennaismaanottoalue alue -->            
                  
         <Rule>
           <Name>32111</Name>
-          <Title>32111 Karkean kivenn&#228;
-ismaanottoalue</Title>
+          <Title>32111 Karkean kivennaismaanottoalue</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -346,9 +343,7 @@ ismaanottoalue</Title>
             </Fill>            
           </PolygonSymbolizer>
       
-          <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> <!-- Phko 0 0 0 100 v&#228;
-rill&#228;
- --> 
+          <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> <!-- Phko 0 0 0 100 varilla --> 
             <Fill>
               <GraphicFill>
                 <Graphic>
@@ -369,13 +364,11 @@ xlink:href="peruskartta/Phko_0_0_0_100.svg"/>
         </Rule>          
     
     
-<!-- 32111 Karkean kivenn&#228;
-ismaanottoalue alue -->            
+<!-- 32111 Karkean kivennaismaanottoalue alue -->            
                  
         <Rule>
           <Name>32111</Name>
-          <Title>32111 Karkean kivenn&#228;
-ismaanottoalue</Title>
+          <Title>32111 Karkean kivennaismaanottoalue</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -394,9 +387,7 @@ ismaanottoalue</Title>
             </Fill>            
           </PolygonSymbolizer>
       
-          <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> <!-- Phko 0 0 0 100 v&#228;
-rill&#228;
- --> 
+          <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> <!-- Phko 0 0 0 100 varilla --> 
             <Fill>
               <GraphicFill>
                 <Graphic>
@@ -421,13 +412,11 @@ xlink:href="peruskartta/Phko_0_0_0_100.svg"/>
     
     
     
-<!-- 32112 Hieno kivenn&#228;
-ismaanottoalue alue -->            
+<!-- 32112 Hieno kivennaismaanottoalue alue -->            
            
         <Rule>
           <Name>32112</Name>
-          <Title>32112 Hieno kivenn&#228;
-ismaanottoalue</Title>
+          <Title>32112 Hieno kivennaismaanottoalue</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -448,15 +437,11 @@ ismaanottoalue</Title>
         </Rule>        
          
 
-<!-- 32113 eloper&#228;
-inen kivenn&#228;
-ismaanottoalue alue -->           
+<!-- 32113 eloperainen kivennaismaanottoalue alue -->           
                    
         <Rule>
           <Name>32113</Name>
-          <Title>32113 Eloper&#228;
-inen kivenn&#228;
-ismaanottoalue</Title>
+          <Title>32113 Eloperainen kivennaismaanottoalue</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -581,8 +566,8 @@ xlink:href="peruskartta/Pkivikko_0_0_0_60.svg"/>
             </Fill>            
           </PolygonSymbolizer>      
       
-           <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> <!-- Phko 0 0 0 100 v&#228;
-rill&#228;
+           <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> <!-- Phko 0 0 0 100 va
+rilla
  --> 
             <Fill>
               <GraphicFill>
@@ -626,8 +611,8 @@ xlink:href="peruskartta/Phko_0_0_0_100.svg"/>
             </Fill>            
           </PolygonSymbolizer>      
       
-           <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> <!-- Phko 0 0 0 100 v&#228;
-rill&#228;
+           <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> <!-- Phko 0 0 0 100 va
+rilla
  --> 
             <Fill>
               <GraphicFill>
@@ -672,13 +657,11 @@ xlink:href="peruskartta/Phko_0_0_0_100.svg"/>
         </Rule>           
       
 
-<!-- 33000 T&#228;
-ytemaa  -->        
+<!-- 33000 Taytemaa  -->        
                    
         <Rule>
           <Name>33000</Name>
-          <Title>33000 T&#228;
-ytemaa</Title>
+          <Title>33000 Taytemaa</Title>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -716,13 +699,12 @@ xlink:href="peruskartta/Psoist_0_0_0_80.svg"/>
 
         </Rule>  
       
-<!-- 36200 j&#228;
-rvivesi alue -->    
+<!-- 36200 jarvivesi alue -->    
               
         <Rule>
           <Name>36200</Name>
           
-          <Title>J&#228;rvivesi</Title>
+          <Title>Jarvivesi</Title>
                 
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -840,15 +822,11 @@ rvivesi alue -->
         </Rule>  
       
     
-<!-- 35412 suo helppokulkuinen mets&#228;
-&#228;
- kasvaa -->
+<!-- 35412 suo helppokulkuinen metsaa kasvaa -->
               
         <Rule>
           <Name>35412</Name>
-          <Title>Suo helppokulkuinen mets&#228;
-&#228;
- kasvaa</Title>
+          <Title>Suo helppokulkuinen metsaa kasvaa</Title>
           
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -889,7 +867,7 @@ rvivesi alue -->
             </Fill>
           </PolygonSymbolizer>            
           
-          <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> <!-- Psuo12p -->
+          <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> <!-- Psuo12 -->
             <Fill>
               <GraphicFill>
                 <Graphic>
@@ -909,15 +887,11 @@ rvivesi alue -->
         </Rule>    
           
 
-<!-- 35422 suo vaikeakulkuinen mets&#228;
-&#228;
- kasvaa -->
+<!-- 35422 suo vaikeakulkuinen metsaa kasvaa -->
                     
         <Rule>
           <Name>35422</Name>
-          <Title>35422 Suo vaikeakulkuinen mets&#228;
-&#228;
- kasvaa</Title>
+          <Title>35422 Suo vaikeakulkuinen metsaa kasvaa</Title>
           
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -942,7 +916,7 @@ rvivesi alue -->
           <Mark>
             <WellKnownName>shape://horline</WellKnownName>
           <Stroke>
-            <CssParameter name="stroke">#5ce6e6</CssParameter><!--5ce6e6-->
+            <CssParameter name="stroke">#5ce6e6</CssParameter>
                       <CssParameter name="stroke-width">6</CssParameter>            
           </Stroke>
             </Mark>
@@ -977,14 +951,14 @@ rvivesi alue -->
             </Fill>
           </PolygonSymbolizer>            
           
-          <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> <!-- Psuo12p -->
+          <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> <!-- Psuo12 -->
             <Fill>
               <GraphicFill>
                 <Graphic>
                   <Mark>
                     <WellKnownName>shape://horline</WellKnownName>
                     <Stroke>
-                      <CssParameter name="stroke">#5ce6e6</CssParameter><!--5ce6e6-->
+                      <CssParameter name="stroke">#5ce6e6</CssParameter>
                       <CssParameter name="stroke-width">6</CssParameter>                      
                     </Stroke>
                   </Mark>
@@ -997,15 +971,11 @@ rvivesi alue -->
         </Rule>    
           
 
-<!-- 35422 suo vaikeakulkuinen mets&#228;
-&#228;
- kasvaa -->
+<!-- 35422 suo vaikeakulkuinen metsaa kasvaa -->
                     
         <Rule>
           <Name>35422</Name>
-          <Title>35422 Suo vaikeakulkuinen mets&#228;
-&#228;
- kasvaa</Title>
+          <Title>35422 Suo vaikeakulkuinen metsaa kasvaa</Title>
           
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -1043,94 +1013,10 @@ rvivesi alue -->
       
         </Rule>  
                         
-<!--  35421 suo vaikeakulkuinen, puuton eli avoin -->
-      
-       <Rule>
-          <Name>35421</Name>          
-      <Title>Suo vaikeakulkuinen, puuton eli avoin</Title>
-      
-          
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
-              <ogc:Literal>35421</ogc:Literal>
-            </ogc:PropertyIsEqualTo>   
-          </ogc:Filter> 
-
-         <MinScaleDenominator>10000</MinScaleDenominator>
-         <MaxScaleDenominator>10000</MaxScaleDenominator>
-                    
-      <PolygonSymbolizer>
-        <Fill>
-        <CssParameter name="fill">#d1cc40</CssParameter>
-            </Fill>
-          </PolygonSymbolizer>            
-          
-          <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> <!-- Psuo12p -->
-            <Fill>
-              <GraphicFill>
-                <Graphic>
-                  <Mark>
-                    <WellKnownName>shape://horline</WellKnownName>
-                    <Stroke>
-                      <CssParameter name="stroke">#5ce6e6</CssParameter><!--5ce6e6-->
-                      <CssParameter name="stroke-width">8</CssParameter>                      
-                    </Stroke>
-                  </Mark>
-                  <Size>16</Size>
-                </Graphic>
-              </GraphicFill>
-            </Fill>
-          </PolygonSymbolizer>
-          
-        </Rule>    
+  
           
 
-<!-- 35422 suo vaikeakulkuinen mets&#228;
-&#228;
- kasvaa -->
-                    
-        <Rule>
-          <Name>35422</Name>
-          <Title>35422 Suo vaikeakulkuinen mets&#228;
-&#228;
- kasvaa</Title>
-          
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
-              <ogc:Literal>35422</ogc:Literal>
-            </ogc:PropertyIsEqualTo>     
-          </ogc:Filter>
-
-      
-         <MinScaleDenominator>10000</MinScaleDenominator>
-         <MaxScaleDenominator>10000</MaxScaleDenominator>    
-      
-      <PolygonSymbolizer>
-        <Fill>
-        <CssParameter name="fill">#C7EBEB</CssParameter>
-            </Fill>
-          </PolygonSymbolizer>  
-
-      <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> <!-- Psuo12 -->
-        <Fill>
-        <GraphicFill>
-          <Graphic>
-          <Mark>
-            <WellKnownName>shape://horline</WellKnownName>
-          <Stroke>
-            <CssParameter name="stroke">#5ce6e6</CssParameter><!--5ce6e6-->
-                      <CssParameter name="stroke-width">8</CssParameter>            
-          </Stroke>
-            </Mark>
-          <Size>16</Size> 
-        </Graphic>
-              </GraphicFill>
-            </Fill>
-          </PolygonSymbolizer>  
-      
-        </Rule>               
+             
     
 <!-- 44300 allas -->      
       
@@ -1167,13 +1053,11 @@ rvivesi alue -->
 
 
       
-<!-- 39110 Avoin mets&#228;
-maa -->
+<!-- 39110 Avoin metsamaa -->
       
         <Rule>
           <Name>39110</Name>          
-          <Title>39110 Avoin mets&#228;
-maa</Title>
+          <Title>39110 Avoin metsamaa</Title>
         
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -1182,7 +1066,6 @@ maa</Title>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter> 
 
-          <!-- <MinScaleDenominator>3570</MinScaleDenominator>  -->
           <MaxScaleDenominator>10000</MaxScaleDenominator> 
 
       <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> <!-- Psuvv -->
@@ -1205,51 +1088,13 @@ maa</Title>
 
         </Rule>             
        
-<!-- 39110 Avoin mets&#228;
-maa -->
-      
-        <Rule>
-          <Name>39110</Name>          
-          <Title>39110 Avoin mets&#228;
-maa</Title>
-        
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
-              <ogc:Literal>39110</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter> 
+   
 
-          <MinScaleDenominator>10000</MinScaleDenominator>
-          <MaxScaleDenominator>10000</MaxScaleDenominator> 
-
-      <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> <!-- Psuvv -->
-        <Fill>
-        <GraphicFill>
-          <Graphic>
-          <Mark>
-            <WellKnownName>shape://slash</WellKnownName>
-          <Stroke>
-            <CssParameter name="stroke">#b8d900</CssParameter>
-                      <CssParameter name="stroke-width">5</CssParameter>
-                      <CssParameter name="stroke-linecap">square</CssParameter>            
-          </Stroke>
-            </Mark>
-          <Size>22</Size>
-        </Graphic>
-              </GraphicFill>
-            </Fill>
-          </PolygonSymbolizer>  
-
-        </Rule>     
-
-<!-- 39130 Avoin vesij&#228;
-tt&#246; -->
+<!-- 39130 Avoin vesijatto -->
       
         <Rule>
           <Name>39130</Name>          
-          <Title>39130 Avoin vesij&#228;
-tt&#246;</Title>
+          <Title>39130 Avoin vesijatto</Title>
         
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -1284,9 +1129,7 @@ tt&#246;</Title>
       
       <MaxScaleDenominator>5000</MaxScaleDenominator>       
       
-           <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> <!-- Phko 100 50 0 0 v&#228;
-rill&#228;
- --> 
+           <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> <!-- Phko 100 50 0 0 varilla --> 
             <Fill>
               <GraphicFill>
                 <Graphic>
@@ -1323,9 +1166,7 @@ xlink:href="peruskartta/Phko_100_50_0_0.svg"/>
       <MinScaleDenominator>5000</MinScaleDenominator>       
       <MaxScaleDenominator>10000</MaxScaleDenominator>       
       
-           <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> <!-- Phko 100 50 0 0 v&#228;
-rill&#228;
- --> 
+           <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> <!-- Phko 100 50 0 0 varilla --> 
             <Fill>
               <GraphicFill>
                 <Graphic>
@@ -1393,15 +1234,12 @@ xlink:href="peruskartta/Phko_100_50_0_0.svg"/>
 
           
 
-<!-- 32411 lentokent&#228;
-n kiitotie p&#228;
-&#228;
-llystetty -->
+<!-- 32411 lentokentan kiitotie paallystetty -->
               
         <Rule>
           <Name>32411</Name>
           
-          <Title>32411 Lentokent&#228;n kiitotie p&#228;&#228;llystetty</Title>
+          <Title>32411 Lentokentan kiitotie paallystetty</Title>
         
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -1421,17 +1259,12 @@ llystetty -->
     
           
 
-<!-- 32412 lentokent&#228;
-n kiitotie p&#228;
-&#228;
-llyst&#228;
-m&#228;
-t&#246;n -->  
+<!-- 32412 lentokentan kiitotie paallystamaton -->  
               
         <Rule>
           <Name>32412</Name>
           
-          <Title>32412 Lentokent&#228;n kiitotie p&#228;&#228;llyst&#228;m&#228;t&#246;n</Title>
+          <Title>32412 Lentokentan kiitotie paallystamaton</Title>
         
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -1451,13 +1284,12 @@ t&#246;n -->
     
           
 
-<!-- 32413 muu lentokentt&#228;
-alue (nurmikot ym. alueet) -->  
+<!-- 32413 muu lentokenttaalue (nurmikot ym. alueet) -->  
           
         <Rule>
           <Name>32413</Name>
           
-          <Title>32413 Muu lentokentt&#228;alue (nurmikot ym. alueet)</Title>
+          <Title>32413 Muu lentokenttaalue (nurmikot ym. alueet)</Title>
         
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -1477,15 +1309,12 @@ alue (nurmikot ym. alueet) -->
     
           
 
-<!-- 32415 muu lentokentt&#228;
-alue p&#228;
-&#228;
-llystetty -->
+<!-- 32415 muu lentokenttaalue paallystetty -->
           
         <Rule>
           <Name>32415</Name>
           
-          <Title>32415 Muu lentokentt&#228;alue p&#228;&#228;llystetty</Title>
+          <Title>32415 Muu lentokenttaalue paallystetty</Title>
         
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -1505,17 +1334,12 @@ llystetty -->
     
           
 
-<!-- 32416 muu lentokentt&#228;
-alue p&#228;
-&#228;
-llyst&#228;
-m&#228;
-t&#246;n -->
+<!-- 32416 muu lentokenttaalue paallystamaton -->
                   
         <Rule>
           <Name>32416</Name>
           
-          <Title>32416 Muu lentokentt&#228;alue p&#228;&#228;llyst&#228;m&#228;t&#246;n</Title>
+          <Title>32416 Muu lentokenttaalue paallystamaton</Title>
         
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -1559,13 +1383,11 @@ t&#246;n -->
     
           
 
-<!-- 32417 muu lentoliikennealue p&#228;
-&#228;
-llystetty -->        
+<!-- 32417 muu lentoliikennealue paallystetty -->        
           
         <Rule>
           <Name>32417</Name>          
-          <Title>32417 Muu lentoliikennealue p&#228;&#228;llystetty</Title>
+          <Title>32417 Muu lentoliikennealue paallystetty</Title>
         
           <ogc:Filter>
               <ogc:PropertyIsEqualTo>
@@ -1585,15 +1407,11 @@ llystetty -->
     
         
 
-<!-- 32418 muu lentoliikennealue p&#228;
-&#228;
-llyst&#228;
-m&#228;
-t&#246;n -->    
+<!-- 32418 muu lentoliikennealue paallystamaton -->    
               
         <Rule>
           <Name>32418</Name>          
-          <Title>32418 Muu lentoliikennealue p&#228;&#228;llyst&#228;m&#228;t&#246;n</Title>
+          <Title>32418 Muu lentoliikennealue paallystamaton</Title>
         
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -1616,7 +1434,7 @@ t&#246;n -->
         <Rule>
           <Name>72000</Name>
           <Title>72000 suojelualueen reunaviiva</Title>                       
-          <Abstract>Suojelualueen reunaviiva. Vy�hykerasterin kuvaus m��ritet��n peruskartta_psuvvvyohyke.xml sld:ss�</Abstract>                       
+          <Abstract>Suojelualueen reunaviiva</Abstract>                       
 
       
       
@@ -1647,7 +1465,7 @@ t&#246;n -->
         <Rule>
           <Name>72410</Name>
           <Title>72410 Rauhoitettu kivi, reunaviiva</Title>                       
-          <Abstract>Rauhoitettu kivi, reunaviiva. Vy�hykerasterin kuvaus m��ritet��n peruskartta_psuvvvyohyke.xml sld:ss�</Abstract>                       
+          <Abstract>Rauhoitettu kivi, reunaviiva</Abstract>                       
 
       
       
@@ -1678,7 +1496,7 @@ t&#246;n -->
         <Rule>
           <Name>72420</Name>
           <Title>72420 Rauhoitettu puu, reunaviiva</Title>                       
-          <Abstract>Rauhoitettu puu, reunaviiva. Vy�hykerasterin kuvaus m��ritet��n peruskartta_psuvvvyohyke.xml sld:ss�</Abstract>                       
+          <Abstract>Rauhoitettu puu, reunaviiva.</Abstract>                       
 
       
       
@@ -1709,7 +1527,7 @@ t&#246;n -->
         <Rule>
           <Name>72440</Name>
           <Title>72440 Muu rauhoitettu kohde, reunaviiva</Title>                       
-          <Abstract>Muu rauhoitettu kohde, reunaviiva. Vy�hykerasterin kuvaus m��ritet��n peruskartta_psuvvvyohyke.xml sld:ss�</Abstract>                       
+          <Abstract>Muu rauhoitettu kohde, reunaviiva.</Abstract>                       
 
       
       
@@ -1741,7 +1559,7 @@ t&#246;n -->
         <Rule>
           <Name>62100</Name>
           <Title>62100 Ampuma-alue</Title>                       
-          <Abstract>Ampuma-alueen viiva. Vy�hykerasterin kuvaus m��ritet��n peruskartta_psuvvvyohyke sld:ss�</Abstract>                       
+          <Abstract>Ampuma-alueen viiva</Abstract>                       
 
       
       
@@ -1934,9 +1752,7 @@ t&#246;n -->
 
           <MaxScaleDenominator>10000</MaxScaleDenominator> 
 
-          <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> <!-- Pkivikikko 0 0 0 100 v&#228;
-rill&#228;
- -->
+          <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> <!-- Pkivikikko 0 0 0 100 varilla -->
 
             <Fill>
               <GraphicFill>
@@ -1973,9 +1789,7 @@ xlink:href="peruskartta/Pkivikko_0_0_0_100.svg"/>
 
           <MaxScaleDenominator>10000</MaxScaleDenominator>  
 
-          <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre"><!-- Pkivikko 0 0 0 100 v&#228;
-rill&#228;
- -->
+          <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre"><!-- Pkivikko 0 0 0 100 varilla -->
             <Fill>
               <GraphicFill>
                 <Graphic>
@@ -2212,7 +2026,7 @@ xlink:href="peruskartta/luiska_hapsu_apusymboli.svg"/>
           </LineSymbolizer>
         </Rule>     
     
-<!-- Jyrk&#228;
+<!-- Jyrka
 nne --> 
      
         <Rule> <!-- 0,5 m  pikseli -->
@@ -2258,7 +2072,7 @@ xlink:href="peruskartta/jyrkanne_hapsu_apusymboli.svg"/>
           </LineSymbolizer>
         </Rule>          
     
-<!-- Jyrk&#228;
+<!-- Jyrka
 nne --> 
      
         <Rule> <!-- 1 m  pikseli -->
@@ -2305,7 +2119,7 @@ xlink:href="peruskartta/jyrkanne_hapsu_apusymboli.svg"/>
           </LineSymbolizer>
         </Rule>     
     
-<!-- Jyrk&#228;
+<!-- Jyrka
 nne --> 
      
         <Rule> <!-- 2 m  pikseli -->
@@ -2352,52 +2166,7 @@ xlink:href="peruskartta/jyrkanne_hapsu_apusymboli.svg"/>
           </LineSymbolizer>
         </Rule>     
     
-<!-- Jyrk&#228;
-nne --> 
-     
-        <Rule> <!-- 4 m -->
-          <Name>34400</Name>
-          <Title>34400 Jyrkanne</Title>      
-      
- 
-          <ogc:Filter>    
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
-              <ogc:Literal>34400</ogc:Literal>
-            </ogc:PropertyIsEqualTo>                  
-          </ogc:Filter>  
-      
-          <MinScaleDenominator>10000</MinScaleDenominator> 
-          <MaxScaleDenominator>10000</MaxScaleDenominator> 
-      
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#000000</CssParameter>
-              <CssParameter name="stroke-width">4</CssParameter>
-              <CssParameter name="stroke-linecap">butt</CssParameter>
-            </Stroke>
-          </LineSymbolizer>
-
-
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <GraphicStroke>
-                <Graphic>
-                  <ExternalGraphic>
-                    <OnlineResource
-xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
-xlink:href="peruskartta/jyrkanne_hapsu_apusymboli.svg"/>
-                    <Format>image/svg+xml</Format>
-                  </ExternalGraphic>
-                  <Size>
-                    <ogc:Literal>27</ogc:Literal>
-                  </Size>
-                </Graphic>
-              </GraphicStroke>
-              <CssParameter name="stroke-dasharray">8 16</CssParameter>         
-            </Stroke>
-          </LineSymbolizer>
-        </Rule>              
+              
 
 <!--  34500 Kalliohalkeama -->
         
@@ -2424,13 +2193,11 @@ xlink:href="peruskartta/jyrkanne_hapsu_apusymboli.svg"/>
           </LineSymbolizer>
         </Rule>        
 
-<!--  35500 Suoj&#228;
-nne -->
+<!--  35500 Suojanne -->
         
         <Rule>
           <Name>35500</Name>
-      <Title>35500 Suoj&#228;
-nne</Title>
+      <Title>35500 Suojanne</Title>
         
  
           <ogc:Filter>     
@@ -2452,188 +2219,7 @@ nne</Title>
           </LineSymbolizer>
         </Rule>        
     
-<!--  21665 Yleisen alueen raja -->
         
-        <Rule>
-          <Name>21665</Name>
-      <Title>21665 Yleisen alueen raja</Title>
-        
- 
-          <ogc:Filter>     
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
-              <ogc:Literal>21665</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter> 
-
-          <MaxScaleDenominator>10000</MaxScaleDenominator> 
-         
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#8000ff</CssParameter>
-              <CssParameter name="stroke-width">2.5</CssParameter>              
-              <CssParameter name="stroke-linecap">round</CssParameter>
-            </Stroke>
-          </LineSymbolizer>
-        </Rule>      
-
-<!--  21661 Kyl&#228;
-n raja -->
-        
-        <Rule>
-          <Name>21661</Name>
-      <Title>21661 Kyl&#228;
-n raja</Title>
-        
- 
-          <ogc:Filter>     
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
-              <ogc:Literal>21661</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter> 
-
-          <MaxScaleDenominator>10000</MaxScaleDenominator> 
-         
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#990080</CssParameter>
-              <CssParameter name="stroke-width">3.5</CssParameter>              
-              <CssParameter name="stroke-linecap">round</CssParameter>
-              <CssParameter name="stroke-dasharray">40 10</CssParameter>
-              <CssParameter name="stroke-dashoffset">10</CssParameter>
-            </Stroke>
-          </LineSymbolizer>
-        </Rule>      
-    
-<!--  21662 Yleisten yms. rekisteriyksik&#246;n raja -->
-        
-        <Rule>
-          <Name>21662</Name>
-      <Title>21662 Yleisten yms. rekisteriyksik&#246;n raja</Title>
-        
- 
-          <ogc:Filter>     
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
-              <ogc:Literal>21662</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter> 
-
-          <MaxScaleDenominator>10000</MaxScaleDenominator> 
-         
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#990080</CssParameter>
-              <CssParameter name="stroke-width">2.5</CssParameter>              
-              <CssParameter name="stroke-linecap">round</CssParameter>
-              <CssParameter name="stroke-dasharray">20 8</CssParameter>
-              <CssParameter name="stroke-dashoffset">10</CssParameter>
-            </Stroke>
-          </LineSymbolizer>
-        </Rule>      
-        
-<!--  21663 Tilan raja -->
-        
-        <Rule>
-          <Name>21663</Name>
-      <Title>21663 Tilan raja</Title>
-        
- 
-          <ogc:Filter>     
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
-              <ogc:Literal>21663</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter> 
-
-          <MaxScaleDenominator>10000</MaxScaleDenominator> 
-         
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#cc0080</CssParameter>
-              <CssParameter name="stroke-width">2.5</CssParameter>              
-              <CssParameter name="stroke-linecap">round</CssParameter>
-              <CssParameter name="stroke-dasharray">20 8</CssParameter>
-              <CssParameter name="stroke-dashoffset">10</CssParameter>
-            </Stroke>
-          </LineSymbolizer>
-        </Rule>        
-
-<!--  21664 Tontin raja -->
-        
-        <Rule>
-          <Name>21664</Name>
-      <Title>21664 Tontin raja</Title>
-        
- 
-          <ogc:Filter>     
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
-              <ogc:Literal>21664</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter> 
-
-          <MaxScaleDenominator>10000</MaxScaleDenominator> 
-         
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#990080</CssParameter>
-              <CssParameter name="stroke-width">2</CssParameter>              
-              <CssParameter name="stroke-linecap">round</CssParameter>
-            </Stroke>
-          </LineSymbolizer>
-        </Rule>              
-
-<!--  21653 Kunnan raja, kameraalinen -->
-        
-        <Rule>
-          <Name>21653</Name>
-      <Title>21653 Kunnan raja, kameraalinen</Title>
-        
- 
-          <ogc:Filter>     
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
-              <ogc:Literal>21653</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter> 
-
-          <MaxScaleDenominator>10000</MaxScaleDenominator> 
-         
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#ff00ff</CssParameter>
-              <CssParameter name="stroke-width">2.5</CssParameter>              
-              <CssParameter name="stroke-linecap">round</CssParameter>
-            </Stroke>
-          </LineSymbolizer>
-        </Rule>              
-
-<!--  21651 Valtakunnan raja, kameraalinen -->
-        
-        <Rule>
-          <Name>21651</Name>
-      <Title>21651 Valtakunnan raja, kameraalinen</Title>
-        
- 
-          <ogc:Filter>     
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
-              <ogc:Literal>21651</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter> 
-
-          <MaxScaleDenominator>10000</MaxScaleDenominator> 
-         
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#ff00ff</CssParameter>
-              <CssParameter name="stroke-width">2.5</CssParameter>              
-              <CssParameter name="stroke-linecap">round</CssParameter>
-            </Stroke>
-          </LineSymbolizer>
-        </Rule>                  
     
 <!--  35200 Puurivi -->
         
@@ -2874,15 +2460,11 @@ n raja</Title>
           </LineSymbolizer>
         </Rule>    
     
-<!--  16511 Laivav&#228;
-yl&#228;
- -->
+<!--  16511 Laivavayla -->
         
         <Rule>
           <Name>16511</Name>
-      <Title>16511 Laivav&#228;
-yl&#228;
-</Title>
+      <Title>16511 Laivavayla</Title>
         
  
           <ogc:Filter>     
@@ -2934,9 +2516,7 @@ yl&#228;
         
         <Rule>
           <Name>16521</Name>
-      <Title>16521 Laivav&#228;
-yl&#228;linja
-</Title>
+      <Title>16521 Laivavaylalinja</Title>
         
  
           <ogc:Filter>     

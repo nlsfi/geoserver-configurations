@@ -763,7 +763,7 @@
         <ogc:Or>
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
-                <ogc:Literal>12515</ogc:Literal>
+                <ogc:Literal>12151</ogc:Literal>
               </ogc:PropertyIsEqualTo>
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
