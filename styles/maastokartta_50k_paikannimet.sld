@@ -16,9 +16,7 @@
 
     <FeatureTypeStyle>     
    
-<!-- Karttanimet mustat pysty eli kirjasinkallistuskulma 0 -->        
 
-        <Rule>
 
  <!-- Karttanimet mustat pysty eli kirjasinkallistuskulma 0 -->        
 
