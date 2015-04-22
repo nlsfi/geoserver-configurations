@@ -23,7 +23,7 @@
           <Name>52192</Name>
       
           <ogc:Filter> 
-            <ogc:Or>      
+            <ogc:Or>		  
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>52192</ogc:Literal>
@@ -32,21 +32,13 @@
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>52193</ogc:Literal>
               </ogc:PropertyIsEqualTo>
-            </ogc:Or>        
+            </ogc:Or>			  
           </ogc:Filter> 
 
          <MaxScaleDenominator>10000</MaxScaleDenominator>
 
-          <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-      
-<!--             <Geometry>
-              <ogc:Function name ="offset">
-                <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
-                <ogc:Literal>7.5</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>     -->    
-      
+          <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre">		  
+		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -60,13 +52,13 @@ xlink:href="peruskartta/Sviettov_korkeus.svg"/>
         
                <Rotation> 
                 <ogc:Function name="toDegrees">
-                  <ogc:Add>        
+                  <ogc:Add>				
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
                       <ogc:Literal>-10000</ogc:Literal>
                     </ogc:Div>        
-                    <ogc:Literal>3.1415</ogc:Literal>    
-                  </ogc:Add>          
+                    <ogc:Literal>3.1415</ogc:Literal>		
+                  </ogc:Add>  				
                 </ogc:Function>                
               </Rotation>  
         
@@ -91,16 +83,10 @@ xlink:href="peruskartta/Sviettov_korkeus.svg"/>
           <Name>54192</Name>
       
           <ogc:Filter>
-            <ogc:Or>      
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
-                <ogc:Literal>54192</ogc:Literal>
-              </ogc:PropertyIsEqualTo>      
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
-                <ogc:Literal>54592</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:Or>        
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
+              <ogc:Literal>54192</ogc:Literal>
+            </ogc:PropertyIsEqualTo>		  	  
           </ogc:Filter> 
 
          <MaxScaleDenominator>10000</MaxScaleDenominator>
@@ -119,13 +105,13 @@ xlink:href="peruskartta/Sviettov_vesi.svg"/>
         
               <Rotation> 
                 <ogc:Function name="toDegrees">
-                  <ogc:Add>        
+                  <ogc:Add>				
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
                       <ogc:Literal>-10000</ogc:Literal>
                     </ogc:Div>        
-                    <ogc:Literal>3.1415</ogc:Literal>    
-                  </ogc:Add>          
+                    <ogc:Literal>3.1415</ogc:Literal>		
+                  </ogc:Add>  				
                 </ogc:Function>                
               </Rotation> 
         

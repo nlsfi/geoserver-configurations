@@ -43,14 +43,7 @@ xlink:href="peruskartta/Svkrajapyykki.svg"/>
                 <ogc:Literal>22</ogc:Literal>
               </Size>
         
-              <Rotation> 
-                <ogc:Function name="toDegrees">
-                  <ogc:Div>                  
-                    <ogc:PropertyName>suunta</ogc:PropertyName> 
-                    <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
-                </ogc:Function>
-              </Rotation>
+
         
             </Graphic>
           </PointSymbolizer>
@@ -84,14 +77,7 @@ xlink:href="peruskartta/Svesiasteikko.svg"/>
                 <ogc:Literal>15.625</ogc:Literal>
               </Size>
         
-              <Rotation> 
-                <ogc:Function name="toDegrees">
-                  <ogc:Div>                  
-                    <ogc:PropertyName>suunta</ogc:PropertyName> 
-                    <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
-                </ogc:Function>
-              </Rotation>
+
         
             </Graphic>
           </PointSymbolizer>
@@ -138,11 +124,11 @@ xlink:href="peruskartta/Slo_Slo.svg"/>
           </PointSymbolizer>
         </Rule>      
 	  
-<!--  14191 Sähköistyssymboli, rautatie -->		
+<!--  14191 Sï¿½hkï¿½istyssymboli, rautatie -->		
 
         <Rule>
           <Name>14191</Name>
-          <Title>14191 Rautatien sähköistyssymboli</Title>
+          <Title>14191 Rautatien sï¿½hkï¿½istyssymboli</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -174,6 +160,7 @@ xlink:href="peruskartta/Sz.svg"/>
               <Size>
                 <ogc:Literal>28.1</ogc:Literal>
               </Size>
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
@@ -186,11 +173,11 @@ xlink:href="peruskartta/Sz.svg"/>
           </PointSymbolizer>
         </Rule>		
 		
-<!--  14192 Sähköistyssymboli, rautatie käytöstä poistettu -->		
+<!--  14192 Sï¿½hkï¿½istyssymboli, rautatie kï¿½ytï¿½stï¿½ poistettu -->		
 
         <Rule>
           <Name>14192</Name>
-          <Title>14192 Käytöstä poistetun rautatien sähköistyssymboli</Title>
+          <Title>14192 Kï¿½ytï¿½stï¿½ poistetun rautatien sï¿½hkï¿½istyssymboli</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -325,11 +312,11 @@ xlink:href="peruskartta/SK.svg"/>
           </PointSymbolizer>
         </Rule>			
 		
-<!-- 22394 suurjännitelinjan z-merkki -->		
+<!-- 22394 suurjï¿½nnitelinjan z-merkki -->		
 
         <Rule>
           <Name>22394</Name>
-          <Title>22394 Suurjännitelinjan z-merkki</Title>
+          <Title>22394 Suurjï¿½nnitelinjan z-merkki</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -375,11 +362,11 @@ xlink:href="peruskartta/Sz.svg"/>
           </PointSymbolizer>
         </Rule>			
 			
-<!-- 22395 jakelujännitelinjan z-merkki -->		
+<!-- 22395 jakelujï¿½nnitelinjan z-merkki -->		
 
         <Rule>
           <Name>22395</Name>
-          <Title>22395 Jakelujännitelinjan z-merkki</Title>
+          <Title>22395 Jakelujï¿½nnitelinjan z-merkki</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -425,11 +412,11 @@ xlink:href="peruskartta/Sz.svg"/>
           </PointSymbolizer>
         </Rule>	
 	
-<!-- 22392 Suurjännitelinjan pylväs -->		
+<!-- 22392 Suurjï¿½nnitelinjan pylvï¿½s -->		
 
         <Rule>
           <Name>22392</Name>
-          <Title>22392 Suurjännitelinjan pylväs</Title>
+          <Title>22392 Suurjï¿½nnitelinjan pylvï¿½s</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -525,11 +512,11 @@ xlink:href="peruskartta/STs.svg"/>
           </PointSymbolizer>
         </Rule>		
 		
-<!-- 44591 Ilmaradan kannatinpylväs -->		
+<!-- 44591 Ilmaradan kannatinpylvï¿½s -->		
 
         <Rule>
           <Name>44591</Name>
-          <Title>44591 Ilmaradan kannatinpylväs</Title>
+          <Title>44591 Ilmaradan kannatinpylvï¿½s</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -698,11 +685,11 @@ xlink:href="peruskartta/SRmm.svg"/>
           </PointSymbolizer>
         </Rule>		
 	
-<!-- 45000 Näkötorni -->		
+<!-- 45000 Nï¿½kï¿½torni -->		
 
         <Rule>
           <Name>45000</Name>
-          <Title>45000 Näkötorni</Title>
+          <Title>45000 Nï¿½kï¿½torni</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -862,11 +849,11 @@ xlink:href="peruskartta/Stvoimala.svg"/>
           </PointSymbolizer>
         </Rule>			
 	
-<!-- 44700 Lähestymisvalo -->		
+<!-- 44700 Lï¿½hestymisvalo -->		
 
         <Rule>
           <Name>44700</Name>
-          <Title>44700 Lähestymisvalo</Title>
+          <Title>44700 Lï¿½hestymisvalo</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -1085,11 +1072,11 @@ xlink:href="peruskartta/Sesterak.svg"/>
           </PointSymbolizer>
         </Rule>	
 		
-<!-- 32191 Eloperäinen ainessymboli -->		
+<!-- 32191 Eloperï¿½inen ainessymboli -->		
 
         <Rule>
           <Name>32191</Name>
-          <Title>32191 Eloperäinen ainessymboli</Title>
+          <Title>32191 Eloperï¿½inen ainessymboli</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -1126,11 +1113,11 @@ xlink:href="peruskartta/Selop.svg"/>
           </PointSymbolizer>
         </Rule>			
 		
-<!-- 32192 Hieno kivennäisainessymboli -->		
+<!-- 32192 Hieno kivennï¿½isainessymboli -->		
 
         <Rule>
           <Name>32192</Name>
-          <Title>32192 Hieno kivennäisainessymboli </Title>
+          <Title>32192 Hieno kivennï¿½isainessymboli </Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -1373,11 +1360,11 @@ xlink:href="peruskartta/Spuu.svg"/>
           </PointSymbolizer>
         </Rule>		
 
-<!-- 72330 Muinaisjäännös -->		
+<!-- 72330 Muinaisjï¿½ï¿½nnï¿½s -->		
 
         <Rule>
           <Name>72330</Name>
-          <Title>72330 Muinaisjäännös</Title>
+          <Title>72330 Muinaisjï¿½ï¿½nnï¿½s</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -1496,11 +1483,11 @@ xlink:href="peruskartta/Skivi.svg"/>
           </PointSymbolizer>
         </Rule>					
 
-<!-- 34900 Merkittävä luontokohde -->		
+<!-- 34900 Merkittï¿½vï¿½ luontokohde -->		
 
         <Rule>
           <Name>34900</Name>
-          <Title>34900 Merkittävä luontokohde</Title>
+          <Title>34900 Merkittï¿½vï¿½ luontokohde</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -1579,11 +1566,11 @@ xlink:href="peruskartta/Spuu.svg"/>
         </Rule>			
 
 		
-<!-- 36100 Lähde-->		
+<!-- 36100 Lï¿½hde-->		
 
         <Rule>
           <Name>36100</Name>
-          <Title>36100 Lähde</Title>
+          <Title>36100 Lï¿½hde</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -1732,11 +1719,11 @@ xlink:href="peruskartta/Svsn.svg"/>
 		
 
 		
-<!-- 36393 Leveän virtaveden juoksusuunta-->		
+<!-- 36393 Leveï¿½n virtaveden juoksusuunta-->		
 
         <Rule>
           <Name>36393</Name>
-          <Title>36393 Leveän virtaveden juoksusuunta</Title>
+          <Title>36393 Leveï¿½n virtaveden juoksusuunta</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -1868,11 +1855,11 @@ xlink:href="peruskartta/Svo.svg"/>
         </Rule>
 
 		
-<!-- 32710 Havumetsä-->		
+<!-- 32710 Havumetsï¿½-->		
 
         <Rule>
           <Name>32710</Name>
-          <Title>32710 Havumetsä</Title>
+          <Title>32710 Havumetsï¿½</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -1908,11 +1895,11 @@ xlink:href="peruskartta/Shm.svg"/>
           </PointSymbolizer>
         </Rule>
 		
-<!-- 32713 Lehtimetsä -->		
+<!-- 32713 Lehtimetsï¿½ -->		
 
         <Rule>
           <Name>32713</Name>
-          <Title>32713 Lehtimetsä</Title>
+          <Title>32713 Lehtimetsï¿½</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -1950,11 +1937,11 @@ xlink:href="peruskartta/Slm.svg"/>
           </PointSymbolizer>
         </Rule>		
 		
-<!-- 32714 Sekametsä -->		
+<!-- 32714 Sekametsï¿½ -->		
 
         <Rule>
           <Name>32714</Name>
-          <Title>32714 Sekametsä</Title>
+          <Title>32714 Sekametsï¿½</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -2160,11 +2147,11 @@ xlink:href="peruskartta/Skivt.svg"/>
 
 
 
-<!-- 38513 Vesikivi, vedenpäällinen -->		
+<!-- 38513 Vesikivi, vedenpï¿½ï¿½llinen -->		
 
         <Rule>
           <Name>38513</Name>
-          <Title>38513 Vesikivi, vedenpäällinen</Title>
+          <Title>38513 Vesikivi, vedenpï¿½ï¿½llinen</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -2285,13 +2272,13 @@ xlink:href="peruskartta/Suitto.svg"/>
           </PointSymbolizer>
         </Rule>		
 
-<!-- 16505 Vesikulkuväylän nimelliskulkusuunta -->		
+<!-- 16505 Vesikulkuvï¿½ylï¿½n nimelliskulkusuunta -->		
 
 
 
         <Rule>
           <Name>16505</Name>
-          <Title>16505 Vesikulkuväylän nimelliskulkusuunta</Title>
+          <Title>16505 Vesikulkuvï¿½ylï¿½n nimelliskulkusuunta</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -2337,13 +2324,13 @@ xlink:href="peruskartta/Svkvnimsuun.svg"/>
           </PointSymbolizer>
         </Rule>		
 
-<!-- 56506 Vesikulkuväylän suositeltu kulkusuunta -->		
+<!-- 56506 Vesikulkuvï¿½ylï¿½n suositeltu kulkusuunta -->		
 
 
 
         <Rule>
           <Name>16506</Name>
-          <Title>16506 Vesikulkuväylän suositeltu kulkusuunta</Title>
+          <Title>16506 Vesikulkuvï¿½ylï¿½n suositeltu kulkusuunta</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -2391,13 +2378,13 @@ xlink:href="peruskartta/Svkvsuosuun.svg"/>
           </PointSymbolizer>
         </Rule>	
 
-<!-- 16507 Vesikulkuväylän pakollinen kulkusuunta -->		
+<!-- 16507 Vesikulkuvï¿½ylï¿½n pakollinen kulkusuunta -->		
 
 
 
         <Rule>
           <Name>16507</Name>
-          <Title>16507 Vesikulkuväylän pakollinen kulkusuunta</Title>
+          <Title>16507 Vesikulkuvï¿½ylï¿½n pakollinen kulkusuunta</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -2872,15 +2859,6 @@ xlink:href="peruskartta/SKum.svg"/>
                 <ogc:Literal>16</ogc:Literal>
               </Size>
 			  
-              <Rotation> 
-                <ogc:Function name="toDegrees">
-                  <ogc:Div>                  
-                    <ogc:PropertyName>suunta</ogc:PropertyName> 
-                    <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>				
-                </ogc:Function>
-              </Rotation>
-			  
             </Graphic>
           </PointSymbolizer>
         </Rule>		
@@ -2922,14 +2900,6 @@ xlink:href="peruskartta/STmaja.svg"/>
                 <ogc:Literal>28</ogc:Literal>
               </Size>
 			  
-              <Rotation> 
-                <ogc:Function name="toDegrees">
-                  <ogc:Div>                  
-                    <ogc:PropertyName>suunta</ogc:PropertyName> 
-                    <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>				
-                </ogc:Function>
-              </Rotation>
 			  
             </Graphic>
           </PointSymbolizer>
@@ -2971,15 +2941,7 @@ xlink:href="peruskartta/SMaja.svg"/>
               <Size>
                 <ogc:Literal>48</ogc:Literal>
               </Size>
-			  
-              <Rotation> 
-                <ogc:Function name="toDegrees">
-                  <ogc:Div>                  
-                    <ogc:PropertyName>suunta</ogc:PropertyName> 
-                    <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>				
-                </ogc:Function>
-              </Rotation>			  
+		  
             </Graphic>
           </PointSymbolizer>
         </Rule>		          
@@ -3021,15 +2983,7 @@ xlink:href="peruskartta/SLm_SLm.svg"/>
               <Size>
                 <ogc:Literal>24</ogc:Literal>
               </Size>
-			  
-              <Rotation> 
-                <ogc:Function name="toDegrees">
-                  <ogc:Div>                  
-                    <ogc:PropertyName>suunta</ogc:PropertyName> 
-                    <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>				
-                </ogc:Function>
-              </Rotation>			  
+		  
             </Graphic>
           </PointSymbolizer>
         </Rule>		  		
@@ -3070,15 +3024,7 @@ xlink:href="peruskartta/SLo.svg"/>
               <Size>
                 <ogc:Literal>35</ogc:Literal>
               </Size>
-			  
-              <Rotation> 
-                <ogc:Function name="toDegrees">
-                  <ogc:Div>                  
-                    <ogc:PropertyName>suunta</ogc:PropertyName> 
-                    <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>				
-                </ogc:Function>
-              </Rotation>			  
+		  
             </Graphic>
           </PointSymbolizer>
         </Rule>				
@@ -3119,15 +3065,7 @@ xlink:href="peruskartta/SLl.svg"/>
               <Size>
                 <ogc:Literal>37</ogc:Literal>
               </Size>
-			  
-              <Rotation> 
-                <ogc:Function name="toDegrees">
-                  <ogc:Div>                  
-                    <ogc:PropertyName>suunta</ogc:PropertyName> 
-                    <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>				
-                </ogc:Function>
-              </Rotation>			  
+		  
             </Graphic>
           </PointSymbolizer>
         </Rule>				
@@ -3169,14 +3107,7 @@ xlink:href="peruskartta/Stutkamerkki.svg"/>
                 <ogc:Literal>97</ogc:Literal>
               </Size>
 			  
-              <Rotation> 
-                <ogc:Function name="toDegrees">
-                  <ogc:Div>                  
-                    <ogc:PropertyName>suunta</ogc:PropertyName> 
-                    <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>				
-                </ogc:Function>
-              </Rotation>			  
+	  
             </Graphic>
           </PointSymbolizer>
         </Rule>			
@@ -3217,15 +3148,7 @@ xlink:href="peruskartta/Svaltutkamerkki.svg"/>
               <Size>
                 <ogc:Literal>97</ogc:Literal>
               </Size>
-			  
-              <Rotation> 
-                <ogc:Function name="toDegrees">
-                  <ogc:Div>                  
-                    <ogc:PropertyName>suunta</ogc:PropertyName> 
-                    <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>				
-                </ogc:Function>
-              </Rotation>			  
+			  	  
             </Graphic>
           </PointSymbolizer>
         </Rule>	
@@ -3252,7 +3175,7 @@ xlink:href="peruskartta/Svaltutkamerkki.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
 				
-                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -3262,7 +3185,7 @@ xlink:href="peruskartta/Svaltutkamerkki.svg"/>
                   <ogc:Literal>24.5</ogc:Literal> 
                 </ogc:Mul>
 								
-                <ogc:Literal>24.5</ogc:Literal>
+                <ogc:Literal>26</ogc:Literal>
               </ogc:Function>				
             </Geometry>	
 			
@@ -3288,33 +3211,8 @@ xlink:href="peruskartta/SVvas.svg"/>
             </Graphic>
           </PointSymbolizer>
 		  
-          <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> 
-		  
-            <Geometry>
-              <ogc:Function name ="offset">
-                <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>				
-                <ogc:Literal>0</ogc:Literal>
-              </ogc:Function>				
-            </Geometry>	
-			
-            <Graphic>
-              <ExternalGraphic>
-                <OnlineResource
-xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
-xlink:href="peruskartta/SVa.svg"/>
-                <Format>image/svg+xml</Format>
-              </ExternalGraphic>
-              <Size>
-                <ogc:Literal>3</ogc:Literal>
-              </Size>			  
-              <Rotation> 
-                <ogc:Literal>0</ogc:Literal>			  
-              </Rotation>			  
-            </Graphic>
-          </PointSymbolizer>		
-		            <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> <!-- jalka -->
-		  
+		
+          <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> <!-- jalka -->
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
@@ -3363,7 +3261,7 @@ xlink:href="peruskartta/SVa.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
 				
-                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -3448,7 +3346,7 @@ xlink:href="peruskartta/SVa.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
 				
-                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -3511,11 +3409,11 @@ xlink:href="peruskartta/SVa.svg"/>
 		  
         </Rule>	
 
-<!-- 16144 Merimerkki, etelä -->		
+<!-- 16144 Merimerkki, etelï¿½ -->		
 
         <Rule>
           <Name>16144</Name>
-          <Title>16144 Merimerkki, etelä</Title>
+          <Title>16144 Merimerkki, etelï¿½</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -3533,7 +3431,7 @@ xlink:href="peruskartta/SVa.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
 				
-                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -3596,11 +3494,11 @@ xlink:href="peruskartta/SVa.svg"/>
 		  
         </Rule>			
 		
-<!-- 16145 Merimerkki, itä -->		
+<!-- 16145 Merimerkki, itï¿½ -->		
 
         <Rule>
           <Name>16145</Name>
-          <Title>16145 Merimerkki, itä</Title>
+          <Title>16145 Merimerkki, itï¿½</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -3618,7 +3516,7 @@ xlink:href="peruskartta/SVa.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
 				
-                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -3682,11 +3580,11 @@ xlink:href="peruskartta/SVa.svg"/>
         </Rule>			
 		
 		
-<!-- 16146 Merimerkki, länsi -->		
+<!-- 16146 Merimerkki, lï¿½nsi -->		
 
         <Rule>
           <Name>16146</Name>
-          <Title>16146 Merimerkki, länsi</Title>
+          <Title>16146 Merimerkki, lï¿½nsi</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -3704,7 +3602,7 @@ xlink:href="peruskartta/SVa.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
 				
-                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -3791,7 +3689,7 @@ xlink:href="peruskartta/SVa.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
 				
-                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -3876,7 +3774,7 @@ xlink:href="peruskartta/SVa.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
 				
-                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -3961,7 +3859,7 @@ xlink:href="peruskartta/SVa.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
 				
-                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -4046,7 +3944,7 @@ xlink:href="peruskartta/SVa.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
 				
-                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -4131,7 +4029,7 @@ xlink:href="peruskartta/SVa.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
 				
-                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -4216,7 +4114,7 @@ xlink:href="peruskartta/SVa.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
 				
-                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -4279,11 +4177,11 @@ xlink:href="peruskartta/SVa.svg"/>
 		  
         </Rule>	
 
-<!-- 16154 Viittapoiju, etelä -->		
+<!-- 16154 Viittapoiju, etelï¿½ -->		
 
         <Rule>
           <Name>16154</Name>
-          <Title>16154 Viittapoiju, etelä</Title>
+          <Title>16154 Viittapoiju, etelï¿½</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -4301,7 +4199,7 @@ xlink:href="peruskartta/SVa.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
 				
-                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -4365,11 +4263,11 @@ xlink:href="peruskartta/SVa.svg"/>
         </Rule>	
 
 
-<!-- 16155 Viittapoiju, itä -->		
+<!-- 16155 Viittapoiju, itï¿½ -->		
 
         <Rule>
           <Name>16155</Name>
-          <Title>16155 Viittapoiju, itä</Title>
+          <Title>16155 Viittapoiju, itï¿½</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -4387,7 +4285,7 @@ xlink:href="peruskartta/SVa.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
 				
-                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -4450,11 +4348,11 @@ xlink:href="peruskartta/SVa.svg"/>
 			  
         </Rule>	
 
-<!-- 16156 Viittapoiju, länsi -->		
+<!-- 16156 Viittapoiju, lï¿½nsi -->		
 
         <Rule>
           <Name>16156</Name>
-          <Title>16156 Viittapoiju, länsi</Title>
+          <Title>16156 Viittapoiju, lï¿½nsi</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -4472,7 +4370,7 @@ xlink:href="peruskartta/SVa.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
 				
-                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -4557,7 +4455,7 @@ xlink:href="peruskartta/SVa.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
 				
-                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -4642,7 +4540,7 @@ xlink:href="peruskartta/SVa.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
 				
-                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -4727,7 +4625,7 @@ xlink:href="peruskartta/SVa.svg"/>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
 				
-                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän tangens funtkiona -->
+                <ogc:Mul> <!-- dx siirtymï¿½ lasketaan kiertokulman ja dy siirtymï¿½n tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
@@ -4937,11 +4835,11 @@ xlink:href="peruskartta/SPpoh.svg"/>
           </PointSymbolizer>
         </Rule>			
 
-<!-- 16164 Poiju, etelä -->		
+<!-- 16164 Poiju, etelï¿½ -->		
 
         <Rule>
           <Name>16164</Name>
-          <Title>16164 Poiju, etelä</Title>
+          <Title>16164 Poiju, etelï¿½</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -4986,11 +4884,11 @@ xlink:href="peruskartta/SPete.svg"/>
           </PointSymbolizer>
         </Rule>			
 
-<!-- 16165 Poiju, itä -->		
+<!-- 16165 Poiju, itï¿½ -->		
 
         <Rule>
           <Name>16165</Name>
-          <Title>16165 Poiju, itä</Title>
+          <Title>16165 Poiju, itï¿½</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -5035,11 +4933,11 @@ xlink:href="peruskartta/SPita.svg"/>
           </PointSymbolizer>
         </Rule>		
 
-<!-- 16166 Poiju, länsi -->		
+<!-- 16166 Poiju, lï¿½nsi -->		
 
         <Rule>
           <Name>16166</Name>
-          <Title>16166 Poiju, länsi</Title>
+          <Title>16166 Poiju, lï¿½nsi</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -5378,11 +5276,11 @@ xlink:href="peruskartta/SVaPpoh.svg"/>
           </PointSymbolizer>
         </Rule>	
 
-<!-- 16174 Valopoiju, etelä -->		
+<!-- 16174 Valopoiju, etelï¿½ -->		
 
         <Rule>
           <Name>16174</Name>
-          <Title>16174 Valopoiju, etelä</Title>
+          <Title>16174 Valopoiju, etelï¿½</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -5428,11 +5326,11 @@ xlink:href="peruskartta/SVaPete.svg"/>
         </Rule>	
 
 
-<!-- 16175 Valopoiju, itä -->		
+<!-- 16175 Valopoiju, itï¿½ -->		
 
         <Rule>
           <Name>16175</Name>
-          <Title>16175 Valopoiju, itä</Title>
+          <Title>16175 Valopoiju, itï¿½</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -5477,11 +5375,11 @@ xlink:href="peruskartta/SVaPita.svg"/>
           </PointSymbolizer>
         </Rule>
 
-<!-- 16176 Valopoiju, länsi -->		
+<!-- 16176 Valopoiju, lï¿½nsi -->		
 
         <Rule>
           <Name>16176</Name>
-          <Title>16176 Valopoiju, länsi</Title>
+          <Title>16176 Valopoiju, lï¿½nsi</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -5673,11 +5571,11 @@ xlink:href="peruskartta/SVaPerik.svg"/>
           </PointSymbolizer>
         </Rule>	
 
-<!-- 16181 Jääpoiju, vasen -->		
+<!-- 16181 Jï¿½ï¿½poiju, vasen -->		
 
         <Rule>
           <Name>16181</Name>
-          <Title>16181 Jääpoiju, vasen</Title>
+          <Title>16181 Jï¿½ï¿½poiju, vasen</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -5722,11 +5620,11 @@ xlink:href="peruskartta/SJPvas.svg"/>
           </PointSymbolizer>
         </Rule>
 
-<!-- 16182 Jääpoiju, oikea -->		
+<!-- 16182 Jï¿½ï¿½poiju, oikea -->		
 
         <Rule>
           <Name>16182</Name>
-          <Title>16182 Jääpoiju, oikea</Title>
+          <Title>16182 Jï¿½ï¿½poiju, oikea</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -5771,11 +5669,11 @@ xlink:href="peruskartta/SJPoik.svg"/>
           </PointSymbolizer>
         </Rule>	
 
-<!-- 16183 Jääpoiju, pohjois -->		
+<!-- 16183 Jï¿½ï¿½poiju, pohjois -->		
 
         <Rule>
           <Name>16183</Name>
-          <Title>16183 Jääpoiju, pohjois</Title>
+          <Title>16183 Jï¿½ï¿½poiju, pohjois</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -5820,11 +5718,11 @@ xlink:href="peruskartta/SJPpoh.svg"/>
           </PointSymbolizer>
         </Rule>	
 
-<!-- 16184 Jääpoiju, etelä -->		
+<!-- 16184 Jï¿½ï¿½poiju, etelï¿½ -->		
 
         <Rule>
           <Name>16184</Name>
-          <Title>16184 Jääpoiju, etelä</Title>
+          <Title>16184 Jï¿½ï¿½poiju, etelï¿½</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -5869,11 +5767,11 @@ xlink:href="peruskartta/SJPete.svg"/>
           </PointSymbolizer>
         </Rule>	
 
-<!-- 16185 Jääpoiju, itä -->		
+<!-- 16185 Jï¿½ï¿½poiju, itï¿½ -->		
 
         <Rule>
           <Name>16185</Name>
-          <Title>16185 Jääpoiju, itä</Title>
+          <Title>16185 Jï¿½ï¿½poiju, itï¿½</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -5918,11 +5816,11 @@ xlink:href="peruskartta/SJPita.svg"/>
           </PointSymbolizer>
         </Rule>			
 		
-<!-- 16186 Jääpoiju, länsi -->		
+<!-- 16186 Jï¿½ï¿½poiju, lï¿½nsi -->		
 
         <Rule>
           <Name>16186</Name>
-          <Title>16186 Jääpoiju, länsi</Title>
+          <Title>16186 Jï¿½ï¿½poiju, lï¿½nsi</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -5967,11 +5865,11 @@ xlink:href="peruskartta/SJPlan.svg"/>
           </PointSymbolizer>
         </Rule>		
 
-<!-- 16187 Jääpoiju, kari -->		
+<!-- 16187 Jï¿½ï¿½poiju, kari -->		
 
         <Rule>
           <Name>16187</Name>
-          <Title>16187 Jääpoiju, kari</Title>
+          <Title>16187 Jï¿½ï¿½poiju, kari</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -6016,11 +5914,11 @@ xlink:href="peruskartta/SJPkari.svg"/>
           </PointSymbolizer>
         </Rule>			
 
-<!-- 16188 Jääpoiju, turva -->		
+<!-- 16188 Jï¿½ï¿½poiju, turva -->		
 
         <Rule>
           <Name>16188</Name>
-          <Title>16188 Jääpoiju, turva</Title>
+          <Title>16188 Jï¿½ï¿½poiju, turva</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -6065,11 +5963,11 @@ xlink:href="peruskartta/SJPturva.svg"/>
           </PointSymbolizer>
         </Rule>	
 
-<!-- 16189 Jääpoiju, erikois -->		
+<!-- 16189 Jï¿½ï¿½poiju, erikois -->		
 
         <Rule>
           <Name>16189</Name>
-          <Title>16189 Jääpoiju, erikois</Title>
+          <Title>16189 Jï¿½ï¿½poiju, erikois</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -6114,11 +6012,11 @@ xlink:href="peruskartta/SJPerik.svg"/>
           </PointSymbolizer>
         </Rule>	
 
-<!-- 16191 Valojääpoiju, vasen -->		
+<!-- 16191 Valojï¿½ï¿½poiju, vasen -->		
 
         <Rule>
           <Name>16191</Name>
-          <Title>16191 Valojääpoiju, vasen</Title>
+          <Title>16191 Valojï¿½ï¿½poiju, vasen</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -6163,11 +6061,11 @@ xlink:href="peruskartta/SVJPvas.svg"/>
           </PointSymbolizer>
         </Rule>		
 
-<!-- 16192 Valojääpoiju, oikea -->		
+<!-- 16192 Valojï¿½ï¿½poiju, oikea -->		
 
         <Rule>
           <Name>16192</Name>
-          <Title>16192 Valojääpoiju, oikea</Title>
+          <Title>16192 Valojï¿½ï¿½poiju, oikea</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -6213,11 +6111,11 @@ xlink:href="peruskartta/SVJPoik.svg"/>
         </Rule>				
 		
 
-<!-- 16193 Valojääpoiju, pohjois -->		
+<!-- 16193 Valojï¿½ï¿½poiju, pohjois -->		
 
         <Rule>
           <Name>16193</Name>
-          <Title>16193 Valojääpoiju, pohjois</Title>
+          <Title>16193 Valojï¿½ï¿½poiju, pohjois</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -6262,11 +6160,11 @@ xlink:href="peruskartta/SVJPpoh.svg"/>
           </PointSymbolizer>
         </Rule>	
 
-<!-- 16194 Valojääpoiju, etelä -->		
+<!-- 16194 Valojï¿½ï¿½poiju, etelï¿½ -->		
 
         <Rule>
           <Name>16194</Name>
-          <Title>16194 Valojääpoiju, etelä</Title>
+          <Title>16194 Valojï¿½ï¿½poiju, etelï¿½</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -6311,11 +6209,11 @@ xlink:href="peruskartta/SVJPete.svg"/>
           </PointSymbolizer>
         </Rule>	
 
-<!-- 16195 Valojääpoiju, itä -->		
+<!-- 16195 Valojï¿½ï¿½poiju, itï¿½ -->		
 
         <Rule>
           <Name>16195</Name>
-          <Title>16195 Valojääpoiju, itä</Title>
+          <Title>16195 Valojï¿½ï¿½poiju, itï¿½</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -6361,11 +6259,11 @@ xlink:href="peruskartta/SVJPita.svg"/>
         </Rule>	
 
 
-<!-- 16196 Valojääpoiju, länsi -->		
+<!-- 16196 Valojï¿½ï¿½poiju, lï¿½nsi -->		
 
         <Rule>
           <Name>16196</Name>
-          <Title>16196 Valojääpoiju, länsi</Title>
+          <Title>16196 Valojï¿½ï¿½poiju, lï¿½nsi</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -6410,11 +6308,11 @@ xlink:href="peruskartta/SVJPlan.svg"/>
           </PointSymbolizer>
         </Rule>		
 
-<!-- 16197 Valojääpoiju, kari -->		
+<!-- 16197 Valojï¿½ï¿½poiju, kari -->		
 
         <Rule>
           <Name>16197</Name>
-          <Title>16197 Valojääpoiju, kari</Title>
+          <Title>16197 Valojï¿½ï¿½poiju, kari</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -6459,11 +6357,11 @@ xlink:href="peruskartta/SVJPkari.svg"/>
           </PointSymbolizer>
         </Rule>	
 
-<!-- 16198 Valojääpoiju, turva -->		
+<!-- 16198 Valojï¿½ï¿½poiju, turva -->		
 
         <Rule>
           <Name>16198</Name>
-          <Title>16198 Valojääpoiju, turva</Title>
+          <Title>16198 Valojï¿½ï¿½poiju, turva</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -6508,11 +6406,11 @@ xlink:href="peruskartta/SVJPturva.svg"/>
           </PointSymbolizer>
         </Rule>	
 
-<!-- 16199 Valojääpoiju, erikois -->		
+<!-- 16199 Valojï¿½ï¿½poiju, erikois -->		
 
         <Rule>
           <Name>16199</Name>
-          <Title>16199 Valojääpoiju, erikois</Title>
+          <Title>16199 Valojï¿½ï¿½poiju, erikois</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -6701,10 +6599,10 @@ xlink:href="peruskartta/SRMpoh.svg"/>
           </PointSymbolizer>
         </Rule>	
 
-<!-- 16204 Reunamerkki, etelä -->		
+<!-- 16204 Reunamerkki, etelï¿½ -->		
         <Rule>
           <Name>16204</Name>
-          <Title>16204 Reunamerkki, etelä</Title>
+          <Title>16204 Reunamerkki, etelï¿½</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -6749,10 +6647,10 @@ xlink:href="peruskartta/SRMete.svg"/>
           </PointSymbolizer>
         </Rule>	
 
-<!-- 16205 Reunamerkki, itä -->		
+<!-- 16205 Reunamerkki, itï¿½ -->		
         <Rule>
           <Name>16205</Name>
-          <Title>16205 Reunamerkki, itä</Title>
+          <Title>16205 Reunamerkki, itï¿½</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -6797,10 +6695,10 @@ xlink:href="peruskartta/SRMita.svg"/>
           </PointSymbolizer>
         </Rule>	
 
-<!-- 16206 Reunamerkki, länsi -->		
+<!-- 16206 Reunamerkki, lï¿½nsi -->		
         <Rule>
           <Name>16206</Name>
-          <Title>16206 Reunamerkki, länsi</Title>
+          <Title>16206 Reunamerkki, lï¿½nsi</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -6989,10 +6887,10 @@ xlink:href="peruskartta/SVRMpoh.svg"/>
           </PointSymbolizer>
         </Rule>	
 
-<!-- 16214 Valaistu reunamerkki, etelä -->		
+<!-- 16214 Valaistu reunamerkki, etelï¿½ -->		
         <Rule>
           <Name>16214</Name>
-          <Title>16214 Valaistu reunamerkki, etelä</Title>
+          <Title>16214 Valaistu reunamerkki, etelï¿½</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -7037,10 +6935,10 @@ xlink:href="peruskartta/SVRMete.svg"/>
           </PointSymbolizer>
         </Rule>	
 
-<!-- 16215 Valaistu reunamerkki, itä -->		
+<!-- 16215 Valaistu reunamerkki, itï¿½ -->		
         <Rule>
           <Name>16215</Name>
-          <Title>16215 Valaistu reunamerkki, itä</Title>
+          <Title>16215 Valaistu reunamerkki, itï¿½</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -7085,10 +6983,10 @@ xlink:href="peruskartta/SVRMita.svg"/>
           </PointSymbolizer>
         </Rule>
 
-<!-- 16216 Valaistu reunamerkki, länsi -->		
+<!-- 16216 Valaistu reunamerkki, lï¿½nsi -->		
         <Rule>
           <Name>16216</Name>
-          <Title>116216 Valaistu reunamerkki, länsi</Title>
+          <Title>116216 Valaistu reunamerkki, lï¿½nsi</Title>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -7139,4 +7037,4 @@ xlink:href="peruskartta/SVRMlan.svg"/>
       </FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
-</StyledLayerDescriptor>  				
+</StyledLayerDescriptor>

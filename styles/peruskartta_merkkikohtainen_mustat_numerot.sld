@@ -39,11 +39,13 @@
                 <ogc:PropertyIsLike  wildCard="*" singleChar="." escape="!">
                   <ogc:PropertyName>teksti</ogc:PropertyName>
                   <ogc:Literal>t</ogc:Literal>
-                </ogc:PropertyIsLike>				
+                </ogc:PropertyIsLike>					
+		
               </ogc:Or>			
             </ogc:Not>			
-          </ogc:Filter>       
-           <MaxScaleDenominator>10000</MaxScaleDenominator>
+          </ogc:Filter>      
+		  
+          <MaxScaleDenominator>10000</MaxScaleDenominator>
 
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
@@ -87,16 +89,16 @@
                   <DisplacementX>
                     <ogc:Div>
                       <ogc:PropertyName>kirjasinkoko</ogc:PropertyName>
-                      <ogc:Literal>-150</ogc:Literal>
+                      <ogc:Literal>-88</ogc:Literal>
                     </ogc:Div>
                   </DisplacementX>
                   <DisplacementY>
                     <ogc:Div>
                       <ogc:PropertyName>kirjasinkoko</ogc:PropertyName>
-                      <ogc:Literal>30</ogc:Literal>
+                      <ogc:Literal>-33</ogc:Literal>
                     </ogc:Div>
                   </DisplacementY>
-                </Displacement> 
+                </Displacement>
                 <!-- suuntakulman muuntaminen asteisiin ja jakolaskulla pilkku oikeaan paikkaan --> 
                 <Rotation>
                   <ogc:Function name="toDegrees">
