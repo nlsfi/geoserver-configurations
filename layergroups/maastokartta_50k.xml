@@ -1,0 +1,944 @@
+<layerGroup>
+  <name>maastokartta_50k</name>
+  <mode>SINGLE</mode>
+  <title>maastokartta_50k</title>
+  <publishables>
+    <published type="layer">
+      <name>mtk:muuavoinalue</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/muuavoinalue.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:kallioalue</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/kallioalue.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:taajaanrakennettualue</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/taajaanrakennettualue.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:hautausmaa</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/hautausmaa.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:puisto</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/puisto.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:maatalousmaa</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/maatalousmaa.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:urheilujavirkistysalue</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/urheilujavirkistysalue.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:niitty</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/niitty.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:hietikko</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/hietikko.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:maaaineksenottoalue</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/maaaineksenottoalue.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:kaatopaikka</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/kaatopaikka.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:louhos</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/louhos.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:varastoalue</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/varastoalue.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:taytemaa</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/taytemaa.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:soistuma</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/soistuma.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:suo</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/suo.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:muuavoinalue</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/muuavoinalue.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:taajaanrakennetunalueenreuna</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/taajaanrakennetunalueenreuna.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:meri</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/meri.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:jarvi</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/jarvi.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:virtavesialue</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/virtavesialue.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:allas</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/allas.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:tulvaalue</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/tulvaalue.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:maatuvavesialue</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/maatuvavesialue.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:autoliikennealue</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/autoliikennealue.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:lentokenttaalue</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/lentokenttaalue.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:korkeuskayra</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/korkeuskayra.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:viettoviiva</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/viettoviiva.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:syvyyskayra</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/syvyyskayra.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:kivikko</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/kivikko.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:vesikivikko</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/vesikivikko.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:metsanraja_maastokartta_buffer_view</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/metsanraja_maastokartta_buffer_view.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:suojelualueenreunaviiva_maastokartta_buffer_view</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/suojelualueenreunaviiva_maastokartta_buffer_view.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:suojametsanreunaviiva_maastokartta_buffer_view</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/suojametsanreunaviiva_maastokartta_buffer_view.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:suojametsanreunaviiva</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/suojametsanreunaviiva.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:suojelualueenreunaviiva</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/suojelualueenreunaviiva.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:ampumaalue_maastokartta_buffer_view</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/ampumaalue_maastokartta_buffer_view.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:ampumaalue</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/ampumaalue.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:suojaalue</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/suojaalue.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:rajavyohykkeentakaraja_maastokartta_buffer_view</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/rajavyohykkeentakaraja_maastokartta_buffer_view.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:valtakunnanraja_maastokartta_buffer_view</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/valtakunnanraja_maastokartta_buffer_view.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:maastokuvionreuna</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/maastokuvionreuna.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:maasto2kuvionreuna</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/maasto2kuvionreuna.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:pato</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/pato.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:koski</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/koski.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:rakennusreunaviiva</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/rakennusreunaviiva.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:virtavesikapea</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/virtavesikapea.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:maastokuvionreuna</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/maastokuvionreuna.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:jyrkanne</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/jyrkanne.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:luiska</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/luiska.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:tieviiva</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/tieviiva.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:rautatie</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/rautatie.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:tieviiva</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/tieviiva.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:rautatie</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/rautatie.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:kunnanhallintoraja</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/kunnanhallintoraja.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:aluemerenulkoraja</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/aluemerenulkoraja.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:sisaistenaluevesienulkoraja</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/sisaistenaluevesienulkoraja.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:piste</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/piste.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:rakennus</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/rakennus.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:tieviiva</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/tieviiva.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:puurivi</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/puurivi.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:aita</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/aita.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:muuntoasema</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/muuntoasema.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:ilmarata</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/ilmarata.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:rakennelma</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/rakennelma.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:sahkolinja</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/sahkolinja.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:putkijohto</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/putkijohto.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:vesikulkuvayla</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/vesikulkuvayla.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:pistolaituriviiva</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/pistolaituriviiva.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:portti</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/portti.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:tunnelinaukko</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/tunnelinaukko.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:masto</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/masto.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:muistomerkki</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/muistomerkki.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:nakotorni</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/nakotorni.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:savupiippu</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/savupiippu.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:tervahauta</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/tervahauta.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:tuulivoimala</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/tuulivoimala.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:tulentekopaikka</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/tulentekopaikka.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:vesitorni</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/vesitorni.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:muuntaja</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/muuntaja.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:suurjannitelinjanpylvas</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/suurjannitelinjanpylvas.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:sahkolinjansymboli</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/sahkolinjansymboli.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:rautatiensymboli</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/rautatiensymboli.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:ilmaradankannatinpylvas</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/ilmaradankannatinpylvas.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:putkijohdonsymboli</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/putkijohdonsymboli.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:vesikulkuvaylankulkusuunta</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/vesikulkuvaylankulkusuunta.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:lahde</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/lahde.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:virtausnuoli</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/virtausnuoli.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:vesikuoppa</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/vesikuoppa.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:vedenottamo</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/vedenottamo.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:rakennus</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/rakennus.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:harvalouhikko</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/harvalouhikko.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:kivi</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/kivi.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:vesikivi_pinnalla</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/vesikivi_pinnalla.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:vesikivi_pinnanylapuoli</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/vesikivi_pinnanylapuoli.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:vesikivi_pinnanalapuoli</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/vesikivi_pinnanalapuoli.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:uittolaite</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/uittolaite.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:ankkuripaikka</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/ankkuripaikka.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:merkittavaluontokohde</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/merkittavaluontokohde.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:puu</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/puu.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:rauhoitettukohde</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/rauhoitettukohde.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:valtakunnanrajapyykki</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/valtakunnanrajapyykki.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:turvalaite</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/turvalaite.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:paikannimi</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/paikannimi.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:selite</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/selite.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:paikannimi_50000</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/paikannimi_50000.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:paikannimi_50000</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/paikannimi_50000.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:selite_50000</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/selite_50000.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:selite_50000</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/selite_50000.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:tienroteksti_50000</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/tienroteksti_50000.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:vesikulkuvaylanteksti_50000</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/vesikulkuvaylanteksti_50000.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:mastonkorkeus_50000</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/mastonkorkeus_50000.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:savupiipunkorkeus_50000</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/savupiipunkorkeus_50000.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:vedenpinnankorkeusluku_50000</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/vedenpinnankorkeusluku_50000.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:korkeuskayrankorkeusarvo_50000</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/korkeuskayrankorkeusarvo_50000.xml" type="application/xml"/>
+    </published>
+    <published type="layer">
+      <name>mtk:syvyyskayransyvyysarvo_50000</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/syvyyskayransyvyysarvo_50000.xml" type="application/xml"/>
+    </published>
+  </publishables>
+  <styles>
+    <style>
+      <name>maastokartta_50k_varvikko</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_varvikko.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_pintaalayleistykset</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_pintaalayleistykset.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_pintaalayleistykset</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_pintaalayleistykset.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_pintaalayleistykset</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_pintaalayleistykset.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_pintaalayleistykset</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_pintaalayleistykset.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_pintaalayleistykset</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_pintaalayleistykset.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_pintaalayleistykset</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_pintaalayleistykset.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_korkeuskayra_viiva</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_korkeuskayra_viiva.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_symbolit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_symbolit.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_syvyysskayra_viiva</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_syvyysskayra_viiva.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_pintaalayleistykset</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_pintaalayleistykset.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_pintaalayleistykset</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_pintaalayleistykset.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_psuvvvyohyke</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_psuvvvyohyke.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_psuvvvyohyke</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_psuvvvyohyke.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_psuvvvyohyke</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_psuvvvyohyke.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_psuvvvyohyke</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_psuvvvyohyke.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_psuvvvyohyke</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_psuvvvyohyke.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_psuvvvyohyke</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_psuvvvyohyke.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_maastoreuna</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_maastoreuna.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_maastoreuna</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_maastoreuna.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_pato_koski</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_pato_koski.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_pato_koski</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_pato_koski.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_vesistot_viivat</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_vesistot_viivat.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_maastoreuna_vesistot</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_maastoreuna_vesistot.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_tiet_tunnelissa</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_tiet_tunnelissa.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_raideliikenne_tunnelissa</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_raideliikenne_tunnelissa.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_tiet_pinnalla</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_tiet_pinnalla.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_raideliikenne_pinnalla</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_raideliikenne_pinnalla.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_koordinaattiristit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_koordinaattiristit.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_rakennukset</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_rakennukset.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_tiet_sillalla</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_tiet_sillalla.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_kaasu</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_kaasu.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_symbolit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_symbolit.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_symbolit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_symbolit.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_symbolit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_symbolit.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_symbolit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_symbolit.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_symbolit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_symbolit.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_symbolit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_symbolit.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_symbolit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_symbolit.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_symbolit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_symbolit.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_symbolit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_symbolit.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_symbolit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_symbolit.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_symbolit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_symbolit.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_symbolit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_symbolit.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_symbolit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_symbolit.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_symbolit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_symbolit.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_symbolit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_symbolit.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_symbolit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_symbolit.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_symbolit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_symbolit.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_symbolit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_symbolit.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_symbolit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_symbolit.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_symbolit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_symbolit.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_symbolit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_symbolit.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_kirkko</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_kirkko.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_harvalouhikko_yleistys</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_harvalouhikko_yleistys.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_kivi_yleistys</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_kivi_yleistys.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_vedenpaallakivi_yleistys</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_vedenpaallakivi_yleistys.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_vedenpaallakivi_yleistys</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_vedenpaallakivi_yleistys.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_vedenalainenkivi_yleistys</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_vedenalainenkivi_yleistys.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_symbolit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_symbolit.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_symbolit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_symbolit.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_symbolit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_symbolit.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_symbolit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_symbolit.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_symbolit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_symbolit.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_symbolit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_symbolit.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_symbolit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_symbolit.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_yleistetyt_rakennukset</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_yleistetyt_rakennukset.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_yleistetyt_rakennukset</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_yleistetyt_rakennukset.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_merkkikohtainen_nimisto</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_merkkikohtainen_nimisto.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_merkkikohtainen_nimisto_avaus</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_merkkikohtainen_nimisto_avaus.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_merkkikohtainen_selite</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_merkkikohtainen_selite.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_merkkikohtainen_selite_avaus</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_merkkikohtainen_selite_avaus.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_merkkikohtainen_tekstit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_merkkikohtainen_tekstit.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_merkkikohtainen_tekstit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_merkkikohtainen_tekstit.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_merkkikohtainen_selite</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_merkkikohtainen_selite.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_merkkikohtainen_selite</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_merkkikohtainen_selite.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_merkkikohtainen_tekstit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_merkkikohtainen_tekstit.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_merkkikohtainen_tekstit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_merkkikohtainen_tekstit.xml" type="application/xml"/>
+    </style>
+    <style>
+      <name>maastokartta_50k_merkkikohtainen_tekstit</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/maastokartta_50k_merkkikohtainen_tekstit.xml" type="application/xml"/>
+    </style>
+  </styles>
+  <bounds>
+    <minx>0.0</minx>
+    <maxx>735000.0</maxx>
+    <miny>6600000.0</miny>
+    <maxy>7790000.0</maxy>
+    <crs class="projected">EPSG:3067</crs>
+  </bounds>
+</layerGroup>

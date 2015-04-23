@@ -1,7 +1,7 @@
 data: maastotietokanta GML-schema (will not work with maastotietokanta shape data)
 note: this layergroup uses
 -for placenames: non-standard data, where each letter has its own position
--- se peruskartta_paikanimet.sld style to use normal placenames
+-- see peruskartta_paikanimet.sld style to use normal placenames
 -for buffered and offseted lines (e.g. suojelualue (protected areas)): buffered and offseted areas are calculated in Postgresql/PostGIS -database.
 - due to a Geoserver feature (bug?) the placenames needs to be drawn in a certain order, where the colored name is drawn first and the halo after that.
 
