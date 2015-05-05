@@ -11,11 +11,11 @@
     <UserStyle>
 
       <Title>maastokartta_symbolit</Title>
-      <Abstract>symbolit sis�lt�� suunta-kent�n.</Abstract>
+      <Abstract>symbolit sisältää suunta-kentän.</Abstract>
 
       <FeatureTypeStyle>
     
-<!-- 52192 viettoviiva k�yra ja apuk�yr� -->    
+<!-- 52192 viettoviiva käyra ja apukäyrä -->    
 
         <Rule>
           <Name>52192</Name>
@@ -47,13 +47,13 @@ xlink:href="maastokartta/Sviettov_korkeus.svg"/>
         
               <Rotation> 
                 <ogc:Function name="toDegrees">
-                  <ogc:Add>        
+                  <ogc:Add>				
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
                       <ogc:Literal>-10000</ogc:Literal>
                     </ogc:Div>        
-                    <ogc:Literal>3.1415</ogc:Literal>    
-                  </ogc:Add>          
+                    <ogc:Literal>3.1415</ogc:Literal>		
+                  </ogc:Add>  				
                 </ogc:Function>                
               </Rotation> 
         
@@ -61,22 +61,22 @@ xlink:href="maastokartta/Sviettov_korkeus.svg"/>
           </PointSymbolizer>
         </Rule>  
     
-<!-- 52192 viettoviiva syvyysk�yr�n -->    
+<!-- 52192 viettoviiva syvyyskäyrän -->    
 
         <Rule>
           <Name>54192</Name>
       
           <ogc:Filter>
-            <ogc:Or>      
+            <ogc:Or>		  
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>54192</ogc:Literal>
-              </ogc:PropertyIsEqualTo>      
+              </ogc:PropertyIsEqualTo>		  
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>54592</ogc:Literal>
               </ogc:PropertyIsEqualTo>
-            </ogc:Or>        
+            </ogc:Or>			  
           </ogc:Filter> 
 
           <MinScaleDenominator>10000</MinScaleDenominator>
@@ -96,13 +96,13 @@ xlink:href="maastokartta/Sviettov_vesi.svg"/>
         
               <Rotation> 
                 <ogc:Function name="toDegrees">
-                  <ogc:Add>        
+                  <ogc:Add>				
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
                       <ogc:Literal>-10000</ogc:Literal>
                     </ogc:Div>        
-                    <ogc:Literal>3.1415</ogc:Literal>    
-                  </ogc:Add>          
+                    <ogc:Literal>3.1415</ogc:Literal>		
+                  </ogc:Add>  				
                 </ogc:Function>                
               </Rotation> 
         
@@ -114,16 +114,16 @@ xlink:href="maastokartta/Sviettov_vesi.svg"/>
 
     
     
-      </FeatureTypeStyle>      
-    
+      </FeatureTypeStyle>  	  
+	  
       <FeatureTypeStyle>
 
-<!-- 45200 Portti -->    
+<!-- 45200 Portti -->		
 
         <Rule>
           <Name>45200</Name>
           <Title>45200 Portti</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -139,11 +139,11 @@ xlink:href="maastokartta/Sviettov_vesi.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>0</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>        
-      
+              </ogc:Function>				
+            </Geometry>			  
+		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -154,26 +154,26 @@ xlink:href="maastokartta/Sportti.svg"/>
               <Size>
                 <ogc:Literal>40</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
               </Rotation>
-        
+			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>        
-    
-<!-- 16800 Tunnelin aukko -->    
+        </Rule>				
+		
+<!-- 16800 Tunnelin aukko -->		
 
         <Rule>
           <Name>16800</Name>
           <Title>16800 Tunnelin aukko</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -189,11 +189,11 @@ xlink:href="maastokartta/Sportti.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>0</ogc:Literal>
-              </ogc:Function>        
+              </ogc:Function>				
             </Geometry>
-      
+			
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -204,27 +204,27 @@ xlink:href="maastokartta/STs.svg"/>
               <Size>
                 <ogc:Literal>40</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
               </Rotation>
-        
+			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>    
+        </Rule>		
 
 
-<!-- 44800 masto -->    
+<!-- 44800 masto -->		
 
         <Rule>
           <Name>44800</Name>
           <Title>44800 Masto</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -240,11 +240,11 @@ xlink:href="maastokartta/STs.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>20</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-      
+              </ogc:Function>				
+            </Geometry>	
+			
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -255,27 +255,27 @@ xlink:href="maastokartta/Smasto.svg"/>
               <Size>
                 <ogc:Literal>100</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
               </Rotation>
-        
+			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>    
+        </Rule>		
 
 
-<!-- 44900 Muistomerkki -->    
+<!-- 44900 Muistomerkki -->		
 
         <Rule>
           <Name>44900</Name>
           <Title>44900 Muistomerkki</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -291,11 +291,11 @@ xlink:href="maastokartta/Smasto.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>28</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-      
+              </ogc:Function>				
+            </Geometry>	
+			
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -306,26 +306,26 @@ xlink:href="maastokartta/SRmm.svg"/>
               <Size>
                 <ogc:Literal>60</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
               </Rotation>
-        
+			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>    
+        </Rule>		
 
-<!-- 45000 N�k�torni -->    
+<!-- 45000 Näkötorni -->		
 
         <Rule>
           <Name>45000</Name>
-          <Title>45000 N�k�torni</Title>
-      
+          <Title>45000 Näkötorni</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -341,11 +341,11 @@ xlink:href="maastokartta/SRmm.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>20</ogc:Literal>
-              </ogc:Function>        
+              </ogc:Function>				
             </Geometry>
-      
+			
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -356,26 +356,26 @@ xlink:href="maastokartta/Snt.svg"/>
               <Size>
                 <ogc:Literal>84</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
               </Rotation>
-        
+			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>    
+        </Rule>		
 
-<!-- 45300 Savupiippu -->    
+<!-- 45300 Savupiippu -->		
 
         <Rule>
           <Name>45300</Name>
           <Title>45300 Savupiippu</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -391,11 +391,11 @@ xlink:href="maastokartta/Snt.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>0</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-            
+              </ogc:Function>				
+            </Geometry>	
+						
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -406,26 +406,26 @@ xlink:href="maastokartta/Ssp.svg"/>
               <Size>
                 <ogc:Literal>44</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
               </Rotation>
-        
+			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>    
+        </Rule>		
 
-<!-- 45400 Tervahauta -->    
+<!-- 45400 Tervahauta -->		
 
         <Rule>
           <Name>45400</Name>
           <Title>45400 Tervahauta</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -441,11 +441,11 @@ xlink:href="maastokartta/Ssp.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>0</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-      
+              </ogc:Function>				
+            </Geometry>	
+			
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -456,27 +456,27 @@ xlink:href="maastokartta/Stervahauta.svg"/>
               <Size>
                 <ogc:Literal>40</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
               </Rotation>
-        
+			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>      
+        </Rule>			
 
-  
-<!--  45500 tuulivoimala -->    
+	
+<!--  45500 tuulivoimala -->		
 
         <Rule>
           <Name>45500</Name>
           <Title>45500 Tuulivoimala</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -488,15 +488,15 @@ xlink:href="maastokartta/Stervahauta.svg"/>
           <MaxScaleDenominator>20000</MaxScaleDenominator> 
 
           <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-      
+		  
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>        
-                  
+              </ogc:Function>				
+            </Geometry>			  
+		  		  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -507,26 +507,26 @@ xlink:href="maastokartta/Stvoimala.svg"/>
               <Size>
                 <ogc:Literal>124</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
               </Rotation>
-        
+			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>        
-    
-    <!-- 45710 Tulentekopaikka -->    
+        </Rule>				
+		
+		<!-- 45710 Tulentekopaikka -->		
 
         <Rule>
           <Name>45710</Name>
           <Title>45710 Tulentekopaikka</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -542,11 +542,11 @@ xlink:href="maastokartta/Stvoimala.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>20</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-      
+              </ogc:Function>				
+            </Geometry>	
+			
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -557,27 +557,27 @@ xlink:href="maastokartta/Stuli.svg"/>
               <Size>
                 <ogc:Literal>112</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
               </Rotation>
-        
+			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
-    
-<!-- 45800 vesitorni -->    
+		
+<!-- 45800 vesitorni -->		
 
         <Rule>
           <Name>45800</Name>
           <Title>45800 Vesitorni</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -589,15 +589,15 @@ xlink:href="maastokartta/Stuli.svg"/>
           <MaxScaleDenominator>20000</MaxScaleDenominator> 
 
           <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> 
-      
+		  
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>0</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-            
+              </ogc:Function>				
+            </Geometry>	
+						
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -608,28 +608,28 @@ xlink:href="maastokartta/Svesitorni.svg"/>
               <Size>
                 <ogc:Literal>40</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
               </Rotation>
-        
+			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
-    
-    
+        </Rule>	
+		
+		
 
-<!-- 22392 Suurj�nnitelinjan pylv�s -->    
+<!-- 22392 Suurjännitelinjan pylväs -->		
 
         <Rule>
           <Name>22392</Name>
-          <Title>22392 Suurj�nnitelinjan pylv�s</Title>
-      
+          <Title>22392 Suurjännitelinjan pylväs</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -645,11 +645,11 @@ xlink:href="maastokartta/Svesitorni.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>0</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-      
+              </ogc:Function>				
+            </Geometry>	
+			
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -660,32 +660,32 @@ xlink:href="maastokartta/Sslp.svg"/>
               <Size>
                 <ogc:Literal>38</ogc:Literal>
               </Size>
-        
+			  
               <Rotation>
-                <ogc:Add>        
+                <ogc:Add>			  
                 <ogc:Function name="toDegrees">
              
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
 
                 </ogc:Function>
 
                   <ogc:Literal>90</ogc:Literal>
-                </ogc:Add>          
+                </ogc:Add>				  
               </Rotation>
-        
+			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>      
-    
-<!-- 22394 s�hk�linjan z-merkki -->    
+        </Rule>			
+		
+<!-- 22394 sähkölinjan z-merkki -->		
 
         <Rule>
           <Name>22394</Name>
-          <Title>22394 Suurj�nnitelinjan z-merkki</Title>
-      
+          <Title>22394 Suurjännitelinjan z-merkki</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -697,15 +697,15 @@ xlink:href="maastokartta/Sslp.svg"/>
           <MaxScaleDenominator>20000</MaxScaleDenominator> 
 
           <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> 
-      
+		  
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>0</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-      
+              </ogc:Function>				
+            </Geometry>	
+			
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -716,26 +716,26 @@ xlink:href="maastokartta/Sz.svg"/>
               <Size>
                 <ogc:Literal>48</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
               </Rotation>
-        
+			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>        
-    
-<!--  14191 S�hk�istyssymboli, rautatie -->    
+        </Rule>				
+		
+<!--  14191 Sähköistyssymboli, rautatie -->		
 
         <Rule>
           <Name>14191</Name>
-          <Title>14191 Rautatien s�hk�istyssymboli</Title>
-      
+          <Title>14191 Rautatien sähköistyssymboli</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -751,11 +751,11 @@ xlink:href="maastokartta/Sz.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>0</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-      
+              </ogc:Function>				
+            </Geometry>	
+			
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -771,19 +771,19 @@ xlink:href="maastokartta/Sz.svg"/>
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>      
-    
-<!-- 44591 Ilmaradan kannatinpylv�s -->    
+        </Rule>			
+		
+<!-- 44591 Ilmaradan kannatinpylväs -->		
 
         <Rule>
           <Name>44591</Name>
-          <Title>44591 Ilmaradan kannatinpylv�s</Title>
-      
+          <Title>44591 Ilmaradan kannatinpylväs</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -805,30 +805,30 @@ xlink:href="maastokartta/Sslp.svg"/>
               <Size>
                 <ogc:Literal>38</ogc:Literal>
               </Size>
-        
+			  
               <Rotation>
-              <ogc:Add>        
+              <ogc:Add>			  
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
                 <ogc:Literal>90</ogc:Literal>
-                </ogc:Add>        
+                </ogc:Add>				
               </Rotation>
-        
+			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>          
+        </Rule>					
 
 
-<!--  26191 kaasujohdon symboli -->    
+<!--  26191 kaasujohdon symboli -->		
 
         <Rule>
           <Name>26191</Name>
           <Title>26191 kaasujohdon symboli</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -840,15 +840,15 @@ xlink:href="maastokartta/Sslp.svg"/>
           <MaxScaleDenominator>20000</MaxScaleDenominator> 
 
           <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> 
-      
+		  
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>0</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>        
-            
+              </ogc:Function>				
+            </Geometry>			  
+		  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -864,22 +864,22 @@ xlink:href="maastokartta/SK.svg"/>
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>      
+        </Rule>			
 
 
-<!-- 56505 Vesikulkuv�yl�n nimelliskulkusuunta -->    
+<!-- 56505 Vesikulkuväylän nimelliskulkusuunta -->		
 
 
 
         <Rule>
           <Name>16505</Name>
-          <Title>16505 Vesikulkuv�yl�n nimelliskulkusuunta</Title>
-      
+          <Title>16505 Vesikulkuväylän nimelliskulkusuunta</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -891,15 +891,15 @@ xlink:href="maastokartta/SK.svg"/>
           <MaxScaleDenominator>20000</MaxScaleDenominator> 
 
           <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> 
-      
+		  
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>0</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>    
-      
+              </ogc:Function>				
+            </Geometry>		
+			
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -910,26 +910,26 @@ xlink:href="maastokartta/Svknimsuun.svg"/>
               <Size>
                 <ogc:Literal>136</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
               </Rotation>
-        
+			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>    
+        </Rule>		
 
-<!-- 36100 L�hde-->    
+<!-- 36100 Lähde-->		
 
         <Rule>
           <Name>36100</Name>
-          <Title>36100 L�hde</Title>
-      
+          <Title>36100 Lähde</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -945,11 +945,11 @@ xlink:href="maastokartta/Svknimsuun.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>0</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-      
+              </ogc:Function>				
+            </Geometry>	
+			
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -960,26 +960,26 @@ xlink:href="maastokartta/Svl.svg"/>
               <Size>
                 <ogc:Literal>32</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
               </Rotation>
-        
+			  
             </Graphic>
           </PointSymbolizer>
         </Rule>
 
-<!-- 36393 Leve�n virtaveden juoksusuunta-->    
+<!-- 36393 Leveän virtaveden juoksusuunta-->		
 
         <Rule>
           <Name>36393</Name>
-          <Title>36393 Leve�n virtaveden juoksusuunta</Title>
-      
+          <Title>36393 Leveän virtaveden juoksusuunta</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -1001,30 +1001,30 @@ xlink:href="maastokartta/Svsn.svg"/>
               <Size>
                 <ogc:Literal>108</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Add>
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
-                      <ogc:Literal>-10000</ogc:Literal>        
-                    </ogc:Div>        
-                      <ogc:Literal>1.57075</ogc:Literal>          
-                    </ogc:Add>                    
-          </ogc:Function>
+                      <ogc:Literal>-10000</ogc:Literal>				
+                    </ogc:Div>				
+                      <ogc:Literal>1.57075</ogc:Literal>				  
+                    </ogc:Add>									  
+				  </ogc:Function>
               </Rotation>
-        
+			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>    
+        </Rule>		
 
 
-<!-- 36400 Vesikuoppa-->    
+<!-- 36400 Vesikuoppa-->		
 
         <Rule>
           <Name>36400</Name>
           <Title>36400 Vesikuoppa</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -1036,15 +1036,15 @@ xlink:href="maastokartta/Svsn.svg"/>
           <MaxScaleDenominator>20000</MaxScaleDenominator> 
 
           <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> 
-      
+		  
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>0</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>        
-      
+              </ogc:Function>				
+            </Geometry>			  
+		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -1055,26 +1055,26 @@ xlink:href="maastokartta/Svk.svg"/>
               <Size>
                 <ogc:Literal>52</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
               </Rotation>
-        
+			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>    
-    
-<!-- 26200 Vedenottamo mustavalkoinen-->    
+        </Rule>		
+		
+<!-- 26200 Vedenottamo mustavalkoinen-->		
 
         <Rule>
           <Name>26200</Name>
           <Title>26200 Vedenottamo mustavalkoinen</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -1090,11 +1090,11 @@ xlink:href="maastokartta/Svk.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>0</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>        
-      
+              </ogc:Function>				
+            </Geometry>			  
+		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -1105,30 +1105,30 @@ xlink:href="maastokartta/Svo.svg"/>
               <Size>
                 <ogc:Literal>36</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
               </Rotation>
-        
+			  
             </Graphic>
           </PointSymbolizer>
         </Rule>
 
 <!-- kirkko alle 5000 m2 -->
 
-    
+		
 
-  <!--  34200 Harva louhikko -->    
+	<!--  34200 Harva louhikko -->		
 
 <!--         <Rule>
           <Name>34200</Name>
           <Title>34200 Harva louhikko</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -1144,11 +1144,11 @@ xlink:href="maastokartta/Svo.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>-4</ogc:Literal>        
+                <ogc:Literal>-4</ogc:Literal>				
                 <ogc:Literal>0</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>        
-      
+              </ogc:Function>				
+            </Geometry>			  
+		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -1162,16 +1162,16 @@ xlink:href="maastokartta/Slo.svg"/>
 
             </Graphic>
           </PointSymbolizer>
-        </Rule> -->      
-    
-  
-    
-<!-- 34600 Kivi -->    
+        </Rule> -->		  
+	  
+	
+		
+<!-- 34600 Kivi -->		
 
 <!--         <Rule>
           <Name>34600</Name>
           <Title>34600 Kivi</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -1186,10 +1186,10 @@ xlink:href="maastokartta/Slo.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>12</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>        
+              </ogc:Function>				
+            </Geometry>			  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -1200,28 +1200,28 @@ xlink:href="maastokartta/Ski.svg"/>
               <Size>
                 <ogc:Literal>32</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
               </Rotation>
-        
+			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>   -->        
+        </Rule>	 -->				
 
 
-  
-<!-- 38511 Vesikivi vedenalainen -->    
+	
+<!-- 38511 Vesikivi vedenalainen -->		
 
 <!--         <Rule>
           <Name>38511</Name>
           <Title>38511 Vesikivi vedenalainen</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -1237,11 +1237,11 @@ xlink:href="maastokartta/Ski.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>-16</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-      
+              </ogc:Function>				
+            </Geometry>	
+			
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -1252,27 +1252,27 @@ xlink:href="maastokartta/Skiva.svg"/>
               <Size>
                 <ogc:Literal>32</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
               </Rotation>
-        
+			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>   -->
+        </Rule>	 -->
 
 
-<!-- 38512 Vesikivi, keskiveden pinnassa -->    
+<!-- 38512 Vesikivi, keskiveden pinnassa -->		
 
 <!--         <Rule>
           <Name>38512</Name>
           <Title>38512 Vesikivi, keskiveden pinnassa</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -1288,11 +1288,11 @@ xlink:href="maastokartta/Skiva.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>0</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-      
+              </ogc:Function>				
+            </Geometry>	
+			
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -1303,29 +1303,29 @@ xlink:href="maastokartta/Skivt.svg"/>
               <Size>
                 <ogc:Literal>36</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
               </Rotation>
-        
+			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>   -->
-    
+        </Rule>	 -->
+		
 
 
 
-<!-- 38513 Vesikivi, vedenp��llinen -->    
+<!-- 38513 Vesikivi, vedenpäällinen -->		
 
 <!--         <Rule>
           <Name>38513</Name>
-          <Title>38513 Vesikivi, vedenp��llinen</Title>
-      
+          <Title>38513 Vesikivi, vedenpäällinen</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -1341,11 +1341,11 @@ xlink:href="maastokartta/Skivt.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>12</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-      
+              </ogc:Function>				
+            </Geometry>	
+			
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -1356,29 +1356,29 @@ xlink:href="maastokartta/Ski.svg"/>
               <Size>
                 <ogc:Literal>32</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
               </Rotation>
-        
+			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>   -->
+        </Rule>	 -->
 
 
-<!-- 38800  Uittolaite -->    
+<!-- 38800  Uittolaite -->		
 
 
 
         <Rule>
           <Name>38800</Name>
           <Title>38800 Uittolaite</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -1390,15 +1390,15 @@ xlink:href="maastokartta/Ski.svg"/>
           <MaxScaleDenominator>20000</MaxScaleDenominator> 
 
           <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-      
+		  
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>0</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>        
-            
+              </ogc:Function>				
+            </Geometry>			  
+		  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -1409,30 +1409,30 @@ xlink:href="maastokartta/Suitto.svg"/>
               <Size>
                 <ogc:Literal>28</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
               </Rotation>
-        
+			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>    
+        </Rule>		
 
 
-    
-<!-- 16600 Ankkuripaikka -->    
+		
+<!-- 16600 Ankkuripaikka -->		
 
 
 
         <Rule>
           <Name>16600</Name>
           <Title>16600 Ankkuripaikka</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -1444,15 +1444,15 @@ xlink:href="maastokartta/Suitto.svg"/>
           <MaxScaleDenominator>20000</MaxScaleDenominator> 
 
           <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> 
-      
+		  
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>-12</ogc:Literal>        
+                <ogc:Literal>-12</ogc:Literal>				
                 <ogc:Literal>-6</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>        
-                  
+              </ogc:Function>				
+            </Geometry>			  
+		  		  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -1463,28 +1463,28 @@ xlink:href="maastokartta/Sankkuri.svg"/>
               <Size>
                 <ogc:Literal>91</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
               </Rotation>
-        
+			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
 
 
-<!-- 34900 Merkitt�v� luontokohde -->    
+<!-- 34900 Merkittävä luontokohde -->		
 
         <Rule>
           <Name>34900</Name>
-          <Title>34900 Merkitt�v� luontokohde</Title>
-      
+          <Title>34900 Merkittävä luontokohde</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -1506,28 +1506,28 @@ xlink:href="maastokartta/SRmuu.svg"/>
               <Size>
                 <ogc:Literal>34</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
               </Rotation>
-        
+			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
-    
+		
 
-<!-- 35100 Puu -->    
+<!-- 35100 Puu -->		
 
         <Rule>
           <Name>35100</Name>
           <Title>35100 Puu</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -1539,15 +1539,15 @@ xlink:href="maastokartta/SRmuu.svg"/>
           <MaxScaleDenominator>20000</MaxScaleDenominator> 
 
           <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> 
-      
+		  
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>0</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-      
+              </ogc:Function>				
+            </Geometry>	
+			
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -1558,27 +1558,27 @@ xlink:href="maastokartta/Spuu.svg"/>
               <Size>
                 <ogc:Literal>72</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
               </Rotation>
-        
+			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>      
+        </Rule>			
 
-    
-<!-- 72300 rauhoitettu kohde -->    
+		
+<!-- 72300 rauhoitettu kohde -->		
 
         <Rule>
           <Name>72300</Name>
           <Title>72300 Rauhoitettu kohde</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -1600,27 +1600,27 @@ xlink:href="maastokartta/SRmuu.svg"/>
               <Size>
                 <ogc:Literal>34</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
               </Rotation>
-        
+			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>          
-    
-  
-<!-- 72310 Rauhoitettu kivi -->    
+        </Rule>					
+		
+	
+<!-- 72310 Rauhoitettu kivi -->		
 
         <Rule>
           <Name>72310</Name>
           <Title>72310 Rauhoitettu kivi</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -1642,26 +1642,26 @@ xlink:href="maastokartta/SRmuu.svg"/>
               <Size>
                 <ogc:Literal>34</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
               </Rotation>
-        
+			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>          
+        </Rule>					
 
-<!-- 72320 Rauhoitettu puu -->    
+<!-- 72320 Rauhoitettu puu -->		
 
         <Rule>
           <Name>72320</Name>
           <Title>72320 Rauhoitettu puu</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -1674,14 +1674,14 @@ xlink:href="maastokartta/SRmuu.svg"/>
 
           <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
 
-      <Geometry>
+		  <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>0</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-      
+              </ogc:Function>				
+            </Geometry>	
+			
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -1692,26 +1692,26 @@ xlink:href="maastokartta/Spuu.svg"/>
               <Size>
                 <ogc:Literal>68</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
               </Rotation>
-        
+			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>    
+        </Rule>		
 
-<!-- 72330 Muinaisj��nn�s -->    
+<!-- 72330 Muinaisjäännös -->		
 
         <Rule>
           <Name>72330</Name>
-          <Title>72330 Muinaisj��nn�s</Title>
-      
+          <Title>72330 Muinaisjäännös</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -1727,11 +1727,11 @@ xlink:href="maastokartta/Spuu.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>13</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-      
+              </ogc:Function>				
+            </Geometry>	
+			
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -1742,26 +1742,26 @@ xlink:href="maastokartta/SMjs.svg"/>
               <Size>
                 <ogc:Literal>68</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
               </Rotation>
-        
+			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>        
+        </Rule>				
 
-<!-- 72340 Muu rauhoitettu kohde -->    
+<!-- 72340 Muu rauhoitettu kohde -->		
 
         <Rule>
           <Name>72340</Name>
           <Title>72340 Muu rauhoitettu kohde</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -1777,11 +1777,11 @@ xlink:href="maastokartta/SMjs.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>0</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-            
+              </ogc:Function>				
+            </Geometry>	
+					  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -1792,36 +1792,36 @@ xlink:href="maastokartta/SRmuu.svg"/>
               <Size>
                 <ogc:Literal>34</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
               </Rotation>
-        
+			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>        
+        </Rule>				
 
 
 
 
 
-    
+		
 
-  
+	
          
-    
-    
-<!-- 16120 Linjamerkki -->    
+		
+		
+<!-- 16120 Linjamerkki -->		
 
         <Rule>
           <Name>16120</Name>
           <Title>16120 Linjamerkki</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -1837,11 +1837,11 @@ xlink:href="maastokartta/SRmuu.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>24</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -1852,26 +1852,26 @@ xlink:href="maastokartta/SLm.svg"/>
               <Size>
                 <ogc:Literal>52</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>          
+        </Rule>		  		
 
-  
-<!-- 16121 Kummeli -->    
+	
+<!-- 16121 Kummeli -->		
 
         <Rule>
           <Name>16121</Name>
           <Title>16121 Kummeli</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -1887,11 +1887,11 @@ xlink:href="maastokartta/SLm.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>14</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -1902,26 +1902,26 @@ xlink:href="maastokartta/SKum.svg"/>
               <Size>
                 <ogc:Literal>32</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
               </Rotation>
-        
+			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>    
-    
-<!-- 16122 Tunnusmajakka -->    
+        </Rule>		
+		
+<!-- 16122 Tunnusmajakka -->		
 
         <Rule>
           <Name>16122</Name>
           <Title>16122 Tunnusmajakka</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -1937,11 +1937,11 @@ xlink:href="maastokartta/SKum.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>24</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                    
+              </ogc:Function>				
+            </Geometry>	
+					  			  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -1952,26 +1952,26 @@ xlink:href="maastokartta/STmaja.svg"/>
               <Size>
                 <ogc:Literal>60</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
               </Rotation>
-        
+			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>    
-    
-<!-- 16124 Loisto -->    
+        </Rule>		
+		
+<!-- 16124 Loisto -->		
 
         <Rule>
           <Name>16124</Name>
           <Title>16124 Loisto</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -1987,11 +1987,11 @@ xlink:href="maastokartta/STmaja.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>20</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                    
+              </ogc:Function>				
+            </Geometry>	
+					  			  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -2002,25 +2002,25 @@ xlink:href="maastokartta/SLo.svg"/>
               <Size>
                 <ogc:Literal>76</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>        
-    
-<!-- 16125 Linjaloisto -->    
+        </Rule>				
+		
+<!-- 16125 Linjaloisto -->		
 
         <Rule>
           <Name>16125</Name>
           <Title>16125 Linjaloisto</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -2036,11 +2036,11 @@ xlink:href="maastokartta/SLo.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>36</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                      
+              </ogc:Function>				
+            </Geometry>	
+					  				  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -2051,25 +2051,25 @@ xlink:href="maastokartta/SLl.svg"/>
               <Size>
                 <ogc:Literal>80</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>        
+        </Rule>				
 
-<!-- 16126 merimajakka -->    
+<!-- 16126 merimajakka -->		
 
         <Rule>
           <Name>16126</Name>
           <Title>16126 Merimajakka</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -2085,11 +2085,11 @@ xlink:href="maastokartta/SLl.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>4</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                      
+              </ogc:Function>				
+            </Geometry>	
+					  				  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -2100,25 +2100,25 @@ xlink:href="maastokartta/SMaja.svg"/>
               <Size>
                 <ogc:Literal>100</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>     
-    
-<!-- 16127 Tutkamerkki -->    
+        </Rule>		 
+		
+<!-- 16127 Tutkamerkki -->		
 
         <Rule>
           <Name>16127</Name>
           <Title>16127 Tutkamerkki</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -2134,11 +2134,11 @@ xlink:href="maastokartta/SMaja.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
-                <ogc:Literal>70</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                      
+                <ogc:Literal>0</ogc:Literal>				
+                <ogc:Literal>60</ogc:Literal>
+              </ogc:Function>				
+            </Geometry>	
+					  				  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -2149,25 +2149,25 @@ xlink:href="maastokartta/STutka.svg"/>
               <Size>
                 <ogc:Literal>156</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>      
-    
-<!-- 16128 Valaistu tutkamerkki -->    
+        </Rule>			
+		
+<!-- 16128 Valaistu tutkamerkki -->		
 
         <Rule>
           <Name>16128</Name>
           <Title>16128 Valaistu tutkamerkki</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -2183,11 +2183,11 @@ xlink:href="maastokartta/STutka.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>20</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                      
+              </ogc:Function>				
+            </Geometry>	
+					  				  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -2198,25 +2198,25 @@ xlink:href="maastokartta/STutka.svg"/>
               <Size>
                 <ogc:Literal>156</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
-<!-- 16141 Merimerkki, vasen -->    
+<!-- 16141 Merimerkki, vasen -->		
 
         <Rule>
           <Name>16141</Name>
           <Title>16141 Merimerkki, vasen</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -2232,20 +2232,30 @@ xlink:href="maastokartta/STutka.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-        
-                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
-                  <ogc:Function name="tan">
+				
+                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän sin funtkiona -->
+                  <ogc:Function name="sin">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
                       <ogc:Literal>-10000</ogc:Literal>            
                     </ogc:Div> 
-                  </ogc:Function>          
+                  </ogc:Function>					
                   <ogc:Literal>46</ogc:Literal> 
-                </ogc:Mul>        
-                <ogc:Literal>46</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-      
+                </ogc:Mul>
+                
+                <ogc:Mul> <!-- dy siirtymä lasketaan kiertokulman ja dy siirtymän cosfuntkiona -->
+                  <ogc:Function name="cos">
+                    <ogc:Div>                  
+                      <ogc:PropertyName>suunta</ogc:PropertyName> 
+                      <ogc:Literal>10000</ogc:Literal>            
+                    </ogc:Div> 
+                  </ogc:Function>					
+                  <ogc:Literal>46</ogc:Literal> 
+                </ogc:Mul>	
+				
+              </ogc:Function>				
+            </Geometry>	
+			
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -2256,25 +2266,25 @@ xlink:href="maastokartta/SVvas.svg"/>
               <Size>
                 <ogc:Literal>96</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
-<!-- 16142 Merimerkki, oikea -->    
+<!-- 16142 Merimerkki, oikea -->		
 
         <Rule>
           <Name>16142</Name>
           <Title>16142 Merimerkki, oikea</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -2290,20 +2300,30 @@ xlink:href="maastokartta/SVvas.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-        
-                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
-                  <ogc:Function name="tan">
+				
+                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän sin funtkiona -->
+                  <ogc:Function name="sin">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
                       <ogc:Literal>-10000</ogc:Literal>            
                     </ogc:Div> 
-                  </ogc:Function>          
+                  </ogc:Function>					
                   <ogc:Literal>46</ogc:Literal> 
-                </ogc:Mul>        
-                <ogc:Literal>46</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-            
+                </ogc:Mul>
+                
+                <ogc:Mul> <!-- dy siirtymä lasketaan kiertokulman ja dy siirtymän cosfuntkiona -->
+                  <ogc:Function name="cos">
+                    <ogc:Div>                  
+                      <ogc:PropertyName>suunta</ogc:PropertyName> 
+                      <ogc:Literal>10000</ogc:Literal>            
+                    </ogc:Div> 
+                  </ogc:Function>					
+                  <ogc:Literal>46</ogc:Literal> 
+                </ogc:Mul>	
+				
+              </ogc:Function>				
+            </Geometry>	
+					  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -2314,25 +2334,25 @@ xlink:href="maastokartta/SVoi.svg"/>
               <Size>
                 <ogc:Literal>96</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>    
-    
-<!-- 16143 Merimerkki, pohjois -->    
+        </Rule>		
+		
+<!-- 16143 Merimerkki, pohjois -->		
 
         <Rule>
           <Name>16143</Name>
           <Title>16143 Merimerkki, pohjois</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -2348,20 +2368,30 @@ xlink:href="maastokartta/SVoi.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-        
-                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
-                  <ogc:Function name="tan">
+				
+                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän sin funtkiona -->
+                  <ogc:Function name="sin">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
                       <ogc:Literal>-10000</ogc:Literal>            
                     </ogc:Div> 
-                  </ogc:Function>          
+                  </ogc:Function>					
                   <ogc:Literal>54</ogc:Literal> 
-                </ogc:Mul>        
-                <ogc:Literal>54</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-            
+                </ogc:Mul>
+                
+                <ogc:Mul> <!-- dy siirtymä lasketaan kiertokulman ja dy siirtymän cosfuntkiona -->
+                  <ogc:Function name="cos">
+                    <ogc:Div>                  
+                      <ogc:PropertyName>suunta</ogc:PropertyName> 
+                      <ogc:Literal>10000</ogc:Literal>            
+                    </ogc:Div> 
+                  </ogc:Function>					
+                  <ogc:Literal>54</ogc:Literal> 
+                </ogc:Mul>	
+				
+              </ogc:Function>				
+            </Geometry>	
+					  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -2372,25 +2402,25 @@ xlink:href="maastokartta/SVpo.svg"/>
               <Size>
                 <ogc:Literal>112</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
-<!-- 16144 Merimerkki, etel� -->    
+<!-- 16144 Merimerkki, etelä -->		
 
         <Rule>
           <Name>16144</Name>
-          <Title>16144 Merimerkki, etel�</Title>
-      
+          <Title>16144 Merimerkki, etelä</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -2406,20 +2436,30 @@ xlink:href="maastokartta/SVpo.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-        
-                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
-                  <ogc:Function name="tan">
+				
+                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän sin funtkiona -->
+                  <ogc:Function name="sin">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
                       <ogc:Literal>-10000</ogc:Literal>            
                     </ogc:Div> 
-                  </ogc:Function>          
+                  </ogc:Function>					
                   <ogc:Literal>50</ogc:Literal> 
-                </ogc:Mul>      
-                <ogc:Literal>50</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-            
+                </ogc:Mul>
+                
+                <ogc:Mul> <!-- dy siirtymä lasketaan kiertokulman ja dy siirtymän cosfuntkiona -->
+                  <ogc:Function name="cos">
+                    <ogc:Div>                  
+                      <ogc:PropertyName>suunta</ogc:PropertyName> 
+                      <ogc:Literal>10000</ogc:Literal>            
+                    </ogc:Div> 
+                  </ogc:Function>					
+                  <ogc:Literal>50</ogc:Literal> 
+                </ogc:Mul>	
+				
+              </ogc:Function>				
+            </Geometry>	
+					  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -2430,25 +2470,25 @@ xlink:href="maastokartta/SVet.svg"/>
               <Size>
                 <ogc:Literal>108</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>      
-    
-<!-- 16145 Merimerkki, it� -->    
+        </Rule>			
+		
+<!-- 16145 Merimerkki, itä -->		
 
         <Rule>
           <Name>16145</Name>
-          <Title>16145 Merimerkki, it�</Title>
-      
+          <Title>16145 Merimerkki, itä</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -2464,20 +2504,30 @@ xlink:href="maastokartta/SVet.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-        
-                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
-                  <ogc:Function name="tan">
+				
+                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän sin funtkiona -->
+                  <ogc:Function name="sin">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
                       <ogc:Literal>-10000</ogc:Literal>            
                     </ogc:Div> 
-                  </ogc:Function>          
+                  </ogc:Function>					
                   <ogc:Literal>54</ogc:Literal> 
-                </ogc:Mul>        
-                <ogc:Literal>54</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-            
+                </ogc:Mul>
+                
+                <ogc:Mul> <!-- dy siirtymä lasketaan kiertokulman ja dy siirtymän cosfuntkiona -->
+                  <ogc:Function name="cos">
+                    <ogc:Div>                  
+                      <ogc:PropertyName>suunta</ogc:PropertyName> 
+                      <ogc:Literal>10000</ogc:Literal>            
+                    </ogc:Div> 
+                  </ogc:Function>					
+                  <ogc:Literal>54</ogc:Literal> 
+                </ogc:Mul>	
+				
+              </ogc:Function>				
+            </Geometry>	
+					  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -2488,26 +2538,26 @@ xlink:href="maastokartta/SVita.svg"/>
               <Size>
                 <ogc:Literal>112</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>      
-    
-    
-<!-- 16146 Merimerkki, l�nsi -->    
+        </Rule>			
+		
+		
+<!-- 16146 Merimerkki, länsi -->		
 
         <Rule>
           <Name>16146</Name>
-          <Title>16146 Merimerkki, l�nsi</Title>
-      
+          <Title>16146 Merimerkki, länsi</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -2523,20 +2573,30 @@ xlink:href="maastokartta/SVita.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-        
-                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
-                  <ogc:Function name="tan">
+				
+                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän sin funtkiona -->
+                  <ogc:Function name="sin">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
                       <ogc:Literal>-10000</ogc:Literal>            
                     </ogc:Div> 
-                  </ogc:Function>          
+                  </ogc:Function>					
                   <ogc:Literal>50</ogc:Literal> 
-                </ogc:Mul>        
-                <ogc:Literal>50</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-            
+                </ogc:Mul>
+                
+                <ogc:Mul> <!-- dy siirtymä lasketaan kiertokulman ja dy siirtymän cosfuntkiona -->
+                  <ogc:Function name="cos">
+                    <ogc:Div>                  
+                      <ogc:PropertyName>suunta</ogc:PropertyName> 
+                      <ogc:Literal>10000</ogc:Literal>            
+                    </ogc:Div> 
+                  </ogc:Function>					
+                  <ogc:Literal>50</ogc:Literal> 
+                </ogc:Mul>	
+				
+              </ogc:Function>				
+            </Geometry>
+					  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -2547,27 +2607,27 @@ xlink:href="maastokartta/SVla.svg"/>
               <Size>
                 <ogc:Literal>108</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
-    
-    
-<!-- 16147 Merimerkki, kari -->    
+		
+		
+<!-- 16147 Merimerkki, kari -->		
 
         <Rule>
           <Name>16147</Name>
           <Title>16147 Merimerkki, kari</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -2583,20 +2643,30 @@ xlink:href="maastokartta/SVla.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-        
-                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
-                  <ogc:Function name="tan">
+				
+                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän sin funtkiona -->
+                  <ogc:Function name="sin">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
                       <ogc:Literal>-10000</ogc:Literal>            
                     </ogc:Div> 
-                  </ogc:Function>          
+                  </ogc:Function>					
                   <ogc:Literal>60</ogc:Literal> 
-                </ogc:Mul>        
-                <ogc:Literal>60</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-            
+                </ogc:Mul>
+                
+                <ogc:Mul> <!-- dy siirtymä lasketaan kiertokulman ja dy siirtymän cosfuntkiona -->
+                  <ogc:Function name="cos">
+                    <ogc:Div>                  
+                      <ogc:PropertyName>suunta</ogc:PropertyName> 
+                      <ogc:Literal>10000</ogc:Literal>            
+                    </ogc:Div> 
+                  </ogc:Function>					
+                  <ogc:Literal>60</ogc:Literal> 
+                </ogc:Mul>	
+				
+              </ogc:Function>				
+            </Geometry>
+					  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -2607,25 +2677,25 @@ xlink:href="maastokartta/SKari.svg"/>
               <Size>
                 <ogc:Literal>128</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>    
+        </Rule>		
 
-<!-- 16148 Merimerkki, turva -->    
+<!-- 16148 Merimerkki, turva -->		
 
         <Rule>
           <Name>16148</Name>
           <Title>16148 Merimerkki, turva</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -2641,20 +2711,30 @@ xlink:href="maastokartta/SKari.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-        
-                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
-                  <ogc:Function name="tan">
+				
+                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän sin funtkiona -->
+                  <ogc:Function name="sin">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
                       <ogc:Literal>-10000</ogc:Literal>            
                     </ogc:Div> 
-                  </ogc:Function>          
+                  </ogc:Function>					
                   <ogc:Literal>44</ogc:Literal> 
-                </ogc:Mul>        
-                <ogc:Literal>44</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-            
+                </ogc:Mul>
+                
+                <ogc:Mul> <!-- dy siirtymä lasketaan kiertokulman ja dy siirtymän cosfuntkiona -->
+                  <ogc:Function name="cos">
+                    <ogc:Div>                  
+                      <ogc:PropertyName>suunta</ogc:PropertyName> 
+                      <ogc:Literal>10000</ogc:Literal>            
+                    </ogc:Div> 
+                  </ogc:Function>					
+                  <ogc:Literal>44</ogc:Literal> 
+                </ogc:Mul>	
+				
+              </ogc:Function>				
+            </Geometry>
+					  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -2665,25 +2745,25 @@ xlink:href="maastokartta/STurva.svg"/>
               <Size>
                 <ogc:Literal>96</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
-<!-- 16149 Merimerkki, erikois -->    
+<!-- 16149 Merimerkki, erikois -->		
 
         <Rule>
           <Name>16149</Name>
           <Title>16149 Merimerkki, erikois</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -2699,20 +2779,30 @@ xlink:href="maastokartta/STurva.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-        
-                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
-                  <ogc:Function name="tan">
+				
+                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän sin funtkiona -->
+                  <ogc:Function name="sin">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
                       <ogc:Literal>-10000</ogc:Literal>            
                     </ogc:Div> 
-                  </ogc:Function>          
+                  </ogc:Function>					
                   <ogc:Literal>48</ogc:Literal> 
-                </ogc:Mul>        
-                <ogc:Literal>48</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-            
+                </ogc:Mul>
+                
+                <ogc:Mul> <!-- dy siirtymä lasketaan kiertokulman ja dy siirtymän cosfuntkiona -->
+                  <ogc:Function name="cos">
+                    <ogc:Div>                  
+                      <ogc:PropertyName>suunta</ogc:PropertyName> 
+                      <ogc:Literal>10000</ogc:Literal>            
+                    </ogc:Div> 
+                  </ogc:Function>					
+                  <ogc:Literal>48</ogc:Literal> 
+                </ogc:Mul>	
+				
+              </ogc:Function>				
+            </Geometry>
+					  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -2723,25 +2813,25 @@ xlink:href="maastokartta/SVeri.svg"/>
               <Size>
                 <ogc:Literal>100</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
-<!-- 16151 Viittapoiju, vasen -->    
+<!-- 16151 Viittapoiju, vasen -->		
 
         <Rule>
           <Name>16151</Name>
           <Title>16151 Viittapoiju, vasen</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -2757,20 +2847,30 @@ xlink:href="maastokartta/SVeri.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-        
-                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
-                  <ogc:Function name="tan">
+				
+                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän sin funtkiona -->
+                  <ogc:Function name="sin">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
                       <ogc:Literal>-10000</ogc:Literal>            
                     </ogc:Div> 
-                  </ogc:Function>          
+                  </ogc:Function>					
                   <ogc:Literal>46</ogc:Literal> 
-                </ogc:Mul>        
-                <ogc:Literal>46</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-      
+                </ogc:Mul>
+                
+                <ogc:Mul> <!-- dy siirtymä lasketaan kiertokulman ja dy siirtymän cosfuntkiona -->
+                  <ogc:Function name="cos">
+                    <ogc:Div>                  
+                      <ogc:PropertyName>suunta</ogc:PropertyName> 
+                      <ogc:Literal>10000</ogc:Literal>            
+                    </ogc:Div> 
+                  </ogc:Function>					
+                  <ogc:Literal>46</ogc:Literal> 
+                </ogc:Mul>	
+				
+              </ogc:Function>				
+            </Geometry>
+			
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -2781,25 +2881,25 @@ xlink:href="maastokartta/SVvas.svg"/>
               <Size>
                 <ogc:Literal>96</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
-<!-- 16152 Viittapoiju, oikea -->    
+<!-- 16152 Viittapoiju, oikea -->		
 
         <Rule>
           <Name>16152</Name>
           <Title>16152 Viittapoiju, oikea</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -2815,20 +2915,30 @@ xlink:href="maastokartta/SVvas.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-        
-                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
-                  <ogc:Function name="tan">
+				
+                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän sin funtkiona -->
+                  <ogc:Function name="sin">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
                       <ogc:Literal>-10000</ogc:Literal>            
                     </ogc:Div> 
-                  </ogc:Function>          
+                  </ogc:Function>					
                   <ogc:Literal>46</ogc:Literal> 
-                </ogc:Mul>        
-                <ogc:Literal>46</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-            
+                </ogc:Mul>
+                
+                <ogc:Mul> <!-- dy siirtymä lasketaan kiertokulman ja dy siirtymän cosfuntkiona -->
+                  <ogc:Function name="cos">
+                    <ogc:Div>                  
+                      <ogc:PropertyName>suunta</ogc:PropertyName> 
+                      <ogc:Literal>10000</ogc:Literal>            
+                    </ogc:Div> 
+                  </ogc:Function>					
+                  <ogc:Literal>46</ogc:Literal> 
+                </ogc:Mul>	
+				
+              </ogc:Function>				
+            </Geometry>
+					  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -2839,25 +2949,25 @@ xlink:href="maastokartta/SVoi.svg"/>
               <Size>
                 <ogc:Literal>96</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
-<!-- 16153 Viittapoiju, pohjois -->    
+<!-- 16153 Viittapoiju, pohjois -->		
 
         <Rule>
           <Name>16153</Name>
           <Title>16153 Viittapoiju, pohjois</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -2873,20 +2983,30 @@ xlink:href="maastokartta/SVoi.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-        
-                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
-                  <ogc:Function name="tan">
+				
+                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän sin funtkiona -->
+                  <ogc:Function name="sin">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
                       <ogc:Literal>-10000</ogc:Literal>            
                     </ogc:Div> 
-                  </ogc:Function>          
+                  </ogc:Function>					
                   <ogc:Literal>54</ogc:Literal> 
-                </ogc:Mul>        
-                <ogc:Literal>54</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-            
+                </ogc:Mul>
+                
+                <ogc:Mul> <!-- dy siirtymä lasketaan kiertokulman ja dy siirtymän cosfuntkiona -->
+                  <ogc:Function name="cos">
+                    <ogc:Div>                  
+                      <ogc:PropertyName>suunta</ogc:PropertyName> 
+                      <ogc:Literal>10000</ogc:Literal>            
+                    </ogc:Div> 
+                  </ogc:Function>					
+                  <ogc:Literal>54</ogc:Literal> 
+                </ogc:Mul>	
+				
+              </ogc:Function>				
+            </Geometry>
+					  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -2897,25 +3017,25 @@ xlink:href="maastokartta/SVpo.svg"/>
               <Size>
                 <ogc:Literal>112</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
-<!-- 16154 Viittapoiju, etel� -->    
+<!-- 16154 Viittapoiju, etelä -->		
 
         <Rule>
           <Name>16154</Name>
-          <Title>16154 Viittapoiju, etel�</Title>
-      
+          <Title>16154 Viittapoiju, etelä</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -2931,20 +3051,30 @@ xlink:href="maastokartta/SVpo.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-        
-                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
-                  <ogc:Function name="tan">
+				
+                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän sin funtkiona -->
+                  <ogc:Function name="sin">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
                       <ogc:Literal>-10000</ogc:Literal>            
                     </ogc:Div> 
-                  </ogc:Function>          
+                  </ogc:Function>					
                   <ogc:Literal>50</ogc:Literal> 
-                </ogc:Mul>        
-                <ogc:Literal>50</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-            
+                </ogc:Mul>
+                
+                <ogc:Mul> <!-- dy siirtymä lasketaan kiertokulman ja dy siirtymän cosfuntkiona -->
+                  <ogc:Function name="cos">
+                    <ogc:Div>                  
+                      <ogc:PropertyName>suunta</ogc:PropertyName> 
+                      <ogc:Literal>10000</ogc:Literal>            
+                    </ogc:Div> 
+                  </ogc:Function>					
+                  <ogc:Literal>50</ogc:Literal> 
+                </ogc:Mul>	
+				
+              </ogc:Function>				
+            </Geometry>
+					  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -2955,26 +3085,26 @@ xlink:href="maastokartta/SVet.svg"/>
               <Size>
                 <ogc:Literal>108</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
 
-<!-- 16155 Viittapoiju, it� -->    
+<!-- 16155 Viittapoiju, itä -->		
 
         <Rule>
           <Name>16155</Name>
-          <Title>16155 Viittapoiju, it�</Title>
-      
+          <Title>16155 Viittapoiju, itä</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -2990,20 +3120,30 @@ xlink:href="maastokartta/SVet.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-        
-                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
-                  <ogc:Function name="tan">
+				
+                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän sin funtkiona -->
+                  <ogc:Function name="sin">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
                       <ogc:Literal>-10000</ogc:Literal>            
                     </ogc:Div> 
-                  </ogc:Function>          
+                  </ogc:Function>					
                   <ogc:Literal>54</ogc:Literal> 
-                </ogc:Mul>        
-                <ogc:Literal>54</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-            
+                </ogc:Mul>
+                
+                <ogc:Mul> <!-- dy siirtymä lasketaan kiertokulman ja dy siirtymän cosfuntkiona -->
+                  <ogc:Function name="cos">
+                    <ogc:Div>                  
+                      <ogc:PropertyName>suunta</ogc:PropertyName> 
+                      <ogc:Literal>10000</ogc:Literal>            
+                    </ogc:Div> 
+                  </ogc:Function>					
+                  <ogc:Literal>54</ogc:Literal> 
+                </ogc:Mul>	
+				
+              </ogc:Function>				
+            </Geometry>
+					  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -3014,25 +3154,25 @@ xlink:href="maastokartta/SVita.svg"/>
               <Size>
                 <ogc:Literal>112</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
-<!-- 16156 Viittapoiju, l�nsi -->    
+<!-- 16156 Viittapoiju, länsi -->		
 
         <Rule>
           <Name>16156</Name>
-          <Title>16156 Viittapoiju, l�nsi</Title>
-      
+          <Title>16156 Viittapoiju, länsi</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -3044,24 +3184,34 @@ xlink:href="maastokartta/SVita.svg"/>
           <MaxScaleDenominator>20000</MaxScaleDenominator> 
 
           <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-      
+		  
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-        
-                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
-                  <ogc:Function name="tan">
+				
+                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän sin funtkiona -->
+                  <ogc:Function name="sin">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
                       <ogc:Literal>-10000</ogc:Literal>            
                     </ogc:Div> 
-                  </ogc:Function>          
+                  </ogc:Function>					
                   <ogc:Literal>50</ogc:Literal> 
-                </ogc:Mul>        
-                <ogc:Literal>50</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-      
+                </ogc:Mul>
+                
+                <ogc:Mul> <!-- dy siirtymä lasketaan kiertokulman ja dy siirtymän cosfuntkiona -->
+                  <ogc:Function name="cos">
+                    <ogc:Div>                  
+                      <ogc:PropertyName>suunta</ogc:PropertyName> 
+                      <ogc:Literal>10000</ogc:Literal>            
+                    </ogc:Div> 
+                  </ogc:Function>					
+                  <ogc:Literal>50</ogc:Literal> 
+                </ogc:Mul>	
+				
+              </ogc:Function>				
+            </Geometry>
+			
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -3072,25 +3222,25 @@ xlink:href="maastokartta/SVla.svg"/>
               <Size>
                 <ogc:Literal>108</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
-<!-- 16157 Viittapoiju, kari -->    
+<!-- 16157 Viittapoiju, kari -->		
 
         <Rule>
           <Name>16157</Name>
           <Title>16157 Viittapoiju, kari</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -3106,20 +3256,30 @@ xlink:href="maastokartta/SVla.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-        
-                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
-                  <ogc:Function name="tan">
+				
+                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän sin funtkiona -->
+                  <ogc:Function name="sin">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
                       <ogc:Literal>-10000</ogc:Literal>            
                     </ogc:Div> 
-                  </ogc:Function>          
+                  </ogc:Function>					
                   <ogc:Literal>60</ogc:Literal> 
-                </ogc:Mul>        
-                <ogc:Literal>60</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-            
+                </ogc:Mul>
+                
+                <ogc:Mul> <!-- dy siirtymä lasketaan kiertokulman ja dy siirtymän cosfuntkiona -->
+                  <ogc:Function name="cos">
+                    <ogc:Div>                  
+                      <ogc:PropertyName>suunta</ogc:PropertyName> 
+                      <ogc:Literal>10000</ogc:Literal>            
+                    </ogc:Div> 
+                  </ogc:Function>					
+                  <ogc:Literal>60</ogc:Literal> 
+                </ogc:Mul>	
+				
+              </ogc:Function>				
+            </Geometry>
+					  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -3130,25 +3290,25 @@ xlink:href="maastokartta/SKari.svg"/>
               <Size>
                 <ogc:Literal>128</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>      
-    
-<!-- 16158 Viittapoiju, turva -->    
+        </Rule>			
+		
+<!-- 16158 Viittapoiju, turva -->		
 
         <Rule>
           <Name>16158</Name>
           <Title>16158 Viittapoiju, turva</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -3164,20 +3324,30 @@ xlink:href="maastokartta/SKari.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-        
-                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
-                  <ogc:Function name="tan">
+				
+                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän sin funtkiona -->
+                  <ogc:Function name="sin">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
                       <ogc:Literal>-10000</ogc:Literal>            
                     </ogc:Div> 
-                  </ogc:Function>          
+                  </ogc:Function>					
                   <ogc:Literal>44</ogc:Literal> 
-                </ogc:Mul>        
-                <ogc:Literal>44</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-            
+                </ogc:Mul>
+                
+                <ogc:Mul> <!-- dy siirtymä lasketaan kiertokulman ja dy siirtymän cosfuntkiona -->
+                  <ogc:Function name="cos">
+                    <ogc:Div>                  
+                      <ogc:PropertyName>suunta</ogc:PropertyName> 
+                      <ogc:Literal>10000</ogc:Literal>            
+                    </ogc:Div> 
+                  </ogc:Function>					
+                  <ogc:Literal>44</ogc:Literal> 
+                </ogc:Mul>	
+				
+              </ogc:Function>				
+            </Geometry>
+					  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -3188,25 +3358,25 @@ xlink:href="maastokartta/STurva.svg"/>
               <Size>
                 <ogc:Literal>96</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>        
+        </Rule>				
 
-<!-- 16159 Viittapoiju, erikois -->    
+<!-- 16159 Viittapoiju, erikois -->		
 
         <Rule>
           <Name>16159</Name>
           <Title>16159 Viittapoiju, erikois</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -3222,20 +3392,30 @@ xlink:href="maastokartta/STurva.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-        
-                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
-                  <ogc:Function name="tan">
+				
+                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän sin funtkiona -->
+                  <ogc:Function name="sin">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
                       <ogc:Literal>-10000</ogc:Literal>            
                     </ogc:Div> 
-                  </ogc:Function>          
+                  </ogc:Function>					
                   <ogc:Literal>48</ogc:Literal> 
-                </ogc:Mul>        
-                <ogc:Literal>48</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-            
+                </ogc:Mul>
+                
+                <ogc:Mul> <!-- dy siirtymä lasketaan kiertokulman ja dy siirtymän cosfuntkiona -->
+                  <ogc:Function name="cos">
+                    <ogc:Div>                  
+                      <ogc:PropertyName>suunta</ogc:PropertyName> 
+                      <ogc:Literal>10000</ogc:Literal>            
+                    </ogc:Div> 
+                  </ogc:Function>					
+                  <ogc:Literal>48</ogc:Literal> 
+                </ogc:Mul>	
+				
+              </ogc:Function>				
+            </Geometry>
+					  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -3246,25 +3426,25 @@ xlink:href="maastokartta/SVeri.svg"/>
               <Size>
                 <ogc:Literal>100</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
-<!-- 16161 Poiju, vasen -->    
+<!-- 16161 Poiju, vasen -->		
 
         <Rule>
           <Name>16161</Name>
           <Title>16161 Poiju, vasen</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -3280,11 +3460,11 @@ xlink:href="maastokartta/SVeri.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -3295,25 +3475,25 @@ xlink:href="maastokartta/SPvas.svg"/>
               <Size>
                 <ogc:Literal>112</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
-<!-- 16162 Poiju, oikea -->    
+<!-- 16162 Poiju, oikea -->		
 
         <Rule>
           <Name>16162</Name>
           <Title>16162 Poiju, oikea</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -3325,15 +3505,15 @@ xlink:href="maastokartta/SPvas.svg"/>
           <MaxScaleDenominator>20000</MaxScaleDenominator> 
 
           <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> 
-      
+		  
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-            
+              </ogc:Function>				
+            </Geometry>	
+					  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -3344,25 +3524,25 @@ xlink:href="maastokartta/SPoi.svg"/>
               <Size>
                 <ogc:Literal>116</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
-<!-- 16163 Poiju, pohjois -->    
+<!-- 16163 Poiju, pohjois -->		
 
         <Rule>
           <Name>16163</Name>
           <Title>16163 Poiju, pohjois</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -3378,11 +3558,11 @@ xlink:href="maastokartta/SPoi.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -3393,25 +3573,25 @@ xlink:href="maastokartta/SPpo.svg"/>
               <Size>
                 <ogc:Literal>124</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>      
+        </Rule>			
 
-<!-- 16164 Poiju, etel� -->    
+<!-- 16164 Poiju, etelä -->		
 
         <Rule>
           <Name>16164</Name>
-          <Title>16164 Poiju, etel�</Title>
-      
+          <Title>16164 Poiju, etelä</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -3427,11 +3607,11 @@ xlink:href="maastokartta/SPpo.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -3442,25 +3622,25 @@ xlink:href="maastokartta/SPet.svg"/>
               <Size>
                 <ogc:Literal>120</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>      
+        </Rule>			
 
-<!-- 16165 Poiju, it� -->    
+<!-- 16165 Poiju, itä -->		
 
         <Rule>
           <Name>16165</Name>
-          <Title>16165 Poiju, it�</Title>
-      
+          <Title>16165 Poiju, itä</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -3476,11 +3656,11 @@ xlink:href="maastokartta/SPet.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -3491,25 +3671,25 @@ xlink:href="maastokartta/SPita.svg"/>
               <Size>
                 <ogc:Literal>124</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>    
+        </Rule>		
 
-<!-- 16166 Poiju, l�nsi -->    
+<!-- 16166 Poiju, länsi -->		
 
         <Rule>
           <Name>16166</Name>
-          <Title>16166 Poiju, l�nsi</Title>
-      
+          <Title>16166 Poiju, länsi</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -3525,11 +3705,11 @@ xlink:href="maastokartta/SPita.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -3540,25 +3720,25 @@ xlink:href="maastokartta/SPla.svg"/>
               <Size>
                 <ogc:Literal>120</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
         </Rule>
 
-<!-- 16167 Poiju, kari -->    
+<!-- 16167 Poiju, kari -->		
 
         <Rule>
           <Name>16167</Name>
           <Title>16167 Poiju, kari</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -3574,20 +3754,20 @@ xlink:href="maastokartta/SPla.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-        
-                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
+				
+                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
                       <ogc:Literal>-10000</ogc:Literal>            
                     </ogc:Div> 
-                  </ogc:Function>          
+                  </ogc:Function>					
                   <ogc:Literal>60</ogc:Literal> 
-                </ogc:Mul>        
+                </ogc:Mul>				
                 <ogc:Literal>60</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -3598,25 +3778,25 @@ xlink:href="maastokartta/SKari.svg"/>
               <Size>
                 <ogc:Literal>128</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>    
-    
-<!-- 16168 Poiju, turva -->    
+        </Rule>		
+		
+<!-- 16168 Poiju, turva -->		
 
         <Rule>
           <Name>16168</Name>
           <Title>16168 Poiju, turva</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -3632,20 +3812,20 @@ xlink:href="maastokartta/SKari.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-        
-                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
+				
+                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
                       <ogc:Literal>-10000</ogc:Literal>            
                     </ogc:Div> 
-                  </ogc:Function>          
+                  </ogc:Function>					
                   <ogc:Literal>44</ogc:Literal> 
-                </ogc:Mul>      
+                </ogc:Mul>			
                 <ogc:Literal>44</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -3656,25 +3836,25 @@ xlink:href="maastokartta/STurva.svg"/>
               <Size>
                 <ogc:Literal>96</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>        
-    
-<!-- 16169 Poiju, erikois -->    
+        </Rule>				
+		
+<!-- 16169 Poiju, erikois -->		
 
         <Rule>
           <Name>16169</Name>
           <Title>16169 Poiju, erikois</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -3690,20 +3870,20 @@ xlink:href="maastokartta/STurva.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-        
-                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
+				
+                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
                       <ogc:Literal>-10000</ogc:Literal>            
                     </ogc:Div> 
-                  </ogc:Function>          
+                  </ogc:Function>					
                   <ogc:Literal>48</ogc:Literal> 
-                </ogc:Mul>        
+                </ogc:Mul>				
                 <ogc:Literal>48</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -3714,25 +3894,25 @@ xlink:href="maastokartta/SVeri.svg"/>
               <Size>
                 <ogc:Literal>100</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>    
+        </Rule>		
 
-<!-- 16171 Valopoiju, vasen -->    
+<!-- 16171 Valopoiju, vasen -->		
 
         <Rule>
           <Name>16171</Name>
           <Title>16171 Valopoiju, vasen</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -3748,11 +3928,11 @@ xlink:href="maastokartta/SVeri.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -3763,25 +3943,25 @@ xlink:href="maastokartta/SPvas.svg"/>
               <Size>
                 <ogc:Literal>112</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
-<!-- 16172 Valopoiju, oikea -->    
+<!-- 16172 Valopoiju, oikea -->		
 
         <Rule>
           <Name>16172</Name>
           <Title>16172 Valopoiju, oikea</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -3793,15 +3973,15 @@ xlink:href="maastokartta/SPvas.svg"/>
           <MaxScaleDenominator>20000</MaxScaleDenominator> 
 
           <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> 
-      
+		  
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-            
+              </ogc:Function>				
+            </Geometry>	
+					  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -3812,25 +3992,25 @@ xlink:href="maastokartta/SPoi.svg"/>
               <Size>
                 <ogc:Literal>116</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
-<!-- 16173 Valopoiju, pohjois -->    
+<!-- 16173 Valopoiju, pohjois -->		
 
         <Rule>
           <Name>16173</Name>
           <Title>16173 Valopoiju, pohjois</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -3846,11 +4026,11 @@ xlink:href="maastokartta/SPoi.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -3861,25 +4041,25 @@ xlink:href="maastokartta/SPpo.svg"/>
               <Size>
                 <ogc:Literal>124</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>    
+        </Rule>		
 
-<!-- 16174 Valopoiju, etel� -->    
+<!-- 16174 Valopoiju, etelä -->		
 
         <Rule>
           <Name>16174</Name>
-          <Title>16174 Valopoiju, etel�</Title>
-      
+          <Title>16174 Valopoiju, etelä</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -3895,11 +4075,11 @@ xlink:href="maastokartta/SPpo.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -3910,26 +4090,26 @@ xlink:href="maastokartta/SPet.svg"/>
               <Size>
                 <ogc:Literal>120</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>    
+        </Rule>		
 
 
-<!-- 16175 Valopoiju, it� -->    
+<!-- 16175 Valopoiju, itä -->		
 
         <Rule>
           <Name>16175</Name>
-          <Title>16175 Valopoiju, it�</Title>
-      
+          <Title>16175 Valopoiju, itä</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -3945,11 +4125,11 @@ xlink:href="maastokartta/SPet.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -3960,25 +4140,25 @@ xlink:href="maastokartta/SPita.svg"/>
               <Size>
                 <ogc:Literal>124</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>    
+        </Rule>		
 
-<!-- 16176 Valopoiju, l�nsi -->    
+<!-- 16176 Valopoiju, länsi -->		
 
         <Rule>
           <Name>16176</Name>
-          <Title>16176 Valopoiju, l�nsi</Title>
-      
+          <Title>16176 Valopoiju, länsi</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -3994,11 +4174,11 @@ xlink:href="maastokartta/SPita.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -4009,25 +4189,25 @@ xlink:href="maastokartta/SPla.svg"/>
               <Size>
                 <ogc:Literal>120</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
         </Rule>
 
-<!-- 16177 Valopoiju, kari -->    
+<!-- 16177 Valopoiju, kari -->		
 
         <Rule>
           <Name>16177</Name>
           <Title>16177 Valopoiju, kari</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -4043,20 +4223,20 @@ xlink:href="maastokartta/SPla.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-        
-                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
+				
+                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
                       <ogc:Literal>-10000</ogc:Literal>            
                     </ogc:Div> 
-                  </ogc:Function>          
+                  </ogc:Function>					
                   <ogc:Literal>60</ogc:Literal> 
-                </ogc:Mul>        
+                </ogc:Mul>				
                 <ogc:Literal>60</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -4067,25 +4247,25 @@ xlink:href="maastokartta/SKari.svg"/>
               <Size>
                 <ogc:Literal>128</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
         </Rule>
 
-<!-- 16178 Valopoiju, turva -->    
+<!-- 16178 Valopoiju, turva -->		
 
         <Rule>
           <Name>16178</Name>
           <Title>16178 Valopoiju, turva</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -4101,20 +4281,20 @@ xlink:href="maastokartta/SKari.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-        
-                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
+				
+                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
                       <ogc:Literal>-10000</ogc:Literal>            
                     </ogc:Div> 
-                  </ogc:Function>          
+                  </ogc:Function>					
                   <ogc:Literal>44</ogc:Literal> 
-                </ogc:Mul>        
+                </ogc:Mul>				
                 <ogc:Literal>44</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -4125,25 +4305,25 @@ xlink:href="maastokartta/STurva.svg"/>
               <Size>
                 <ogc:Literal>96</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>      
-    
-<!-- 16179 Valopoiju, erikois -->    
+        </Rule>			
+		
+<!-- 16179 Valopoiju, erikois -->		
 
         <Rule>
           <Name>16179</Name>
           <Title>16179 Valopoiju, erikois</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -4159,20 +4339,20 @@ xlink:href="maastokartta/STurva.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-        
-                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
+				
+                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
                       <ogc:Literal>-10000</ogc:Literal>            
                     </ogc:Div> 
-                  </ogc:Function>          
+                  </ogc:Function>					
                   <ogc:Literal>48</ogc:Literal> 
-                </ogc:Mul>        
+                </ogc:Mul>				
                 <ogc:Literal>48</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -4183,25 +4363,25 @@ xlink:href="maastokartta/SVeri.svg"/>
               <Size>
                 <ogc:Literal>100</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>    
+        </Rule>		
 
-<!-- 16181 J��poiju, vasen -->    
+<!-- 16181 Jääpoiju, vasen -->		
 
         <Rule>
           <Name>16181</Name>
-          <Title>16181 J��poiju, vasen</Title>
-      
+          <Title>16181 Jääpoiju, vasen</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -4217,11 +4397,11 @@ xlink:href="maastokartta/SVeri.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -4232,25 +4412,25 @@ xlink:href="maastokartta/SPvas.svg"/>
               <Size>
                 <ogc:Literal>112</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
-<!-- 16182 J��poiju, oikea -->    
+<!-- 16182 Jääpoiju, oikea -->		
 
         <Rule>
           <Name>16182</Name>
-          <Title>16182 J��poiju, oikea</Title>
-      
+          <Title>16182 Jääpoiju, oikea</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -4262,15 +4442,15 @@ xlink:href="maastokartta/SPvas.svg"/>
           <MaxScaleDenominator>20000</MaxScaleDenominator> 
 
           <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> 
-      
+		  
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-            
+              </ogc:Function>				
+            </Geometry>	
+					  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -4281,25 +4461,25 @@ xlink:href="maastokartta/SPoi.svg"/>
               <Size>
                 <ogc:Literal>116</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
-<!-- 16183 J��poiju, pohjois -->    
+<!-- 16183 Jääpoiju, pohjois -->		
 
         <Rule>
           <Name>16183</Name>
-          <Title>16183 J��poiju, pohjois</Title>
-      
+          <Title>16183 Jääpoiju, pohjois</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -4315,11 +4495,11 @@ xlink:href="maastokartta/SPoi.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -4330,25 +4510,25 @@ xlink:href="maastokartta/SPpo.svg"/>
               <Size>
                 <ogc:Literal>124</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>      
+        </Rule>			
 
-<!-- 16184 J��poiju, etel� -->    
+<!-- 16184 Jääpoiju, etelä -->		
 
         <Rule>
           <Name>16184</Name>
-          <Title>16184 J��poiju, etel�</Title>
-      
+          <Title>16184 Jääpoiju, etelä</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -4364,11 +4544,11 @@ xlink:href="maastokartta/SPpo.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -4379,25 +4559,25 @@ xlink:href="maastokartta/SPet.svg"/>
               <Size>
                 <ogc:Literal>120</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>      
+        </Rule>			
 
-<!-- 16185 J��poiju, it� -->    
+<!-- 16185 Jääpoiju, itä -->		
 
         <Rule>
           <Name>16185</Name>
-          <Title>16185 J��poiju, it�</Title>
-      
+          <Title>16185 Jääpoiju, itä</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -4413,11 +4593,11 @@ xlink:href="maastokartta/SPet.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -4428,25 +4608,25 @@ xlink:href="maastokartta/SPita.svg"/>
               <Size>
                 <ogc:Literal>124</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>    
-    
-<!-- 16186 J��poiju, l�nsi -->    
+        </Rule>		
+		
+<!-- 16186 Jääpoiju, länsi -->		
 
         <Rule>
           <Name>16186</Name>
-          <Title>16186 J��poiju, l�nsi</Title>
-      
+          <Title>16186 Jääpoiju, länsi</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -4462,11 +4642,11 @@ xlink:href="maastokartta/SPita.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -4477,25 +4657,25 @@ xlink:href="maastokartta/SPla.svg"/>
               <Size>
                 <ogc:Literal>120</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
-<!-- 16187 J��poiju, kari -->    
+<!-- 16187 Jääpoiju, kari -->		
 
         <Rule>
           <Name>16187</Name>
-          <Title>16187 J��poiju, kari</Title>
-      
+          <Title>16187 Jääpoiju, kari</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -4511,20 +4691,20 @@ xlink:href="maastokartta/SPla.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-        
-                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
+				
+                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
                       <ogc:Literal>-10000</ogc:Literal>            
                     </ogc:Div> 
-                  </ogc:Function>          
+                  </ogc:Function>					
                   <ogc:Literal>60</ogc:Literal> 
-                </ogc:Mul>        
+                </ogc:Mul>				
                 <ogc:Literal>60</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -4535,25 +4715,25 @@ xlink:href="maastokartta/SKari.svg"/>
               <Size>
                 <ogc:Literal>128</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>      
+        </Rule>			
 
-<!-- 16188 J��poiju, turva -->    
+<!-- 16188 Jääpoiju, turva -->		
 
         <Rule>
           <Name>16188</Name>
-          <Title>16188 J��poiju, turva</Title>
-      
+          <Title>16188 Jääpoiju, turva</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -4569,20 +4749,20 @@ xlink:href="maastokartta/SKari.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-        
-                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
+				
+                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
                       <ogc:Literal>-10000</ogc:Literal>            
                     </ogc:Div> 
-                  </ogc:Function>          
+                  </ogc:Function>					
                   <ogc:Literal>44</ogc:Literal> 
-                </ogc:Mul>        
+                </ogc:Mul>				
                 <ogc:Literal>44</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -4593,25 +4773,25 @@ xlink:href="maastokartta/STurva.svg"/>
               <Size>
                 <ogc:Literal>96</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
-<!-- 16189 J��poiju, erikois -->    
+<!-- 16189 Jääpoiju, erikois -->		
 
         <Rule>
           <Name>16189</Name>
-          <Title>16189 J��poiju, erikois</Title>
-      
+          <Title>16189 Jääpoiju, erikois</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -4627,20 +4807,20 @@ xlink:href="maastokartta/STurva.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-        
-                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
+				
+                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
                       <ogc:Literal>-10000</ogc:Literal>            
                     </ogc:Div> 
-                  </ogc:Function>          
+                  </ogc:Function>					
                   <ogc:Literal>48</ogc:Literal> 
-                </ogc:Mul>      
+                </ogc:Mul>			
                 <ogc:Literal>48</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -4651,25 +4831,25 @@ xlink:href="maastokartta/SVeri.svg"/>
               <Size>
                 <ogc:Literal>100</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
-<!-- 16191 Valoj��poiju, vasen -->    
+<!-- 16191 Valojääpoiju, vasen -->		
 
         <Rule>
           <Name>16191</Name>
-          <Title>16191 Valoj��poiju, vasen</Title>
-      
+          <Title>16191 Valojääpoiju, vasen</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -4685,11 +4865,11 @@ xlink:href="maastokartta/SVeri.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -4700,25 +4880,25 @@ xlink:href="maastokartta/SPvas.svg"/>
               <Size>
                 <ogc:Literal>112</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>    
+        </Rule>		
 
-<!-- 16192 Valoj��poiju, oikea -->    
+<!-- 16192 Valojääpoiju, oikea -->		
 
         <Rule>
           <Name>16192</Name>
-          <Title>16192 Valoj��poiju, oikea</Title>
-      
+          <Title>16192 Valojääpoiju, oikea</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -4730,15 +4910,15 @@ xlink:href="maastokartta/SPvas.svg"/>
           <MaxScaleDenominator>20000</MaxScaleDenominator> 
 
           <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> 
-      
+		  
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-            
+              </ogc:Function>				
+            </Geometry>	
+					  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -4749,26 +4929,26 @@ xlink:href="maastokartta/SPoi.svg"/>
               <Size>
                 <ogc:Literal>116</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>        
-    
+        </Rule>				
+		
 
-<!-- 16193 Valoj��poiju, pohjois -->    
+<!-- 16193 Valojääpoiju, pohjois -->		
 
         <Rule>
           <Name>16193</Name>
-          <Title>16193 Valoj��poiju, pohjois</Title>
-      
+          <Title>16193 Valojääpoiju, pohjois</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -4784,11 +4964,11 @@ xlink:href="maastokartta/SPoi.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -4799,25 +4979,25 @@ xlink:href="maastokartta/SPpo.svg"/>
               <Size>
                 <ogc:Literal>124</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>    
+        </Rule>		
 
-<!-- 16194 Valoj��poiju, etel� -->    
+<!-- 16194 Valojääpoiju, etelä -->		
 
         <Rule>
           <Name>16194</Name>
-          <Title>16194 Valoj��poiju, etel�</Title>
-      
+          <Title>16194 Valojääpoiju, etelä</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -4833,11 +5013,11 @@ xlink:href="maastokartta/SPpo.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -4848,25 +5028,25 @@ xlink:href="maastokartta/SPet.svg"/>
               <Size>
                 <ogc:Literal>120</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
-<!-- 16195 Valoj��poiju, it� -->    
+<!-- 16195 Valojääpoiju, itä -->		
 
         <Rule>
           <Name>16195</Name>
-          <Title>16195 Valoj��poiju, it�</Title>
-      
+          <Title>16195 Valojääpoiju, itä</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -4882,11 +5062,11 @@ xlink:href="maastokartta/SPet.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -4897,26 +5077,26 @@ xlink:href="maastokartta/SPita.svg"/>
               <Size>
                 <ogc:Literal>124</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
 
-<!-- 16196 Valoj��poiju, l�nsi -->    
+<!-- 16196 Valojääpoiju, länsi -->		
 
         <Rule>
           <Name>16196</Name>
-          <Title>16196 Valoj��poiju, l�nsi</Title>
-      
+          <Title>16196 Valojääpoiju, länsi</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -4932,11 +5112,11 @@ xlink:href="maastokartta/SPita.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -4947,25 +5127,25 @@ xlink:href="maastokartta/SPla.svg"/>
               <Size>
                 <ogc:Literal>120</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
-<!-- 16197 Valoj��poiju, kari -->    
+<!-- 16197 Valojääpoiju, kari -->		
 
         <Rule>
           <Name>16197</Name>
-          <Title>16197 Valoj��poiju, kari</Title>
-      
+          <Title>16197 Valojääpoiju, kari</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -4981,20 +5161,20 @@ xlink:href="maastokartta/SPla.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-        
-                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
+				
+                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
                       <ogc:Literal>-10000</ogc:Literal>            
                     </ogc:Div> 
-                  </ogc:Function>          
+                  </ogc:Function>					
                   <ogc:Literal>60</ogc:Literal> 
-                </ogc:Mul>        
+                </ogc:Mul>				
                 <ogc:Literal>60</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -5005,25 +5185,25 @@ xlink:href="maastokartta/SKari.svg"/>
               <Size>
                 <ogc:Literal>128</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>    
+        </Rule>		
 
-<!-- 16198 Valoj��poiju, turva -->    
+<!-- 16198 Valojääpoiju, turva -->		
 
         <Rule>
           <Name>16198</Name>
-          <Title>16198 Valoj��poiju, turva</Title>
-      
+          <Title>16198 Valojääpoiju, turva</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -5039,20 +5219,20 @@ xlink:href="maastokartta/SKari.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-        
-                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
+				
+                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
                       <ogc:Literal>-10000</ogc:Literal>            
                     </ogc:Div> 
-                  </ogc:Function>          
+                  </ogc:Function>					
                   <ogc:Literal>44</ogc:Literal> 
-                </ogc:Mul>        
+                </ogc:Mul>				
                 <ogc:Literal>44</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -5063,25 +5243,25 @@ xlink:href="maastokartta/STurva.svg"/>
               <Size>
                 <ogc:Literal>96</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
-<!-- 16199 Valoj��poiju, erikois -->    
+<!-- 16199 Valojääpoiju, erikois -->		
 
         <Rule>
           <Name>16199</Name>
-          <Title>16199 Valoj��poiju, erikois</Title>
-      
+          <Title>16199 Valojääpoiju, erikois</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -5097,20 +5277,20 @@ xlink:href="maastokartta/STurva.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-        
-                <ogc:Mul> <!-- dx siirtym� lasketaan kiertokulman ja dy siirtym�n tangens funtkiona -->
+				
+                <ogc:Mul> <!-- dx siirtymä lasketaan kiertokulman ja dy siirtymän tangens funtkiona -->
                   <ogc:Function name="tan">
                     <ogc:Div>                  
                       <ogc:PropertyName>suunta</ogc:PropertyName> 
                       <ogc:Literal>-10000</ogc:Literal>            
                     </ogc:Div> 
-                  </ogc:Function>          
+                  </ogc:Function>					
                   <ogc:Literal>48</ogc:Literal> 
-                </ogc:Mul>      
+                </ogc:Mul>			
                 <ogc:Literal>48</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -5121,24 +5301,24 @@ xlink:href="maastokartta/SVeri.svg"/>
               <Size>
                 <ogc:Literal>100</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
-<!-- 16201 Reunamerkki, vasen -->    
+<!-- 16201 Reunamerkki, vasen -->		
         <Rule>
           <Name>16201</Name>
           <Title>16201 Reunamerkki, vasen</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -5154,11 +5334,11 @@ xlink:href="maastokartta/SVeri.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -5169,24 +5349,24 @@ xlink:href="maastokartta/SRvas.svg"/>
               <Size>
                 <ogc:Literal>120</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>        
-          
-<!-- 16202 Reunamerkki, oikea -->    
+        </Rule>				
+					
+<!-- 16202 Reunamerkki, oikea -->		
         <Rule>
           <Name>16202</Name>
           <Title>16202 Reunamerkki, oikea</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -5202,11 +5382,11 @@ xlink:href="maastokartta/SRvas.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -5217,24 +5397,24 @@ xlink:href="maastokartta/SRoi.svg"/>
               <Size>
                 <ogc:Literal>120</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>    
+        </Rule>		
 
-<!-- 16203 Reunamerkki, pohjois -->    
+<!-- 16203 Reunamerkki, pohjois -->		
         <Rule>
           <Name>16203</Name>
           <Title>16203 Reunamerkki, pohjois</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -5250,11 +5430,11 @@ xlink:href="maastokartta/SRoi.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -5265,24 +5445,24 @@ xlink:href="maastokartta/SRpo.svg"/>
               <Size>
                 <ogc:Literal>128</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
-<!-- 16204 Reunamerkki, etel� -->    
+<!-- 16204 Reunamerkki, etelä -->		
         <Rule>
           <Name>16204</Name>
-          <Title>16204 Reunamerkki, etel�</Title>
-      
+          <Title>16204 Reunamerkki, etelä</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -5298,11 +5478,11 @@ xlink:href="maastokartta/SRpo.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -5313,24 +5493,24 @@ xlink:href="maastokartta/SRet.svg"/>
               <Size>
                 <ogc:Literal>124</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
-<!-- 16205 Reunamerkki, it� -->    
+<!-- 16205 Reunamerkki, itä -->		
         <Rule>
           <Name>16205</Name>
-          <Title>16205 Reunamerkki, it�</Title>
-      
+          <Title>16205 Reunamerkki, itä</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -5346,11 +5526,11 @@ xlink:href="maastokartta/SRet.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -5361,24 +5541,24 @@ xlink:href="maastokartta/SRita.svg"/>
               <Size>
                 <ogc:Literal>128</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
-<!-- 16206 Reunamerkki, l�nsi -->    
+<!-- 16206 Reunamerkki, länsi -->		
         <Rule>
           <Name>16206</Name>
-          <Title>16206 Reunamerkki, l�nsi</Title>
-      
+          <Title>16206 Reunamerkki, länsi</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -5394,11 +5574,11 @@ xlink:href="maastokartta/SRita.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -5409,24 +5589,24 @@ xlink:href="maastokartta/SRla.svg"/>
               <Size>
                 <ogc:Literal>124</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>    
+        </Rule>		
 
-<!-- 16211 Valaistu reunamerkki, vasen -->    
+<!-- 16211 Valaistu reunamerkki, vasen -->		
         <Rule>
           <Name>16211</Name>
           <Title>16211 Valaistu reunamerkki, vasen</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -5442,11 +5622,11 @@ xlink:href="maastokartta/SRla.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -5457,24 +5637,24 @@ xlink:href="maastokartta/SRvas.svg"/>
               <Size>
                 <ogc:Literal>120</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>          
-          
-<!-- 16212 Valaistu reunamerkki, oikea -->    
+        </Rule>					
+					
+<!-- 16212 Valaistu reunamerkki, oikea -->		
         <Rule>
           <Name>16212</Name>
           <Title>16212 Valaistu reunamerkki, oikea</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -5490,11 +5670,11 @@ xlink:href="maastokartta/SRvas.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -5505,24 +5685,24 @@ xlink:href="maastokartta/SRoi.svg"/>
               <Size>
                 <ogc:Literal>120</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
-<!-- 16213 Valaistu reunamerkki, pohjois -->    
+<!-- 16213 Valaistu reunamerkki, pohjois -->		
         <Rule>
           <Name>16213</Name>
           <Title>16213 Valaistu reunamerkki, pohjois</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -5538,11 +5718,11 @@ xlink:href="maastokartta/SRoi.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -5553,24 +5733,24 @@ xlink:href="maastokartta/SRpo.svg"/>
               <Size>
                 <ogc:Literal>128</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
-<!-- 16214 Valaistu reunamerkki, etel� -->    
+<!-- 16214 Valaistu reunamerkki, etelä -->		
         <Rule>
           <Name>16214</Name>
-          <Title>16214 Valaistu reunamerkki, etel�</Title>
-      
+          <Title>16214 Valaistu reunamerkki, etelä</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -5586,11 +5766,11 @@ xlink:href="maastokartta/SRpo.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -5601,24 +5781,24 @@ xlink:href="maastokartta/SRet.svg"/>
               <Size>
                 <ogc:Literal>124</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
-<!-- 16215 Valaistu reunamerkki, it� -->    
+<!-- 16215 Valaistu reunamerkki, itä -->		
         <Rule>
           <Name>16215</Name>
-          <Title>16215 Valaistu reunamerkki, it�</Title>
-      
+          <Title>16215 Valaistu reunamerkki, itä</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -5634,11 +5814,11 @@ xlink:href="maastokartta/SRet.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -5649,24 +5829,24 @@ xlink:href="maastokartta/SRita.svg"/>
               <Size>
                 <ogc:Literal>128</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
+        </Rule>	
 
-<!-- 16216 Valaistu reunamerkki, l�nsi -->    
+<!-- 16216 Valaistu reunamerkki, länsi -->		
         <Rule>
           <Name>16216</Name>
-          <Title>116216 Valaistu reunamerkki, l�nsi</Title>
-      
+          <Title>116216 Valaistu reunamerkki, länsi</Title>
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -5682,11 +5862,11 @@ xlink:href="maastokartta/SRita.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>40</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -5697,24 +5877,24 @@ xlink:href="maastokartta/SRla.svg"/>
               <Size>
                 <ogc:Literal>124</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>  
-        
-<!--82500 Valtakunnan rajapyykki -->    
+        </Rule>	
+				
+<!--82500 Valtakunnan rajapyykki -->		
         <Rule>
           <Name>82500</Name>
           <Title>82500 Valtakunnan rajapyykki</Title>
-      
+		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -5730,11 +5910,11 @@ xlink:href="maastokartta/SRla.svg"/>
             <Geometry>
               <ogc:Function name ="offset">
                 <ogc:PropertyName>sijainti_piste</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>        
+                <ogc:Literal>0</ogc:Literal>				
                 <ogc:Literal>0</ogc:Literal>
-              </ogc:Function>        
-            </Geometry>  
-                  
+              </ogc:Function>				
+            </Geometry>	
+					  		  
             <Graphic>
               <ExternalGraphic>
                 <OnlineResource
@@ -5745,21 +5925,21 @@ xlink:href="maastokartta/Svrp.svg"/>
               <Size>
                 <ogc:Literal>40</ogc:Literal>
               </Size>
-        
+			  
               <Rotation> 
                 <ogc:Function name="toDegrees">
                   <ogc:Div>                  
                     <ogc:PropertyName>suunta</ogc:PropertyName> 
                     <ogc:Literal>-10000</ogc:Literal>
-                  </ogc:Div>        
+                  </ogc:Div>				
                 </ogc:Function>
-              </Rotation>        
+              </Rotation>			  
             </Graphic>
           </PointSymbolizer>
-        </Rule>    
-        
-    
+        </Rule>		
+				
+		
       </FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
-</StyledLayerDescriptor>
+</StyledLayerDescriptor>  				
