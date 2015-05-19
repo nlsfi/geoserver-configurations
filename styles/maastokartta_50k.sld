@@ -1345,7 +1345,7 @@ nne -->
                   <ExternalGraphic>
                     <OnlineResource
 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
-xlink:href="peruskartta/jyrkanne_hapsu_apusymboli.svg"/>
+xlink:href="maastokartta/jyrkanne_hapsu_apusymboli.svg"/>
                     <Format>image/svg+xml</Format>
                   </ExternalGraphic>
                   <Size>
@@ -1390,7 +1390,7 @@ xlink:href="peruskartta/jyrkanne_hapsu_apusymboli.svg"/>
                   <ExternalGraphic>
                     <OnlineResource
 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
-xlink:href="peruskartta/luiska_hapsu_apusymboli.svg"/>
+xlink:href="maastokartta/luiska_hapsu_apusymboli.svg"/>
                     <Format>image/svg+xml</Format>
                   </ExternalGraphic>
                   <Size>
