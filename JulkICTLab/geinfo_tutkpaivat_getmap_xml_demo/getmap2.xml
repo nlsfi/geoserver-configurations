@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ogc:GetMap
+xmlns:ogc="http://www.opengis.net/ows"
+xmlns:gml="http://www.opengis.net/gml"
+version="1.1.1" service="WMS">
+ 
+<StyledLayerDescriptor version="1.0.0">
+  <NamedLayer>
+    <Name>mtk:puisto</Name>
+    <UserStyle>
+      <Title>puisto</Title>
+      <Abstract>puisto</Abstract>
+      <FeatureTypeStyle>
+	   <!-- since we puisto contains only parks we can draw all fetaures, no filtering needed -->
+		  <!--MaxScaleDenominator>10000</MaxScaleDenominator--> <!-- no scaledenominators needed -->		  
+        <Rule>
+          <PolygonSymbolizer>
+            <Fill>
+              <CssParameter name="fill">#cadfaa</CssParameter>                
+            </Fill>            
+          </PolygonSymbolizer>	  
+        </Rule>	
+      </FeatureTypeStyle>
+    </UserStyle>
+  </NamedLayer>
+  <NamedLayer>
+    <Name>mtk:maatalousmaa</Name>
+    <UserStyle>
+      <Title>puutarhat</Title>
+      <Abstract>puutarhat</Abstract>
+      <FeatureTypeStyle>
+        <Rule>
+ <!-- filter only puutarha features from mtk:maatalousmaa -->
+           <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
+              <ogc:Literal>32612</ogc:Literal>
+            </ogc:PropertyIsEqualTo>			  
+          </ogc:Filter>
+          <PolygonSymbolizer>
+            <Fill>
+              <CssParameter name="fill">#cadfaa</CssParameter>                
+            </Fill>            
+          </PolygonSymbolizer>	  
+        </Rule>	
+      </FeatureTypeStyle>
+    </UserStyle>
+  </NamedLayer>
+  <NamedLayer>
+    <Name>mtk:niitty</Name>
+    <UserStyle>
+      <Title>niitty</Title>
+      <Abstract>niitty</Abstract>
+      <FeatureTypeStyle>
+        <Rule>
+          <PolygonSymbolizer>
+            <Fill>
+              <CssParameter name="fill">#cadfaa</CssParameter>                
+            </Fill>            
+          </PolygonSymbolizer>	  
+        </Rule>	
+      </FeatureTypeStyle>
+    </UserStyle>
+  </NamedLayer>  
+  <NamedLayer>
+    <Name>mtk:rakennus</Name>
+    <UserStyle>
+      <Title>rakennus</Title>
+      <Abstract>rakennus</Abstract>
+<!--  The following rule adds the building shadows  -->
+
+      <FeatureTypeStyle>
+       <Rule>     
+          <ogc:Filter>
+            <ogc:PropertyIsGreaterThan>       
+              <ogc:Function name="area"> 
+                <ogc:PropertyName>sijainti_alue</ogc:PropertyName>                
+              </ogc:Function> 
+              <ogc:Literal>1000</ogc:Literal>
+            </ogc:PropertyIsGreaterThan>                          
+          </ogc:Filter>  	   
+        <PolygonSymbolizer>
+         <Geometry>
+          <ogc:Function name='offset'>
+           <ogc:PropertyName>sijainti_alue</ogc:PropertyName>
+           <ogc:Literal>3</ogc:Literal>
+           <ogc:Literal>-3</ogc:Literal>                
+          </ogc:Function>
+         </Geometry>
+         <Fill>
+          <CssParameter name='fill'>#555555</CssParameter>
+          <CssParameter name='opacity'>0.15</CssParameter>
+         </Fill>
+        </PolygonSymbolizer>
+       </Rule>
+      </FeatureTypeStyle>  
+
+<!--  The following rule extrudes the polygons to create the sides of the buildings  -->
+      
+      <FeatureTypeStyle>
+       <Rule>  
+          <ogc:Filter>
+            <ogc:PropertyIsGreaterThan>       
+              <ogc:Function name="area"> 
+                <ogc:PropertyName>sijainti_alue</ogc:PropertyName>                
+              </ogc:Function> 
+              <ogc:Literal>1000</ogc:Literal>
+            </ogc:PropertyIsGreaterThan>                          
+          </ogc:Filter>  	  	   
+        <PolygonSymbolizer>
+         <Geometry>
+          <ogc:Function name='isometric'>
+           <ogc:PropertyName>sijainti_alue</ogc:PropertyName>
+           <ogc:Literal>5</ogc:Literal>
+          </ogc:Function>
+         </Geometry>
+         <Fill>
+          <CssParameter name='fill'>#E0D5C7</CssParameter>
+         </Fill>
+         <Stroke>
+          <CssParameter name='stroke'>#CEC5BC</CssParameter>
+          <CssParameter name='stroke-width'>0.1</CssParameter>   
+         </Stroke>
+        </PolygonSymbolizer>
+       </Rule>
+      </FeatureTypeStyle>
+
+<!--  The following rule adds a roof to the buildings  -->
+      
+      <FeatureTypeStyle>
+       <Rule>  
+          <ogc:Filter>
+            <ogc:PropertyIsGreaterThan>       
+              <ogc:Function name="area"> 
+                <ogc:PropertyName>sijainti_alue</ogc:PropertyName>                
+              </ogc:Function> 
+              <ogc:Literal>1000</ogc:Literal>
+            </ogc:PropertyIsGreaterThan>                          
+          </ogc:Filter>  	  	   
+        <PolygonSymbolizer>
+         <Geometry>
+          <ogc:Function name='offset'>
+            <ogc:PropertyName>sijainti_alue</ogc:PropertyName>
+            <ogc:Literal>0</ogc:Literal>
+            <ogc:Literal>5</ogc:Literal>
+           </ogc:Function>
+          </Geometry>
+           <Fill>
+            <CssParameter name='fill'>#F2E6D4</CssParameter>
+           </Fill>
+           <Stroke>
+            <CssParameter name='stroke'>#C6BDB5</CssParameter>
+            <CssParameter name='stroke-width'>0.3</CssParameter>
+           </Stroke>
+          </PolygonSymbolizer>
+         </Rule>
+        </FeatureTypeStyle>
+    </UserStyle>
+  </NamedLayer>  
+</StyledLayerDescriptor>
+
+<BoundingBox srsName="http://www.opengis.net/gml/srs/epsg.xml#3067">
+<gml:coord>
+<gml:X>386210</gml:X>
+<gml:Y>6675478</gml:Y>
+</gml:coord>
+<gml:coord>
+<gml:X>388078</gml:X>
+<gml:Y>6676529</gml:Y>
+</gml:coord>
+</BoundingBox>
+ 
+<Output>
+ <Format>image/png</Format>
+ <Size>
+ <Width>1578</Width>
+ <Height>887</Height>
+ </Size>
+</Output>
+ 
+<Exceptions>application/vnd.ogc.se+xml</Exceptions>
+ 
+</ogc:GetMap>
+
