@@ -4,19 +4,14 @@
   <NamedLayer>
     <Name>mtk:manner</Name>
     <UserStyle>
-    
-      <Title>taustakartta_manner suomen ulkopuolinen</Title>
-
       <FeatureTypeStyle>
         <Rule>
-          <Name>taustakartta_manner suomen ulkopuolinen</Name>
           <MinScaleDenominator>5000000</MinScaleDenominator>
           <!--MaxScaleDenominator>15000000</MaxScaleDenominator-->
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#cccccc</CssParameter>
             </Fill>
-
           </PolygonSymbolizer>
         </Rule>
       </FeatureTypeStyle>
