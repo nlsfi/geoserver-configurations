@@ -138,7 +138,7 @@ version="1.1.1" service="WMS">
 ------------------------------------------------------------
 ------------------------------------------------------------
 
-the xml getmap documents should be posted to the server using the following command:
+the xml getmap documents should be dowloaded to your computer and posted to the server using the following command (from the folder where the downloaded xml-files are):
 
 
 curl --data-binary @getmap.xml -H "Content-Type: text/xml" -o map.png "http://avoindata.maanmittauslaitos.fi/geoserver/wms/GetMap"
