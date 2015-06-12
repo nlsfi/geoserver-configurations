@@ -17,4 +17,26 @@
       </FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
+    <NamedLayer>
+    <Name>mtk:meret</Name>
+    <UserStyle>
+
+      <Title>taustakartta_meri suomen ulkopuolinen</Title>
+
+      <FeatureTypeStyle>
+        
+        <Rule>
+          <Name>meri_taustakartta</Name>
+          <!-- <MinScaleDenominator>5000000</MinScaleDenominator> -->
+          <!--MaxScaleDenominator>15000000</MaxScaleDenominator-->
+          <PolygonSymbolizer>
+            <Fill>
+              <CssParameter name="fill">#b4e6fa</CssParameter>
+            </Fill>
+
+          </PolygonSymbolizer>
+        </Rule>
+      </FeatureTypeStyle>
+    </UserStyle>
+  </NamedLayer>  
 </StyledLayerDescriptor>
