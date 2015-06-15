@@ -3,6 +3,7 @@ Presented at Geoinformatiikan tutkimuspäivät 21.5.2015
 Presenter Jakob Ventin, National Land Survey of Finland
 
 This demo uses cURL, can be downloaded from http://curl.haxx.se/download.html
+installation instructions e.g. http://superuser.com/questions/134685/run-curl-commands-from-windows-console
 Also other http clients most likely work
 
 
@@ -106,7 +107,9 @@ version="1.1.1" service="WMS">
 </StyledLayerDescriptor>
 
 ------------------------------------------------------------
-// definintion of crs and bbox
+// definintion of crs and bbox. By changing these values you 
+can get a map from another area. Remeber to add similar values
+to both of the east (or north) coordinates.
 ------------------------------------------------------------
 
 <BoundingBox srsName="http://www.opengis.net/gml/srs/epsg.xml#3067">
@@ -138,7 +141,8 @@ version="1.1.1" service="WMS">
 ------------------------------------------------------------
 ------------------------------------------------------------
 
-the xml getmap documents should be dowloaded to your computer and posted to the server using the following command (from the folder where the downloaded xml-files are):
+the xml getmap documents should be dowloaded to your computer (be sure to download the raw version of the xml-files) 
+and posted to the server using the following command (from the folder where the downloaded xml-files are):
 
 
 curl --data-binary @getmap.xml -H "Content-Type: text/xml" -o map.png "http://avoindata.maanmittauslaitos.fi/geoserver/wms/GetMap"
