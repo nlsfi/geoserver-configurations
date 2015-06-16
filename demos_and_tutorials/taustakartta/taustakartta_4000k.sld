@@ -46,8 +46,8 @@
       <FeatureTypeStyle> 
         <Rule>
           <Name>52100</Name>
-          <Title>52100 taustaväri</Title>          
-      <Abstract>käytetän KorkeusAlue aluetta taustavärin aikaansaamiseksi</Abstract>
+          <Title>52100 taustavari</Title>          
+      <Abstract>kaytetan KorkeusAlue aluetta taustavarin aikaansaamiseksi</Abstract>
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
