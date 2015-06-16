@@ -7,7 +7,7 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>yleiskartta_8000k_paikannimi_avaus</Name>
+    <Name>mtk:karttanimi_8000000</Name>
     <UserStyle>
 
       <Title>yleiskartta_8000k_paikannimi_avaus</Title>
@@ -16,10 +16,10 @@
   
       <FeatureTypeStyle> 
     
-  
+	
           
-            
-  
+          	
+	
 
   <!-- mustat, kallistus=0 -->
         <Rule>
@@ -67,9 +67,9 @@
                 <ogc:Div> 
                   <ogc:PropertyName>kirjasinkoko</ogc:PropertyName>
                   <ogc:Literal>0.2</ogc:Literal>
-                </ogc:Div>         
-              </Radius>        
-            </Halo>     
+                </ogc:Div>			   
+              </Radius>				
+            </Halo> 	  
 
             <Fill>
               <CssParameter name="fill">#ffffff</CssParameter>

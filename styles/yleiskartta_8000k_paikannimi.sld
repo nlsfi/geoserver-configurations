@@ -7,7 +7,7 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>yleiskartta_8000k_paikannimi</Name>
+    <Name>mtk:karttanimi_8000000</Name>
     <UserStyle>
 
       <Title>yleiskartta_8000k_paikannimi</Title>
@@ -16,10 +16,10 @@
   
       <FeatureTypeStyle> 
     
-  
+	
           
-            
-  
+          	
+	
 
   <!-- mustat, kallistus=0 -->
         <Rule>

@@ -7,7 +7,7 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>taustakartta_160k_paikannimi_avaus</Name>
+    <Name>mtk:karttanimi_100000</Name>
     <UserStyle>
 
       <Title>taustakartta_160k_paikannimi_avaus</Title>
@@ -16,7 +16,7 @@
   
   
 <FeatureTypeStyle>
-  
+	
        
 <!-- MAASTONIMET 35111 valkoinen avaus-->        
        <Rule>
@@ -138,7 +138,7 @@
                       <ogc:Literal>-10000</ogc:Literal> 
                     </ogc:Div>        
                   </ogc:Function> 
-                </Rotation>         
+                </Rotation> 				
               </PointPlacement>
             </LabelPlacement> 
          <Halo>
@@ -160,9 +160,9 @@
 
 <FeatureTypeStyle>
        
-     
-     
-     
+	   
+	   
+	   
 <!--VESIST�NIMI 36111 valkoinen avaus -->        
        <Rule>
         
@@ -258,7 +258,7 @@
            <Radius>15</Radius>
          <Fill>
            <CssParameter name="fill">#ffffff</CssParameter>
-         </Fill>       
+         </Fill>		   
          </Halo>
      
          <Fill>
@@ -271,10 +271,10 @@
        </Rule>          
   
       </FeatureTypeStyle>
-    
-    
+	  
+	  
 
-    
+	  
       <FeatureTypeStyle>
   
 <!-- ASUTUSNIMET 48100 valkoinen avaus  -->        
@@ -336,7 +336,7 @@
            <CssParameter name="font-size">
              <ogc:Div> 
                <ogc:PropertyName>kirjasinkoko</ogc:PropertyName>
-               <ogc:Literal>0.425</ogc:Literal>
+               <ogc:Literal>0.45</ogc:Literal>
               </ogc:Div>         
              </CssParameter>
 
@@ -360,7 +360,7 @@
                       <ogc:Literal>-10000</ogc:Literal> 
                     </ogc:Div>        
                   </ogc:Function> 
-                </Rotation>         
+                </Rotation> 				
               </PointPlacement>
             </LabelPlacement>     
 
@@ -382,7 +382,7 @@
   
         
  
-    
+		
 
       </FeatureTypeStyle>
   

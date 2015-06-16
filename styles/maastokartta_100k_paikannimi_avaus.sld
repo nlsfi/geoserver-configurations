@@ -7,7 +7,7 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>maastokartta_100k_paikannimi_avaus</Name>
+    <Name>mtk:karttanimi_40000</Name>
     <UserStyle>
 
       <Title>maastokartta_100k_paikannimi_avaus</Title>
@@ -122,11 +122,11 @@
                       <ogc:Literal>-10000</ogc:Literal> 
                     </ogc:Div>        
                   </ogc:Function> 
-                </Rotation>         
+                </Rotation> 				
               </PointPlacement>
             </LabelPlacement>  
             <Halo>
-              <Radius>11</Radius>
+              <Radius>6</Radius>
             </Halo>
             <Fill>
               <CssParameter name="fill">#ffffff</CssParameter>
@@ -256,7 +256,7 @@
                       <ogc:Literal>-10000</ogc:Literal> 
                     </ogc:Div>        
                   </ogc:Function> 
-                </Rotation>         
+                </Rotation> 				
               </PointPlacement>
             </LabelPlacement>           
 
@@ -343,7 +343,7 @@
                  <Displacement>
                   <DisplacementX>0</DisplacementX>
                   <DisplacementY>-22</DisplacementY>
-                </Displacement>          
+                </Displacement>  			  
 
                   <Rotation>
                    <ogc:Function name="toDegrees">
@@ -356,7 +356,7 @@
               </PointPlacement>
             </LabelPlacement>                
             <Halo>
-              <Radius>10</Radius>
+              <Radius>6</Radius>
             </Halo>
      
             <Fill>
@@ -423,10 +423,7 @@
                 </ogc:Function>              
               </CssParameter>         
               <CssParameter name="font-size">
-                <ogc:Div>        
-                  <ogc:PropertyName>kirjasinkoko</ogc:PropertyName>
-                  <ogc:Literal>1.05</ogc:Literal>            
-                </ogc:Div>                  
+                <ogc:PropertyName>kirjasinkoko</ogc:PropertyName>
               </CssParameter>
             </Font>
             <LabelPlacement>
@@ -437,8 +434,8 @@
                 </AnchorPoint>
                  <Displacement>
                   <DisplacementX>0</DisplacementX>
-                  <DisplacementY>-24</DisplacementY>
-                </Displacement>         
+                  <DisplacementY>-22</DisplacementY>
+                </Displacement>  			 
                   <Rotation>
                    <ogc:Function name="toDegrees">
                     <ogc:Div>
@@ -446,11 +443,11 @@
                       <ogc:Literal>-10000</ogc:Literal> 
                     </ogc:Div>        
                   </ogc:Function> 
-                </Rotation>         
+                </Rotation> 				
               </PointPlacement>
             </LabelPlacement> 
             <Halo>
-              <Radius>11</Radius>
+              <Radius>6</Radius>
             </Halo>
      
             <Fill>
@@ -474,12 +471,12 @@
                 <ogc:PropertyName>paikkatyyppikoodi</ogc:PropertyName> <!-- luonnonsuojelualueen nimi -->
                 <ogc:Literal>600</ogc:Literal>
               </ogc:PropertyIsEqualTo>              
-        
+			  
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>paikkatyyppikoodi</ogc:PropertyName> <!-- luonnonpuiston nimi -->
                 <ogc:Literal>602</ogc:Literal>
               </ogc:PropertyIsEqualTo>
-        
+			  
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>paikkatyyppikoodi</ogc:PropertyName> <!-- kansallispuiston nimi -->
                 <ogc:Literal>604</ogc:Literal>
@@ -493,13 +490,13 @@
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>paikkatyyppikoodi</ogc:PropertyName> <!-- retkeilyalueen nimi -->
                 <ogc:Literal>640</ogc:Literal>
-              </ogc:PropertyIsEqualTo>          
-        
+              </ogc:PropertyIsEqualTo>  			  
+			  
             </ogc:Or>
           </ogc:Filter> 
 
-      <MinScaleDenominator>20000</MinScaleDenominator>
-      <MaxScaleDenominator>90000</MaxScaleDenominator>  
+		  <MinScaleDenominator>20000</MinScaleDenominator>
+		  <MaxScaleDenominator>90000</MaxScaleDenominator>	
 
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
@@ -514,13 +511,13 @@
                   </ogc:Function>                                
                   <ogc:Literal>Arial</ogc:Literal>  
                   <ogc:Literal>Arial Lihavoitu</ogc:Literal>                                                     
-                </ogc:Function>        
-              </CssParameter>         
+                </ogc:Function> 			 
+              </CssParameter>			   
               <CssParameter name="font-size">
                 <ogc:PropertyName>kirjasinkoko</ogc:PropertyName>
               </CssParameter>
-            </Font>  
-      
+            </Font>	
+			
             <LabelPlacement>
               <PointPlacement>
                 <AnchorPoint>
@@ -530,7 +527,7 @@
                  <Displacement>
                   <DisplacementX>0</DisplacementX>
                   <DisplacementY>-22</DisplacementY>
-                </Displacement>    
+                </Displacement>  	
                   <Rotation>
                    <ogc:Function name="toDegrees">
                     <ogc:Div>
@@ -538,10 +535,10 @@
                       <ogc:Literal>-10000</ogc:Literal> 
                     </ogc:Div>        
                   </ogc:Function> 
-                </Rotation>         
+                </Rotation> 				
               </PointPlacement>
             </LabelPlacement> 
-      
+			
             <Halo>
               <Radius>6</Radius>
             </Halo>
@@ -551,8 +548,8 @@
           <VendorOption name="conflictResolution">false</VendorOption>
             <VendorOption name="partials">true</VendorOption>
           </TextSymbolizer>
-        </Rule>                    
-    
+        </Rule>                		
+		
 
       </FeatureTypeStyle>
   

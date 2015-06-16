@@ -7,7 +7,7 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>maastokartta_500k_paikannimi_avaus</Name>
+    <Name>mtk:karttanimi_500000</Name>
     <UserStyle>
 
       <Title>maastokartta_500k_paikannimi_avaus</Title>
@@ -19,7 +19,7 @@
         <Rule><!-- mustat, kirjasinkallistuskulma=0 -->
         
           <ogc:Filter>
-            <ogc:And>        
+            <ogc:And>  		  
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kirjasinkallistuskulma</ogc:PropertyName>
                 <ogc:Literal>0</ogc:Literal>
@@ -28,7 +28,7 @@
                 <ogc:PropertyName>kirjasinvarikoodi</ogc:PropertyName>
                 <ogc:Literal>10</ogc:Literal>
               </ogc:PropertyIsEqualTo>
-            </ogc:And>        
+            </ogc:And>			  
           </ogc:Filter> 
 
           <MinScaleDenominator>180000</MinScaleDenominator>
@@ -50,17 +50,17 @@
                   </ogc:Function>                                
                   <ogc:Literal>Arial</ogc:Literal>  
                   <ogc:Literal>Arial Lihavoitu</ogc:Literal>                                                     
-                </ogc:Function>        
+                </ogc:Function> 			 
               </CssParameter>
               <CssParameter name="font-size">
                 <ogc:Div> 
                   <ogc:PropertyName>kirjasinkoko</ogc:PropertyName>
                   <ogc:Literal>0.2</ogc:Literal>
-                </ogc:Div>         
+                </ogc:Div>			   
               </CssParameter>
 
             </Font>
-      
+			
             <LabelPlacement>
               <PointPlacement>
                 <AnchorPoint>
@@ -80,10 +80,10 @@
                       <ogc:Literal>-10000</ogc:Literal> 
                     </ogc:Div>        
                   </ogc:Function> 
-                </Rotation>           
+                </Rotation> 					
               </PointPlacement>
-            </LabelPlacement>       
-      
+            </LabelPlacement> 			
+			
             <Halo>
               <Radius>50</Radius>
             </Halo>
@@ -94,13 +94,13 @@
             <VendorOption name="conflictResolution">false</VendorOption>
             <VendorOption name="partials">true</VendorOption>
           </TextSymbolizer>
-       </Rule>            
-  
+       </Rule>          	
+	
 <!-- mustat, kirjasinkallistuskulma = 15 -->
         <Rule>
         
           <ogc:Filter>
-            <ogc:And>        
+            <ogc:And>  		  
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kirjasinkallistuskulma</ogc:PropertyName>
                 <ogc:Literal>15</ogc:Literal>
@@ -109,7 +109,7 @@
                 <ogc:PropertyName>kirjasinvarikoodi</ogc:PropertyName>
                 <ogc:Literal>10</ogc:Literal>
               </ogc:PropertyIsEqualTo>
-            </ogc:And>        
+            </ogc:And>			  
           </ogc:Filter> 
 
           <MinScaleDenominator>180000</MinScaleDenominator>
@@ -131,17 +131,17 @@
                   </ogc:Function>                                
                   <ogc:Literal>Arial Etukeno</ogc:Literal>  
                   <ogc:Literal>Arial Lihavoitu Etukeno</ogc:Literal>                                                     
-                </ogc:Function>        
+                </ogc:Function> 			 
               </CssParameter>
               <CssParameter name="font-size">
                 <ogc:Div> 
                   <ogc:PropertyName>kirjasinkoko</ogc:PropertyName>
                   <ogc:Literal>0.2</ogc:Literal>
-                </ogc:Div>         
+                </ogc:Div>			   
               </CssParameter>
 
             </Font>
-      
+			
             <LabelPlacement>
               <PointPlacement>
                 <AnchorPoint>
@@ -161,10 +161,10 @@
                       <ogc:Literal>-10000</ogc:Literal> 
                     </ogc:Div>        
                   </ogc:Function> 
-                </Rotation>           
+                </Rotation> 					
               </PointPlacement>
-            </LabelPlacement>       
-      
+            </LabelPlacement> 			
+			
             <Halo>
               <Radius>50</Radius>
             </Halo>
@@ -175,13 +175,13 @@
             <VendorOption name="conflictResolution">false</VendorOption>
             <VendorOption name="partials">true</VendorOption>
           </TextSymbolizer>
-       </Rule>     
+       </Rule>   	
 
 <!-- siniset (kirjasinvarikoodi=20) ja kirjasinkallistuskulma -15 -->
         <Rule>
         
           <ogc:Filter>
-            <ogc:And>        
+            <ogc:And>  		  
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kirjasinkallistuskulma</ogc:PropertyName>
                 <ogc:Literal>-15</ogc:Literal>
@@ -190,7 +190,7 @@
                 <ogc:PropertyName>kirjasinvarikoodi</ogc:PropertyName>
                 <ogc:Literal>20</ogc:Literal>
               </ogc:PropertyIsEqualTo>
-            </ogc:And>        
+            </ogc:And>			  
           </ogc:Filter> 
 
           <MinScaleDenominator>180000</MinScaleDenominator>
@@ -210,19 +210,19 @@
                     <ogc:PropertyName>kirjasintyyppikoodi</ogc:PropertyName>
                     <ogc:Literal>10</ogc:Literal>
                   </ogc:Function>                                
-                  <ogc:Literal>Arial Etukeno</ogc:Literal>  
-                  <ogc:Literal>Arial Lihavoitu Etukeno</ogc:Literal>                                                     
-                </ogc:Function>        
+                  <ogc:Literal>Arial Takakeno</ogc:Literal>  
+                  <ogc:Literal>Arial Lihavoitu Takakeno</ogc:Literal>                                                     
+                </ogc:Function> 			 
               </CssParameter>
               <CssParameter name="font-size">
                 <ogc:Div> 
                   <ogc:PropertyName>kirjasinkoko</ogc:PropertyName>
                   <ogc:Literal>0.2</ogc:Literal>
-                </ogc:Div>         
+                </ogc:Div>			   
               </CssParameter>
  
             </Font>
-      
+			
             <LabelPlacement>
               <PointPlacement>
                 <AnchorPoint>
@@ -242,11 +242,11 @@
                       <ogc:Literal>-10000</ogc:Literal> 
                     </ogc:Div>        
                   </ogc:Function> 
-                </Rotation>         
-        
+                </Rotation> 				
+				
               </PointPlacement>
-            </LabelPlacement>       
-      
+            </LabelPlacement> 			
+			
             <Halo>
               <Radius>50</Radius>
             </Halo>
@@ -257,8 +257,8 @@
             <VendorOption name="conflictResolution">false</VendorOption>
             <VendorOption name="partials">true</VendorOption>
           </TextSymbolizer>
-       </Rule>            
-  
+       </Rule>          	
+	
 
       </FeatureTypeStyle>  
   

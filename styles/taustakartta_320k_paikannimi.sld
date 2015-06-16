@@ -7,7 +7,7 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>taustakartta_320k_paikannimi</Name>
+    <Name>mtk:karttanimi_250000</Name>
     <UserStyle>
 
       <Title>taustakartta_320k_paikannimi</Title>
@@ -19,7 +19,7 @@
 
 
 
-        
+			  
 <!-- mustat, kirjasinkallistuskulma=0 -->
         <Rule>
         
@@ -83,7 +83,7 @@
                       <ogc:Literal>-10000</ogc:Literal> 
                     </ogc:Div>        
                   </ogc:Function> 
-                </Rotation>        
+                </Rotation>				
               </PointPlacement>
             </LabelPlacement>         
       
@@ -167,7 +167,7 @@
                       <ogc:Literal>-10000</ogc:Literal> 
                     </ogc:Div>        
                   </ogc:Function> 
-                </Rotation>        
+                </Rotation>				
               </PointPlacement>
             </LabelPlacement>       
       
@@ -221,8 +221,8 @@
                     <ogc:PropertyName>kirjasintyyppikoodi</ogc:PropertyName>
                     <ogc:Literal>10</ogc:Literal>
                   </ogc:Function>                                
-                  <ogc:Literal>Arial Etukeno</ogc:Literal>  
-                  <ogc:Literal>Arial Lihavoitu Etukeno</ogc:Literal>                                                     
+                  <ogc:Literal>Arial Takakeno</ogc:Literal>  
+                  <ogc:Literal>Arial Lihavoitu Takakeno</ogc:Literal>                                                     
                 </ogc:Function>        
               </CssParameter>
               <CssParameter name="font-size">

@@ -7,7 +7,7 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>taustakartta_8000k_paikannimi</Name>
+    <Name>mtk:karttanimi_8000000</Name>
     <UserStyle>
 
       <Title>taustakartta_8000k_paikannimi</Title>
@@ -63,8 +63,8 @@
                 <ogc:Div> 
                   <ogc:PropertyName>kirjkoko</ogc:PropertyName>
                   <ogc:Literal>0.35</ogc:Literal>
-                </ogc:Div>         
-              </Radius>        
+                </ogc:Div>			   
+              </Radius>				
             </Halo> -->
             <Fill>
               <CssParameter name="fill">#4d4d4d</CssParameter>

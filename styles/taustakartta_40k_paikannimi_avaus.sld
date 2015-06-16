@@ -7,7 +7,7 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>taustakartta_40k_paikannimi_avaus</Name>
+    <Name>mtk:karttanimi_40000</Name>
     <UserStyle>
 
       <Title>taustakartta_40k_paikannimi_avaus</Title>
@@ -16,8 +16,8 @@
   
       <FeatureTypeStyle> <!-- Paikannimet  -->
     
-  
-  
+	
+	
        
 <!-- MAASTONIMET 35111-->        
        <Rule>
@@ -28,63 +28,63 @@
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>paikkatyyppikoodi</ogc:PropertyName> <!-- puun nimi 300 -->
                 <ogc:Literal>300</ogc:Literal>
-              </ogc:PropertyIsEqualTo>       
-      
+              </ogc:PropertyIsEqualTo> 			
+			
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>paikkatyyppikoodi</ogc:PropertyName> <!-- kiven nimi 305 -->
                 <ogc:Literal>305</ogc:Literal>
               </ogc:PropertyIsEqualTo> 
-        
+			  
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>paikkatyyppikoodi</ogc:PropertyName> <!--vesikiven nimi  310 -->  
                 <ogc:Literal>310</ogc:Literal>
               </ogc:PropertyIsEqualTo>  
-        
+			  
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>paikkatyyppikoodi</ogc:PropertyName> <!-- merkitt�v�n luontokohteen nimi 315 -->
                 <ogc:Literal>315</ogc:Literal>
               </ogc:PropertyIsEqualTo>  
-        
+			  
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>paikkatyyppikoodi</ogc:PropertyName>  <!-- pellon tai niityn nimi 320 -->
                 <ogc:Literal>320</ogc:Literal>
-              </ogc:PropertyIsEqualTo>        
-        
+              </ogc:PropertyIsEqualTo>			  
+			  
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>paikkatyyppikoodi</ogc:PropertyName> <!-- mets�alueen nimi 325 -->
                 <ogc:Literal>325</ogc:Literal>
               </ogc:PropertyIsEqualTo>  
-        
+			  
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>paikkatyyppikoodi</ogc:PropertyName> <!-- suon nimi 330 -->
                 <ogc:Literal>330</ogc:Literal>
               </ogc:PropertyIsEqualTo>  
-        
+			  
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>paikkatyyppikoodi</ogc:PropertyName> <!-- kohouman nimi 335 -->
                 <ogc:Literal>335</ogc:Literal>
               </ogc:PropertyIsEqualTo>
-        
+			  
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>paikkatyyppikoodi</ogc:PropertyName>  <!-- painanteen nimi 340 -->
                 <ogc:Literal>340</ogc:Literal>
               </ogc:PropertyIsEqualTo>  
-        
+			  
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>paikkatyyppikoodi</ogc:PropertyName> <!-- niemen nimi 345 -->
                 <ogc:Literal>345</ogc:Literal>
               </ogc:PropertyIsEqualTo>
-        
+			  
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>paikkatyyppikoodi</ogc:PropertyName> <!-- saaren nimi 350 -->
                 <ogc:Literal>350</ogc:Literal>
               </ogc:PropertyIsEqualTo>
-        
+			  
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>paikkatyyppikoodi</ogc:PropertyName> <!-- matalikon nimi 430 -->
                 <ogc:Literal>430</ogc:Literal>
-              </ogc:PropertyIsEqualTo>        
-        
+              </ogc:PropertyIsEqualTo>			  
+			  
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>paikkatyyppikoodi</ogc:PropertyName> <!-- muu maastonimi 390 -->
                 <ogc:Literal>390</ogc:Literal>
@@ -92,8 +92,8 @@
             </ogc:Or>
           </ogc:Filter> 
 
-      <MinScaleDenominator>20000</MinScaleDenominator>
-      <MaxScaleDenominator>40000</MaxScaleDenominator>
+		  <MinScaleDenominator>20000</MinScaleDenominator>
+		  <MaxScaleDenominator>40000</MaxScaleDenominator>
 
        
 
@@ -111,14 +111,11 @@
                </ogc:Function>                                
                <ogc:Literal>Arial Etukeno</ogc:Literal>  
                <ogc:Literal>Arial Lihavoitu Etukeno</ogc:Literal>                                                     
-             </ogc:Function>        
-           </CssParameter>  
-           <CssParameter name="font-size">
-             <ogc:Div>
-               <ogc:PropertyName>kirjasinkoko</ogc:PropertyName>
-               <ogc:Literal>1.05</ogc:Literal>
-             </ogc:Div>         
-           </CssParameter>
+             </ogc:Function> 			 
+           </CssParameter>	
+              <CssParameter name="font-size">
+                <ogc:PropertyName>kirjasinkoko</ogc:PropertyName>
+              </CssParameter>
 
          </Font>   
          
@@ -131,7 +128,7 @@
 
                  <Displacement>
                   <DisplacementX>0</DisplacementX>
-                  <DisplacementY>-50</DisplacementY>
+                  <DisplacementY>-22</DisplacementY>
                 </Displacement>
                   <Rotation>
                    <ogc:Function name="toDegrees">
@@ -142,10 +139,10 @@
                   </ogc:Function> 
                 </Rotation>       
               </PointPlacement>
-            </LabelPlacement>      
+            </LabelPlacement> 		 
 
          <Halo>
-           <Radius>5</Radius>
+           <Radius>6</Radius>
 
          </Halo>
      
@@ -195,8 +192,8 @@
             </ogc:Or> 
           </ogc:Filter> 
 
-      <MinScaleDenominator>20000</MinScaleDenominator>
-      <MaxScaleDenominator>40000</MaxScaleDenominator>
+		  <MinScaleDenominator>20000</MinScaleDenominator>
+		  <MaxScaleDenominator>40000</MaxScaleDenominator>
 
         
      
@@ -216,14 +213,11 @@
                </ogc:Function>                                
                <ogc:Literal>Arial Takakeno</ogc:Literal>  
                <ogc:Literal>Arial Lihavoitu Takakeno</ogc:Literal>                                                     
-             </ogc:Function>        
+             </ogc:Function> 			 
            </CssParameter>
-           <CssParameter name="font-size">
-             <ogc:Div>
-               <ogc:PropertyName>kirjasinkoko</ogc:PropertyName>
-               <ogc:Literal>1.05</ogc:Literal>
-             </ogc:Div>         
-           </CssParameter>
+              <CssParameter name="font-size">
+                <ogc:PropertyName>kirjasinkoko</ogc:PropertyName>
+              </CssParameter>
 
          </Font>
        
@@ -236,8 +230,8 @@
 
                  <Displacement>
                   <DisplacementX>0</DisplacementX>
-                  <DisplacementY>-50</DisplacementY>
-                </Displacement>       
+                  <DisplacementY>-22</DisplacementY>
+                </Displacement>		   
                   <Rotation>
                    <ogc:Function name="toDegrees">
                     <ogc:Div>
@@ -249,7 +243,7 @@
               </PointPlacement>
             </LabelPlacement>            
          <Halo>
-           <Radius>5</Radius>
+           <Radius>6</Radius>
          </Halo>
      
          <Fill>
@@ -298,8 +292,8 @@
           </ogc:Filter>       
       
 
-      <MinScaleDenominator>20000</MinScaleDenominator>
-      <MaxScaleDenominator>40000</MaxScaleDenominator>   
+		  <MinScaleDenominator>20000</MinScaleDenominator>
+		  <MaxScaleDenominator>40000</MaxScaleDenominator>   
 
        
 
@@ -317,16 +311,13 @@
                </ogc:Function>                                
                <ogc:Literal>Arial</ogc:Literal>  
                <ogc:Literal>Arial Lihavoitu</ogc:Literal>                                                     
-             </ogc:Function>        
-           </CssParameter>  
-           <CssParameter name="font-size">
-             <ogc:Div>
-               <ogc:PropertyName>kirjasinkoko</ogc:PropertyName>
-               <ogc:Literal>1.05</ogc:Literal>
-             </ogc:Div>         
-           </CssParameter>
+             </ogc:Function> 			 
+           </CssParameter>	
+              <CssParameter name="font-size">
+                <ogc:PropertyName>kirjasinkoko</ogc:PropertyName>
+              </CssParameter>
          </Font>
-     
+		 
             <LabelPlacement>
               <PointPlacement>
                 <AnchorPoint>
@@ -336,7 +327,7 @@
 
                  <Displacement>
                   <DisplacementX>0</DisplacementX>
-                  <DisplacementY>-50</DisplacementY>
+                  <DisplacementY>-22</DisplacementY>
                 </Displacement> 
                   <Rotation>
                    <ogc:Function name="toDegrees">
@@ -345,12 +336,12 @@
                       <ogc:Literal>-10000</ogc:Literal> 
                     </ogc:Div>        
                   </ogc:Function> 
-                </Rotation>         
+                </Rotation> 				
               </PointPlacement>
-            </LabelPlacement>       
+            </LabelPlacement>  		 
 
          <Halo>
-           <Radius>5</Radius>
+           <Radius>6</Radius>
 
          </Halo>
      

@@ -7,7 +7,7 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>yleiskartta_1000k_paikannimi</Name>
+    <Name> mtk:karttanimi_1000000</Name>
     <UserStyle>
 
       <Title>yleiskartta_1000k_paikannimi</Title>
@@ -16,14 +16,14 @@
   
       <FeatureTypeStyle> 
     
-  
-  
-  
+	
+	
+	
 <!-- mustat, kirjasinkallistuskulma=0 -->
         <Rule>
         
           <ogc:Filter>
-            <ogc:And>        
+            <ogc:And>  		  
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kirjasinkallistuskulma</ogc:PropertyName>
                 <ogc:Literal>0</ogc:Literal>
@@ -32,7 +32,7 @@
                 <ogc:PropertyName>kirjasinvarikoodi</ogc:PropertyName>
                 <ogc:Literal>10</ogc:Literal>
               </ogc:PropertyIsEqualTo>
-            </ogc:And>        
+            </ogc:And>			  
           </ogc:Filter>  
 
           <MinScaleDenominator>300000</MinScaleDenominator>
@@ -54,16 +54,16 @@
                   </ogc:Function>                                
                   <ogc:Literal>Arial</ogc:Literal>  
                   <ogc:Literal>Arial Lihavoitu</ogc:Literal>                                                     
-                </ogc:Function>        
+                </ogc:Function> 			 
               </CssParameter>
               <CssParameter name="font-size">
                 <ogc:Div> 
                   <ogc:PropertyName>kirjasinkoko</ogc:PropertyName>
                   <ogc:Literal>0.1</ogc:Literal>
-                </ogc:Div>         
+                </ogc:Div>			   
               </CssParameter>
             </Font>
-      
+			
             <LabelPlacement>
               <PointPlacement>
                 <AnchorPoint>
@@ -83,10 +83,10 @@
                       <ogc:Literal>-10000</ogc:Literal> 
                     </ogc:Div>        
                   </ogc:Function> 
-                </Rotation>         
+                </Rotation> 				
               </PointPlacement>
-            </LabelPlacement>         
-      
+            </LabelPlacement> 				
+			
 
      
             <Fill>
@@ -95,13 +95,13 @@
             <VendorOption name="conflictResolution">false</VendorOption>
             <VendorOption name="partials">true</VendorOption>
           </TextSymbolizer>
-       </Rule>            
-  
+       </Rule>          	
+	
 <!-- mustat, kirjasinkallistuskulma = 15 -->
         <Rule>
         
           <ogc:Filter>
-            <ogc:And>        
+            <ogc:And>  		  
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kirjasinkallistuskulma</ogc:PropertyName>
                 <ogc:Literal>15</ogc:Literal>
@@ -110,7 +110,7 @@
                 <ogc:PropertyName>kirjasinvarikoodi</ogc:PropertyName>
                 <ogc:Literal>10</ogc:Literal>
               </ogc:PropertyIsEqualTo>
-            </ogc:And>        
+            </ogc:And>			  
           </ogc:Filter> 
 
           <MinScaleDenominator>300000</MinScaleDenominator>
@@ -132,16 +132,16 @@
                   </ogc:Function>                                
                   <ogc:Literal>Arial Etukeno</ogc:Literal>  
                   <ogc:Literal>Arial Lihavoitu Etukeno</ogc:Literal>                                                     
-                </ogc:Function>        
+                </ogc:Function> 			 
               </CssParameter>
               <CssParameter name="font-size">
                 <ogc:Div> 
                   <ogc:PropertyName>kirjasinkoko</ogc:PropertyName>
                   <ogc:Literal>0.1</ogc:Literal>
-                </ogc:Div>         
+                </ogc:Div>			   
               </CssParameter>
             </Font>
-      
+			
             <LabelPlacement>
               <PointPlacement>
                 <AnchorPoint>
@@ -161,10 +161,10 @@
                       <ogc:Literal>-10000</ogc:Literal> 
                     </ogc:Div>        
                   </ogc:Function> 
-                </Rotation>         
+                </Rotation> 				
               </PointPlacement>
-            </LabelPlacement>       
-      
+            </LabelPlacement> 			
+			
 
      
             <Fill>
@@ -173,13 +173,13 @@
             <VendorOption name="conflictResolution">false</VendorOption>
             <VendorOption name="partials">true</VendorOption>
           </TextSymbolizer>
-       </Rule>     
+       </Rule>   	
 
 <!-- siniset (kirjasinvarikoodi=20) ja kirjasinkallistuskulma -15 -->
         <Rule>
         
           <ogc:Filter>
-            <ogc:And>        
+            <ogc:And>  		  
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kirjasinkallistuskulma</ogc:PropertyName>
                 <ogc:Literal>-15</ogc:Literal>
@@ -188,7 +188,7 @@
                 <ogc:PropertyName>kirjasinvarikoodi</ogc:PropertyName>
                 <ogc:Literal>20</ogc:Literal>
               </ogc:PropertyIsEqualTo>
-            </ogc:And>        
+            </ogc:And>			  
           </ogc:Filter> 
 
           <MinScaleDenominator>300000</MinScaleDenominator>
@@ -208,18 +208,18 @@
                     <ogc:PropertyName>kirjasintyyppikoodi</ogc:PropertyName>
                     <ogc:Literal>10</ogc:Literal>
                   </ogc:Function>                                
-                  <ogc:Literal>Arial Etukeno</ogc:Literal>  
-                  <ogc:Literal>Arial Lihavoitu Etukeno</ogc:Literal>                                                     
-                </ogc:Function>        
+                  <ogc:Literal>Arial Takakeno</ogc:Literal>  
+                  <ogc:Literal>Arial Lihavoitu Takakeno</ogc:Literal>                                                     
+                </ogc:Function> 			 
               </CssParameter>
               <CssParameter name="font-size">
                 <ogc:Div> 
                   <ogc:PropertyName>kirjasinkoko</ogc:PropertyName>
                   <ogc:Literal>0.1</ogc:Literal>
-                </ogc:Div>         
+                </ogc:Div>			   
               </CssParameter>
             </Font>
-      
+			
             <LabelPlacement>
               <PointPlacement>
                 <AnchorPoint>
@@ -241,10 +241,10 @@
                     </ogc:Div>        
                   </ogc:Function> 
                 </Rotation> 
-        
+				
               </PointPlacement>
-            </LabelPlacement>       
-      
+            </LabelPlacement> 			
+			
 
      
             <Fill>
@@ -253,7 +253,7 @@
             <VendorOption name="conflictResolution">false</VendorOption>
             <VendorOption name="partials">true</VendorOption>
           </TextSymbolizer>
-       </Rule>            
+       </Rule>          	
 
 
       </FeatureTypeStyle>  

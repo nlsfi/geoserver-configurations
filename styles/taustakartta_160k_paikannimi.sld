@@ -7,7 +7,7 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>taustakartta_160k_paikannimi</Name>
+    <Name>mtk:karttanimi_100000</Name>
     <UserStyle>
 
       <Title>taustakartta_160k_paikannimi</Title>
@@ -16,8 +16,8 @@
   
       <FeatureTypeStyle> <!-- Paikannimet  -->
            
-       <!-- MAASTONIMET 35111 harmaa teksti--> 
-       <Rule>
+		   <!-- MAASTONIMET 35111 harmaa teksti--> 
+		   <Rule>
         
           <ogc:Filter>        
             <ogc:Or>    
@@ -136,7 +136,7 @@
                       <ogc:Literal>-10000</ogc:Literal> 
                     </ogc:Div>        
                   </ogc:Function> 
-                </Rotation>         
+                </Rotation> 				
               </PointPlacement>
             </LabelPlacement> 
 
@@ -257,8 +257,8 @@
   
 </FeatureTypeStyle>
 
-    
-    
+	  
+	  
       <FeatureTypeStyle>
 <!-- Asustusnimet harmaa teksti -->
         <Rule>
@@ -319,7 +319,7 @@
            <CssParameter name="font-size">
              <ogc:Div> 
                <ogc:PropertyName>kirjasinkoko</ogc:PropertyName>
-               <ogc:Literal>0.425</ogc:Literal>
+               <ogc:Literal>0.45</ogc:Literal>
               </ogc:Div>         
              </CssParameter>
 
@@ -343,7 +343,7 @@
                       <ogc:Literal>-10000</ogc:Literal> 
                     </ogc:Div>        
                   </ogc:Function> 
-                </Rotation>         
+                </Rotation> 				
               </PointPlacement>
             </LabelPlacement>     
 
@@ -361,8 +361,8 @@
        </Rule>  
 
       </FeatureTypeStyle>
-    
-    
+	  
+	  
 
   
   
