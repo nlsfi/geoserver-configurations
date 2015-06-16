@@ -689,7 +689,7 @@
             </Label>
             <Font>
               <CssParameter name="font-family">
-                <ogc:Literal>Arial Bold</ogc:Literal>                                                            
+                <ogc:Literal>Arial Lihavoitu</ogc:Literal>                                                            
               </CssParameter>
               <CssParameter name="font-size">
                 <ogc:Div> 
