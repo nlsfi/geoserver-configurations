@@ -27,7 +27,7 @@
         
         <Rule>
           <Name>meri_taustakartta</Name>
-          <!-- <!--MinScaleDenominator>5000000</MinScaleDenominator--> -->
+          <!--MinScaleDenominator>5000000</MinScaleDenominator-->
           <!--MaxScaleDenominator>15000000</MaxScaleDenominator-->
           <PolygonSymbolizer>
             <Fill>
