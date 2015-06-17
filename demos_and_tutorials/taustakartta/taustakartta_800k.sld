@@ -855,7 +855,7 @@
               <ExternalGraphic>
                 <OnlineResource
 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
-xlink:href="taustakartta/SLentokone_valk.svg"/>
+xlink:href="http://avoindata.maanmittauslaitos.fi/sld/taustakartta/SLentokone_valk.svg"/>
                 <Format>image/svg+xml</Format>
               </ExternalGraphic>
               <Size>
