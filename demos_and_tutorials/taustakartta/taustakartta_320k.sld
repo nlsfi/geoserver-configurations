@@ -21,7 +21,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MinScaleDenominator>180000</MinScaleDenominator-->
           <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
           
           <PolygonSymbolizer> 
@@ -51,7 +51,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MinScaleDenominator>180000</MinScaleDenominator-->
           <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
           
           <PolygonSymbolizer> 
@@ -83,7 +83,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MinScaleDenominator>180000</MinScaleDenominator-->
           <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
           
           <PolygonSymbolizer> 
@@ -107,7 +107,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MinScaleDenominator>180000</MinScaleDenominator-->
           <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
           
           <PolygonSymbolizer> 
@@ -140,7 +140,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MinScaleDenominator>180000</MinScaleDenominator-->
           <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
           
           <PolygonSymbolizer> 
@@ -178,7 +178,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MinScaleDenominator>180000</MinScaleDenominator-->
           <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           
@@ -214,7 +214,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MinScaleDenominator>180000</MinScaleDenominator-->
           <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
           
 		  <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> <!-- Psuo12 -->
@@ -249,7 +249,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MinScaleDenominator>180000</MinScaleDenominator-->
           <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
           
 		  <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> <!-- Psuo12 -->
@@ -290,7 +290,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MinScaleDenominator>180000</MinScaleDenominator-->
           <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
           
           <PolygonSymbolizer> 
@@ -320,7 +320,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MinScaleDenominator>180000</MinScaleDenominator-->
           <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           
@@ -348,7 +348,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MinScaleDenominator>180000</MinScaleDenominator-->
           <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           
@@ -376,7 +376,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MinScaleDenominator>180000</MinScaleDenominator-->
           <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           
@@ -404,7 +404,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MinScaleDenominator>180000</MinScaleDenominator-->
           <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           
@@ -432,7 +432,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MinScaleDenominator>180000</MinScaleDenominator-->
           <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           
@@ -460,7 +460,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MinScaleDenominator>180000</MinScaleDenominator-->
           <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           
@@ -495,7 +495,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MinScaleDenominator>180000</MinScaleDenominator-->
           <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           
@@ -523,7 +523,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MinScaleDenominator>180000</MinScaleDenominator-->
           <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           
@@ -551,7 +551,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MinScaleDenominator>180000</MinScaleDenominator-->
           <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           
@@ -579,7 +579,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MinScaleDenominator>180000</MinScaleDenominator-->
           <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           
@@ -607,7 +607,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MinScaleDenominator>180000</MinScaleDenominator-->
           <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           
@@ -643,7 +643,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>      
 
-          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MinScaleDenominator>180000</MinScaleDenominator-->
           <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           
@@ -694,7 +694,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>      
 
-          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MinScaleDenominator>180000</MinScaleDenominator-->
           <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           
@@ -723,7 +723,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>      
 
-          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MinScaleDenominator>180000</MinScaleDenominator-->
           <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           
@@ -753,7 +753,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>      
 
-          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MinScaleDenominator>180000</MinScaleDenominator-->
           <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           
@@ -783,7 +783,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>    
 
-          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MinScaleDenominator>180000</MinScaleDenominator-->
           <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           
@@ -817,7 +817,7 @@
               </ogc:Or>        
           </ogc:Filter>      
 
-          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MinScaleDenominator>180000</MinScaleDenominator-->
           <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
       
           
@@ -848,7 +848,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>      
 
-          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MinScaleDenominator>180000</MinScaleDenominator-->
           <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
@@ -880,7 +880,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>      
 
-          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MinScaleDenominator>180000</MinScaleDenominator-->
           <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
         
@@ -917,7 +917,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
 
-          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MinScaleDenominator>180000</MinScaleDenominator-->
           <!--MaxScaleDenominator>300000</MaxScaleDenominator-->	  
 		  
           <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
@@ -970,7 +970,7 @@ xlink:href="http://avoindata.maanmittauslaitos.fi/sld/taustakartta/SLentokone_va
             </ogc:And>        
           </ogc:Filter>  
 
-          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MinScaleDenominator>180000</MinScaleDenominator-->
           <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
        
@@ -1054,7 +1054,7 @@ xlink:href="http://avoindata.maanmittauslaitos.fi/sld/taustakartta/SLentokone_va
             </ogc:And>        
           </ogc:Filter> 
 
-          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MinScaleDenominator>180000</MinScaleDenominator-->
           <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
        
@@ -1138,7 +1138,7 @@ xlink:href="http://avoindata.maanmittauslaitos.fi/sld/taustakartta/SLentokone_va
             </ogc:And>        
           </ogc:Filter> 
 
-          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MinScaleDenominator>180000</MinScaleDenominator-->
           <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
        
