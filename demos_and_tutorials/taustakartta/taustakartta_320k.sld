@@ -11,8 +11,8 @@
         
         <Rule>
           <Name>52100</Name>
-          <Title>52100 taustav�ri</Title>          
-		  <Abstract>k�ytet��n KorkeusAlue aluetta taustav�rin aikaansaamiseksi</Abstract>
+          <Title>52100 taustavari</Title>          
+		  <Abstract>kaytetaan KorkeusAlue aluetta taustavarin aikaansaamiseksi</Abstract>
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -94,11 +94,11 @@
           
         </Rule>			
 		
-<!--  J�rvivesi - alue ja reunaviiva --> 
+<!--  Jarvivesi - alue ja reunaviiva --> 
         
         <Rule>
           <Name>36200</Name>
-          <Title>36200 J�rvivesi - alue ja reunaviiva</Title>          
+          <Title>36200 Jarvivesi - alue ja reunaviiva</Title>          
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -127,11 +127,11 @@
 		  
         </Rule>				
 
-<!--  Yli 500 m leve� virtavesi - alue ja reunaviiva --> 
+<!--  Yli 500 m levea virtavesi - alue ja reunaviiva --> 
         
         <Rule>
           <Name>36325</Name>
-          <Title>36325 Yli 500 m leve� virtavesi - alue ja reunaviiva</Title>          
+          <Title>36325 Yli 500 m levea virtavesi - alue ja reunaviiva</Title>          
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -201,11 +201,11 @@
     <Name>mtkshp1000k:maaalue</Name>
     <UserStyle>
       <FeatureTypeStyle>   
-<!--  Mets�inen suo --> 
+<!--  Metsainen suo --> 
         
         <Rule>
           <Name>35402</Name>
-          <Title>35402 Mets�inen suo</Title>          
+          <Title>35402 Metsainen suo</Title>          
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -335,11 +335,11 @@
 		  
         </Rule>			
 		
-<!--  125-500 m leve� virtavesi --> 
+<!--  125-500 m levea virtavesi --> 
         
         <Rule>
           <Name>36324</Name>
-          <Title>36324 125-500 m leve� virtavesi</Title>          
+          <Title>36324 125-500 m levea virtavesi</Title>          
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -363,11 +363,11 @@
 		  
         </Rule>				
 		
-<!--  50-125 m leve� virtavesi --> 
+<!--  50-125 m levea virtavesi --> 
         
         <Rule>
           <Name>36322</Name>
-          <Title>36322 50-125 m leve� virtavesi</Title>          
+          <Title>36322 50-125 m levea virtavesi</Title>          
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -391,11 +391,11 @@
 		  
         </Rule>				
 		
-<!--  20-50 m leve� virtavesi --> 
+<!--  20-50 m levea virtavesi --> 
         
         <Rule>
           <Name>36321</Name>
-          <Title>36321 20-50 m leve� virtavesi</Title>          
+          <Title>36321 20-50 m levea virtavesi</Title>          
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -419,11 +419,11 @@
 		  
         </Rule>				
 		
-<!--  5-20 m leve� virtavesi --> 
+<!--  5-20 m levea virtavesi --> 
         
         <Rule>
           <Name>36314</Name>
-          <Title>36314 5-20 m leve� virtavesi</Title>          
+          <Title>36314 5-20 m levea virtavesi</Title>          
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -447,11 +447,11 @@
 		  
         </Rule>			
 		
-<!--  alle 5 m leve� virtavesi --> 
+<!--  alle 5 m levea virtavesi --> 
         
         <Rule>
           <Name>36312</Name>
-          <Title>36312 allle 5 m leve� virtavesi</Title>          
+          <Title>36312 allle 5 m levea virtavesi</Title>          
 		  
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
