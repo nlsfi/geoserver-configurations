@@ -21,8 +21,8 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <MinScaleDenominator>180000</MinScaleDenominator>
-          <MaxScaleDenominator>300000</MaxScaleDenominator>
+          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
           
           <PolygonSymbolizer> 
             <Fill>			 
@@ -51,8 +51,8 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <MinScaleDenominator>180000</MinScaleDenominator>
-          <MaxScaleDenominator>300000</MaxScaleDenominator>
+          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
           
           <PolygonSymbolizer> 
             <Fill>			 
@@ -83,8 +83,8 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <MinScaleDenominator>180000</MinScaleDenominator>
-          <MaxScaleDenominator>300000</MaxScaleDenominator>
+          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
           
           <PolygonSymbolizer> 
             <Fill>			 
@@ -107,8 +107,8 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <MinScaleDenominator>180000</MinScaleDenominator>
-          <MaxScaleDenominator>300000</MaxScaleDenominator>
+          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
           
           <PolygonSymbolizer> 
             <Fill>			 
@@ -140,8 +140,8 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <MinScaleDenominator>180000</MinScaleDenominator>
-          <MaxScaleDenominator>300000</MaxScaleDenominator>
+          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
           
           <PolygonSymbolizer> 
             <Fill>			 
@@ -178,8 +178,8 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <MinScaleDenominator>180000</MinScaleDenominator>
-          <MaxScaleDenominator>300000</MaxScaleDenominator>
+          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
@@ -214,8 +214,8 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <MinScaleDenominator>180000</MinScaleDenominator>
-          <MaxScaleDenominator>300000</MaxScaleDenominator>
+          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
           
 		  <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> <!-- Psuo12 -->
 		    <Fill>
@@ -249,8 +249,8 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <MinScaleDenominator>180000</MinScaleDenominator>
-          <MaxScaleDenominator>300000</MaxScaleDenominator>
+          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
           
 		  <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre"> <!-- Psuo12 -->
 		    <Fill>
@@ -290,8 +290,8 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <MinScaleDenominator>180000</MinScaleDenominator>
-          <MaxScaleDenominator>300000</MaxScaleDenominator>
+          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
           
           <PolygonSymbolizer> 
             <Fill>			 
@@ -320,8 +320,8 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <MinScaleDenominator>180000</MinScaleDenominator>
-          <MaxScaleDenominator>300000</MaxScaleDenominator>
+          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
@@ -348,8 +348,8 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <MinScaleDenominator>180000</MinScaleDenominator>
-          <MaxScaleDenominator>300000</MaxScaleDenominator>
+          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
@@ -376,8 +376,8 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <MinScaleDenominator>180000</MinScaleDenominator>
-          <MaxScaleDenominator>300000</MaxScaleDenominator>
+          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
@@ -404,8 +404,8 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <MinScaleDenominator>180000</MinScaleDenominator>
-          <MaxScaleDenominator>300000</MaxScaleDenominator>
+          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
@@ -432,8 +432,8 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <MinScaleDenominator>180000</MinScaleDenominator>
-          <MaxScaleDenominator>300000</MaxScaleDenominator>
+          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
@@ -460,8 +460,8 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <MinScaleDenominator>180000</MinScaleDenominator>
-          <MaxScaleDenominator>300000</MaxScaleDenominator>
+          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
@@ -495,8 +495,8 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <MinScaleDenominator>180000</MinScaleDenominator>
-          <MaxScaleDenominator>300000</MaxScaleDenominator>
+          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
@@ -523,8 +523,8 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <MinScaleDenominator>180000</MinScaleDenominator>
-          <MaxScaleDenominator>300000</MaxScaleDenominator>
+          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
@@ -551,8 +551,8 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <MinScaleDenominator>180000</MinScaleDenominator>
-          <MaxScaleDenominator>300000</MaxScaleDenominator>
+          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
@@ -579,8 +579,8 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <MinScaleDenominator>180000</MinScaleDenominator>
-          <MaxScaleDenominator>300000</MaxScaleDenominator>
+          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
@@ -607,8 +607,8 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>		  
 
-          <MinScaleDenominator>180000</MinScaleDenominator>
-          <MaxScaleDenominator>300000</MaxScaleDenominator>
+          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
@@ -643,8 +643,8 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>      
 
-          <MinScaleDenominator>180000</MinScaleDenominator>
-          <MaxScaleDenominator>300000</MaxScaleDenominator>
+          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
@@ -694,8 +694,8 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>      
 
-          <MinScaleDenominator>180000</MinScaleDenominator>
-          <MaxScaleDenominator>300000</MaxScaleDenominator>
+          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
@@ -723,8 +723,8 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>      
 
-          <MinScaleDenominator>180000</MinScaleDenominator>
-          <MaxScaleDenominator>300000</MaxScaleDenominator>
+          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
@@ -753,8 +753,8 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>      
 
-          <MinScaleDenominator>180000</MinScaleDenominator>
-          <MaxScaleDenominator>300000</MaxScaleDenominator>
+          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
@@ -783,8 +783,8 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>    
 
-          <MinScaleDenominator>180000</MinScaleDenominator>
-          <MaxScaleDenominator>300000</MaxScaleDenominator>
+          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
@@ -817,8 +817,8 @@
               </ogc:Or>        
           </ogc:Filter>      
 
-          <MinScaleDenominator>180000</MinScaleDenominator>
-          <MaxScaleDenominator>300000</MaxScaleDenominator>
+          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
       
           
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
@@ -848,8 +848,8 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>      
 
-          <MinScaleDenominator>180000</MinScaleDenominator>
-          <MaxScaleDenominator>300000</MaxScaleDenominator>
+          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
@@ -880,8 +880,8 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>      
 
-          <MinScaleDenominator>180000</MinScaleDenominator>
-          <MaxScaleDenominator>300000</MaxScaleDenominator>
+          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
         
           
@@ -917,8 +917,8 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
 
-          <MinScaleDenominator>180000</MinScaleDenominator>
-          <MaxScaleDenominator>300000</MaxScaleDenominator>	  
+          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MaxScaleDenominator>300000</MaxScaleDenominator-->	  
 		  
           <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Graphic>
@@ -970,8 +970,8 @@ xlink:href="http://avoindata.maanmittauslaitos.fi/sld/taustakartta/SLentokone_va
             </ogc:And>        
           </ogc:Filter>  
 
-          <MinScaleDenominator>180000</MinScaleDenominator>
-          <MaxScaleDenominator>300000</MaxScaleDenominator>
+          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
        
 
@@ -1054,8 +1054,8 @@ xlink:href="http://avoindata.maanmittauslaitos.fi/sld/taustakartta/SLentokone_va
             </ogc:And>        
           </ogc:Filter> 
 
-          <MinScaleDenominator>180000</MinScaleDenominator>
-          <MaxScaleDenominator>300000</MaxScaleDenominator>
+          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
        
 
@@ -1138,8 +1138,8 @@ xlink:href="http://avoindata.maanmittauslaitos.fi/sld/taustakartta/SLentokone_va
             </ogc:And>        
           </ogc:Filter> 
 
-          <MinScaleDenominator>180000</MinScaleDenominator>
-          <MaxScaleDenominator>300000</MaxScaleDenominator>
+          <!--MinScaleDenominator>180000</MinScaleDenominator--->
+          <!--MaxScaleDenominator>300000</MaxScaleDenominator-->
 
        
 
