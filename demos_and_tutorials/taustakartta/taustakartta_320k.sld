@@ -870,8 +870,8 @@
 <!--  Autotie 1a --> 
         
         <Rule>
-          <Name>12111 valkoinen tï¿½yttï¿½</Name>
-          <Title>12111 Autotie 1a valkoinen tï¿½yttï¿½</Title>          
+          <Name>12111 valkoinen taytto</Name>
+          <Title>12111 Autotie 1a valkoinen taytto</Title>          
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
