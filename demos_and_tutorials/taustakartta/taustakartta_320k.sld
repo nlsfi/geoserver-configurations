@@ -901,6 +901,52 @@
     </UserStyle>
   </NamedLayer>  
   <NamedLayer>
+    <Name>mtkshp1000k:taajamapiste</Name>
+    <UserStyle>
+      <FeatureTypeStyle> 
+
+<!--   Taajamapiste -->    
+
+        <Rule>
+          <Name>40200</Name>
+          <Title>40200 Taajamapiste</Title>
+      
+          <ogc:Filter>
+            <ogc:And>      
+              <ogc:PropertyIsEqualTo>      
+                <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
+                <ogc:Literal>40200</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>      
+                <ogc:PropertyName>pintaalalu</ogc:PropertyName>
+                <ogc:Literal>1</ogc:Literal>
+              </ogc:PropertyIsEqualTo>        
+            </ogc:And>        
+          </ogc:Filter>
+
+          <!--MinScaleDenominator>180000</MinScaleDenominator-->
+          <!--MaxScaleDenominator>300000</MaxScaleDenominator-->    
+      
+          <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <Graphic>
+              <Mark>
+                <WellKnownName>circle</WellKnownName>
+                <Fill>
+                  <CssParameter name="fill">#f2cedf</CssParameter>
+                </Fill>
+              </Mark>
+              <Size>416</Size>
+            </Graphic>              
+          </PointSymbolizer>
+      
+      
+        </Rule>    
+    	  
+      </FeatureTypeStyle>        
+    </UserStyle>
+  </NamedLayer>  	  
+	  
+  <NamedLayer>
     <Name>mtkshp1000k:lentokenttapiste</Name>
     <UserStyle>
       <FeatureTypeStyle> 
