@@ -7,7 +7,7 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>maastokartta_500k_paikannimi</Name>
+    <Name>mtk:karttanimi_500000</Name>
     <UserStyle>
 
       <Title>maastokartta_500k_paikannimi</Title>
