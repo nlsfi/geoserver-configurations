@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>MML/WWWPROXY: Pyydetty&auml; osoitetta ei voitu hakea</TITLE>
+<STYLE type="text/css"><!--BODY{background-color:#ffffff;font-family:verdana,sans-serif}PRE{font-family:courier}ADDRESS{font-family:arial}--></STYLE>
+</HEAD><BODY>
+<IMG STYLE="float: left; margin: 2px 16px" SRC="http://www.maanmittauslaitos.fi/sites/default/files/mml_logo.png" ALT="MML logo" ALIGN="left">&nbsp;<H1>VIRHE</H1></IMG>
+<H2>Pyydetty&auml; osoitetta ei voitu hakea</H2>
+<HR noshade size="1px">
+<P>
+Yritett&auml;ess&auml; hakea URL-osoitetta:
+<A HREF="http://getmap1.xml/">http://getmap1.xml/</A>
+<P>
+Ilmeni seuraava virhe:
+<UL>
+<LI>
+<STRONG>
+Nimelle
+<I>getmap1.xml</I>
+ei voitu m&auml;&auml;ritt&auml;&auml; IP-osoitetta.
+</STRONG>
+<P>
+DNS-palvelin palautti viestin:
+<PRE> Name Error: The domain name does not exist.</PRE>
+
+<P>
+T&auml;m&auml; tarkoittaa, ett&auml;
+V&auml;lityspalvelin ei voinut selvitt&auml;&auml; URL:ss&auml; esitetty&auml; palvelinnime&auml;.
+Tarkista, ett&auml; osoite on oikein.
+</P>
+<P>
+<I>The Internet Domain Name Service system could not resolve
+the server name of your URL request. Check that the address is correct.
+</I>
+</P>
+</UL>
+<hr><p><font size="-1">wwwp-jkl4.nls.fi (squid/3.5.2) @ Wed, 17 Jun 2015 11:58:54 GMT</font></p>
