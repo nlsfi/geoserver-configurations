@@ -269,7 +269,53 @@
           </LineSymbolizer>
         </Rule>     
     
+        <Rule>
+          <Name>12151</Name>
+          <Title>12151 Lautta</Title>
+       
+          <ogc:Filter>    
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
+              <ogc:Literal>12151</ogc:Literal>
+            </ogc:PropertyIsEqualTo>        
+          </ogc:Filter>
 
+          <MinScaleDenominator>40000</MinScaleDenominator>
+          <MaxScaleDenominator>90000</MaxScaleDenominator>  
+
+          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">            
+            <Stroke>
+              <CssParameter name="stroke">#b4b6b8</CssParameter>
+              <CssParameter name="stroke-width">52</CssParameter>              
+              <CssParameter name="stroke-dasharray">104 104</CssParameter>              
+              <CssParameter name="stroke-linecap">butt</CssParameter>
+            </Stroke>            
+          </LineSymbolizer>
+        </Rule>   
+        
+        <Rule>
+          <Name>12152</Name>
+          <Title>12152 Lossi</Title>
+       
+          <ogc:Filter>    
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
+              <ogc:Literal>12152</ogc:Literal>
+            </ogc:PropertyIsEqualTo>        
+          </ogc:Filter>
+
+          <MinScaleDenominator>40000</MinScaleDenominator>
+          <MaxScaleDenominator>90000</MaxScaleDenominator> 
+
+          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">            
+            <Stroke>
+              <CssParameter name="stroke">#b4b6b8</CssParameter>
+              <CssParameter name="stroke-width">52</CssParameter>              
+              <CssParameter name="stroke-dasharray">104 104</CssParameter>              
+              <CssParameter name="stroke-linecap">butt</CssParameter>
+            </Stroke>            
+          </LineSymbolizer>
+        </Rule>        
 
   
     
