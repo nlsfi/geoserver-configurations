@@ -11,7 +11,7 @@ note: this layergroup uses
 <layer>peltoalue</layer><style>taustakartta_320k</style>
 <layer>vesiviiva</layer><style>taustakartta_320k</style>
 <layer>hallintoalueraja</layer><style>taustakartta_320k</style>
-<layer>tieviiva_uusi_tieluokka</layer><style>taustakartta_320k_tieviiva</style>
+<layer>tieviiva</layer><style>taustakartta_320k_tieviiva</style>
 <layer>rautatieviiva</layer><style>taustakartta_320k</style>
 <layer>taajamapiste</layer><style>taustakartta_320k</style>
 <layer>lentokenttapiste</layer><style>taustakartta_320k</style>
