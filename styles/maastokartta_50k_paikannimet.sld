@@ -11,7 +11,7 @@
     <UserStyle>
 
       <Title>maastokartta_50k_paikannimet</Title>
-      <Abstract>maastokartta 50k nimiston piirtyminen. kaytetaan paikannimet-layerin kanssa</Abstract>
+      <Abstract>maastokartta 50k nimiston piirtyminen. kaytetaan paikannimi-layerin kanssa</Abstract>
 
 
     <FeatureTypeStyle>     

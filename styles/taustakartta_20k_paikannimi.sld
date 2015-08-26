@@ -7,11 +7,12 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>taustakartta_20k_paikannimi_WFS</Name>
+    <Name>taustakartta_20k_paikannimi</Name>
     <UserStyle>
 
       <Title>taustakartta_20k_paikannimi</Title>
-      <Abstract>mï¿½ï¿½ritellï¿½ï¿½n esitystyyli paikannimillle MAASTONIMET (35111) VESISTï¿½NIMET (36111) ASUTUSNIMIET (48100) </Abstract>
+      <Abstract>Tama SLD-tyylitiedosto maarittaa paikanimien kuvaustekniikan taustakartta_20k-kartalle.
+	  kaytetaan paikannimi layerin kanssa.</Abstract>
 
     
      <FeatureTypeStyle> 
