@@ -94,12 +94,6 @@
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72802</ogc:Literal>
               </ogc:PropertyIsNotEqualTo>  
-
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>kirjasinvalyskerroin</ogc:PropertyName>
-                <ogc:Literal>7</ogc:Literal>
-              </ogc:PropertyIsEqualTo>  
-			  
             </ogc:And>      
           </ogc:Filter>    
         
@@ -191,9 +185,7 @@
         <Rule>
 
           <ogc:Filter>
-        
-            <ogc:And>
-			    <ogc:Or>
+			<ogc:Or>
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72202</ogc:Literal>
@@ -230,14 +222,7 @@
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>72802</ogc:Literal>
               </ogc:PropertyIsEqualTo>        
-            </ogc:Or>
-
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>kirjasinvalyskerroin</ogc:PropertyName>
-                <ogc:Literal>7</ogc:Literal>
-              </ogc:PropertyIsEqualTo>  
-			  			
-            </ogc:And>      
+            </ogc:Or>     
           </ogc:Filter>    
         
            <MinScaleDenominator>10000</MinScaleDenominator>
@@ -328,7 +313,6 @@
 
     
           <ogc:Filter>
-            <ogc:And>
             <ogc:Or>
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
@@ -338,13 +322,7 @@
                 <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
                 <ogc:Literal>62202</ogc:Literal>
               </ogc:PropertyIsEqualTo>                 
-            </ogc:Or>
-			              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>kirjasinvalyskerroin</ogc:PropertyName>
-                <ogc:Literal>7</ogc:Literal>
-              </ogc:PropertyIsEqualTo>  
-			  			
-            </ogc:And>      
+            </ogc:Or>      
           </ogc:Filter>    
         
            <MinScaleDenominator>10000</MinScaleDenominator>
