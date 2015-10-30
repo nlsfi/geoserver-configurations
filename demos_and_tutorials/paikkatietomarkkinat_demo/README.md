@@ -8,7 +8,7 @@ This demo uses cURL, can be downloaded from http://curl.haxx.se/download.html <b
 Installation instructions can be found e.g. here: http://superuser.com/questions/134685/run-curl-commands-from-windows-console <br />
 Also other http clients most likely work <br />
 
-The demo uses National Land Survey of Finlands ["Paikkatiedon palvelualustan pilotti"](http://www.maanmittauslaitos.fi/aineistot-palvelut/rajapintapalvelut/paikkatiedon-palvelualustan-pilotti)  [WMS-service](http://avoindata.maanmittauslaitos.fi/geoserver/web/). <br />
+The demo uses the [WMS-service](http://avoindata.maanmittauslaitos.fi/geoserver/web/) of National Land Survey of Finlands ["Paikkatiedon palvelualustan pilotti"](http://www.maanmittauslaitos.fi/aineistot-palvelut/rajapintapalvelut/paikkatiedon-palvelualustan-pilotti). <br />
 
 
 
