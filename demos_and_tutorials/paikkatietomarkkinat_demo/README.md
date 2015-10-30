@@ -7,7 +7,7 @@ This demo uses cURL, can be downloaded from http://curl.haxx.se/download.html <b
 installation instructions e.g. http://superuser.com/questions/134685/run-curl-commands-from-windows-console <br />
 Also other http clients most likely work <br />
 
-The demo uses National Land Survey of Finlands "Paikkatiedon palvelualustan pilotti" WMS-service. <br />
+The demo uses National Land Survey of Finlands ["Paikkatiedon palvelualustan pilotti"](http://www.maanmittauslaitos.fi/aineistot-palvelut/rajapintapalvelut/paikkatiedon-palvelualustan-pilotti)  [WMS-service](http://avoindata.maanmittauslaitos.fi/geoserver/web/). <br />
 
 You can see that in this repo, there are five xml-files. We use the xml-files to build up a map. <br />
 
