@@ -1,4 +1,4 @@
-This tutorial will describe how to request maps with GetMap from Geoserver using HTTP POST and cURL
+This tutorial describes how to request maps with GetMap from Geoserver using HTTP POST and cURL
 ========================
 
 Presenter Jakob Ventin, National Land Survey of Finland <br />
