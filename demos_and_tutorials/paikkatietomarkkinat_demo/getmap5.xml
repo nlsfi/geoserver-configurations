@@ -148,20 +148,20 @@ version="1.1.1" service="WMS">
 
 <BoundingBox srsName="http://www.opengis.net/gml/srs/epsg.xml#3067">
 <gml:coord>
-<gml:X>-436375</gml:X>
-<gml:Y>6136125</gml:Y>
+<gml:X>-111339</gml:X>
+<gml:Y>6440637</gml:Y>
 </gml:coord>
 <gml:coord>
-<gml:X>1391750</gml:X>
-<gml:Y>8086125</gml:Y>
+<gml:X>813828</gml:X>
+<gml:Y>6961044</gml:Y>
 </gml:coord>
 </BoundingBox>
  
 <Output>
  <Format>image/png</Format>
  <Size>
- <Width>1500</Width>
- <Height>1600</Height>
+ <Width>1600</Width>
+ <Height>900</Height>
  </Size>
 </Output>
  
