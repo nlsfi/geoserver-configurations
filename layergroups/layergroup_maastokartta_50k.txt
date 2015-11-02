@@ -98,7 +98,7 @@ note: this layergroup uses
 <name>mtk:rakennus</name></style><name>maastokartta_50k_kirkko</name></style>      
 <name>mtk:harvalouhikko</name></style><name>maastokartta_50k_harvalouhikko_yleistys</name></style>      
 <name>mtk:kivi</name></style><name>maastokartta_50k_kivi_yleistys</name></style>      
-<name>mtk:vesikivi_pinnalla</name></style><name>maastokartta_50k_vedenpaallakivi_yleistys</name></style>      
+<name>mtk:vesikivi_pinnalla</name></style><name>maastokartta_50k_vedenpinnassakivi_yleistys</name></style>      
 <name>mtk:vesikivi_pinnanylapuoli</name></style><name>maastokartta_50k_vedenpaallakivi_yleistys</name></style>      
 <name>mtk:vesikivi_pinnanalapuoli</name></style><name>maastokartta_50k_vedenalainenkivi_yleistys</name></style>      
 <name>mtk:uittolaite</name></style><name>maastokartta_50k_symbolit</name></style>      
