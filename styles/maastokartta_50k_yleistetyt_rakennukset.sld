@@ -26,7 +26,7 @@
       
                 <ogc:PropertyIsLike  wildCard="*" singleChar="." escape="!">
                   <ogc:PropertyName>teksti</ogc:PropertyName>
-                  <ogc:Literal>*k\228mpp\228*</ogc:Literal>
+                  <ogc:Literal>*k*mpp*</ogc:Literal>
                 </ogc:PropertyIsLike> 
                 <ogc:PropertyIsLike  wildCard="*" singleChar="." escape="!">
                   <ogc:PropertyName>teksti</ogc:PropertyName>
@@ -42,9 +42,9 @@
                 </ogc:PropertyIsLike>        
                 <ogc:PropertyIsLike  wildCard="*" singleChar="." escape="!">
                   <ogc:PropertyName>teksti</ogc:PropertyName>
-                  <ogc:Literal>*ets\228*</ogc:Literal>
+                  <ogc:Literal>mets*stysmaja</ogc:Literal>
                 </ogc:PropertyIsLike>                
-        </ogc:Or> 
+              </ogc:Or> 
                <ogc:Or>
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>kohdeluokka</ogc:PropertyName>
