@@ -212,10 +212,6 @@
       <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/suojanne.xml" type="application/xml"/>
     </published>
     <published type="layer">
-      <name>mtk:uittoranni</name>
-      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/uittoranni.xml" type="application/xml"/>
-    </published>
-    <published type="layer">
       <name>mtk:maasto2kuvionreuna</name>
       <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/maasto2kuvionreuna.xml" type="application/xml"/>
     </published>
@@ -227,6 +223,10 @@
       <name>mtk:kunnanhallintoraja</name>
       <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/kunnanhallintoraja.xml" type="application/xml"/>
     </published>
+    <published type="layer">
+      <name>mtk:uittoranni</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/uittoranni.xml" type="application/xml"/>
+    </published>	
     <published type="layer">
       <name>mtk:tieviiva</name>
       <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/layers/tieviiva.xml" type="application/xml"/>
@@ -754,10 +754,6 @@
       <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/peruskartta.xml" type="application/xml"/>
     </style>
     <style>
-      <name>peruskartta_uittoranni</name>
-      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/peruskartta_uittoranni.xml" type="application/xml"/>
-    </style>
-    <style>
       <name>peruskartta_maastoreuna_vesistot</name>
       <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/peruskartta_maastoreuna_vesistot.xml" type="application/xml"/>
     </style>
@@ -769,6 +765,10 @@
       <name>peruskartta</name>
       <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/peruskartta.xml" type="application/xml"/>
     </style>
+    <style>
+      <name>peruskartta_uittoranni</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/peruskartta_uittoranni.xml" type="application/xml"/>
+    </style>	
     <style>
       <name>peruskartta_tiet_tunnelissa</name>
       <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8080/geoserver/rest/styles/peruskartta_tiet_tunnelissa.xml" type="application/xml"/>
