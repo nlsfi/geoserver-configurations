@@ -1,0 +1,21 @@
+LAYER							STYLE
+mtkshp1000k:korkeusalue	 		taustakartta_jhs_6	 
+mtkshp4500k:vesialue	 		taustakartta_jhs_6	 
+mtkshp4500k:maasto1reuna	 	taustakartta_jhs_6	 
+mtkshp4500k:vesiviiva2000	 	taustakartta_jhs_6	 
+kuntajako:aluejako_raja_1000k	taustakartta_jhs_6_hallintoalueraja	 
+mtkshp1000k:tieviiva	 		taustakartta_jhs_6_tieviiva	 
+mtkshp1000k:rautatieviiva	 	taustakartta_jhs_6	 
+mtkshp1000k:lentokenttapiste	taustakartta_jhs_6	 
+mtkshp4500k:taajamapiste2000	taustakartta_jhs_6_taajamapiste	 
+piti_nimet:karttanimi	 		taustakartta_jhs_6_karttanimi	 
+mtkshp4500k:karttanimipiste2000	taustakartta_jhs_6_paikannimi	 
+
+note: 
+
+mtkshp4500k is the same data that is distributed via the file download service (layer: Yleiskartta 1:4,5 milj.)
+mtkshp1000k is the same data that is distributed via the file download service (layer: Yleiskartta 1:1 milj.) 
+The layer kuntajako:aluejako_raja_1000k contains administrative boundaries and the corresponding data can be found in the file download service (layer: kuntajako 1:1 milj). The same data is also in the mtkshp1000k data, but updated less frequent than the kuntajako data.
+The layer piti_nimet:karttanimi is to be replaced by the layer mtkshp4500k:karttanimipiste20000. Renaming of the attributes in the SLD-file is needed.
+
+The url to the file download service: https://tiedostopalvelu.maanmittauslaitos.fi/tp/kartta

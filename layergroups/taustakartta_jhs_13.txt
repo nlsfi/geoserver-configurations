@@ -1,0 +1,83 @@
+LAYER								STYLE
+mtk:suo									 	taustakartta_jhs_13	 
+mtk:hautausmaa								taustakartta_jhs_13	 
+mtk:puisto	 								taustakartta_jhs_13	 
+mtk:maatalousmaa	 						taustakartta_jhs_13	 
+mtk:urheilujavirkistysalue			 		taustakartta_jhs_13	 
+mtk:niitty	 								taustakartta_jhs_13	 
+mtk:kaatopaikka							 	taustakartta_jhs_13	 
+mtk:louhos	 								taustakartta_jhs_13	 
+mtk:hietikko							 	taustakartta_jhs_13	 
+mtk:jarvi	 								taustakartta_jhs_13	 
+mtk:meri	 								taustakartta_jhs_13	 
+mtk:virtavesialue						 	taustakartta_jhs_13	 
+mtk:allas	 								taustakartta_jhs_13	 
+mtk:lentokenttaalue	 						taustakartta_jhs_13	 
+mtk:maastokuvionreuna			 			taustakartta_jhs_13_maastoreuna	 
+mtk:maasto2kuvionreuna	 					taustakartta_jhs_13_maastoreuna	 
+mtk:virtavesikapea	 						taustakartta_jhs_13_virtavesi	 
+mtk:maastokuvionreuna	 					taustakartta_jhs_13_maastoreuna_vesistot	 
+mtk:tieviiva	 							taustakartta_jhs_13_tiet_rautatiet	 
+mtk:rautatie	 							taustakartta_jhs_13_tiet_rautatiet	 
+mtk:kunnanhallintoraja_jakotausta			taustakartta_jhs_13	 
+mtk:aluemerenulkoraja	 					taustakartta_jhs_13	 
+mtk:rakennus	 							taustakartta_jhs_13	 
+mtk:rakennusreunaviiva	 					taustakartta_jhs_13_rakennusreuna	 
+mtk:rakennelma	 							taustakartta_jhs_13	 
+mtk:rakennus	 							taustakartta_jhs_13_rakennukset	 
+mtk:tieviiva	 							taustakartta_jhs_13_tiet_rautatiet_sillalla	 
+mtk:rautatie	 							taustakartta_jhs_13_tiet_rautatiet_sillalla	 
+mtk:ilmarata	 							taustakartta_jhs_13	 
+mtk:vesikulkuvayla	 						taustakartta_jhs_13	 
+mtk:pistolaituriviiva	 					taustakartta_jhs_13	 
+mtk:ilmaradankannatinpylvas	 				taustakartta_jhs_13_symbolit	 
+mtk:tiesymboli	 							taustakartta_jhs_13_symbolit	 
+mtk:karttasymboli	 						taustakartta_jhs_13_symbolit	 
+mtk:turvalaite	 							taustakartta_jhs_13_symbolit	 
+mtk:tieviiva	 							taustakartta_jhs_13_tienimet	 
+mtk:rautatieliikennepaikka				 	taustakartta_jhs_13_symbolit	 
+mtk:tieviiva_tausta_5k_12141_offset_view	taustakartta_jhs_13_tienimet_ajotie	 
+mtk:paikannimi	 							taustakartta_jhs_13_paikannimi	 
+vtj:osoite_m	 							taustakartta_jhs_13_osoitepisteet	 
+
+
+
+
+
+
+
+
+
+
+mtk:tieviiva_tausta_5k_12141_offset_view is a materialized view in postgis created with the following sql:
+
+SET maintenance_work_mem='4GB';
+SET work_mem='256MB';
+
+BEGIN;
+DROP MATERIALIZED VIEW IF EXISTS tieviiva_tausta_5k_12141_offset;
+CREATE MATERIALIZED VIEW tieviiva_tausta_5k_12141_offset AS
+  SELECT
+    kohdeluokka,
+    kuntatunnus,
+    valmiusaste,
+    nimi_suomi,
+    nimi_ruotsi,
+    nimi_inarinsaame,
+    nimi_koltansaame,
+    nimi_pohjoissaame,
+    ST_OffsetCurve(ST_Simplify(ST_Force2D(sijainti_viiva), 1.0), -8, 'quad_segs=8 join=round')
+  FROM tieviiva
+  WHERE kohdeluokka=12141
+  AND versio=0
+  AND (
+                             nimi_suomi IS NOT NULL
+                               OR nimi_ruotsi IS NOT NULL
+                               OR nimi_inarinsaame IS NOT NULL
+                               OR nimi_koltansaame IS NOT NULL
+                               OR nimi_pohjoissaame IS NOT NULL
+  );
+CREATE INDEX ON tieviiva_tausta_5k_12141_offset USING gist (ST_OffsetCurve);
+ANALYZE tieviiva_tausta_5k_12141_offset;
+COMMIT;
+GRANT SELECT ON tieviiva_tausta_5k_12141_offset TO visuweb;

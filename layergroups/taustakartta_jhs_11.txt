@@ -1,0 +1,42 @@
+mtk:suo	 								taustakartta_jhs_11	 
+mtk:taajaanrakennettualue			 	taustakartta_jhs_11	 
+mtk:hautausmaa	 						taustakartta_jhs_11	 
+mtk:puisto	 							taustakartta_jhs_11	 
+mtk:maatalousmaa	 					taustakartta_jhs_11	 
+mtk:urheilujavirkistysalue		 		taustakartta_jhs_11	 
+mtk:niitty	 							taustakartta_jhs_11	 
+mtk:kaatopaikka	 						taustakartta_jhs_11	 
+mtk:hietikko	 						taustakartta_jhs_11	 
+mtk:jarvi	 							taustakartta_jhs_11	 
+mtk:meri	 							taustakartta_jhs_11	 
+mtk:virtavesialue		 				taustakartta_jhs_11	 
+mtk:allas	 							taustakartta_jhs_11	 
+mtk:lentokenttaalue	 					taustakartta_jhs_11	 
+mtk:maastokuvionreuna		 			taustakartta_jhs_11_maastoreuna	 
+mtk:virtavesikapea	 					taustakartta_jhs_11_virtavesi	 
+mtk:rakennusreunaviiva	 				taustakartta_jhs_11	 
+mtk:maastokuvionreuna	 				taustakartta_jhs_11_maastoreuna_vesistot	 
+mtk:tieviiva	 						taustakartta_jhs_11_tiet_rautatiet	 
+mtk:rautatie	 						taustakartta_jhs_11_tiet_rautatiet	 
+mtk:kunnanhallintoraja_jakotausta	 	taustakartta_jhs_11	 
+mtk:aluemerenulkoraja	 				taustakartta_jhs_11	 
+mtk:rakennus	 						taustakartta_jhs_11	 
+mtk:rakennus	 						taustakartta_jhs_11_pintaalayleistys	 
+mtk:tieviiva	 						taustakartta_jhs_11_tiet_rautatiet_sillalla	 
+mtk:rautatie	 						taustakartta_jhs_11_tiet_rautatiet_sillalla	 
+mtk:ilmarata	 						taustakartta_jhs_11	 
+mtk:rakennelma	 						taustakartta_jhs_11	 
+mtk:vesikulkuvayla	 					taustakartta_jhs_11	 
+mtk:karttasymboli	 					taustakartta_jhs_11_symbolit	 
+mtk:turvalaite	 						taustakartta_jhs_11_symbolit	 
+mtk:rautatieliikennepaikka	 			taustakartta_jhs_11_symbolit	 
+mtk:paikannimi	 						taustakartta_jhs_11_paikannimi	 
+mtk:tieviiva	 						taustakartta_jhs_11_tienimet	 
+
+
+note: 
+
+mtk: is the same data that is distributed via the file download service (layer Maastotietokanta, kaikki kohteet, format: GML)
+The layer mtk:kunnanhallintoraja_jakotausta contains administrative boundaries and the corresponding data can be found in the file download service (layer: kuntajako 1:250k). The same data is also in the mtk: data.
+
+The url to the file download service: https://tiedostopalvelu.maanmittauslaitos.fi/tp/kartta

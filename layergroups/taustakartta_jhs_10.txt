@@ -1,0 +1,30 @@
+LAYER							STYLE
+mtkshp100k:maaalue		 		taustakartta_jhs_10	 
+mtkshp100k:taajamaalue	 		taustakartta_jhs_10	 
+mtkshp100k:peltoalue	 		taustakartta_jhs_10	 
+mtkshp100k:maaalue	 			taustakartta_jhs_10	 
+mtkshp100k:maasto2alue	 		taustakartta_jhs_10	 
+mtkshp100k:vesialue	 			taustakartta_jhs_10	 
+mtkshp100k:liikennealue	 		taustakartta_jhs_10	 
+mtkshp100k:kiitotieviiva		taustakartta_jhs_10	 
+mtkshp100k:vesiviiva	 		taustakartta_jhs_10	 
+mtkshp100k:maasto1reuna	 		taustakartta_jhs_10	 
+kuntajako:aluejako_raja_100k	taustakartta_jhs_10_hallintoalueraja	 
+mtkshp100k:tieviiva	 			taustakartta_jhs_10_tiet	 
+mtkshp100k:rakennuspiste	 	taustakartta_jhs_10_rakennukset	 
+mtkshp100k:rautatieviiva	 	taustakartta_jhs_10_raideliikenne	 
+mtkshp100k:vesiliikenneviiva	taustakartta_jhs_10	 
+mtkshp100k:rakennuspiste	 	taustakartta_jhs_10	 
+mtkshp100k:majakkapiste		 	taustakartta_jhs_10	 
+mtk:rautatieliikennepaikka	 	taustakartta_jhs_10_rautatieliikennepaikka	 
+piti_nimet:karttanimi	 		taustakartta_jhs_10_karttanimi	 
+mtk:tieviiva	 				taustakartta_jhs_10_tienimet	 
+
+note: 
+
+mtkshp100k is the same data that is distributed via the file download service (layer: Maastokartta 1:100 000) 
+mtk:rautatieliikennepaikka and mtk:tieviiva are from the mtkgml schema. mtkgml can be dowloaded from the file download service (layer Maastotietokanta, kaikki kohteet, format: GML)
+The layer kuntajako:aluejako_raja_100k contains administrative boundaries and the corresponding data can be found in the file download service (layer: kuntajako 1:250k). The same data is also in the mtkshp100k data, but updated less frequent than the kuntajako data.
+The layer piti_nimet:karttanimi is to be replaced by the layer mtkshp100k:karttanimipiste. Renaming of the attributes in the SLD-file is needed.
+
+The url to the file download service: https://tiedostopalvelu.maanmittauslaitos.fi/tp/kartta

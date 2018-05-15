@@ -1,0 +1,46 @@
+LAYER								STYLE
+mtk:suo							 	taustakartta_jhs_12	 
+mtk:hautausmaa					 	taustakartta_jhs_12	 
+mtk:puisto	 						taustakartta_jhs_12	 
+mtk:maatalousmaa				 	taustakartta_jhs_12	 
+mtk:urheilujavirkistysalue	 		taustakartta_jhs_12	 
+mtk:niitty	 						taustakartta_jhs_12	 
+mtk:kaatopaikka					 	taustakartta_jhs_12	 
+mtk:hietikko	 					taustakartta_jhs_12	 
+mtk:jarvi						 	taustakartta_jhs_12	 
+mtk:meri	 						taustakartta_jhs_12	 
+mtk:virtavesialue				 	taustakartta_jhs_12	 
+mtk:allas	 						taustakartta_jhs_12	 
+mtk:lentokenttaalue	 				taustakartta_jhs_12	 
+mtk:maastokuvionreuna			 	taustakartta_jhs_12_maastoreuna	 
+mtk:maasto2kuvionreuna	 			taustakartta_jhs_12_maastoreuna	 
+mtk:virtavesikapea	 				taustakartta_jhs_12_virtavesi	 
+mtk:maastokuvionreuna	 			taustakartta_jhs_12_maastoreuna_vesistot	 
+mtk:tieviiva	 					taustakartta_jhs_12_tiet_rautatiet	 
+mtk:rautatie	 					taustakartta_jhs_12_tiet_rautatiet	 
+mtk:kunnanhallintoraja_jakotausta	taustakartta_jhs_12	 
+mtk:aluemerenulkoraja	 			taustakartta_jhs_12	 
+mtk:rakennus	 					taustakartta_jhs_12	 
+mtk:rakennusreunaviiva	 			taustakartta_jhs_12_rakennusreuna	 
+mtk:tieviiva	 					taustakartta_jhs_12_tiet_rautatiet_sillalla	 
+mtk:rautatie	 					taustakartta_jhs_12_tiet_rautatiet_sillalla	 
+mtk:ilmarata	 					taustakartta_jhs_12	 
+mtk:aallonmurtaja				 	taustakartta_jhs_12	 
+mtk:rakennelma	 					taustakartta_jhs_12	 
+mtk:muuntoasema	 					taustakartta_jhs_12	 
+mtk:vesikulkuvayla	 				taustakartta_jhs_12	 
+mtk:pistolaituriviiva	 			taustakartta_jhs_12	 
+mtk:ilmaradankannatinpylvas	 		taustakartta_jhs_12_symbolit	 
+mtk:tiesymboli	 					taustakartta_jhs_12_symbolit	 
+mtk:karttasymboli	 				taustakartta_jhs_12_symbolit	 
+mtk:turvalaite	 					taustakartta_jhs_12_symbolit	 
+mtk:rautatieliikennepaikka		 	taustakartta_jhs_12_symbolit	 
+mtk:paikannimi	 					taustakartta_jhs_12_paikannimi	 
+mtk:tieviiva	 					taustakartta_jhs_12_tienimet	 
+
+note: 
+
+mtk: is the same data that is distributed via the file download service (layer Maastotietokanta, kaikki kohteet, format: GML)
+The layer mtk:kunnanhallintoraja_jakotausta contains administrative boundaries and the corresponding data can be found in the file download service (layer: kuntajako 1:250k). The same data is also in the mtk: data.
+
+The url to the file download service: https://tiedostopalvelu.maanmittauslaitos.fi/tp/kartta

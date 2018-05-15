@@ -1,0 +1,25 @@
+LAYER							STYLE
+mtkshp250k:maasto2alue	 		taustakartta_jhs_9	 
+mtkshp250k:maaalue	 			taustakartta_jhs_9	 
+mtkshp250k:taajamaalue	 		taustakartta_jhs_9	 
+mtkshp250k:taajamapiste	 		taustakartta_jhs_9	 
+mtkshp250k:peltoalue	 		taustakartta_jhs_9	 
+mtkshp250k:vesialue	 			taustakartta_jhs_9	 
+mtkshp250k:liikennealue	 		taustakartta_jhs_9	 
+mtkshp250k:kiitotieviiva		taustakartta_jhs_9	 
+mtkshp250k:vesiviiva	 		taustakartta_jhs_9	 
+mtkshp250k:tieviiva	 			taustakartta_jhs_9_tiet	 
+mtkshp250k:rautatieviiva		taustakartta_jhs_9	 
+kuntajako:aluejako_raja_250k	taustakartta_jhs_9_hallintoalueraja	 
+mtkshp250k:lentokenttapiste	 	taustakartta_jhs_9	 
+mtkshp250k:majakkapiste	 		taustakartta_jhs_9	 
+piti_nimet:karttanimi	 		taustakartta_jhs_9_karttanimi	 
+
+
+note: 
+
+mtkshp250k is the same data that is distributed via the file download service (layer: Maastokartta 1:250 000) 
+The layer kuntajako:aluejako_raja_250k contains administrative boundaries and the corresponding data can be found in the file download service (layer: kuntajako 1:250k). The same data is also in the mtkshp250k data, but updated less frequent than the kuntajako data.
+The layer piti_nimet:karttanimi is to be replaced by the layer mtkshp250k:karttanimipiste. Renaming of the attributes in the SLD-file is needed.
+
+The url to the file download service: https://tiedostopalvelu.maanmittauslaitos.fi/tp/kartta

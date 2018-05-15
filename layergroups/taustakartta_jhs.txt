@@ -1,0 +1,16 @@
+meret	 taustakartta_jhs_meri
+manner	 taustakartta_jhs_manner
+taustakartta_jhs_2_1_0	 	
+taustakartta_jhs_3	 	
+taustakartta_jhs_4	 	
+taustakartta_jhs_5	 	
+taustakartta_jhs_6	 	
+taustakartta_jhs_7	 	
+taustakartta_jhs_8	 	
+taustakartta_jhs_9	 	
+taustakartta_jhs_10	 	
+taustakartta_jhs_11	 	
+taustakartta_jhs_12	 	
+taustakartta_jhs_13
+
+Note: meret and manner are used to visualize the areas outside of Finland in small scales (JHS6 and smaller)
